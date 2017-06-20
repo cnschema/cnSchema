@@ -1,0 +1,10 @@
+cdata==0.0.1
+certifi==2017.4.17
+chardet==3.0.4
+idna==2.5
+requests==2.13.0
+requests-cache==0.4.13
+urllib3==1.21.1
+xlrd==1.0.0
+xlwt==1.2.0
+wikipedia==1.4.0
