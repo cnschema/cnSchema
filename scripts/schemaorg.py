@@ -300,6 +300,10 @@ def task_superclasses(args):
     mapping = collections.defaultdict(list)
     for pair in pairs:
         key = pair["to"]
+        mapping[key].append(pair["to"])
+
+    for pair in pairs:
+        key = pair["to"]
         for parent in pair["path"]:
             if parent not in mapping[key]:
                 mapping[key].append(parent)

@@ -1,26 +1,32 @@
 {
     "APIReference": [
+        "APIReference", 
         "Thing", 
         "CreativeWork", 
         "Article", 
         "TechArticle"
     ], 
     "AboutPage": [
+        "AboutPage", 
         "Thing", 
         "CreativeWork", 
         "WebPage"
     ], 
     "AcceptAction": [
+        "AcceptAction", 
         "Thing", 
         "Action", 
         "OrganizeAction", 
         "AllocateAction"
     ], 
     "Accommodation": [
+        "Accommodation", 
         "Thing", 
         "Place"
     ], 
     "AccountingService": [
+        "AccountingService", 
+        "AccountingService", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -28,32 +34,40 @@
         "Place"
     ], 
     "AchieveAction": [
+        "AchieveAction", 
         "Thing", 
         "Action"
     ], 
     "Action": [
+        "Action", 
         "Thing"
     ], 
     "ActionStatusType": [
+        "ActionStatusType", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "ActivateAction": [
+        "ActivateAction", 
         "Thing", 
         "Action", 
         "ControlAction"
     ], 
     "AddAction": [
+        "AddAction", 
         "Thing", 
         "Action", 
         "UpdateAction"
     ], 
     "AdministrativeArea": [
+        "AdministrativeArea", 
         "Thing", 
         "Place"
     ], 
     "AdultEntertainment": [
+        "AdultEntertainment", 
+        "AdultEntertainment", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -61,40 +75,49 @@
         "Place"
     ], 
     "AggregateOffer": [
+        "AggregateOffer", 
         "Thing", 
         "Intangible", 
         "Offer"
     ], 
     "AggregateRating": [
+        "AggregateRating", 
         "Thing", 
         "Intangible", 
         "Rating"
     ], 
     "AgreeAction": [
+        "AgreeAction", 
         "Thing", 
         "Action", 
         "AssessAction", 
         "ReactAction"
     ], 
     "Airline": [
+        "Airline", 
         "Thing", 
         "Organization"
     ], 
     "Airport": [
+        "Airport", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "AlignmentObject": [
+        "AlignmentObject", 
         "Thing", 
         "Intangible"
     ], 
     "AllocateAction": [
+        "AllocateAction", 
         "Thing", 
         "Action", 
         "OrganizeAction"
     ], 
     "AmusementPark": [
+        "AmusementPark", 
+        "AmusementPark", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -102,27 +125,33 @@
         "Place"
     ], 
     "AnimalShelter": [
+        "AnimalShelter", 
+        "AnimalShelter", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "Answer": [
+        "Answer", 
         "Thing", 
         "CreativeWork", 
         "Comment"
     ], 
     "Apartment": [
+        "Apartment", 
         "Thing", 
         "Place", 
         "Accommodation"
     ], 
     "ApartmentComplex": [
+        "ApartmentComplex", 
         "Thing", 
         "Place", 
         "Residence"
     ], 
     "AppendAction": [
+        "AppendAction", 
         "Thing", 
         "Action", 
         "UpdateAction", 
@@ -130,21 +159,26 @@
         "InsertAction"
     ], 
     "ApplyAction": [
+        "ApplyAction", 
         "Thing", 
         "Action", 
         "OrganizeAction"
     ], 
     "Aquarium": [
+        "Aquarium", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "ArriveAction": [
+        "ArriveAction", 
         "Thing", 
         "Action", 
         "MoveAction"
     ], 
     "ArtGallery": [
+        "ArtGallery", 
+        "ArtGallery", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -152,26 +186,32 @@
         "Place"
     ], 
     "Article": [
+        "Article", 
         "Thing", 
         "CreativeWork"
     ], 
     "AskAction": [
+        "AskAction", 
         "Thing", 
         "Action", 
         "InteractAction", 
         "CommunicateAction"
     ], 
     "AssessAction": [
+        "AssessAction", 
         "Thing", 
         "Action"
     ], 
     "AssignAction": [
+        "AssignAction", 
         "Thing", 
         "Action", 
         "OrganizeAction", 
         "AllocateAction"
     ], 
     "Attorney": [
+        "Attorney", 
+        "Attorney", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -179,21 +219,26 @@
         "Place"
     ], 
     "Audience": [
+        "Audience", 
         "Thing", 
         "Intangible"
     ], 
     "AudioObject": [
+        "AudioObject", 
         "Thing", 
         "CreativeWork", 
         "MediaObject"
     ], 
     "AuthorizeAction": [
+        "AuthorizeAction", 
         "Thing", 
         "Action", 
         "OrganizeAction", 
         "AllocateAction"
     ], 
     "AutoBodyShop": [
+        "AutoBodyShop", 
+        "AutoBodyShop", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -201,6 +246,8 @@
         "Place"
     ], 
     "AutoDealer": [
+        "AutoDealer", 
+        "AutoDealer", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -208,6 +255,10 @@
         "Place"
     ], 
     "AutoPartsStore": [
+        "AutoPartsStore", 
+        "AutoPartsStore", 
+        "AutoPartsStore", 
+        "AutoPartsStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -216,6 +267,8 @@
         "Place"
     ], 
     "AutoRental": [
+        "AutoRental", 
+        "AutoRental", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -223,6 +276,8 @@
         "Place"
     ], 
     "AutoRepair": [
+        "AutoRepair", 
+        "AutoRepair", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -230,6 +285,8 @@
         "Place"
     ], 
     "AutoWash": [
+        "AutoWash", 
+        "AutoWash", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -237,6 +294,8 @@
         "Place"
     ], 
     "AutomatedTeller": [
+        "AutomatedTeller", 
+        "AutomatedTeller", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -244,12 +303,16 @@
         "Place"
     ], 
     "AutomotiveBusiness": [
+        "AutomotiveBusiness", 
+        "AutomotiveBusiness", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "Bakery": [
+        "Bakery", 
+        "Bakery", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -257,12 +320,15 @@
         "Place"
     ], 
     "BankAccount": [
+        "BankAccount", 
         "Thing", 
         "Intangible", 
         "Service", 
         "FinancialProduct"
     ], 
     "BankOrCreditUnion": [
+        "BankOrCreditUnion", 
+        "BankOrCreditUnion", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -270,6 +336,8 @@
         "Place"
     ], 
     "BarOrPub": [
+        "BarOrPub", 
+        "BarOrPub", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -277,17 +345,21 @@
         "Place"
     ], 
     "Barcode": [
+        "Barcode", 
         "Thing", 
         "CreativeWork", 
         "MediaObject", 
         "ImageObject"
     ], 
     "Beach": [
+        "Beach", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "BeautySalon": [
+        "BeautySalon", 
+        "BeautySalon", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -295,6 +367,8 @@
         "Place"
     ], 
     "BedAndBreakfast": [
+        "BedAndBreakfast", 
+        "BedAndBreakfast", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -302,15 +376,19 @@
         "Place"
     ], 
     "BedDetails": [
+        "BedDetails", 
         "Thing", 
         "Intangible"
     ], 
     "BefriendAction": [
+        "BefriendAction", 
         "Thing", 
         "Action", 
         "InteractAction"
     ], 
     "BikeStore": [
+        "BikeStore", 
+        "BikeStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -318,40 +396,49 @@
         "Place"
     ], 
     "Blog": [
+        "Blog", 
         "Thing", 
         "CreativeWork"
     ], 
     "BlogPosting": [
+        "BlogPosting", 
         "Thing", 
         "CreativeWork", 
         "Article", 
         "SocialMediaPosting"
     ], 
     "BoardingPolicyType": [
+        "BoardingPolicyType", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "BodyOfWater": [
+        "BodyOfWater", 
         "Thing", 
         "Place", 
         "Landform"
     ], 
     "Book": [
+        "Book", 
         "Thing", 
         "CreativeWork"
     ], 
     "BookFormatType": [
+        "BookFormatType", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "BookSeries": [
+        "BookSeries", 
         "Thing", 
         "CreativeWork", 
         "CreativeWorkSeries"
     ], 
     "BookStore": [
+        "BookStore", 
+        "BookStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -359,16 +446,20 @@
         "Place"
     ], 
     "BookmarkAction": [
+        "BookmarkAction", 
         "Thing", 
         "Action", 
         "OrganizeAction"
     ], 
     "BorrowAction": [
+        "BorrowAction", 
         "Thing", 
         "Action", 
         "TransferAction"
     ], 
     "BowlingAlley": [
+        "BowlingAlley", 
+        "BowlingAlley", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -376,15 +467,19 @@
         "Place"
     ], 
     "Brand": [
+        "Brand", 
         "Thing", 
         "Intangible"
     ], 
     "BreadcrumbList": [
+        "BreadcrumbList", 
         "Thing", 
         "Intangible", 
         "ItemList"
     ], 
     "Brewery": [
+        "Brewery", 
+        "Brewery", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -392,79 +487,96 @@
         "Place"
     ], 
     "Bridge": [
+        "Bridge", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "BroadcastChannel": [
+        "BroadcastChannel", 
         "Thing", 
         "Intangible"
     ], 
     "BroadcastEvent": [
+        "BroadcastEvent", 
         "Thing", 
         "Event", 
         "PublicationEvent"
     ], 
     "BroadcastService": [
+        "BroadcastService", 
         "Thing", 
         "Intangible", 
         "Service"
     ], 
     "BuddhistTemple": [
+        "BuddhistTemple", 
         "Thing", 
         "Place", 
         "CivicStructure", 
         "PlaceOfWorship"
     ], 
     "BusReservation": [
+        "BusReservation", 
         "Thing", 
         "Intangible", 
         "Reservation"
     ], 
     "BusStation": [
+        "BusStation", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "BusStop": [
+        "BusStop", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "BusTrip": [
+        "BusTrip", 
         "Thing", 
         "Intangible"
     ], 
     "BusinessAudience": [
+        "BusinessAudience", 
         "Thing", 
         "Intangible", 
         "Audience"
     ], 
     "BusinessEntityType": [
+        "BusinessEntityType", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "BusinessEvent": [
+        "BusinessEvent", 
         "Thing", 
         "Event"
     ], 
     "BusinessFunction": [
+        "BusinessFunction", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "BuyAction": [
+        "BuyAction", 
         "Thing", 
         "Action", 
         "TradeAction"
     ], 
     "CableOrSatelliteService": [
+        "CableOrSatelliteService", 
         "Thing", 
         "Intangible", 
         "Service"
     ], 
     "CafeOrCoffeeShop": [
+        "CafeOrCoffeeShop", 
+        "CafeOrCoffeeShop", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -472,6 +584,9 @@
         "Place"
     ], 
     "Campground": [
+        "Campground", 
+        "Campground", 
+        "Campground", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -480,28 +595,34 @@
         "CivicStructure"
     ], 
     "CampingPitch": [
+        "CampingPitch", 
         "Thing", 
         "Place", 
         "Accommodation"
     ], 
     "Canal": [
+        "Canal", 
         "Thing", 
         "Place", 
         "Landform", 
         "BodyOfWater"
     ], 
     "CancelAction": [
+        "CancelAction", 
         "Thing", 
         "Action", 
         "OrganizeAction", 
         "PlanAction"
     ], 
     "Car": [
+        "Car", 
         "Thing", 
         "Product", 
         "Vehicle"
     ], 
     "Casino": [
+        "Casino", 
+        "Casino", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -509,84 +630,102 @@
         "Place"
     ], 
     "CatholicChurch": [
+        "CatholicChurch", 
         "Thing", 
         "Place", 
         "CivicStructure", 
         "PlaceOfWorship"
     ], 
     "Cemetery": [
+        "Cemetery", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "CheckAction": [
+        "CheckAction", 
         "Thing", 
         "Action", 
         "FindAction"
     ], 
     "CheckInAction": [
+        "CheckInAction", 
         "Thing", 
         "Action", 
         "InteractAction", 
         "CommunicateAction"
     ], 
     "CheckOutAction": [
+        "CheckOutAction", 
         "Thing", 
         "Action", 
         "InteractAction", 
         "CommunicateAction"
     ], 
     "CheckoutPage": [
+        "CheckoutPage", 
         "Thing", 
         "CreativeWork", 
         "WebPage"
     ], 
     "ChildCare": [
+        "ChildCare", 
+        "ChildCare", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "ChildrensEvent": [
+        "ChildrensEvent", 
         "Thing", 
         "Event"
     ], 
     "ChooseAction": [
+        "ChooseAction", 
         "Thing", 
         "Action", 
         "AssessAction"
     ], 
     "Church": [
+        "Church", 
         "Thing", 
         "Place", 
         "CivicStructure", 
         "PlaceOfWorship"
     ], 
     "City": [
+        "City", 
         "Thing", 
         "Place", 
         "AdministrativeArea"
     ], 
     "CityHall": [
+        "CityHall", 
         "Thing", 
         "Place", 
         "CivicStructure", 
         "GovernmentBuilding"
     ], 
     "CivicStructure": [
+        "CivicStructure", 
         "Thing", 
         "Place"
     ], 
     "ClaimReview": [
+        "ClaimReview", 
         "Thing", 
         "CreativeWork", 
         "Review"
     ], 
     "Clip": [
+        "Clip", 
         "Thing", 
         "CreativeWork"
     ], 
     "ClothingStore": [
+        "ClothingStore", 
+        "ClothingStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -594,20 +733,25 @@
         "Place"
     ], 
     "Code": [
+        "Code", 
         "Thing", 
         "CreativeWork"
     ], 
     "CollectionPage": [
+        "CollectionPage", 
         "Thing", 
         "CreativeWork", 
         "WebPage"
     ], 
     "CollegeOrUniversity": [
+        "CollegeOrUniversity", 
         "Thing", 
         "Organization", 
         "EducationalOrganization"
     ], 
     "ComedyClub": [
+        "ComedyClub", 
+        "ComedyClub", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -615,35 +759,43 @@
         "Place"
     ], 
     "ComedyEvent": [
+        "ComedyEvent", 
         "Thing", 
         "Event"
     ], 
     "Comment": [
+        "Comment", 
         "Thing", 
         "CreativeWork"
     ], 
     "CommentAction": [
+        "CommentAction", 
         "Thing", 
         "Action", 
         "InteractAction", 
         "CommunicateAction"
     ], 
     "CommunicateAction": [
+        "CommunicateAction", 
         "Thing", 
         "Action", 
         "InteractAction"
     ], 
     "CompoundPriceSpecification": [
+        "CompoundPriceSpecification", 
         "Thing", 
         "Intangible", 
         "StructuredValue", 
         "PriceSpecification"
     ], 
     "ComputerLanguage": [
+        "ComputerLanguage", 
         "Thing", 
         "Intangible"
     ], 
     "ComputerStore": [
+        "ComputerStore", 
+        "ComputerStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -651,6 +803,7 @@
         "Place"
     ], 
     "ConfirmAction": [
+        "ConfirmAction", 
         "Thing", 
         "Action", 
         "InteractAction", 
@@ -658,34 +811,42 @@
         "InformAction"
     ], 
     "ConsumeAction": [
+        "ConsumeAction", 
         "Thing", 
         "Action"
     ], 
     "ContactPage": [
+        "ContactPage", 
         "Thing", 
         "CreativeWork", 
         "WebPage"
     ], 
     "ContactPoint": [
+        "ContactPoint", 
         "Thing", 
         "Intangible", 
         "StructuredValue"
     ], 
     "ContactPointOption": [
+        "ContactPointOption", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "Continent": [
+        "Continent", 
         "Thing", 
         "Place", 
         "Landform"
     ], 
     "ControlAction": [
+        "ControlAction", 
         "Thing", 
         "Action"
     ], 
     "ConvenienceStore": [
+        "ConvenienceStore", 
+        "ConvenienceStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -693,53 +854,67 @@
         "Place"
     ], 
     "Conversation": [
+        "Conversation", 
         "Thing", 
         "CreativeWork"
     ], 
     "CookAction": [
+        "CookAction", 
         "Thing", 
         "Action", 
         "CreateAction"
     ], 
     "Corporation": [
+        "Corporation", 
         "Thing", 
         "Organization"
     ], 
     "Country": [
+        "Country", 
         "Thing", 
         "Place", 
         "AdministrativeArea"
     ], 
     "Course": [
+        "Course", 
         "Thing", 
         "CreativeWork"
     ], 
     "CourseInstance": [
+        "CourseInstance", 
         "Thing", 
         "Event"
     ], 
     "Courthouse": [
+        "Courthouse", 
         "Thing", 
         "Place", 
         "CivicStructure", 
         "GovernmentBuilding"
     ], 
     "CreateAction": [
+        "CreateAction", 
         "Thing", 
         "Action"
     ], 
     "CreativeWork": [
+        "CreativeWork", 
         "Thing"
     ], 
     "CreativeWorkSeason": [
+        "CreativeWorkSeason", 
         "Thing", 
         "CreativeWork"
     ], 
     "CreativeWorkSeries": [
+        "CreativeWorkSeries", 
         "Thing", 
         "CreativeWork"
     ], 
     "CreditCard": [
+        "CreditCard", 
+        "CreditCard", 
+        "CreditCard", 
         "Thing", 
         "Intangible", 
         "Enumeration", 
@@ -750,58 +925,71 @@
         "LoanOrCredit"
     ], 
     "Crematorium": [
+        "Crematorium", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "CurrencyConversionService": [
+        "CurrencyConversionService", 
         "Thing", 
         "Intangible", 
         "Service", 
         "FinancialProduct"
     ], 
     "DanceEvent": [
+        "DanceEvent", 
         "Thing", 
         "Event"
     ], 
     "DanceGroup": [
+        "DanceGroup", 
         "Thing", 
         "Organization", 
         "PerformingGroup"
     ], 
     "DataCatalog": [
+        "DataCatalog", 
         "Thing", 
         "CreativeWork"
     ], 
     "DataDownload": [
+        "DataDownload", 
         "Thing", 
         "CreativeWork", 
         "MediaObject"
     ], 
     "DataFeed": [
+        "DataFeed", 
         "Thing", 
         "CreativeWork", 
         "Dataset"
     ], 
     "DataFeedItem": [
+        "DataFeedItem", 
         "Thing", 
         "Intangible"
     ], 
     "Dataset": [
+        "Dataset", 
         "Thing", 
         "CreativeWork"
     ], 
     "DatedMoneySpecification": [
+        "DatedMoneySpecification", 
         "Thing", 
         "Intangible", 
         "StructuredValue"
     ], 
     "DayOfWeek": [
+        "DayOfWeek", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "DaySpa": [
+        "DaySpa", 
+        "DaySpa", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -809,41 +997,51 @@
         "Place"
     ], 
     "DeactivateAction": [
+        "DeactivateAction", 
         "Thing", 
         "Action", 
         "ControlAction"
     ], 
     "DefenceEstablishment": [
+        "DefenceEstablishment", 
         "Thing", 
         "Place", 
         "CivicStructure", 
         "GovernmentBuilding"
     ], 
     "DeleteAction": [
+        "DeleteAction", 
         "Thing", 
         "Action", 
         "UpdateAction"
     ], 
     "DeliveryChargeSpecification": [
+        "DeliveryChargeSpecification", 
         "Thing", 
         "Intangible", 
         "StructuredValue", 
         "PriceSpecification"
     ], 
     "DeliveryEvent": [
+        "DeliveryEvent", 
         "Thing", 
         "Event"
     ], 
     "DeliveryMethod": [
+        "DeliveryMethod", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "Demand": [
+        "Demand", 
         "Thing", 
         "Intangible"
     ], 
     "Dentist": [
+        "Dentist", 
+        "Dentist", 
+        "Dentist", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -851,11 +1049,14 @@
         "Place"
     ], 
     "DepartAction": [
+        "DepartAction", 
         "Thing", 
         "Action", 
         "MoveAction"
     ], 
     "DepartmentStore": [
+        "DepartmentStore", 
+        "DepartmentStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -863,6 +1064,8 @@
         "Place"
     ], 
     "DepositAccount": [
+        "DepositAccount", 
+        "DepositAccount", 
         "Thing", 
         "Intangible", 
         "Service", 
@@ -871,102 +1074,124 @@
         "InvestmentOrDeposit"
     ], 
     "DigitalDocument": [
+        "DigitalDocument", 
         "Thing", 
         "CreativeWork"
     ], 
     "DigitalDocumentPermission": [
+        "DigitalDocumentPermission", 
         "Thing", 
         "Intangible"
     ], 
     "DigitalDocumentPermissionType": [
+        "DigitalDocumentPermissionType", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "DisagreeAction": [
+        "DisagreeAction", 
         "Thing", 
         "Action", 
         "AssessAction", 
         "ReactAction"
     ], 
     "DiscoverAction": [
+        "DiscoverAction", 
         "Thing", 
         "Action", 
         "FindAction"
     ], 
     "DiscussionForumPosting": [
+        "DiscussionForumPosting", 
         "Thing", 
         "CreativeWork", 
         "Article", 
         "SocialMediaPosting"
     ], 
     "DislikeAction": [
+        "DislikeAction", 
         "Thing", 
         "Action", 
         "AssessAction", 
         "ReactAction"
     ], 
     "Distance": [
+        "Distance", 
         "Thing", 
         "Intangible", 
         "Quantity"
     ], 
     "DonateAction": [
+        "DonateAction", 
         "Thing", 
         "Action", 
         "TradeAction"
     ], 
     "DownloadAction": [
+        "DownloadAction", 
         "Thing", 
         "Action", 
         "TransferAction"
     ], 
     "DrawAction": [
+        "DrawAction", 
         "Thing", 
         "Action", 
         "CreateAction"
     ], 
     "DrinkAction": [
+        "DrinkAction", 
         "Thing", 
         "Action", 
         "ConsumeAction"
     ], 
     "DriveWheelConfigurationValue": [
+        "DriveWheelConfigurationValue", 
         "Thing", 
         "Intangible", 
         "Enumeration", 
         "QualitativeValue"
     ], 
     "DryCleaningOrLaundry": [
+        "DryCleaningOrLaundry", 
+        "DryCleaningOrLaundry", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "Duration": [
+        "Duration", 
         "Thing", 
         "Intangible", 
         "Quantity"
     ], 
     "EatAction": [
+        "EatAction", 
         "Thing", 
         "Action", 
         "ConsumeAction"
     ], 
     "EducationEvent": [
+        "EducationEvent", 
         "Thing", 
         "Event"
     ], 
     "EducationalAudience": [
+        "EducationalAudience", 
         "Thing", 
         "Intangible", 
         "Audience"
     ], 
     "EducationalOrganization": [
+        "EducationalOrganization", 
         "Thing", 
         "Organization"
     ], 
     "Electrician": [
+        "Electrician", 
+        "Electrician", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -974,6 +1199,8 @@
         "Place"
     ], 
     "ElectronicsStore": [
+        "ElectronicsStore", 
+        "ElectronicsStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -981,97 +1208,120 @@
         "Place"
     ], 
     "ElementarySchool": [
+        "ElementarySchool", 
         "Thing", 
         "Organization", 
         "EducationalOrganization"
     ], 
     "EmailMessage": [
+        "EmailMessage", 
         "Thing", 
         "CreativeWork", 
         "Message"
     ], 
     "Embassy": [
+        "Embassy", 
         "Thing", 
         "Place", 
         "CivicStructure", 
         "GovernmentBuilding"
     ], 
     "EmergencyService": [
+        "EmergencyService", 
+        "EmergencyService", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "EmployeeRole": [
+        "EmployeeRole", 
         "Thing", 
         "Intangible", 
         "Role", 
         "OrganizationRole"
     ], 
     "EmploymentAgency": [
+        "EmploymentAgency", 
+        "EmploymentAgency", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "EndorseAction": [
+        "EndorseAction", 
         "Thing", 
         "Action", 
         "AssessAction", 
         "ReactAction"
     ], 
     "Energy": [
+        "Energy", 
         "Thing", 
         "Intangible", 
         "Quantity"
     ], 
     "EngineSpecification": [
+        "EngineSpecification", 
         "Thing", 
         "Intangible", 
         "StructuredValue"
     ], 
     "EntertainmentBusiness": [
+        "EntertainmentBusiness", 
+        "EntertainmentBusiness", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "EntryPoint": [
+        "EntryPoint", 
         "Thing", 
         "Intangible"
     ], 
     "Enumeration": [
+        "Enumeration", 
         "Thing", 
         "Intangible"
     ], 
     "Episode": [
+        "Episode", 
         "Thing", 
         "CreativeWork"
     ], 
     "Event": [
+        "Event", 
         "Thing"
     ], 
     "EventReservation": [
+        "EventReservation", 
         "Thing", 
         "Intangible", 
         "Reservation"
     ], 
     "EventStatusType": [
+        "EventStatusType", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "EventVenue": [
+        "EventVenue", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "ExerciseAction": [
+        "ExerciseAction", 
         "Thing", 
         "Action", 
         "PlayAction"
     ], 
     "ExerciseGym": [
+        "ExerciseGym", 
+        "ExerciseGym", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1079,10 +1329,13 @@
         "Place"
     ], 
     "ExhibitionEvent": [
+        "ExhibitionEvent", 
         "Thing", 
         "Event"
     ], 
     "FastFoodRestaurant": [
+        "FastFoodRestaurant", 
+        "FastFoodRestaurant", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1090,30 +1343,39 @@
         "Place"
     ], 
     "Festival": [
+        "Festival", 
         "Thing", 
         "Event"
     ], 
     "FilmAction": [
+        "FilmAction", 
         "Thing", 
         "Action", 
         "CreateAction"
     ], 
     "FinancialProduct": [
+        "FinancialProduct", 
         "Thing", 
         "Intangible", 
         "Service"
     ], 
     "FinancialService": [
+        "FinancialService", 
+        "FinancialService", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "FindAction": [
+        "FindAction", 
         "Thing", 
         "Action"
     ], 
     "FireStation": [
+        "FireStation", 
+        "FireStation", 
+        "FireStation", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1122,15 +1384,19 @@
         "CivicStructure"
     ], 
     "Flight": [
+        "Flight", 
         "Thing", 
         "Intangible"
     ], 
     "FlightReservation": [
+        "FlightReservation", 
         "Thing", 
         "Intangible", 
         "Reservation"
     ], 
     "Florist": [
+        "Florist", 
+        "Florist", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1138,31 +1404,39 @@
         "Place"
     ], 
     "FollowAction": [
+        "FollowAction", 
         "Thing", 
         "Action", 
         "InteractAction"
     ], 
     "FoodEstablishment": [
+        "FoodEstablishment", 
+        "FoodEstablishment", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "FoodEstablishmentReservation": [
+        "FoodEstablishmentReservation", 
         "Thing", 
         "Intangible", 
         "Reservation"
     ], 
     "FoodEvent": [
+        "FoodEvent", 
         "Thing", 
         "Event"
     ], 
     "FoodService": [
+        "FoodService", 
         "Thing", 
         "Intangible", 
         "Service"
     ], 
     "FurnitureStore": [
+        "FurnitureStore", 
+        "FurnitureStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1170,24 +1444,30 @@
         "Place"
     ], 
     "Game": [
+        "Game", 
         "Thing", 
         "CreativeWork"
     ], 
     "GamePlayMode": [
+        "GamePlayMode", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "GameServer": [
+        "GameServer", 
         "Thing", 
         "Intangible"
     ], 
     "GameServerStatus": [
+        "GameServerStatus", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "GardenStore": [
+        "GardenStore", 
+        "GardenStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1195,6 +1475,8 @@
         "Place"
     ], 
     "GasStation": [
+        "GasStation", 
+        "GasStation", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1202,16 +1484,20 @@
         "Place"
     ], 
     "GatedResidenceCommunity": [
+        "GatedResidenceCommunity", 
         "Thing", 
         "Place", 
         "Residence"
     ], 
     "GenderType": [
+        "GenderType", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "GeneralContractor": [
+        "GeneralContractor", 
+        "GeneralContractor", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1219,27 +1505,33 @@
         "Place"
     ], 
     "GeoCircle": [
+        "GeoCircle", 
         "Thing", 
         "Intangible", 
         "StructuredValue", 
         "GeoShape"
     ], 
     "GeoCoordinates": [
+        "GeoCoordinates", 
         "Thing", 
         "Intangible", 
         "StructuredValue"
     ], 
     "GeoShape": [
+        "GeoShape", 
         "Thing", 
         "Intangible", 
         "StructuredValue"
     ], 
     "GiveAction": [
+        "GiveAction", 
         "Thing", 
         "Action", 
         "TransferAction"
     ], 
     "GolfCourse": [
+        "GolfCourse", 
+        "GolfCourse", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1247,31 +1539,39 @@
         "Place"
     ], 
     "GovernmentBuilding": [
+        "GovernmentBuilding", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "GovernmentOffice": [
+        "GovernmentOffice", 
+        "GovernmentOffice", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "GovernmentOrganization": [
+        "GovernmentOrganization", 
         "Thing", 
         "Organization"
     ], 
     "GovernmentPermit": [
+        "GovernmentPermit", 
         "Thing", 
         "Intangible", 
         "Permit"
     ], 
     "GovernmentService": [
+        "GovernmentService", 
         "Thing", 
         "Intangible", 
         "Service"
     ], 
     "GroceryStore": [
+        "GroceryStore", 
+        "GroceryStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1279,6 +1579,8 @@
         "Place"
     ], 
     "HVACBusiness": [
+        "HVACBusiness", 
+        "HVACBusiness", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1286,6 +1588,8 @@
         "Place"
     ], 
     "HairSalon": [
+        "HairSalon", 
+        "HairSalon", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1293,6 +1597,8 @@
         "Place"
     ], 
     "HardwareStore": [
+        "HardwareStore", 
+        "HardwareStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1300,12 +1606,18 @@
         "Place"
     ], 
     "HealthAndBeautyBusiness": [
+        "HealthAndBeautyBusiness", 
+        "HealthAndBeautyBusiness", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "HealthClub": [
+        "HealthClub", 
+        "HealthClub", 
+        "HealthClub", 
+        "HealthClub", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1314,17 +1626,21 @@
         "Place"
     ], 
     "HighSchool": [
+        "HighSchool", 
         "Thing", 
         "Organization", 
         "EducationalOrganization"
     ], 
     "HinduTemple": [
+        "HinduTemple", 
         "Thing", 
         "Place", 
         "CivicStructure", 
         "PlaceOfWorship"
     ], 
     "HobbyShop": [
+        "HobbyShop", 
+        "HobbyShop", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1332,12 +1648,16 @@
         "Place"
     ], 
     "HomeAndConstructionBusiness": [
+        "HomeAndConstructionBusiness", 
+        "HomeAndConstructionBusiness", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "HomeGoodsStore": [
+        "HomeGoodsStore", 
+        "HomeGoodsStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1345,6 +1665,10 @@
         "Place"
     ], 
     "Hospital": [
+        "Hospital", 
+        "Hospital", 
+        "Hospital", 
+        "Hospital", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1354,6 +1678,8 @@
         "CivicStructure"
     ], 
     "Hostel": [
+        "Hostel", 
+        "Hostel", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1361,6 +1687,8 @@
         "Place"
     ], 
     "Hotel": [
+        "Hotel", 
+        "Hotel", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1368,17 +1696,21 @@
         "Place"
     ], 
     "HotelRoom": [
+        "HotelRoom", 
         "Thing", 
         "Place", 
         "Accommodation", 
         "Room"
     ], 
     "House": [
+        "House", 
         "Thing", 
         "Place", 
         "Accommodation"
     ], 
     "HousePainter": [
+        "HousePainter", 
+        "HousePainter", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1386,6 +1718,8 @@
         "Place"
     ], 
     "IceCreamShop": [
+        "IceCreamShop", 
+        "IceCreamShop", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1393,43 +1727,52 @@
         "Place"
     ], 
     "IgnoreAction": [
+        "IgnoreAction", 
         "Thing", 
         "Action", 
         "AssessAction"
     ], 
     "ImageGallery": [
+        "ImageGallery", 
         "Thing", 
         "CreativeWork", 
         "WebPage", 
         "CollectionPage"
     ], 
     "ImageObject": [
+        "ImageObject", 
         "Thing", 
         "CreativeWork", 
         "MediaObject"
     ], 
     "IndividualProduct": [
+        "IndividualProduct", 
         "Thing", 
         "Product"
     ], 
     "InformAction": [
+        "InformAction", 
         "Thing", 
         "Action", 
         "InteractAction", 
         "CommunicateAction"
     ], 
     "InsertAction": [
+        "InsertAction", 
         "Thing", 
         "Action", 
         "UpdateAction", 
         "AddAction"
     ], 
     "InstallAction": [
+        "InstallAction", 
         "Thing", 
         "Action", 
         "ConsumeAction"
     ], 
     "InsuranceAgency": [
+        "InsuranceAgency", 
+        "InsuranceAgency", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1437,59 +1780,73 @@
         "Place"
     ], 
     "Intangible": [
+        "Intangible", 
         "Thing"
     ], 
     "InteractAction": [
+        "InteractAction", 
         "Thing", 
         "Action"
     ], 
     "InteractionCounter": [
+        "InteractionCounter", 
         "Thing", 
         "Intangible", 
         "StructuredValue"
     ], 
     "InternetCafe": [
+        "InternetCafe", 
+        "InternetCafe", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "InvestmentOrDeposit": [
+        "InvestmentOrDeposit", 
         "Thing", 
         "Intangible", 
         "Service", 
         "FinancialProduct"
     ], 
     "InviteAction": [
+        "InviteAction", 
         "Thing", 
         "Action", 
         "InteractAction", 
         "CommunicateAction"
     ], 
     "Invoice": [
+        "Invoice", 
         "Thing", 
         "Intangible"
     ], 
     "ItemAvailability": [
+        "ItemAvailability", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "ItemList": [
+        "ItemList", 
         "Thing", 
         "Intangible"
     ], 
     "ItemListOrderType": [
+        "ItemListOrderType", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "ItemPage": [
+        "ItemPage", 
         "Thing", 
         "CreativeWork", 
         "WebPage"
     ], 
     "JewelryStore": [
+        "JewelryStore", 
+        "JewelryStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1497,67 +1854,83 @@
         "Place"
     ], 
     "JobPosting": [
+        "JobPosting", 
         "Thing", 
         "Intangible"
     ], 
     "JoinAction": [
+        "JoinAction", 
         "Thing", 
         "Action", 
         "InteractAction"
     ], 
     "LakeBodyOfWater": [
+        "LakeBodyOfWater", 
         "Thing", 
         "Place", 
         "Landform", 
         "BodyOfWater"
     ], 
     "Landform": [
+        "Landform", 
         "Thing", 
         "Place"
     ], 
     "LandmarksOrHistoricalBuildings": [
+        "LandmarksOrHistoricalBuildings", 
         "Thing", 
         "Place"
     ], 
     "Language": [
+        "Language", 
         "Thing", 
         "Intangible"
     ], 
     "LeaveAction": [
+        "LeaveAction", 
         "Thing", 
         "Action", 
         "InteractAction"
     ], 
     "LegalService": [
+        "LegalService", 
+        "LegalService", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "LegislativeBuilding": [
+        "LegislativeBuilding", 
         "Thing", 
         "Place", 
         "CivicStructure", 
         "GovernmentBuilding"
     ], 
     "LendAction": [
+        "LendAction", 
         "Thing", 
         "Action", 
         "TransferAction"
     ], 
     "Library": [
+        "Library", 
+        "Library", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "LikeAction": [
+        "LikeAction", 
         "Thing", 
         "Action", 
         "AssessAction", 
         "ReactAction"
     ], 
     "LiquorStore": [
+        "LiquorStore", 
+        "LiquorStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1565,19 +1938,23 @@
         "Place"
     ], 
     "ListItem": [
+        "ListItem", 
         "Thing", 
         "Intangible"
     ], 
     "ListenAction": [
+        "ListenAction", 
         "Thing", 
         "Action", 
         "ConsumeAction"
     ], 
     "LiteraryEvent": [
+        "LiteraryEvent", 
         "Thing", 
         "Event"
     ], 
     "LiveBlogPosting": [
+        "LiveBlogPosting", 
         "Thing", 
         "CreativeWork", 
         "Article", 
@@ -1585,29 +1962,36 @@
         "BlogPosting"
     ], 
     "LoanOrCredit": [
+        "LoanOrCredit", 
         "Thing", 
         "Intangible", 
         "Service", 
         "FinancialProduct"
     ], 
     "LocalBusiness": [
+        "LocalBusiness", 
+        "LocalBusiness", 
         "Thing", 
         "Organization", 
         "Place"
     ], 
     "LocationFeatureSpecification": [
+        "LocationFeatureSpecification", 
         "Thing", 
         "Intangible", 
         "StructuredValue", 
         "PropertyValue"
     ], 
     "LockerDelivery": [
+        "LockerDelivery", 
         "Thing", 
         "Intangible", 
         "Enumeration", 
         "DeliveryMethod"
     ], 
     "Locksmith": [
+        "Locksmith", 
+        "Locksmith", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1615,55 +1999,68 @@
         "Place"
     ], 
     "LodgingBusiness": [
+        "LodgingBusiness", 
+        "LodgingBusiness", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "LodgingReservation": [
+        "LodgingReservation", 
         "Thing", 
         "Intangible", 
         "Reservation"
     ], 
     "LoseAction": [
+        "LoseAction", 
         "Thing", 
         "Action", 
         "AchieveAction"
     ], 
     "Map": [
+        "Map", 
         "Thing", 
         "CreativeWork"
     ], 
     "MapCategoryType": [
+        "MapCategoryType", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "MarryAction": [
+        "MarryAction", 
         "Thing", 
         "Action", 
         "InteractAction"
     ], 
     "Mass": [
+        "Mass", 
         "Thing", 
         "Intangible", 
         "Quantity"
     ], 
     "MediaObject": [
+        "MediaObject", 
         "Thing", 
         "CreativeWork"
     ], 
     "MedicalOrganization": [
+        "MedicalOrganization", 
         "Thing", 
         "Organization"
     ], 
     "MeetingRoom": [
+        "MeetingRoom", 
         "Thing", 
         "Place", 
         "Accommodation", 
         "Room"
     ], 
     "MensClothingStore": [
+        "MensClothingStore", 
+        "MensClothingStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1671,32 +2068,40 @@
         "Place"
     ], 
     "Menu": [
+        "Menu", 
         "Thing", 
         "CreativeWork"
     ], 
     "MenuItem": [
+        "MenuItem", 
         "Thing", 
         "Intangible"
     ], 
     "MenuSection": [
+        "MenuSection", 
         "Thing", 
         "CreativeWork"
     ], 
     "Message": [
+        "Message", 
         "Thing", 
         "CreativeWork"
     ], 
     "MiddleSchool": [
+        "MiddleSchool", 
         "Thing", 
         "Organization", 
         "EducationalOrganization"
     ], 
     "MobileApplication": [
+        "MobileApplication", 
         "Thing", 
         "CreativeWork", 
         "SoftwareApplication"
     ], 
     "MobilePhoneStore": [
+        "MobilePhoneStore", 
+        "MobilePhoneStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1704,17 +2109,21 @@
         "Place"
     ], 
     "MonetaryAmount": [
+        "MonetaryAmount", 
         "Thing", 
         "Intangible", 
         "StructuredValue"
     ], 
     "Mosque": [
+        "Mosque", 
         "Thing", 
         "Place", 
         "CivicStructure", 
         "PlaceOfWorship"
     ], 
     "Motel": [
+        "Motel", 
+        "Motel", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1722,6 +2131,8 @@
         "Place"
     ], 
     "MotorcycleDealer": [
+        "MotorcycleDealer", 
+        "MotorcycleDealer", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1729,6 +2140,8 @@
         "Place"
     ], 
     "MotorcycleRepair": [
+        "MotorcycleRepair", 
+        "MotorcycleRepair", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1736,24 +2149,30 @@
         "Place"
     ], 
     "Mountain": [
+        "Mountain", 
         "Thing", 
         "Place", 
         "Landform"
     ], 
     "MoveAction": [
+        "MoveAction", 
         "Thing", 
         "Action"
     ], 
     "Movie": [
+        "Movie", 
         "Thing", 
         "CreativeWork"
     ], 
     "MovieClip": [
+        "MovieClip", 
         "Thing", 
         "CreativeWork", 
         "Clip"
     ], 
     "MovieRentalStore": [
+        "MovieRentalStore", 
+        "MovieRentalStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1761,11 +2180,15 @@
         "Place"
     ], 
     "MovieSeries": [
+        "MovieSeries", 
         "Thing", 
         "CreativeWork", 
         "CreativeWorkSeries"
     ], 
     "MovieTheater": [
+        "MovieTheater", 
+        "MovieTheater", 
+        "MovieTheater", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1774,6 +2197,8 @@
         "CivicStructure"
     ], 
     "MovingCompany": [
+        "MovingCompany", 
+        "MovingCompany", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1781,57 +2206,70 @@
         "Place"
     ], 
     "Museum": [
+        "Museum", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "MusicAlbum": [
+        "MusicAlbum", 
         "Thing", 
         "CreativeWork", 
         "MusicPlaylist"
     ], 
     "MusicAlbumProductionType": [
+        "MusicAlbumProductionType", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "MusicAlbumReleaseType": [
+        "MusicAlbumReleaseType", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "MusicComposition": [
+        "MusicComposition", 
         "Thing", 
         "CreativeWork"
     ], 
     "MusicEvent": [
+        "MusicEvent", 
         "Thing", 
         "Event"
     ], 
     "MusicGroup": [
+        "MusicGroup", 
         "Thing", 
         "Organization", 
         "PerformingGroup"
     ], 
     "MusicPlaylist": [
+        "MusicPlaylist", 
         "Thing", 
         "CreativeWork"
     ], 
     "MusicRecording": [
+        "MusicRecording", 
         "Thing", 
         "CreativeWork"
     ], 
     "MusicRelease": [
+        "MusicRelease", 
         "Thing", 
         "CreativeWork", 
         "MusicPlaylist"
     ], 
     "MusicReleaseFormatType": [
+        "MusicReleaseFormatType", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "MusicStore": [
+        "MusicStore", 
+        "MusicStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1839,20 +2277,25 @@
         "Place"
     ], 
     "MusicVenue": [
+        "MusicVenue", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "MusicVideoObject": [
+        "MusicVideoObject", 
         "Thing", 
         "CreativeWork", 
         "MediaObject"
     ], 
     "NGO": [
+        "NGO", 
         "Thing", 
         "Organization"
     ], 
     "NailSalon": [
+        "NailSalon", 
+        "NailSalon", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1860,11 +2303,14 @@
         "Place"
     ], 
     "NewsArticle": [
+        "NewsArticle", 
         "Thing", 
         "CreativeWork", 
         "Article"
     ], 
     "NightClub": [
+        "NightClub", 
+        "NightClub", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1872,6 +2318,8 @@
         "Place"
     ], 
     "Notary": [
+        "Notary", 
+        "Notary", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1879,36 +2327,44 @@
         "Place"
     ], 
     "NoteDigitalDocument": [
+        "NoteDigitalDocument", 
         "Thing", 
         "CreativeWork", 
         "DigitalDocument"
     ], 
     "NutritionInformation": [
+        "NutritionInformation", 
         "Thing", 
         "Intangible", 
         "StructuredValue"
     ], 
     "OceanBodyOfWater": [
+        "OceanBodyOfWater", 
         "Thing", 
         "Place", 
         "Landform", 
         "BodyOfWater"
     ], 
     "Offer": [
+        "Offer", 
         "Thing", 
         "Intangible"
     ], 
     "OfferCatalog": [
+        "OfferCatalog", 
         "Thing", 
         "Intangible", 
         "ItemList"
     ], 
     "OfferItemCondition": [
+        "OfferItemCondition", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "OfficeEquipmentStore": [
+        "OfficeEquipmentStore", 
+        "OfficeEquipmentStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1916,46 +2372,57 @@
         "Place"
     ], 
     "OnDemandEvent": [
+        "OnDemandEvent", 
         "Thing", 
         "Event", 
         "PublicationEvent"
     ], 
     "OpeningHoursSpecification": [
+        "OpeningHoursSpecification", 
         "Thing", 
         "Intangible", 
         "StructuredValue"
     ], 
     "Order": [
+        "Order", 
         "Thing", 
         "Intangible"
     ], 
     "OrderAction": [
+        "OrderAction", 
         "Thing", 
         "Action", 
         "TradeAction"
     ], 
     "OrderItem": [
+        "OrderItem", 
         "Thing", 
         "Intangible"
     ], 
     "OrderStatus": [
+        "OrderStatus", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "Organization": [
+        "Organization", 
         "Thing"
     ], 
     "OrganizationRole": [
+        "OrganizationRole", 
         "Thing", 
         "Intangible", 
         "Role"
     ], 
     "OrganizeAction": [
+        "OrganizeAction", 
         "Thing", 
         "Action"
     ], 
     "OutletStore": [
+        "OutletStore", 
+        "OutletStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -1963,46 +2430,56 @@
         "Place"
     ], 
     "OwnershipInfo": [
+        "OwnershipInfo", 
         "Thing", 
         "Intangible", 
         "StructuredValue"
     ], 
     "PaintAction": [
+        "PaintAction", 
         "Thing", 
         "Action", 
         "CreateAction"
     ], 
     "Painting": [
+        "Painting", 
         "Thing", 
         "CreativeWork"
     ], 
     "ParcelDelivery": [
+        "ParcelDelivery", 
         "Thing", 
         "Intangible"
     ], 
     "ParcelService": [
+        "ParcelService", 
         "Thing", 
         "Intangible", 
         "Enumeration", 
         "DeliveryMethod"
     ], 
     "ParentAudience": [
+        "ParentAudience", 
         "Thing", 
         "Intangible", 
         "Audience", 
         "PeopleAudience"
     ], 
     "Park": [
+        "Park", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "ParkingFacility": [
+        "ParkingFacility", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "PawnShop": [
+        "PawnShop", 
+        "PawnShop", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -2010,11 +2487,14 @@
         "Place"
     ], 
     "PayAction": [
+        "PayAction", 
         "Thing", 
         "Action", 
         "TradeAction"
     ], 
     "PaymentCard": [
+        "PaymentCard", 
+        "PaymentCard", 
         "Thing", 
         "Intangible", 
         "Enumeration", 
@@ -2023,64 +2503,78 @@
         "FinancialProduct"
     ], 
     "PaymentChargeSpecification": [
+        "PaymentChargeSpecification", 
         "Thing", 
         "Intangible", 
         "StructuredValue", 
         "PriceSpecification"
     ], 
     "PaymentMethod": [
+        "PaymentMethod", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "PaymentService": [
+        "PaymentService", 
         "Thing", 
         "Intangible", 
         "Service", 
         "FinancialProduct"
     ], 
     "PaymentStatusType": [
+        "PaymentStatusType", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "PeopleAudience": [
+        "PeopleAudience", 
         "Thing", 
         "Intangible", 
         "Audience"
     ], 
     "PerformAction": [
+        "PerformAction", 
         "Thing", 
         "Action", 
         "PlayAction"
     ], 
     "PerformanceRole": [
+        "PerformanceRole", 
         "Thing", 
         "Intangible", 
         "Role"
     ], 
     "PerformingArtsTheater": [
+        "PerformingArtsTheater", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "PerformingGroup": [
+        "PerformingGroup", 
         "Thing", 
         "Organization"
     ], 
     "Periodical": [
+        "Periodical", 
         "Thing", 
         "CreativeWork", 
         "CreativeWorkSeries"
     ], 
     "Permit": [
+        "Permit", 
         "Thing", 
         "Intangible"
     ], 
     "Person": [
+        "Person", 
         "Thing"
     ], 
     "PetStore": [
+        "PetStore", 
+        "PetStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -2088,47 +2582,58 @@
         "Place"
     ], 
     "Pharmacy": [
+        "Pharmacy", 
         "Thing", 
         "Organization", 
         "MedicalOrganization"
     ], 
     "Photograph": [
+        "Photograph", 
         "Thing", 
         "CreativeWork"
     ], 
     "PhotographAction": [
+        "PhotographAction", 
         "Thing", 
         "Action", 
         "CreateAction"
     ], 
     "Physician": [
+        "Physician", 
         "Thing", 
         "Organization", 
         "MedicalOrganization"
     ], 
     "Place": [
+        "Place", 
         "Thing"
     ], 
     "PlaceOfWorship": [
+        "PlaceOfWorship", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "PlanAction": [
+        "PlanAction", 
         "Thing", 
         "Action", 
         "OrganizeAction"
     ], 
     "PlayAction": [
+        "PlayAction", 
         "Thing", 
         "Action"
     ], 
     "Playground": [
+        "Playground", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "Plumber": [
+        "Plumber", 
+        "Plumber", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -2136,6 +2641,9 @@
         "Place"
     ], 
     "PoliceStation": [
+        "PoliceStation", 
+        "PoliceStation", 
+        "PoliceStation", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -2144,12 +2652,15 @@
         "CivicStructure"
     ], 
     "Pond": [
+        "Pond", 
         "Thing", 
         "Place", 
         "Landform", 
         "BodyOfWater"
     ], 
     "PostOffice": [
+        "PostOffice", 
+        "PostOffice", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -2157,12 +2668,14 @@
         "Place"
     ], 
     "PostalAddress": [
+        "PostalAddress", 
         "Thing", 
         "Intangible", 
         "StructuredValue", 
         "ContactPoint"
     ], 
     "PrependAction": [
+        "PrependAction", 
         "Thing", 
         "Action", 
         "UpdateAction", 
@@ -2170,52 +2683,65 @@
         "InsertAction"
     ], 
     "Preschool": [
+        "Preschool", 
         "Thing", 
         "Organization", 
         "EducationalOrganization"
     ], 
     "PresentationDigitalDocument": [
+        "PresentationDigitalDocument", 
         "Thing", 
         "CreativeWork", 
         "DigitalDocument"
     ], 
     "PriceSpecification": [
+        "PriceSpecification", 
         "Thing", 
         "Intangible", 
         "StructuredValue"
     ], 
     "Product": [
+        "Product", 
         "Thing"
     ], 
     "ProductModel": [
+        "ProductModel", 
         "Thing", 
         "Product"
     ], 
     "ProfessionalService": [
+        "ProfessionalService", 
+        "ProfessionalService", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "ProfilePage": [
+        "ProfilePage", 
         "Thing", 
         "CreativeWork", 
         "WebPage"
     ], 
     "ProgramMembership": [
+        "ProgramMembership", 
         "Thing", 
         "Intangible"
     ], 
     "PropertyValue": [
+        "PropertyValue", 
         "Thing", 
         "Intangible", 
         "StructuredValue"
     ], 
     "PropertyValueSpecification": [
+        "PropertyValueSpecification", 
         "Thing", 
         "Intangible"
     ], 
     "PublicSwimmingPool": [
+        "PublicSwimmingPool", 
+        "PublicSwimmingPool", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -2223,184 +2749,225 @@
         "Place"
     ], 
     "PublicationEvent": [
+        "PublicationEvent", 
         "Thing", 
         "Event"
     ], 
     "PublicationIssue": [
+        "PublicationIssue", 
         "Thing", 
         "CreativeWork"
     ], 
     "PublicationVolume": [
+        "PublicationVolume", 
         "Thing", 
         "CreativeWork"
     ], 
     "QAPage": [
+        "QAPage", 
         "Thing", 
         "CreativeWork", 
         "WebPage"
     ], 
     "QualitativeValue": [
+        "QualitativeValue", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "QuantitativeValue": [
+        "QuantitativeValue", 
         "Thing", 
         "Intangible", 
         "StructuredValue"
     ], 
     "Quantity": [
+        "Quantity", 
         "Thing", 
         "Intangible"
     ], 
     "Question": [
+        "Question", 
         "Thing", 
         "CreativeWork"
     ], 
     "QuoteAction": [
+        "QuoteAction", 
         "Thing", 
         "Action", 
         "TradeAction"
     ], 
     "RVPark": [
+        "RVPark", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "RadioChannel": [
+        "RadioChannel", 
         "Thing", 
         "Intangible", 
         "BroadcastChannel"
     ], 
     "RadioClip": [
+        "RadioClip", 
         "Thing", 
         "CreativeWork", 
         "Clip"
     ], 
     "RadioEpisode": [
+        "RadioEpisode", 
         "Thing", 
         "CreativeWork", 
         "Episode"
     ], 
     "RadioSeason": [
+        "RadioSeason", 
         "Thing", 
         "CreativeWork", 
         "CreativeWorkSeason"
     ], 
     "RadioSeries": [
+        "RadioSeries", 
         "Thing", 
         "CreativeWork", 
         "CreativeWorkSeries"
     ], 
     "RadioStation": [
+        "RadioStation", 
+        "RadioStation", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "Rating": [
+        "Rating", 
         "Thing", 
         "Intangible"
     ], 
     "ReactAction": [
+        "ReactAction", 
         "Thing", 
         "Action", 
         "AssessAction"
     ], 
     "ReadAction": [
+        "ReadAction", 
         "Thing", 
         "Action", 
         "ConsumeAction"
     ], 
     "RealEstateAgent": [
+        "RealEstateAgent", 
+        "RealEstateAgent", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "ReceiveAction": [
+        "ReceiveAction", 
         "Thing", 
         "Action", 
         "TransferAction"
     ], 
     "Recipe": [
+        "Recipe", 
         "Thing", 
         "CreativeWork"
     ], 
     "RecyclingCenter": [
+        "RecyclingCenter", 
+        "RecyclingCenter", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "RegisterAction": [
+        "RegisterAction", 
         "Thing", 
         "Action", 
         "InteractAction"
     ], 
     "RejectAction": [
+        "RejectAction", 
         "Thing", 
         "Action", 
         "OrganizeAction", 
         "AllocateAction"
     ], 
     "RentAction": [
+        "RentAction", 
         "Thing", 
         "Action", 
         "TradeAction"
     ], 
     "RentalCarReservation": [
+        "RentalCarReservation", 
         "Thing", 
         "Intangible", 
         "Reservation"
     ], 
     "ReplaceAction": [
+        "ReplaceAction", 
         "Thing", 
         "Action", 
         "UpdateAction"
     ], 
     "ReplyAction": [
+        "ReplyAction", 
         "Thing", 
         "Action", 
         "InteractAction", 
         "CommunicateAction"
     ], 
     "Report": [
+        "Report", 
         "Thing", 
         "CreativeWork", 
         "Article"
     ], 
     "Reservation": [
+        "Reservation", 
         "Thing", 
         "Intangible"
     ], 
     "ReservationPackage": [
+        "ReservationPackage", 
         "Thing", 
         "Intangible", 
         "Reservation"
     ], 
     "ReservationStatusType": [
+        "ReservationStatusType", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "ReserveAction": [
+        "ReserveAction", 
         "Thing", 
         "Action", 
         "OrganizeAction", 
         "PlanAction"
     ], 
     "Reservoir": [
+        "Reservoir", 
         "Thing", 
         "Place", 
         "Landform", 
         "BodyOfWater"
     ], 
     "Residence": [
+        "Residence", 
         "Thing", 
         "Place"
     ], 
     "Resort": [
+        "Resort", 
+        "Resort", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -2408,6 +2975,8 @@
         "Place"
     ], 
     "Restaurant": [
+        "Restaurant", 
+        "Restaurant", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -2415,40 +2984,49 @@
         "Place"
     ], 
     "RestrictedDiet": [
+        "RestrictedDiet", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "ResumeAction": [
+        "ResumeAction", 
         "Thing", 
         "Action", 
         "ControlAction"
     ], 
     "ReturnAction": [
+        "ReturnAction", 
         "Thing", 
         "Action", 
         "TransferAction"
     ], 
     "Review": [
+        "Review", 
         "Thing", 
         "CreativeWork"
     ], 
     "ReviewAction": [
+        "ReviewAction", 
         "Thing", 
         "Action", 
         "AssessAction"
     ], 
     "RiverBodyOfWater": [
+        "RiverBodyOfWater", 
         "Thing", 
         "Place", 
         "Landform", 
         "BodyOfWater"
     ], 
     "Role": [
+        "Role", 
         "Thing", 
         "Intangible"
     ], 
     "RoofingContractor": [
+        "RoofingContractor", 
+        "RoofingContractor", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -2456,11 +3034,13 @@
         "Place"
     ], 
     "Room": [
+        "Room", 
         "Thing", 
         "Place", 
         "Accommodation"
     ], 
     "RsvpAction": [
+        "RsvpAction", 
         "Thing", 
         "Action", 
         "InteractAction", 
@@ -2468,96 +3048,118 @@
         "InformAction"
     ], 
     "RsvpResponseType": [
+        "RsvpResponseType", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "SaleEvent": [
+        "SaleEvent", 
         "Thing", 
         "Event"
     ], 
     "ScheduleAction": [
+        "ScheduleAction", 
         "Thing", 
         "Action", 
         "OrganizeAction", 
         "PlanAction"
     ], 
     "ScholarlyArticle": [
+        "ScholarlyArticle", 
         "Thing", 
         "CreativeWork", 
         "Article"
     ], 
     "School": [
+        "School", 
         "Thing", 
         "Organization", 
         "EducationalOrganization"
     ], 
     "ScreeningEvent": [
+        "ScreeningEvent", 
         "Thing", 
         "Event"
     ], 
     "Sculpture": [
+        "Sculpture", 
         "Thing", 
         "CreativeWork"
     ], 
     "SeaBodyOfWater": [
+        "SeaBodyOfWater", 
         "Thing", 
         "Place", 
         "Landform", 
         "BodyOfWater"
     ], 
     "SearchAction": [
+        "SearchAction", 
         "Thing", 
         "Action"
     ], 
     "SearchResultsPage": [
+        "SearchResultsPage", 
         "Thing", 
         "CreativeWork", 
         "WebPage"
     ], 
     "Season": [
+        "Season", 
         "Thing", 
         "CreativeWork"
     ], 
     "Seat": [
+        "Seat", 
         "Thing", 
         "Intangible"
     ], 
     "SelfStorage": [
+        "SelfStorage", 
+        "SelfStorage", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "SellAction": [
+        "SellAction", 
         "Thing", 
         "Action", 
         "TradeAction"
     ], 
     "SendAction": [
+        "SendAction", 
         "Thing", 
         "Action", 
         "TransferAction"
     ], 
     "Series": [
+        "Series", 
         "Thing", 
         "CreativeWork"
     ], 
     "Service": [
+        "Service", 
         "Thing", 
         "Intangible"
     ], 
     "ServiceChannel": [
+        "ServiceChannel", 
         "Thing", 
         "Intangible"
     ], 
     "ShareAction": [
+        "ShareAction", 
         "Thing", 
         "Action", 
         "InteractAction", 
         "CommunicateAction"
     ], 
     "ShoeStore": [
+        "ShoeStore", 
+        "ShoeStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -2565,23 +3167,29 @@
         "Place"
     ], 
     "ShoppingCenter": [
+        "ShoppingCenter", 
+        "ShoppingCenter", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "SingleFamilyResidence": [
+        "SingleFamilyResidence", 
         "Thing", 
         "Place", 
         "Accommodation", 
         "House"
     ], 
     "SiteNavigationElement": [
+        "SiteNavigationElement", 
         "Thing", 
         "CreativeWork", 
         "WebPageElement"
     ], 
     "SkiResort": [
+        "SkiResort", 
+        "SkiResort", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -2589,32 +3197,40 @@
         "Place"
     ], 
     "SocialEvent": [
+        "SocialEvent", 
         "Thing", 
         "Event"
     ], 
     "SocialMediaPosting": [
+        "SocialMediaPosting", 
         "Thing", 
         "CreativeWork", 
         "Article"
     ], 
     "SoftwareApplication": [
+        "SoftwareApplication", 
         "Thing", 
         "CreativeWork"
     ], 
     "SoftwareSourceCode": [
+        "SoftwareSourceCode", 
         "Thing", 
         "CreativeWork"
     ], 
     "SomeProducts": [
+        "SomeProducts", 
         "Thing", 
         "Product"
     ], 
     "Specialty": [
+        "Specialty", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "SportingGoodsStore": [
+        "SportingGoodsStore", 
+        "SportingGoodsStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -2622,12 +3238,16 @@
         "Place"
     ], 
     "SportsActivityLocation": [
+        "SportsActivityLocation", 
+        "SportsActivityLocation", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "SportsClub": [
+        "SportsClub", 
+        "SportsClub", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -2635,24 +3255,31 @@
         "Place"
     ], 
     "SportsEvent": [
+        "SportsEvent", 
         "Thing", 
         "Event"
     ], 
     "SportsOrganization": [
+        "SportsOrganization", 
         "Thing", 
         "Organization"
     ], 
     "SportsTeam": [
+        "SportsTeam", 
         "Thing", 
         "Organization", 
         "SportsOrganization"
     ], 
     "SpreadsheetDigitalDocument": [
+        "SpreadsheetDigitalDocument", 
         "Thing", 
         "CreativeWork", 
         "DigitalDocument"
     ], 
     "StadiumOrArena": [
+        "StadiumOrArena", 
+        "StadiumOrArena", 
+        "StadiumOrArena", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -2661,83 +3288,103 @@
         "CivicStructure"
     ], 
     "State": [
+        "State", 
         "Thing", 
         "Place", 
         "AdministrativeArea"
     ], 
     "SteeringPositionValue": [
+        "SteeringPositionValue", 
         "Thing", 
         "Intangible", 
         "Enumeration", 
         "QualitativeValue"
     ], 
     "Store": [
+        "Store", 
+        "Store", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "StructuredValue": [
+        "StructuredValue", 
         "Thing", 
         "Intangible"
     ], 
     "SubscribeAction": [
+        "SubscribeAction", 
         "Thing", 
         "Action", 
         "InteractAction"
     ], 
     "SubwayStation": [
+        "SubwayStation", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "Suite": [
+        "Suite", 
         "Thing", 
         "Place", 
         "Accommodation"
     ], 
     "SuspendAction": [
+        "SuspendAction", 
         "Thing", 
         "Action", 
         "ControlAction"
     ], 
     "Synagogue": [
+        "Synagogue", 
         "Thing", 
         "Place", 
         "CivicStructure", 
         "PlaceOfWorship"
     ], 
     "TVClip": [
+        "TVClip", 
         "Thing", 
         "CreativeWork", 
         "Clip"
     ], 
     "TVEpisode": [
+        "TVEpisode", 
         "Thing", 
         "CreativeWork", 
         "Episode"
     ], 
     "TVSeason": [
+        "TVSeason", 
+        "TVSeason", 
         "Thing", 
         "CreativeWork", 
         "CreativeWorkSeason"
     ], 
     "TVSeries": [
+        "TVSeries", 
+        "TVSeries", 
         "Thing", 
         "CreativeWork", 
         "CreativeWorkSeries"
     ], 
     "Table": [
+        "Table", 
         "Thing", 
         "CreativeWork", 
         "WebPageElement"
     ], 
     "TakeAction": [
+        "TakeAction", 
         "Thing", 
         "Action", 
         "TransferAction"
     ], 
     "TattooParlor": [
+        "TattooParlor", 
+        "TattooParlor", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -2745,42 +3392,52 @@
         "Place"
     ], 
     "Taxi": [
+        "Taxi", 
         "Thing", 
         "Intangible", 
         "Service"
     ], 
     "TaxiReservation": [
+        "TaxiReservation", 
         "Thing", 
         "Intangible", 
         "Reservation"
     ], 
     "TaxiService": [
+        "TaxiService", 
         "Thing", 
         "Intangible", 
         "Service"
     ], 
     "TaxiStand": [
+        "TaxiStand", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "TechArticle": [
+        "TechArticle", 
         "Thing", 
         "CreativeWork", 
         "Article"
     ], 
     "TelevisionChannel": [
+        "TelevisionChannel", 
         "Thing", 
         "Intangible", 
         "BroadcastChannel"
     ], 
     "TelevisionStation": [
+        "TelevisionStation", 
+        "TelevisionStation", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "TennisComplex": [
+        "TennisComplex", 
+        "TennisComplex", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -2788,34 +3445,42 @@
         "Place"
     ], 
     "TextDigitalDocument": [
+        "TextDigitalDocument", 
         "Thing", 
         "CreativeWork", 
         "DigitalDocument"
     ], 
     "TheaterEvent": [
+        "TheaterEvent", 
         "Thing", 
         "Event"
     ], 
     "TheaterGroup": [
+        "TheaterGroup", 
         "Thing", 
         "Organization", 
         "PerformingGroup"
     ], 
     "Ticket": [
+        "Ticket", 
         "Thing", 
         "Intangible"
     ], 
     "TieAction": [
+        "TieAction", 
         "Thing", 
         "Action", 
         "AchieveAction"
     ], 
     "TipAction": [
+        "TipAction", 
         "Thing", 
         "Action", 
         "TradeAction"
     ], 
     "TireShop": [
+        "TireShop", 
+        "TireShop", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -2823,16 +3488,21 @@
         "Place"
     ], 
     "TouristAttraction": [
+        "TouristAttraction", 
         "Thing", 
         "Place"
     ], 
     "TouristInformationCenter": [
+        "TouristInformationCenter", 
+        "TouristInformationCenter", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "ToyStore": [
+        "ToyStore", 
+        "ToyStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -2840,243 +3510,295 @@
         "Place"
     ], 
     "TrackAction": [
+        "TrackAction", 
         "Thing", 
         "Action", 
         "FindAction"
     ], 
     "TradeAction": [
+        "TradeAction", 
         "Thing", 
         "Action"
     ], 
     "TrainReservation": [
+        "TrainReservation", 
         "Thing", 
         "Intangible", 
         "Reservation"
     ], 
     "TrainStation": [
+        "TrainStation", 
         "Thing", 
         "Place", 
         "CivicStructure"
     ], 
     "TrainTrip": [
+        "TrainTrip", 
         "Thing", 
         "Intangible"
     ], 
     "TransferAction": [
+        "TransferAction", 
         "Thing", 
         "Action"
     ], 
     "TravelAction": [
+        "TravelAction", 
         "Thing", 
         "Action", 
         "MoveAction"
     ], 
     "TravelAgency": [
+        "TravelAgency", 
+        "TravelAgency", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
         "Place"
     ], 
     "TypeAndQuantityNode": [
+        "TypeAndQuantityNode", 
         "Thing", 
         "Intangible", 
         "StructuredValue"
     ], 
     "UnRegisterAction": [
+        "UnRegisterAction", 
         "Thing", 
         "Action", 
         "InteractAction"
     ], 
     "UnitPriceSpecification": [
+        "UnitPriceSpecification", 
         "Thing", 
         "Intangible", 
         "StructuredValue", 
         "PriceSpecification"
     ], 
     "UpdateAction": [
+        "UpdateAction", 
         "Thing", 
         "Action"
     ], 
     "UseAction": [
+        "UseAction", 
         "Thing", 
         "Action", 
         "ConsumeAction"
     ], 
     "UserBlocks": [
+        "UserBlocks", 
         "Thing", 
         "Event", 
         "UserInteraction"
     ], 
     "UserCheckins": [
+        "UserCheckins", 
         "Thing", 
         "Event", 
         "UserInteraction"
     ], 
     "UserComments": [
+        "UserComments", 
         "Thing", 
         "Event", 
         "UserInteraction"
     ], 
     "UserDownloads": [
+        "UserDownloads", 
         "Thing", 
         "Event", 
         "UserInteraction"
     ], 
     "UserInteraction": [
+        "UserInteraction", 
         "Thing", 
         "Event"
     ], 
     "UserLikes": [
+        "UserLikes", 
         "Thing", 
         "Event", 
         "UserInteraction"
     ], 
     "UserPageVisits": [
+        "UserPageVisits", 
         "Thing", 
         "Event", 
         "UserInteraction"
     ], 
     "UserPlays": [
+        "UserPlays", 
         "Thing", 
         "Event", 
         "UserInteraction"
     ], 
     "UserPlusOnes": [
+        "UserPlusOnes", 
         "Thing", 
         "Event", 
         "UserInteraction"
     ], 
     "UserTweets": [
+        "UserTweets", 
         "Thing", 
         "Event", 
         "UserInteraction"
     ], 
     "Vehicle": [
+        "Vehicle", 
         "Thing", 
         "Product"
     ], 
     "VideoGallery": [
+        "VideoGallery", 
         "Thing", 
         "CreativeWork", 
         "WebPage", 
         "CollectionPage"
     ], 
     "VideoGame": [
+        "VideoGame", 
+        "VideoGame", 
         "Thing", 
         "CreativeWork", 
         "Game", 
         "SoftwareApplication"
     ], 
     "VideoGameClip": [
+        "VideoGameClip", 
         "Thing", 
         "CreativeWork", 
         "Clip"
     ], 
     "VideoGameSeries": [
+        "VideoGameSeries", 
         "Thing", 
         "CreativeWork", 
         "CreativeWorkSeries"
     ], 
     "VideoObject": [
+        "VideoObject", 
         "Thing", 
         "CreativeWork", 
         "MediaObject"
     ], 
     "ViewAction": [
+        "ViewAction", 
         "Thing", 
         "Action", 
         "ConsumeAction"
     ], 
     "VisualArtsEvent": [
+        "VisualArtsEvent", 
         "Thing", 
         "Event"
     ], 
     "VisualArtwork": [
+        "VisualArtwork", 
         "Thing", 
         "CreativeWork"
     ], 
     "Volcano": [
+        "Volcano", 
         "Thing", 
         "Place", 
         "Landform"
     ], 
     "VoteAction": [
+        "VoteAction", 
         "Thing", 
         "Action", 
         "AssessAction", 
         "ChooseAction"
     ], 
     "WPAdBlock": [
+        "WPAdBlock", 
         "Thing", 
         "CreativeWork", 
         "WebPageElement"
     ], 
     "WPFooter": [
+        "WPFooter", 
         "Thing", 
         "CreativeWork", 
         "WebPageElement"
     ], 
     "WPHeader": [
+        "WPHeader", 
         "Thing", 
         "CreativeWork", 
         "WebPageElement"
     ], 
     "WPSideBar": [
+        "WPSideBar", 
         "Thing", 
         "CreativeWork", 
         "WebPageElement"
     ], 
     "WantAction": [
+        "WantAction", 
         "Thing", 
         "Action", 
         "AssessAction", 
         "ReactAction"
     ], 
     "WarrantyPromise": [
+        "WarrantyPromise", 
         "Thing", 
         "Intangible", 
         "StructuredValue"
     ], 
     "WarrantyScope": [
+        "WarrantyScope", 
         "Thing", 
         "Intangible", 
         "Enumeration"
     ], 
     "WatchAction": [
+        "WatchAction", 
         "Thing", 
         "Action", 
         "ConsumeAction"
     ], 
     "Waterfall": [
+        "Waterfall", 
         "Thing", 
         "Place", 
         "Landform", 
         "BodyOfWater"
     ], 
     "WearAction": [
+        "WearAction", 
         "Thing", 
         "Action", 
         "ConsumeAction", 
         "UseAction"
     ], 
     "WebApplication": [
+        "WebApplication", 
         "Thing", 
         "CreativeWork", 
         "SoftwareApplication"
     ], 
     "WebPage": [
+        "WebPage", 
         "Thing", 
         "CreativeWork"
     ], 
     "WebPageElement": [
+        "WebPageElement", 
         "Thing", 
         "CreativeWork"
     ], 
     "WebSite": [
+        "WebSite", 
         "Thing", 
         "CreativeWork"
     ], 
     "WholesaleStore": [
+        "WholesaleStore", 
+        "WholesaleStore", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -3084,11 +3806,14 @@
         "Place"
     ], 
     "WinAction": [
+        "WinAction", 
         "Thing", 
         "Action", 
         "AchieveAction"
     ], 
     "Winery": [
+        "Winery", 
+        "Winery", 
         "Thing", 
         "Organization", 
         "LocalBusiness", 
@@ -3096,11 +3821,13 @@
         "Place"
     ], 
     "WriteAction": [
+        "WriteAction", 
         "Thing", 
         "Action", 
         "CreateAction"
     ], 
     "Zoo": [
+        "Zoo", 
         "Thing", 
         "Place", 
         "CivicStructure"
