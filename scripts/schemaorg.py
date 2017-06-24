@@ -289,8 +289,39 @@ def task_init(args=None):
     logging.info(len(data))
 
 
+def task_superclasses(args):
+    filename = "../local/releases/3.2/schema_taxonomy.json"
+    filename = file2abspath(filename, __file__)
+    data = file2json(filename)
+    pairs = []
+    loadmapping(data, [], pairs)
+    logging.info(json.dumps(pairs, indent=4, ensure_ascii=False))
+
+    mapping = collections.defaultdict(list)
+    for pair in pairs:
+        key = pair["to"]
+        for parent in pair["path"]:
+            if parent not in mapping[key]:
+                mapping[key].append(parent)
+
+    logging.info(json.dumps(mapping, indent=4, ensure_ascii=False))
+    filename = "../data/releases/3.2/schema.superclass.json"
+    filename = file2abspath(filename, __file__)
+    json2file(mapping, filename)
+
+
+def loadmapping(node, path, pairs):
+    for child in node.get("children", []):
+        path_child = []
+        path_child.extend(path)
+        path_child.append(node["name"])
+        pairs.append({"form": node["name"], "to": child["name"],
+                      "path": path_child})
+        loadmapping(child, path_child, pairs)
+
+
 if __name__ == "__main__":
-    logging.basicConfig(format='[%(levelname)s][%(asctime)s][%(module)s][%(funcName)s][%(lineno)s] %(message)s', level=logging.INFO)
+    logging.basicConfig(format='[%(levelname)s][%(asctime)s][%(module)s][%(funcName)s][%(lineno)s] %(message)s', level=logging.INFO)  # noqa
     logging.getLogger("requests").setLevel(logging.WARNING)
 
     filename = '../local/cache'
@@ -301,4 +332,5 @@ if __name__ == "__main__":
 
 """
     python schemaorg.py task_init
+    python schemaorg.py task_superclasses
 """
