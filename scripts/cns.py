@@ -26,7 +26,7 @@ import collections
 import requests
 
 from cdata.table import json2excel, excel2json
-from cdata.core import stat, json_get_list, any2utf8, file2abspath
+from cdata.core import stat, json_get_list, any2utf8, file2abspath, file2json
 from cdata.misc import main_subtask
 
 from schemaorg import Schemaorg
@@ -145,8 +145,19 @@ def write_cns_core(items, version):
         json.dump(output, f, ensure_ascii=False, sort_keys=True, indent=4)
 
 
+def task_cns_json2excel(args=None):
+    name = "cns-core"
+    version = "3.2"
 
-####################################################
+    filename = "../data/releases/{}/{}.jsonld".format(version, name)
+    filename = file2abspath(filename, __file__)
+    items = file2json(filename)["@graph"]
+
+    logging.info(items)
+
+    filename = "../data/releases/{}/{}.xls".format(version, name)
+    filename = file2abspath(filename, __file__)
+    #json2excel(items, fileds, filename)
 
 def task_cns_core(args=None):
     name = "cns-core"
@@ -179,5 +190,7 @@ if __name__ == "__main__":
 
 """
     python cns.py task_cns_core
+
+    python cns.py task_cns_json2excel
 
 """
