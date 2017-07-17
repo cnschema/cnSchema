@@ -170,9 +170,21 @@ def task_cns_rebuild(args=None):
     items = temp["data"].values()[0]
 
     #logging.info(items)
+    stat(items, ["wikidataUrl","wikidataName","wikipediaUrl","nameZh","descriptionZh"])
+    dup(items, "wikidataName")
+    dup(items, "wikidataUrl")
+    dup(items, "wikipediaUrl")
 
     write_cns_core(items, version)
 
+def dup(items, prop, threshold=1):
+    counter = collections.Counter()
+    for item in items:
+        counter[item.get(prop,"")]+=1
+    for key, cnt in counter.most_common():
+        if cnt <= threshold:
+            continue
+        print key, cnt
 
 def task_cns_core(args=None):
     name = "cns-core"
