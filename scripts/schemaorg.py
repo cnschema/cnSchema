@@ -24,8 +24,7 @@ from cdata.misc import main_subtask
 import requests
 import requests_cache
 
-
-PLIST_BASIC = ["@id","rdfs:label","rdfs:comment", "_supersede", "_usage", "_layer","_examples","_instances"]
+PLIST_BASIC = ["@id","rdfs:label","rdfs:comment", "_supersede", "_usage", "_layer","_examples","_instances"] 
 PLIST_REF = ["@id","rdfs:label"]
 PLIST_DOMAIN_RANGE = [
     "http://schema.org/rangeIncludes",
