@@ -113,7 +113,7 @@ class Schemaorg:
         if os.path.exists(filename_cache):
             return file2json(filename_cache)
         else:
-            os.path.makedirs(os.path.dirname(filename_cache))
+            os.makedirs(os.path.dirname(filename_cache))
 
         #examples
         self._init_examples()
