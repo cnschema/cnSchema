@@ -24,7 +24,7 @@ from cdata.misc import main_subtask
 import requests
 import requests_cache
 
-PLIST_BASIC = ["@id","rdfs:label","rdfs:comment", "_supersede", "_usage", "_layer","_examples","_instances"] 
+PLIST_BASIC = ["@id","rdfs:label","rdfs:comment", "_supersede", "_usage", "_layer","_examples","_instances"]
 PLIST_REF = ["@id","rdfs:label"]
 PLIST_DOMAIN_RANGE = [
     "http://schema.org/rangeIncludes",
@@ -112,6 +112,8 @@ class Schemaorg:
         filename_cache = os.path.join(self.dir_output, "schemaorg.json")
         if os.path.exists(filename_cache):
             return file2json(filename_cache)
+        else:
+            os.path.makedirs(os.path.dirname(filename_cache))
 
         #examples
         self._init_examples()
