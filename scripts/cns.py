@@ -491,7 +491,7 @@ MAP_CNSCHEMA = [ {"name":x} for x in PLIST_CNSCHEMA]
 
 
 
-def task_cns_extend(args=None):
+def task_cns_make_html(args=None):
     name = "cns-core"
     version = "3.2"
     site = "cnschema.org"
@@ -571,7 +571,7 @@ if __name__ == "__main__":
 
     python cns.py task_cns_core_json2excel
 
-    python cns.py task_cns_extend
+    python cns.py task_cns_make_html
 
     python cns.py task_cns_template
 
