@@ -1,7 +1,8 @@
-cdata==0.0.1
+cdata==0.1.7
 certifi==2017.4.17
 chardet==3.0.4
 idna==2.5
+pystache==0.5.4
 requests==2.13.0
 requests-cache==0.4.13
 urllib3==1.21.1
