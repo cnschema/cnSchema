@@ -1,0 +1,440 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto","Pingfang SC";
+}
+h1,h2,h3,h4,h5,h6,ul,p,span{
+  margin: 0;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+input{
+  outline: none;
+  border: none;
+}
+a{
+  text-decoration: none;
+}
+#container {
+  width: 100%;
+  margin: 0;
+}
+#pageHeader{
+  width: 100%;
+  height: 30px;
+  background: #002050;
+}
+#pageHeader .wrapper{
+  text-align: right;
+  color: #fff;
+  max-width: 960px;
+  min-width: 350px;
+  margin: 0 auto;
+  padding: 0 40px;
+  line-height: 30px;
+  position: relative;
+}
+#pageHeader h1{
+  float: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+#pageHeader ul {
+  line-style: none;
+  float: left;
+  font-size: 12px;
+}
+#pageHeader ul li{
+  float: left;
+  margin-left: 30px;
+}
+#pageHeader ul li a{
+  display: block;
+  color: #fff;
+}
+#pageHeader input{
+  width: 20%;
+  vertical-align: middle;
+  margin-bottom: 2px;
+  padding-left: 4px;
+}
+#pageHeader .searchIcon{
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: 45px;
+  top: 9px;
+}
+#mainContent{
+  max-width: 960px;
+  min-width: 350px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+#mainContent ul {
+  font-size: 12px;
+  width: 80%;
+  padding-top: 30px;
+}
+#mainContent ul h3{
+  font-size: 14px;
+  color: #002050;
+}
+#mainContent ul li{
+  margin-bottom: 24px;
+}
+#mainContent ul li a{
+  color: #DC7D00;
+}
+#mainContent i.line{
+  display: inline-block;
+  width: 40px;
+  height: 5px;
+  vertical-align: baseline;
+  margin: 0 5px;
+  border-top: 1px solid #000;
+}
+#page {
+  width: 100%;
+  margin: 46px 0 40px 0;
+  text-align: center;
+  font-size: 12px;
+  color: #1D1D1D;
+  line-height: 14px;
+  cursor: pointer;
+}
+#page span.prev,#page span.num{
+  margin-right: 12px;
+}
+#page span.active{
+  font-size: 12px;
+  color: #FF8C00;
+}
+#mainContent h1{
+  font-size: 18px;
+  color: #002050;
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+#intro p{
+  text-align: left;
+  font-size: 12px;
+  color: #002050;
+  margin-bottom: 8px;
+}
+#intro p.others{
+  text-indent: 2em;
+}
+#intro p  i.dot{
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #000;
+  border-radius: 2px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+#intro p i.square{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 4px solid #000;
+  border-left: 4px solid rgba(0,0,0,0);
+  border-right: 4px solid rgba(0,0,0,0);
+  border-bottom: 4px solid rgba(0,0,0,0);
+  vertical-align: middle;
+  margin-left: 5px;
+  cursor: pointer;
+}
+#intro p a{
+  margin-right: 20px;
+}
+#intro p a.active{
+  color: #FF8C00;
+}
+#intro div.otherBox{
+  margin-left: 25px;
+  line-height: 12px;
+  padding-left: 10px;
+  border-left:2px solid #000;
+}
+#content{
+  margin-top: 30px;
+  position: relative;
+}
+#content #leftNav{
+  width: 76px;
+  height: 858px;
+  float: left;
+  background: #002050;
+  box-shadow: 1px 1px 1px #000;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#content #leftNav ul, #aboutBox #aboutLeft ul{
+  width: 100%;
+}
+#content:after ,#content:before ,#aboutBox:after,#aboutBox:before{
+  clear:both;
+  content: ".";
+  display: block;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+#content #leftNav ul li,#aboutBox #aboutLeft ul li{
+  text-align: center;
+}
+#content #leftNav ul li span,#aboutBox #aboutLeft ul li span{
+  padding: 0 8px;
+  cursor: pointer;
+}
+#content #leftNav ul li span.active,#aboutBox #aboutLeft ul li span.active{
+  border-left: 1px solid #FF8C00;
+  color: #FF8C00;
+}
+#content #rightBox{
+  width: 100%;
+  padding-left: 77px;
+  box-sizing: border-box;
+}
+#content #rightBox ul,#aboutBox #aboutContent ul{
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+#content #rightBox ul li ,#aboutBox #aboutContent ul li{
+  margin: 0;
+}
+#content #rightBox ul li.prop tbody th{
+  width: 178px;
+  padding: 0;
+  font-size: 12px;
+  position: relative;
+}
+#content #rightBox ul li.prop tbody span {
+  position: absolute;
+  height: 12px;
+  line-height: 12px;
+  top: 0;
+  top: 50%;
+  margin-top: -6px;
+  font-size: 12px;
+}
+#content #rightBox ul li.prop tbody span.propName{
+  padding-left: 30px;
+}
+#content #rightBox ul li.prop tbody span.propFrom{
+  padding-left: 120px;
+}
+#rightBox ul li.prop thead{
+  font-size: 14px;
+  background: #D2D2D2;
+}
+#rightBox ul li.prop thead th{
+  padding: 0;
+}
+#rightBox ul li.prop thead th.propInfo span{
+  line-height: 42px;
+  padding-left: 30px;
+}
+#rightBox ul li.prop th.propInfo{
+  border-right: 1px solid #bbb;
+}
+#rightBox ul li.prop tbody td.category{
+  box-sizing: border-box;
+  width: 123px;
+  padding-left: 30px;
+}
+#rightBox ul li.prop thead th.category span{
+  padding-left: 30px;
+}
+#rightBox ul li.prop tbody td.description{
+  padding: 5px 0;
+}
+#rightBox ul li.prop tbody tr:nth-child(2n) th{
+  background: #e6e6e6;
+}
+#rightBox ul li.prop{
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+}
+#rightBox ul li.extensions h4{
+  font-size: 14px;
+  padding: 15px 0;
+}
+#rightBox ul li.extensions i.dot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background: #000;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-right: 15px;
+}
+#rightBox ul li.extensions p{
+  margin-bottom: 5px;
+}
+#rightBox #details,#rightBox .extensions,#rightBox .examples{
+  display: none;
+}
+
+#rightBox ul li.examples {
+  padding-left: 22px;
+}
+#rightBox ul li.examples .examples-top ul{
+  overflow: hidden;
+  margin-top: 5px;
+  height: 32px;
+}
+#rightBox ul li.examples .examples-top ul li{
+  float: left;
+  width: 72px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #e6e6e6;
+  border-left: none;
+  cursor: pointer;
+}
+#rightBox ul li.examples .examples-top ul li.active{
+  background: #e6e6e6;
+}
+#rightBox ul li.examples .examples-top ul li:nth-child(1){
+  border: 1px solid #e6e6e6;
+}
+#rightBox ul li.examples .examples-top ul li:nth-last-child(1){
+  border-right: 1px solid #e6e6e6;
+}
+#rightBox .examples-bottom {
+  margin-top: 30px;
+}
+#rightBox ul li div.mark{
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin-bottom: 24px;
+}
+#rightBox ul li div.mark label{
+  position: absolute;
+  width: 60px;
+  text-align: left;
+  left: 0;
+  top: 0;
+}
+#rightBox ul li div.mark ol{
+  padding: 0;
+  list-style: none;
+  margin-left: 70px;
+  border: 2px solid #e6e6e6;
+  padding: 5px;
+  font-size: 12px;
+  color: #1d1d1d;
+}
+#rightBox ul li div.code .tag,#rightBox ul li div.code .pln{
+  color: #515484;
+}
+#rightBox ul li div.code .atn, #rightBox ul li div.code .pun{
+  color: #660003;
+}
+#rightBox ul li div.code .atv,#rightBox ul li div.code  .str{
+  color: #008800;
+}
+#rightBox .examples-bottom > ul > li:nth-child(n+2){
+  display: none;
+}
+#mainContent h1.aboutHead{
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: #002050;
+}
+#mainContent #aboutBox {
+  position: relative;
+}
+#mainContent #aboutLeft{
+  position: absolute;
+  width: 114px;
+  box-shadow: 1px 1px 1px #000;
+  background: #002050;
+  color: #fff;
+  height: 858px;
+}
+#mainContent #aboutContent{
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 155px;
+  color: #1D1D1D;
+}
+#aboutContent p{
+  text-indent: 2em;
+  line-height: 18px;
+  font-size: 12px;
+}
+#aboutContent p.line{
+  height: 100px;
+  background: #e6e6e6;
+  margin: 40px 0;
+}
+#aboutContent ul li{
+  overflow: hidden;
+}
+#aboutContent ul li div.person{
+  width: 33%;
+  float: left;
+}
+#aboutContent ul li div.personImg{
+  float: left;
+  width: 40%;
+  height: 50%;
+  margin-top: 10%;
+}
+#aboutContent ul li div.personImg img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#aboutContent ul li div.personInfo {
+  padding-left: 16px;
+  box-sizing: border-box;
+  width: 60%;
+  float: left;
+}
+#aboutContent ul li div.personInfo h4{
+  margin-top: 5px;
+  font-size: 18px;
+}
+#aboutContent ul li div.personInfo h6{
+  margin-top: 15px;
+  font-size: 12px;
+  font-weight: 900;
+}
+#aboutContent >ul >li:nth-child(n+2){
+  display: none;
+}
+#mainContent ul li:nth-child(1){
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #002050;
+}
+#mainContent ul.completed{
+  width: 60%;
+  float: left;
+}
+#mainContent div.others{
+  float: left;
+  box-sizing: border-box;
+  width: 40%;
+  padding-left: 10%;
+}
+#mainContent div.going h6,#mainContent div.plan h6{
+  font-size: 14px;
+}
+#mainContent div.going ul li,#mainContent div.plan ul li{
+  margin-bottom: 18px;
+}
