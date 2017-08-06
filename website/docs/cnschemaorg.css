@@ -157,7 +157,7 @@ a{
 }
 #intro div.otherBox{
   margin-left: 25px;
-  line-height: 12px;
+  line-height: 20px;
   padding-left: 10px;
   border-left:2px solid #000;
 }
@@ -218,7 +218,6 @@ a{
   position: relative;
 }
 #content #rightBox ul li.prop tbody span {
-  position: absolute;
   height: 12px;
   line-height: 12px;
   top: 0;
@@ -257,7 +256,7 @@ a{
 #rightBox ul li.prop tbody td.description{
   padding: 5px 0;
 }
-#rightBox ul li.prop tbody tr:nth-child(2n) th{
+#rightBox ul li.prop tbody th{
   background: #e6e6e6;
 }
 #rightBox ul li.prop{

@@ -251,9 +251,10 @@ PLIST_PROP = PLIST_BASIC + PLIST_DOMAIN_RANGE + INVERSE_DOMAIN_RANGE.values() + 
 
 class WebsiteV1():
     def __init__(self, version, site, map_id_schemaorg):
+        self.subversion = "{}.1".format(version)
         self.version = version
         self.site = site
-        self.dir_output = os.path.join(os.path.dirname(__file__), "../local/releases/{}/").format(self.version)
+        self.dir_output = os.path.join(os.path.dirname(__file__), "../local/sites/{}").format(self.subversion)
         self.map_id_schemaorg = map_id_schemaorg
 
     def run(self):
@@ -261,16 +262,22 @@ class WebsiteV1():
         self.generate_page_entity_detail()
 
     def download_page_docs(self):
-
         # from github
         #url = "https://github.com/schemaorg/schemaorg/tree/master/docs"
-        url = "https://github.com/cnschema/cnschema/tree/master/docs"
+        url = "https://github.com/cnschema/cnschema/tree/master/website/docs"
         r = requests.get(url)
         logging.info(r.content)
-        filenames = re.findall(r"(docs/[^\"]+\.(css|js))", r.content)
+        filenames = re.findall(r"website/(docs/[^\"]+\.(css|js|png|html))", r.content)
+
+        url = "https://github.com/cnschema/cnschema/tree/master/website"
+        r = requests.get(url)
+        logging.info(r.content)
+        filenames_website = re.findall(r"website/([^\"]+\.(html))", r.content)
+        filenames.extend( filenames_website )
+
 
         #urlBase = "https://github.com/schemaorg/schemaorg/raw/master"
-        urlBase = "https://github.com/cnschema/cnschema/raw/master"
+        urlBase = "https://github.com/cnschema/cnschema/raw/master/website"
         for fx in filenames:
             filename = fx[0]
 
@@ -279,7 +286,7 @@ class WebsiteV1():
             r = requests.get(url)
 
             # logging.info(filename)
-            filename = os.path.join(self.dir_output, "{}/".format(self.site), filename)
+            filename = os.path.join(self.dir_output, filename)
             create_dir_if_not_exist(filename)
             with codecs.open(filename,'wb') as f:
                 content = r.content
@@ -295,6 +302,9 @@ class WebsiteV1():
         import pystache
 
         for xid in sorted(self.map_id_schemaorg):
+            if not "Music" in xid:
+                continue
+
             item = self.map_id_schemaorg.get(xid)
 
             if "#" in xid:
@@ -304,13 +314,13 @@ class WebsiteV1():
             entry = self.convert_extend2mustach( item )
 
             html = pystache.render(templatePage, entry)
-            filename = os.path.join(self.dir_output, "{}/{}.html".format(self.site, entry["rdfs:label"]))
+            filename = os.path.join(self.dir_output, "{}.html".format( entry["rdfs:label"]))
             create_dir_if_not_exist(filename)
             with codecs.open(filename, "w", encoding="utf-8") as f:
                 f.write(html)
 
-            #filename = os.path.join(self.dir_output, "{}/{}.json".format(self.site, entry["rdfs:label"]))
-            #json2file( entry, filename)
+            filename = os.path.join(self.dir_output, "{}.json".format( entry["rdfs:label"]))
+            json2file( entry, filename)
 
             #print html
 

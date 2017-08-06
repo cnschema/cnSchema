@@ -6,10 +6,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>{{rdfs:label}} - {{_sitename}}</title>
     <meta name="description" content="{{rdfs:comment}}" />
-    <link rel="stylesheet" type="text/css" href="{{_url_root}}/docs/cnschema.css" />
+    <link rel="stylesheet" type="text/css" href="{{_url_root}}/docs/cnschemaorg.css" />
     <link rel="stylesheet" type="text/css" href="{{_url_root}}/docs/prettify.css"  />
     <script type="text/javascript" src="{{_url_root}}/docs/prettify.js"></script>
-    <script type="text/javascript" src="{{_url_root}}/docs/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="{{_url_root}}/docs/jquery-3.2.1.min.js"></script>
 
 <script type="text/javascript">
       $(document).ready(function(){
@@ -64,39 +64,23 @@
 <body class="mainsite testsite">
 
 <!-- Header start  -->
-<div id="selectionbar">
 
-  <div class="wrapper">
-
-		<ul>
-      <li class="activelink">
-        <a href="{{_url_schema}}/">{{_sitename}}</a>
-      </li>
-
-      <li>
-				<a href="{{_url_schema}}/">项目</a>
-			</li>
-
-
-			<li>
-				<a href="{{_url_root}}/docs/documents.html">文档</a>
-			</li>
-
-      <li>
-				<a href="{{_url_schema}}/">关于</a>
-			</li>
-		</ul>
-
-    <div id="cse-search-form" style="width: 400px;"></div>
-
-	</div>
-
-
+<div id="container">
+  <div id="pageHeader">
+    <div class="wrapper">
+      <div id="sitename">
+        <h1><a href="{{_url_schema}}/">{{_sitename}}</a></h1>
+      </div>
+      <ul>
+        <li><a href="https://github.com/cnschema/cnschema">项目</a></li>
+        <li><a href="https://github.com/cnschema/cnschema/wiki">文档</a></li>
+        <li><a href="docs/about.html">关于</a></li>
+      </ul>
+      <input type="text">
+      <img src="docs/Search.png" class="searchIcon"/>
+    </div>
+  </div>
 </div>
-
-
-
-
 
 <!-- Header -->
 
@@ -105,74 +89,109 @@
   <!--@id, rdfs:label  -->
 
 <h1 property="rdfs:label" class="page-title">{{rdfs:label}}</h1>
- <span class="canonicalUrl">Canonical URL: <a href="{{@id}}">{{@id}}</a></span>
+
+<div id="intro">
+  <!-- links -->
+  <span class="canonicalUrl">Canonical URL: <a href="{{@id}}">{{@id}}</a></span>
+
+  <!-- breadcrumbs， inheritance  -->
+ <h4>
+ {{#_paths}}
+
+  <span class='breadcrumbs'>
+    {{#_path}}
+    <a   href="{{_url_schema}}/{{rdfs:label}}">{{rdfs:label}}</a>  {{^_lastone}}&gt; {{/_lastone}}
+    {{/_path}}
+    {{#_is_instance}}
+     :: <a   href="{{_url_schema}}/{{rdfs:label}}">{{rdfs:label}}</a>
+    {{/_is_instance}}
+    {{^_last}}
+     <br/>
+    {{/_last}}
+  </span>
+ {{/_paths}}
+ </h4>
+
+ <!-- breadcrumbs， class inheritance  -->
 
 
-
- <!-- breadcrumbs， inheritance  -->
-<h4>
-{{#_paths}}
-
- <span class='breadcrumbs'>
-   {{#_path}}
-   <a   href="{{_url_schema}}/{{rdfs:label}}">{{rdfs:label}}</a>  {{^_lastone}}&gt; {{/_lastone}}
-   {{/_path}}
-   {{#_is_instance}}
-    :: <a   href="{{_url_schema}}/{{rdfs:label}}">{{rdfs:label}}</a>
-   {{/_is_instance}}
-   {{^_last}}
-    <br/>
-   {{/_last}}
- </span>
-{{/_paths}}
-</h4>
-
-<!-- breadcrumbs， class inheritance  -->
-
-<div>
-  【<span property="nameZh">{{{nameZh}}}</span>】
-    <span property="descriptionZh">{{{descriptionZh}}}</span>
+ <div>
+    <div>
+    【<span property="nameZh">{{{nameZh}}}</span>】
+      <span property="descriptionZh">{{{descriptionZh}}}</span>
+    </div>
+    <div property="rdfs:comment">{{{rdfs:comment}}}</div>
 </div>
- <div property="rdfs:comment">{{{rdfs:comment}}}</div>
- <div > Linked to Schema.org: <a href="https://schema.org/{{rdfs:label}}">https://schema.org/{{rdfs:label}}</a></div>
- {{#wikidataUrl}}
-  <div > Linked to Wikidata: <a href="{{.}}">{{wikidataName}}</a></div>
- {{/wikidataUrl}}
- {{#wikipediaUrl}}
-  <div > Linked to Wikipedia: <a href="{{.}}">{{.}}</a></div>
- {{/wikipediaUrl}}
 
 
 
- <!-- usage statistics -->
 
-{{#_usage}}
- <br/><div>Usage: {{.}}</div>
-{{/_usage}}
+  <div class="otherBox">
+
+    <div > Linked to Schema.org: <a href="https://schema.org/{{rdfs:label}}">https://schema.org/{{rdfs:label}}</a>
+      <!-- usage statistics -->
+     {{#_usage}}
+       Usage: {{.}}
+     {{/_usage}}
+    </div>
+
+    {{#wikidataUrl}}
+     <div > Linked to Wikidata: <a href="{{.}}">{{.}} ({{wikidataName}})</a></div>
+    {{/wikidataUrl}}
+
+    {{#wikipediaUrl}}
+     <div > Linked to Wikipedia: <a href="{{.}}">{{.}}</a></div>
+    {{/wikipediaUrl}}
+
+  </div>
+</div>
+
+
+
+
+
+
 
 
 
 <!-- more, comment -->
-
+<!-- TODO
 <div>
         <div id='infobox' style='text-align: right;'><label role="checkbox" for=morecheck><b><span style="cursor: pointer;">[more...]</span></b></label></div>
         <input type='checkbox' checked="checked" style='display: none' id=morecheck><div id='infomsg' style='background-color: #EEEEEE; text-align: left; padding: 0.5em;'>
         <ul><li><a href='https://docs.google.com/a/google.com/forms/d/1krxHlWJAO3JgvHRZV9Rugkr9VYnMdrI10xbGsWt733c/viewform?entry.1174568178&entry.41124795={{rdfs:label}}&entry.882602760=type'>Leave public feedback on this term &#128172;</a></li><li><a href='https://github.com/schemaorg/schemaorg/issues?q=is%3Aissue+is%3Aopen+{{rdfs:label}}'>Check for open issues.</a></li><li>'{{rdfs:label}}' is mentioned in layer: <a href='{{@id}}'>{{_layer}}</a></li></ul>
 </div>
 </div>
+-->
+
+<div id="content">
+  <div id="leftNav">
+    <ul>
+      <li><span class="active"><a href="#properties">属性</a></span></li>
+      <li><span><a href="#details">详情</a></span></li>
+      <li><span><a href="#extensions">扩展</a></span></li>
+      <li><span><a href="#examples">案例</a></span></li>
+    </ul>
+  </div>
+  <div id="rightBox">
+    <ul>
+      <li class="prop" id="propItem">
 
 
-
-
+<a name="properties"/>
 
 <!--- class/type domain of property --->
 {{#_pTree}}
 {{#_last}}
 <table class="definition-table">
         <thead>
-  <tr><th>Property</th><th>Expected Type</th><th>Description</th>
+  <tr>
+    <th class="propInfo"><span>属性</span></th>
+    <th class="category"><span>值域<span></th>
+    <th class="description">定义</th>
   </tr>
   </thead>
+
 {{/_last}}
 {{/_pTree}}
 
@@ -187,11 +206,11 @@
 <tbody class="supertype">
   <tr typeof="rdfs:Property" resource="{{@id}}">
 
-      <th class="prop-nam" scope="row">
+      <th class="propInfo" scope="row">
 
 <code property="rdfs:label"><a   href="{{_url_schema}}/{{rdfs:label}}">{{rdfs:label}}</a></code>
     </th>
- <td class="prop-ect">
+ <td class="category">
    {{#rangeIncludes}}
    <link  property="rangeIncludes" href="{{@id}}" /><a   href="{{_url_schema}}/{{rdfs:label}}">{{rdfs:label}}</a>&nbsp; {{^_last}} or {{/_last}}
    {{/rangeIncludes}}
@@ -201,7 +220,7 @@
    {{/domainIncludes}}
 </td>
 
-<td class="prop-desc">【<span property="nameZh">{{{nameZh}}}</span>】 <span property="descriptionZh">{{{descriptionZh}}}</span> <span property="rdfs:comment">{{{rdfs:comment}}}</span>
+<td class="description">【<span property="nameZh">{{{nameZh}}}</span>】 <span property="descriptionZh">{{{descriptionZh}}}</span> <span property="rdfs:comment">{{{rdfs:comment}}}</span>
 {{#_supersede}}Supersedes <a href="{{_url_schema}}/{{rdfs:label}}">{{rdfs:label}}</a>.{{/_supersede}}
 {{#inverseOf}}Inverse property: <a href="{{_url_schema}}/{{rdfs:label}}">{{rdfs:label}}</a>.{{/inverseOf}}
 </td>
@@ -460,6 +479,7 @@ TODO
 {{/_sourceAck}}
 
 
+<a name="examples"/>
 
 <!-- examples -->
 
