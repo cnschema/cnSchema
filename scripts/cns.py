@@ -267,12 +267,12 @@ class WebsiteV1():
         url = "https://github.com/cnschema/cnschema/tree/master/website/docs"
         r = requests.get(url)
         logging.info(r.content)
-        filenames = re.findall(r"website/(docs/[^\"]+\.(css|js|png|html))", r.content)
+        filenames = re.findall(r"website/(docs/[^\"]+\.(css|js|png|htm))", r.content)
 
         url = "https://github.com/cnschema/cnschema/tree/master/website"
         r = requests.get(url)
         logging.info(r.content)
-        filenames_website = re.findall(r"website/([^\"]+\.(html))", r.content)
+        filenames_website = re.findall(r"website/([^\"]+\.(htm))", r.content)
         filenames.extend( filenames_website )
 
 
@@ -302,8 +302,8 @@ class WebsiteV1():
         import pystache
 
         for xid in sorted(self.map_id_schemaorg):
-            if not "Music" in xid:
-                continue
+            #if not "Music" in xid:
+            #    continue
 
             item = self.map_id_schemaorg.get(xid)
 
@@ -320,7 +320,7 @@ class WebsiteV1():
                 f.write(html)
 
             filename = os.path.join(self.dir_output, "{}.json".format( entry["rdfs:label"]))
-            json2file( entry, filename)
+            #json2file( entry, filename)
 
             #print html
 
