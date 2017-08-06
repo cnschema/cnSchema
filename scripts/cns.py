@@ -258,40 +258,56 @@ class WebsiteV1():
         self.map_id_schemaorg = map_id_schemaorg
 
     def run(self):
-        self.download_page_docs()
+        self.copy_website_base()
+        #self.download_page_docs()
         self.generate_page_entity_detail()
 
-    def download_page_docs(self):
+    # def download_page_docs(self):
+    #     # from github
+    #     #url = "https://github.com/schemaorg/schemaorg/tree/master/docs"
+    #     url = "https://github.com/cnschema/cnschema/tree/master/website/docs"
+    #     r = requests.get(url)
+    #     logging.info(r.content)
+    #     filenames = re.findall(r"website/(docs/[^\"]+\.(css|js|png|htm))", r.content)
+    #
+    #     url = "https://github.com/cnschema/cnschema/tree/master/website"
+    #     r = requests.get(url)
+    #     logging.info(r.content)
+    #     filenames_website = re.findall(r"website/([^\"]+\.(htm))", r.content)
+    #     filenames.extend( filenames_website )
+    #
+    #
+    #     #urlBase = "https://github.com/schemaorg/schemaorg/raw/master"
+    #     urlBase = "https://github.com/cnschema/cnschema/raw/master/website"
+    #     for fx in filenames:
+    #         filename = fx[0]
+    #
+    #         url = urlBase + "/" + filename
+    #         logging.info(url)
+    #         r = requests.get(url)
+    #
+    #         # logging.info(filename)
+    #         filename = os.path.join(self.dir_output, filename)
+    #         create_dir_if_not_exist(filename)
+    #         with codecs.open(filename,'wb') as f:
+    #             content = r.content
+    #             f.write( content )
+
+    def copy_website_base(self):
         # from github
         #url = "https://github.com/schemaorg/schemaorg/tree/master/docs"
-        url = "https://github.com/cnschema/cnschema/tree/master/website/docs"
-        r = requests.get(url)
-        logging.info(r.content)
-        filenames = re.findall(r"website/(docs/[^\"]+\.(css|js|png|htm))", r.content)
+        filepath = "../website"
+        filepath = file2abspath(filepath, __file__)
+        from shutil import copyfile
 
-        url = "https://github.com/cnschema/cnschema/tree/master/website"
-        r = requests.get(url)
-        logging.info(r.content)
-        filenames_website = re.findall(r"website/([^\"]+\.(htm))", r.content)
-        filenames.extend( filenames_website )
-
-
-        #urlBase = "https://github.com/schemaorg/schemaorg/raw/master"
-        urlBase = "https://github.com/cnschema/cnschema/raw/master/website"
-        for fx in filenames:
-            filename = fx[0]
-
-            url = urlBase + "/" + filename
-            logging.info(url)
-            r = requests.get(url)
-
-            # logging.info(filename)
-            filename = os.path.join(self.dir_output, filename)
-            create_dir_if_not_exist(filename)
-            with codecs.open(filename,'wb') as f:
-                content = r.content
-                f.write( content )
-
+        for path, subdirs, files in os.walk(filepath):
+            for name in files:
+                filename_in = os.path.join(path, name)
+                name_x = filename_in[len(filepath)+1:]
+                filename = os.path.join(self.dir_output, name_x)
+                print name_x
+                create_dir_if_not_exist(filename)
+                copyfile(filename_in, filename)
 
     def generate_page_entity_detail(self):
         # write html using template file
