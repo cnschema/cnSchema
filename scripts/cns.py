@@ -248,6 +248,7 @@ INVERSE_DOMAIN_RANGE ={
 PLIST_OBJ = ["http://cnschema.org/inverseOf", "http://cnschema.org/supersededBy"]
 PLIST_PROP = PLIST_BASIC + PLIST_DOMAIN_RANGE + INVERSE_DOMAIN_RANGE.values() + PLIST_OBJ
 
+import pystache
 
 class WebsiteV1():
     def __init__(self, version, site, map_id_schemaorg):
@@ -259,7 +260,7 @@ class WebsiteV1():
 
     def run(self):
         self.copy_website_base()
-        #self.download_page_docs()
+        self.generate_page_vocab()
         self.generate_page_entity_detail()
 
     # def download_page_docs(self):
@@ -309,13 +310,64 @@ class WebsiteV1():
                 create_dir_if_not_exist(filename)
                 copyfile(filename_in, filename)
 
+    def generate_page_vocab(self):
+        # classes, types,  properties
+        content_json = {}
+
+        lines = []
+        self._recusive_tree2li(["http://cnschema.org/Thing"], lines)
+        content_json["classes"]= u"\n".join(lines)
+
+        lines = []
+        self._recusive_tree2li(["http://cnschema.org/DataType"], lines)
+        content_json["types"]= u"\n".join(lines)
+
+        content_json["properties"] = []
+        for xid in sorted(self.map_id_schemaorg):
+            item = self.map_id_schemaorg[xid]
+            if item["_group"] != "property":
+                continue
+            #print xid
+            content_json["properties"].append( item )
+
+        #load template page
+        filename = os.path.join(os.path.dirname(__file__), "../templates/vocab.mustache")
+        with codecs.open (filename, encoding="utf-8") as f:
+            templatePage = f.read()
+
+        # apply template
+        html = pystache.render(templatePage, content_json)
+        filename = os.path.join(self.dir_output, "docs/vocab.htm")
+        create_dir_if_not_exist(filename)
+        with codecs.open(filename, "w", encoding="utf-8") as f:
+            f.write(html)
+
+
+
+    def _recusive_tree2li(self, roots, output):
+
+        #logging.info(roots)
+        output.append("<ul>")
+        for root in sorted(roots):
+            node = self.map_id_schemaorg[root]
+            output.append("<li>")
+            line = u"<a href=\"{}\">{}</a> ({})".format( node["@id"], node["rdfs:label"], node["nameZh"])
+            output.append( line )
+            subclasses = node.get("_sub",[])
+            if subclasses:
+                self._recusive_tree2li(subclasses, output)
+            output.append("</li>")
+        output.append("</ul>")
+
+
     def generate_page_entity_detail(self):
         # write html using template file
+
+        #load template page
         filename = os.path.join(os.path.dirname(__file__), "../templates/page.mustache")
         with codecs.open (filename, encoding="utf-8") as f:
             templatePage = f.read()
 
-        import pystache
 
         for xid in sorted(self.map_id_schemaorg):
             #if not "Music" in xid:
