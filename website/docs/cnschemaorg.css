@@ -6,7 +6,7 @@ body{
 h1,h2,h3,h4,h5,h6,ul,p,span{
   margin: 0;
 }
-#pageHeader ul, #leftNav ul{
+#pageHeader ul, #leftNav ul, #aboutLeft ul{
   list-style: none;
   padding: 0;
   margin: 0;
