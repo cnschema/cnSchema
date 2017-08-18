@@ -130,7 +130,7 @@ if __name__ == "__main__":
 
     ####################
     ## run elasticsearch server
-    ~/cnschema.org/elasticsearch-5.5.2/bin/elasticsearch
+    ~/cnschema.org/elasticsearch-2.4.3/bin/elasticsearch
 
     ####################
     ## run remote server

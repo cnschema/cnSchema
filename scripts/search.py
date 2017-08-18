@@ -193,7 +193,7 @@ class CnsSearch():
 
         fileds_index_suggest = ["name","nameZh"]
         fileds_index_search = ["name","nameZh","description", "descriptionZh", "wikidataName"]
-        #fields_suggest_payload = ["@id", "name","nameZh", "description", "descriptionZh", "wikidataName", "wikidataUrl","wikipediaUrl"]
+        fields_suggest_payload = ["@id", "name","nameZh", "description", "descriptionZh", "wikidataName", "wikidataUrl","wikipediaUrl"]
 
         es_index = self.es_config["es_index"]
         es_type = self.es_config["es_type"]
@@ -203,11 +203,11 @@ class CnsSearch():
             # add suggestion field
             index_suggest = []
             index_search = []
-            #suggest_payload = {}
+            suggest_payload = {}
             for p, v in item.items():
 
-                #if p in fields_suggest_payload:
-                #    suggest_payload[p] = v
+                if p in fields_suggest_payload:
+                    suggest_payload[p] = v
 
                 if v:
                     vx = v
@@ -237,7 +237,7 @@ class CnsSearch():
             item["index_suggest"] = {
                 "input": index_suggest,
                 #"output": u"{}（{}）".format(item["name"],item["nameZh"]),
-                #"contexts" : suggest_payload,
+                "payload" : suggest_payload,
             }
 
             yield {
@@ -357,11 +357,11 @@ class CnsSearch():
 
         # logging.info(json.dumps(query,ensure_ascii=False))
         ret = es.suggest(index=self.es_config["es_index"], body=query)
-        #logging.info(json.dumps(ret, ensure_ascii=False, indent=4))
+        logging.info(json.dumps(ret, ensure_ascii=False, indent=4))
 
         # rewrite return value
         output = {
-            "results": [x["_source"] for x in ret["concept-suggest"][0]["options"][:size]]
+            "results": [x["payload"] for x in ret["concept-suggest"][0]["options"][:size]]
         }
         output["servertime"] = (time.time() - ts_start)
         #logging.info(json.dumps(output,ensure_ascii=False, indent=4))

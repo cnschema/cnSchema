@@ -21,7 +21,7 @@
               }
              ],
              "properties" : {
-                "index_suggest" : { "type" : "completion"},
+                "index_suggest" : { "type" : "completion", "payloads": true },
                 "updatedTime" : { "type" : "date", "index" : "not_analyzed", "format": "date_optional_time"},
                 "createdTime" : { "type" : "date", "index" : "not_analyzed", "format": "date_optional_time"}
             }
