@@ -1,0 +1,30 @@
+{
+    "template": "cns_*",
+    "mappings": {
+        "_default_": {
+            "_all": { "enabled": false },
+            "dynamic_templates": [
+              {
+                "strings": {
+                  "match_mapping_type": "string",
+                  "mapping": {
+                    "type": "string",
+                    "fields": {
+                      "raw": {
+                        "type":  "string",
+                        "index": "not_analyzed",
+                        "ignore_above": 256
+                      }
+                    }
+                  }
+                }
+              }
+             ],
+             "properties" : {
+                "index_suggest" : { "type" : "completion"},
+                "updatedTime" : { "type" : "date", "index" : "not_analyzed", "format": "date_optional_time"},
+                "createdTime" : { "type" : "date", "index" : "not_analyzed", "format": "date_optional_time"}
+            }
+        }
+    }
+}

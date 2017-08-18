@@ -1,0 +1,7 @@
+{
+  "note":"elasticsearch 5.5, 2017-08-01",
+  "host":"localhost",
+  "es_index":"cns_20170801",
+  "es_type":"default",
+  "port":9200
+}
