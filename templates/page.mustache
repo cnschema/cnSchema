@@ -8,8 +8,11 @@
     <meta name="description" content="{{rdfs:comment}}" />
     <link rel="stylesheet" type="text/css" href="{{_url_root}}/docs/cnschemaorg.css" />
     <link rel="stylesheet" type="text/css" href="{{_url_root}}/docs/prettify.css"  />
-    <script type="text/javascript" src="{{_url_root}}/docs/prettify.js"></script>
-    <script type="text/javascript" src="{{_url_root}}/docs/jquery-3.2.1.min.js"></script>
+    <!-- JS file -->
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="./docs/prettify.js"></script>
+    <script type="text/javascript" src="./docs/cnschema.js"></script>
 
 <script type="text/javascript">
       $(document).ready(function(){
@@ -68,15 +71,18 @@
 <div id="container">
   <div id="pageHeader">
     <div class="wrapper">
-      <ul>
-        <li><a href="./">cnschema.org</a></li>
-        <li><a href="https://github.com/cnschema/cnschema">项目</a></li>
-        <li><a href="https://github.com/cnschema/cnschema/wiki">文档</a></li>
-        <li><a href="docs/vocab.htm">词汇表</a></li>
-        <li><a href="docs/about.htm">关于</a></li>
-      </ul>
-      <input type="text">
-      <img src="docs/search.png" class="searchIcon"/>
+      <div class="menu">
+        <ul>
+          <li><a href=".">cnschema.org</a></li>
+          <li><a href="https://github.com/cnschema/cnschema">项目</a></li>
+          <li><a href="https://github.com/cnschema/cnschema/wiki">文档</a></li>
+          <li><a href="./docs/vocab.htm">词汇表</a></li>
+          <li><a href="./docs/about.htm">关于</a></li>
+        </ul>
+      </div>
+      <div class="search">
+        <input id="autocomplete_term" />
+      </div>
     </div>
   </div>
 </div>
@@ -523,8 +529,8 @@ TODO
 </div>
 
 <!-- footer -->
-<div>
-  沪ICP备12013633号-13
+<div class= "footer">
+  <center>  沪ICP备12013633号-13 </center>
 </div>
 <!-- footer end -->
 
