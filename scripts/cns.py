@@ -327,13 +327,19 @@ class WebsiteV1():
 
         content_json["properties"] = []
         data_json["properties"] = []
+        data_fields = ["rdfs:label", "rdfs:comment", "nameZh", "descriptionZh", "_supersede"]
         for xid in sorted(self.map_id_schemaorg):
             item = self.map_id_schemaorg[xid]
             if item["_group"] != "property":
                 continue
             #print xid
             content_json["properties"].append( item )
-            data_json["properties"].append( item )
+
+            item_simple = {}
+            for p in data_fields:
+                if p in item:
+                    item_simple[p] = item[p]
+            data_json["properties"].append( item_simple )
 
         #load template page
         filename = os.path.join(os.path.dirname(__file__), "../templates/vocab.mustache")
@@ -351,6 +357,11 @@ class WebsiteV1():
         create_dir_if_not_exist(filename)
         json2file(data_json, filename)
 
+        filename = os.path.join(self.dir_output, "docs/classes.json")
+        json2file(data_json["classes"][0], filename)
+
+        filename = os.path.join(self.dir_output, "docs/properties.json")
+        json2file(data_json["properties"], filename)
 
     def _recusive_tree2li(self, roots, output):
 
@@ -374,6 +385,10 @@ class WebsiteV1():
             node = self.map_id_schemaorg[root]
             item = {}
             item["name"] = node["rdfs:label"]
+            for  p in ["nameZh"]:
+                if p in node:
+                    item[p] = node[p]
+
             subclasses = node.get("_sub",[])
             if subclasses:
                 item["children"] = self._recusive_tree2json(subclasses)
