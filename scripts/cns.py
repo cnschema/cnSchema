@@ -312,23 +312,28 @@ class WebsiteV1():
 
     def generate_page_vocab(self):
         # classes, types,  properties
+        data_json = {}
         content_json = {}
 
         lines = []
         self._recusive_tree2li(["http://cnschema.org/Thing"], lines)
         content_json["classes"]= u"\n".join(lines)
+        data_json["classes"] = self._recusive_tree2json(["http://cnschema.org/Thing"])
 
         lines = []
         self._recusive_tree2li(["http://cnschema.org/DataType"], lines)
         content_json["types"]= u"\n".join(lines)
+        data_json["types"] = self._recusive_tree2json(["http://cnschema.org/DataType"])
 
         content_json["properties"] = []
+        data_json["properties"] = []
         for xid in sorted(self.map_id_schemaorg):
             item = self.map_id_schemaorg[xid]
             if item["_group"] != "property":
                 continue
             #print xid
             content_json["properties"].append( item )
+            data_json["properties"].append( item )
 
         #load template page
         filename = os.path.join(os.path.dirname(__file__), "../templates/vocab.mustache")
@@ -342,6 +347,9 @@ class WebsiteV1():
         with codecs.open(filename, "w", encoding="utf-8") as f:
             f.write(html)
 
+        filename = os.path.join(self.dir_output, "docs/vocab.json")
+        create_dir_if_not_exist(filename)
+        json2file(data_json, filename)
 
 
     def _recusive_tree2li(self, roots, output):
@@ -358,6 +366,19 @@ class WebsiteV1():
                 self._recusive_tree2li(subclasses, output)
             output.append("</li>")
         output.append("</ul>")
+
+    def _recusive_tree2json(self, roots):
+        output = []
+        #logging.info(roots)
+        for root in roots:
+            node = self.map_id_schemaorg[root]
+            item = {}
+            item["name"] = node["rdfs:label"]
+            subclasses = node.get("_sub",[])
+            if subclasses:
+                item["children"] = self._recusive_tree2json(subclasses)
+            output.append(item)
+        return output
 
 
     def generate_page_entity_detail(self):
@@ -387,8 +408,9 @@ class WebsiteV1():
             with codecs.open(filename, "w", encoding="utf-8") as f:
                 f.write(html)
 
-            filename = os.path.join(self.dir_output, "{}.json".format( entry["rdfs:label"]))
-            #json2file( entry, filename)
+            filename = os.path.join(self.dir_output, "data/{}.json".format( entry["rdfs:label"]))
+            create_dir_if_not_exist(filename)
+            json2file( entry, filename)
 
             #print html
 
