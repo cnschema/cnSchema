@@ -70,8 +70,8 @@ def autocomplete():
 
 
 
-@enable_cors
 @app.route('/search', method=['GET'])
+@enable_cors
 def search():
     try:
         q = request.query.get("q")
