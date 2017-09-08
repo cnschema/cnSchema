@@ -1,0 +1,52 @@
+*{
+  font-family: Microsoft Yahei;
+}
+html,body,#app{
+  height: 100%;
+}
+html{
+  font-size: 100px;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  background: #f1f1f3;
+  overflow: hidden;
+}
+.main_body{
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex-direction: column;
+  flex: 1;
+  padding:.1rem;
+}
+body{ margin: 0;padding: 0;overflow: hidden;}
+body,html{-webkit-text-size-adjust: none;width: 100%;height: 100%;}
+*{text-decoration: none;list-style: none;}
+img{border: 0px;}
+ul,li,dl,dd,dt,p,ol,h1,h2,h3,h4,h5{font-size: 14px;font-weight: 100;padding: 0;margin: 0;color:#000;font-weight:400;}
+.wrap{margin: 0 auto;}
+.fl{float: left;}
+.fr{float: right;}
+.index{overflow: hidden;}
+.clr{clear:both; height:0px; width:100%; font-size:1px; line-height:0px; visibility:hidden; overflow:hidden;}
+.pointer{cursor:pointer;}
+a,input,button{ outline:none; }
+::-moz-focus-inner{border:0px;}
+a:link {text-decoration:none;} 
+a:visited {text-decoration:none;} 
+a:hover {text-decoration:underline;} 
+a:active {text-decoration:underline;}
+span{
+  line-height:.22rem;
+}
+.wrapper{clear: both;width: 100%;}
+word-break:break-all /*文字换行*/
+white-space:nowrap /*文字不换行*/
+/*默认滚动条样式修改ie9 google Firefox 等高版本浏览器有效*/
+::selection {background: #D03333;color: white;text-shadow: none;}
+::-webkit-scrollbar-track-piece{width:10px;background-color:#f2f2f2}
+::-webkit-scrollbar{width:10px;height:6px}
+::-webkit-scrollbar-thumb{height:50px;background-color:rgba(0,0,0,.3);}
+::-webkit-scrollbar-thumb:hover{background:#cc0000}
