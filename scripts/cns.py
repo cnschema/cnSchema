@@ -205,6 +205,18 @@ def task_cns_core_init(args=None):
 
     write_cns_core(items, version, formats=["excel","jsonld"])
 
+def task_cns_core_stat(args=None):
+    name = "cns-core"
+    version = "3.2"
+
+    items = read_cns_core_excel(version, path="data")
+
+    #logging.info(items)
+    stat(items, ["wikidataUrl","wikidataName","wikipediaUrl","nameZh","descriptionZh"])
+    dup(items, "wikidataName")
+    dup(items, "wikidataUrl")
+    dup(items, "wikipediaUrl")
+
 def task_cns_core_excel2json(args=None):
     name = "cns-core"
     version = "3.2"
@@ -252,7 +264,7 @@ import pystache
 
 class WebsiteV1():
     def __init__(self, version, site, map_id_schemaorg):
-        self.subversion = "{}.1".format(version)
+        self.subversion = "{}.2".format(version)
         self.version = version
         self.site = site
         self.dir_output = os.path.join(os.path.dirname(__file__), "../local/sites/{}").format(self.subversion)
@@ -263,36 +275,6 @@ class WebsiteV1():
         self.generate_page_vocab()
         self.generate_page_entity_detail()
 
-    # def download_page_docs(self):
-    #     # from github
-    #     #url = "https://github.com/schemaorg/schemaorg/tree/master/docs"
-    #     url = "https://github.com/cnschema/cnschema/tree/master/website/docs"
-    #     r = requests.get(url)
-    #     logging.info(r.content)
-    #     filenames = re.findall(r"website/(docs/[^\"]+\.(css|js|png|htm))", r.content)
-    #
-    #     url = "https://github.com/cnschema/cnschema/tree/master/website"
-    #     r = requests.get(url)
-    #     logging.info(r.content)
-    #     filenames_website = re.findall(r"website/([^\"]+\.(htm))", r.content)
-    #     filenames.extend( filenames_website )
-    #
-    #
-    #     #urlBase = "https://github.com/schemaorg/schemaorg/raw/master"
-    #     urlBase = "https://github.com/cnschema/cnschema/raw/master/website"
-    #     for fx in filenames:
-    #         filename = fx[0]
-    #
-    #         url = urlBase + "/" + filename
-    #         logging.info(url)
-    #         r = requests.get(url)
-    #
-    #         # logging.info(filename)
-    #         filename = os.path.join(self.dir_output, filename)
-    #         create_dir_if_not_exist(filename)
-    #         with codecs.open(filename,'wb') as f:
-    #             content = r.content
-    #             f.write( content )
 
     def copy_website_base(self):
         # from github
@@ -310,20 +292,58 @@ class WebsiteV1():
                 create_dir_if_not_exist(filename)
                 copyfile(filename_in, filename)
 
+    def copy_website_base(self):
+        # from github
+        #url = "https://github.com/schemaorg/schemaorg/tree/master/docs"
+        filepath = "../website/" + self.subversion
+        filepath = file2abspath(filepath, __file__)
+        from shutil import copyfile
+
+        for path, subdirs, files in os.walk(filepath):
+            for name in files:
+                filename_in = os.path.join(path, name)
+                name_x = filename_in[len(filepath)+1:]
+                filename = os.path.join(self.dir_output, name_x)
+                print name_x
+                create_dir_if_not_exist(filename)
+                copyfile(filename_in, filename)
+
     def generate_page_vocab(self):
-        # classes, types,  properties
         data_json = {}
+        data_json["classes"] = self._recusive_tree2json(["http://cnschema.org/Thing"])
+        data_json["types"] = self._recusive_tree2json(["http://cnschema.org/DataType"])
+
+        data_json["properties"] = []
+        data_fields = ["rdfs:label", "rdfs:comment", "nameZh", "descriptionZh", "_supersede"]
+        for xid in sorted(self.map_id_schemaorg):
+            item = self.map_id_schemaorg[xid]
+            if item["_group"] != "property":
+                continue
+
+            item_simple = {}
+            for p in data_fields:
+                if p in item:
+                    item_simple[p] = item[p]
+            data_json["properties"].append( item_simple )
+
+        filename = os.path.join(self.dir_output, "data2/classes.json")
+        create_dir_if_not_exist(filename)
+        json2file(data_json["classes"][0], filename)
+
+        filename = os.path.join(self.dir_output, "data2/properties.json")
+        json2file(data_json["properties"], filename)
+
+    def generate_page_vocab_331(self):
+        # classes, types,  properties
         content_json = {}
 
         lines = []
         self._recusive_tree2li(["http://cnschema.org/Thing"], lines)
         content_json["classes"]= u"\n".join(lines)
-        data_json["classes"] = self._recusive_tree2json(["http://cnschema.org/Thing"])
 
         lines = []
         self._recusive_tree2li(["http://cnschema.org/DataType"], lines)
         content_json["types"]= u"\n".join(lines)
-        data_json["types"] = self._recusive_tree2json(["http://cnschema.org/DataType"])
 
         content_json["properties"] = []
         data_json["properties"] = []
@@ -353,15 +373,9 @@ class WebsiteV1():
         with codecs.open(filename, "w", encoding="utf-8") as f:
             f.write(html)
 
-        filename = os.path.join(self.dir_output, "docs/vocab.json")
-        create_dir_if_not_exist(filename)
-        json2file(data_json, filename)
+        #filename = os.path.join(self.dir_output, "docs/vocab.json")
+        #json2file(data_json, filename)
 
-        filename = os.path.join(self.dir_output, "docs/classes.json")
-        json2file(data_json["classes"][0], filename)
-
-        filename = os.path.join(self.dir_output, "docs/properties.json")
-        json2file(data_json["properties"], filename)
 
     def _recusive_tree2li(self, roots, output):
 
@@ -415,19 +429,18 @@ class WebsiteV1():
                 logging.warn("skip {}".format(xid))
                 continue
 
-            entry = self.convert_extend2mustach( item )
+            entry = self.convert_extend2mustache( item )
 
-            html = pystache.render(templatePage, entry)
-            filename = os.path.join(self.dir_output, "{}.html".format( entry["rdfs:label"]))
-            create_dir_if_not_exist(filename)
-            with codecs.open(filename, "w", encoding="utf-8") as f:
-                f.write(html)
+            #html = pystache.render(templatePage, entry)
+            #filename = os.path.join(self.dir_output, "{}.html".format( entry["rdfs:label"]))
+            #create_dir_if_not_exist(filename)
+            #with codecs.open(filename, "w", encoding="utf-8") as f:
+            #    f.write(html)
 
             filename = os.path.join(self.dir_output, "data/{}.json".format( entry["rdfs:label"]))
             create_dir_if_not_exist(filename)
             json2file( entry, filename)
 
-            #print html
 
     def _gen_path(self, p, node, path, result):
         if p in node:
@@ -469,7 +482,7 @@ class WebsiteV1():
         #logging.info(ret.keys())
         return ret
 
-    def convert_extend2mustach(self, node):
+    def convert_extend2mustache(self, node):
         xid = node["@id"]
         entry = self._copy_data( node, PLIST_PROP, simplify=True)
 
@@ -580,6 +593,7 @@ class WebsiteV1():
             if node.get(p, []):
                 entry[p] = []
                 for v in node.get(p, []):
+                    print node["@id"], v
                     relNode = self.map_id_schemaorg.get(v)
                     entry[p].append(self._copy_data( relNode, PLIST_REF))
 
@@ -681,6 +695,8 @@ if __name__ == "__main__":
 
 """
     python cns.py task_cns_core_init
+
+    python cns.py task_cns_core_stat
 
     python cns.py task_cns_core_excel2json
 
