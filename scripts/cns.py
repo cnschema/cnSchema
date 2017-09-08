@@ -100,7 +100,7 @@ def read_cns_core_jsonld(version, path="data"):
 
 
 
-def rewrite_cns_core(items):
+def rewrite_cns_core(version, items):
     #cleanup
     itemsNew = []
     for item in items:
@@ -184,7 +184,7 @@ def write_cns_core(items, version, formats=["excel","jsonld"]):
           },
           "@graph": items
          }
-        json2file(filename, output)
+        json2file(output, filename)
 
 
 def dup(items, prop, threshold=1):
@@ -201,7 +201,7 @@ def task_cns_core_init(args=None):
     version = "3.2"
 
     items = read_cns_core_excel(version, path="local")
-    items = rewrite_cns_core(items)
+    items = rewrite_cns_core(version, items)
 
     write_cns_core(items, version, formats=["excel","jsonld"])
 
