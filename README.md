@@ -10,8 +10,9 @@ cnSchema的原则
 
 ## 资源
 * 网站 http://cnschema.org
-* 源码 https://github.com/cnschema/cnschema  
-* 文档 https://github.com/cnschema/cnschema/wiki  
+* 源码 https://github.com/cnschema/cnschema
+* 报告 https://github.com/cnschema/cnschema/issues/36
+* 文档 https://github.com/cnschema/cnschema/wiki  
 * 开放中文知识图谱： http://openkg.cn
 
 ## 社区
