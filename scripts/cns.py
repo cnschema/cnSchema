@@ -77,8 +77,7 @@ def create_dir_if_not_exist(filename):
         os.makedirs(dirname)
 
 ####################################################
-
-def read_cns_core_excel(version, path="local"):
+def read_cns_core_excel_v1(version, path="local"):
     name = "cns-core"
     filename = "../{}/releases/{}/{}.xls".format(path, version, name)
     filename = file2abspath(filename, __file__)
@@ -86,6 +85,25 @@ def read_cns_core_excel(version, path="local"):
     temp = excel2json(filename)
     keys = temp["fields"].values()[0]
     items = temp["data"].values()[0]
+    logging.info(len(items))
+
+    return items
+
+def read_cns_core_excel(version, path="local"):
+    if version == "3.2":
+        return read_cns_core_excel_v1(version, path)
+
+    name = "schemaorg_translate"
+    filename = "../{}/releases/{}/{}.xlsx".format(path, version, name)
+    filename = file2abspath(filename, __file__)
+
+    temp = excel2json(filename)
+    keys = temp["fields"][version]
+    items = temp["data"][version]
+
+    # enhance with @id
+    for item in items:
+        item["@id"] = "http://cnschema.org/{}".format(item["name"])
     logging.info(len(items))
 
     return items
@@ -198,7 +216,7 @@ def dup(items, prop, threshold=1):
 
 def task_cns_core_init(args=None):
     name = "cns-core"
-    version = "3.2"
+    version = "3.4"
 
     items = read_cns_core_excel(version, path="local")
     items = rewrite_cns_core(version, items)
@@ -207,7 +225,7 @@ def task_cns_core_init(args=None):
 
 def task_cns_core_stat(args=None):
     name = "cns-core"
-    version = "3.2"
+    version = "3.4"
 
     items = read_cns_core_excel(version, path="data")
 
@@ -219,7 +237,7 @@ def task_cns_core_stat(args=None):
 
 def task_cns_core_excel2json(args=None):
     name = "cns-core"
-    version = "3.2"
+    version = "3.4"
 
     items = read_cns_core_excel(version, path="data")
 
@@ -233,7 +251,7 @@ def task_cns_core_excel2json(args=None):
 
 def task_cns_core_json2excel(args=None):
     name = "cns-core"
-    version = "3.2"
+    version = "3.4"
 
     items = read_cns_core_jsonld(version, path="data")
     #logging.info(items)
@@ -429,6 +447,10 @@ class WebsiteV1():
                 logging.warn("skip {}".format(xid))
                 continue
 
+            if "" == item["xtype"]:
+                logging.warn("skip {}".format(xid))
+                continue
+
             entry = self.convert_extend2mustache( item )
 
             #html = pystache.render(templatePage, entry)
@@ -486,6 +508,7 @@ class WebsiteV1():
         xid = node["@id"]
         entry = self._copy_data( node, PLIST_PROP, simplify=True)
 
+        #logging.info(node) #debug
         entry["_node_label"] = node["rdfs:label"]
         entry["_group_{}".format(node["_group"])] = True
 
@@ -622,7 +645,7 @@ MAP_CNSCHEMA = [ {"name":x} for x in PLIST_CNSCHEMA]
 
 def task_cns_make_html(args=None):
     name = "cns-core"
-    version = "3.2"
+    version = "3.4"
     site = "cnschema.org"
 
     items = read_cns_core_jsonld(version, path="data")
@@ -645,7 +668,7 @@ def task_cns_make_html(args=None):
     #rewrite map_id_schemaorg schema.org => cnschema.org    items_new = schemaorg2cnschema(items_new)
     map_id_schemaorg = schemaorg2cnschema(map_id_schemaorg)
 
-    filename = '../local/releases/3.2/cns-core.extend.json'
+    filename = '../local/releases/3.4/cns-core.extend.json'
     filename = file2abspath(filename, __file__)
     json2file(map_id_schemaorg ,filename)
 

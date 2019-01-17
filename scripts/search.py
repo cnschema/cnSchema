@@ -184,9 +184,9 @@ class CnsSearch():
         logging.info(ret)
 
 
-    def _load_item_data(self):
+    def _load_item_data(self, version):
         # load cns-core data
-        filename = "../data/releases/3.2/cns-core.jsonld"
+        filename = "../data/releases/{}/cns-core.jsonld".format(version)
         filename = file2abspath(filename, __file__)
         items = file2json(filename)["@graph"]
         logging.info(len(items))
@@ -250,13 +250,13 @@ class CnsSearch():
 
 
 
-    def load_data(self):
+    def load_data(self, version):
         """
         https://www.elastic.co/guide/en/elasticsearch/reference/5.5/search-suggesters-completion.html
         """
         es = self.connect()
 
-        items = self._load_item_data()
+        items = self._load_item_data(version)
         helpers.bulk(es, items)
 
         # id_field = "id"
@@ -376,7 +376,8 @@ def task_es_init_mapping(args=None):
 
 def task_es_load_data(args=None):
     cns = CnsSearch()
-    cns.load_data()
+    version = args["version"]
+    cns.load_data(version)
 
 def task_es_test(args):
     q = args.get("input")
@@ -446,13 +447,14 @@ if __name__ == "__main__":
     logging.getLogger("requests").setLevel(logging.WARNING)
 
     optional_params = {
-        "--input" : "search keyword"
+        "--input" : "search keyword",
+        "--version" : "version"
     }
     main_subtask(__name__, optional_params=optional_params)
 
 """
     python search.py task_es_init_mapping
-    python search.py task_es_load_data
+    python search.py task_es_load_data 3.2
     python search.py task_es_test_all
     python search.py task_es_test --input 店
     python search.py task_es_test --input 美

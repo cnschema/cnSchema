@@ -103,7 +103,7 @@ def load_examples(lines):
 class Schemaorg:
     def __init__(self, version):
         self.version = version
-        self.url_base = "https://github.com/schemaorg/schemaorg/raw/sdo-callisto"
+        self.url_base = "https://raw.githubusercontent.com/schemaorg/schemaorg/master"
         self.dir_output = "../local/releases/{}".format(version)
         self.dir_output = file2abspath(self.dir_output, __file__)
 
@@ -284,14 +284,14 @@ class Schemaorg:
                 #exit()
 
 def task_init(args=None):
-    so = Schemaorg("3.2")
+    so = Schemaorg("3.4")
     data = so.load_data()
     stat(data.values(),[], ["_group","@type"])
     logging.info(len(data))
 
 
 def task_superclasses(args):
-    filename = "../local/releases/3.2/schema_taxonomy.json"
+    filename = "../local/releases/3.4/schema_taxonomy.json"
     filename = file2abspath(filename, __file__)
     data = file2json(filename)
     pairs = []
@@ -310,7 +310,7 @@ def task_superclasses(args):
                 mapping[key].append(parent)
 
     logging.info(json.dumps(mapping, indent=4, ensure_ascii=False))
-    filename = "../data/releases/3.2/schema.superclass.json"
+    filename = "../data/releases/3.4/schema.superclass.json"
     filename = file2abspath(filename, __file__)
     json2file(mapping, filename)
 
