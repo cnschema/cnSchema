@@ -220,7 +220,7 @@ def task_cns_core_init(args=None):
     name = "cns-core"
     version = cns_config["version"]
 
-    items = read_cns_core_excel(version, path="local")
+    items = read_cns_core_excel(version)
     items = rewrite_cns_core(version, items)
 
     write_cns_core(items, version, formats=["excel","jsonld"])
