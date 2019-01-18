@@ -91,7 +91,7 @@ def read_cns_core_excel_v1(version, path="local"):
 
     return items
 
-def read_cns_core_excel(version, path="local"):
+def read_cns_core_excel(version, path="data"):
     if version == "3.2":
         return read_cns_core_excel_v1(version, path)
 
@@ -294,7 +294,7 @@ class WebsiteV1():
     def run(self):
         self.copy_website_base()
         self.generate_page_vocab()
-        #self.generate_page_entity_detail()
+        self.generate_page_entity_detail()
 
 
     def copy_website_base(self):
