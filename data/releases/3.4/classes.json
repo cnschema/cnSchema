@@ -1,0 +1,3254 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "TravelAction", 
+                            "nameZh": "动作：旅行"
+                        }, 
+                        {
+                            "name": "DepartAction", 
+                            "nameZh": "动作：离开某地"
+                        }, 
+                        {
+                            "name": "ArriveAction", 
+                            "nameZh": "动作：到达"
+                        }
+                    ], 
+                    "name": "MoveAction", 
+                    "nameZh": "动作：移动"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "DownloadAction", 
+                            "nameZh": "动作：下载"
+                        }, 
+                        {
+                            "name": "LendAction", 
+                            "nameZh": "动作：借出"
+                        }, 
+                        {
+                            "name": "GiveAction", 
+                            "nameZh": "动作：给予"
+                        }, 
+                        {
+                            "name": "ReceiveAction", 
+                            "nameZh": "动作：收到"
+                        }, 
+                        {
+                            "name": "SendAction", 
+                            "nameZh": "动作：发送"
+                        }, 
+                        {
+                            "name": "BorrowAction", 
+                            "nameZh": "动作：借入"
+                        }, 
+                        {
+                            "name": "ReturnAction", 
+                            "nameZh": "动作：返回"
+                        }, 
+                        {
+                            "name": "TakeAction", 
+                            "nameZh": "动作：拿走"
+                        }
+                    ], 
+                    "name": "TransferAction", 
+                    "nameZh": "动作：转移"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "QuoteAction", 
+                            "nameZh": "动作：估价"
+                        }, 
+                        {
+                            "name": "SellAction", 
+                            "nameZh": "动作：卖出"
+                        }, 
+                        {
+                            "name": "PayAction", 
+                            "nameZh": "动作：付款"
+                        }, 
+                        {
+                            "name": "RentAction", 
+                            "nameZh": "动作：租用"
+                        }, 
+                        {
+                            "name": "DonateAction", 
+                            "nameZh": "动作：捐助"
+                        }, 
+                        {
+                            "name": "OrderAction", 
+                            "nameZh": "动作：订购"
+                        }, 
+                        {
+                            "name": "BuyAction", 
+                            "nameZh": "动作：买入"
+                        }, 
+                        {
+                            "name": "TipAction", 
+                            "nameZh": "动作：给小费"
+                        }
+                    ], 
+                    "name": "TradeAction", 
+                    "nameZh": "动作：钱物交换"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "ResumeAction", 
+                            "nameZh": "动作：继续"
+                        }, 
+                        {
+                            "name": "DeactivateAction", 
+                            "nameZh": "动作：停用"
+                        }, 
+                        {
+                            "name": "ActivateAction", 
+                            "nameZh": "动作：启动"
+                        }, 
+                        {
+                            "name": "SuspendAction", 
+                            "nameZh": "动作：暂停"
+                        }
+                    ], 
+                    "name": "ControlAction", 
+                    "nameZh": "动作：控制"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "LoseAction", 
+                            "nameZh": "动作：输掉比赛"
+                        }, 
+                        {
+                            "name": "WinAction", 
+                            "nameZh": "动作：赢得比赛"
+                        }, 
+                        {
+                            "name": "TieAction", 
+                            "nameZh": "动作：比赛平局"
+                        }
+                    ], 
+                    "name": "AchieveAction", 
+                    "nameZh": "动作：实现"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "ApplyAction", 
+                            "nameZh": "动作：申请"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "CancelAction", 
+                                    "nameZh": "动作：取消"
+                                }, 
+                                {
+                                    "name": "ReserveAction", 
+                                    "nameZh": "动作：预定"
+                                }, 
+                                {
+                                    "name": "ScheduleAction", 
+                                    "nameZh": "动作：安排时间"
+                                }
+                            ], 
+                            "name": "PlanAction", 
+                            "nameZh": "动作：计划"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "AuthorizeAction", 
+                                    "nameZh": "动作：批准"
+                                }, 
+                                {
+                                    "name": "AssignAction", 
+                                    "nameZh": "动作：指派"
+                                }, 
+                                {
+                                    "name": "RejectAction", 
+                                    "nameZh": "动作：拒绝"
+                                }, 
+                                {
+                                    "name": "AcceptAction", 
+                                    "nameZh": "动作：接受"
+                                }
+                            ], 
+                            "name": "AllocateAction", 
+                            "nameZh": "动作：分配"
+                        }, 
+                        {
+                            "name": "BookmarkAction", 
+                            "nameZh": "动作：收藏"
+                        }
+                    ], 
+                    "name": "OrganizeAction", 
+                    "nameZh": "动作：整理"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "IgnoreAction", 
+                            "nameZh": "动作：忽略"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "VoteAction", 
+                                    "nameZh": "动作：投票"
+                                }
+                            ], 
+                            "name": "ChooseAction", 
+                            "nameZh": "动作：选择"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "LikeAction", 
+                                    "nameZh": "动作：喜欢"
+                                }, 
+                                {
+                                    "name": "DisagreeAction", 
+                                    "nameZh": "动作：不同意"
+                                }, 
+                                {
+                                    "name": "EndorseAction", 
+                                    "nameZh": "动作：背书支持"
+                                }, 
+                                {
+                                    "name": "AgreeAction", 
+                                    "nameZh": "动作：同意"
+                                }, 
+                                {
+                                    "name": "DislikeAction", 
+                                    "nameZh": "动作：讨厌"
+                                }, 
+                                {
+                                    "name": "WantAction", 
+                                    "nameZh": "动作：想要"
+                                }
+                            ], 
+                            "name": "ReactAction", 
+                            "nameZh": "动作：反应"
+                        }, 
+                        {
+                            "name": "ReviewAction", 
+                            "nameZh": "动作：评价"
+                        }
+                    ], 
+                    "name": "AssessAction", 
+                    "nameZh": "动作：评估"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "BefriendAction", 
+                            "nameZh": "动作：交友"
+                        }, 
+                        {
+                            "name": "RegisterAction", 
+                            "nameZh": "动作：注册"
+                        }, 
+                        {
+                            "name": "SubscribeAction", 
+                            "nameZh": "动作：订阅"
+                        }, 
+                        {
+                            "name": "LeaveAction", 
+                            "nameZh": "动作：离别"
+                        }, 
+                        {
+                            "name": "UnRegisterAction", 
+                            "nameZh": "动作：注销"
+                        }, 
+                        {
+                            "name": "MarryAction", 
+                            "nameZh": "动作：结婚"
+                        }, 
+                        {
+                            "name": "JoinAction", 
+                            "nameZh": "动作：参加"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "CheckOutAction", 
+                                    "nameZh": "动作：付款离开"
+                                }, 
+                                {
+                                    "name": "InviteAction", 
+                                    "nameZh": "动作：邀请"
+                                }, 
+                                {
+                                    "name": "CommentAction", 
+                                    "nameZh": "动作：发表意见"
+                                }, 
+                                {
+                                    "name": "ReplyAction", 
+                                    "nameZh": "动作：答复"
+                                }, 
+                                {
+                                    "name": "ShareAction", 
+                                    "nameZh": "动作：分享"
+                                }, 
+                                {
+                                    "children": [
+                                        {
+                                            "name": "RsvpAction", 
+                                            "nameZh": "动作：对请柬的答复"
+                                        }, 
+                                        {
+                                            "name": "ConfirmAction", 
+                                            "nameZh": "动作：确认"
+                                        }
+                                    ], 
+                                    "name": "InformAction", 
+                                    "nameZh": "动作：告知"
+                                }, 
+                                {
+                                    "name": "AskAction", 
+                                    "nameZh": "动作：询问"
+                                }, 
+                                {
+                                    "name": "CheckInAction", 
+                                    "nameZh": "动作：签到"
+                                }
+                            ], 
+                            "name": "CommunicateAction", 
+                            "nameZh": "动作：沟通"
+                        }, 
+                        {
+                            "name": "FollowAction", 
+                            "nameZh": "动作：在推特上关注某人"
+                        }
+                    ], 
+                    "name": "InteractAction", 
+                    "nameZh": "动作：交互"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "ViewAction", 
+                            "nameZh": "动作：查看"
+                        }, 
+                        {
+                            "name": "DrinkAction", 
+                            "nameZh": "动作：喝"
+                        }, 
+                        {
+                            "name": "ListenAction", 
+                            "nameZh": "动作：聆听"
+                        }, 
+                        {
+                            "name": "WatchAction", 
+                            "nameZh": "动作：观看"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "WearAction", 
+                                    "nameZh": "动作：穿戴"
+                                }
+                            ], 
+                            "name": "UseAction", 
+                            "nameZh": "动作：使用"
+                        }, 
+                        {
+                            "name": "InstallAction", 
+                            "nameZh": "动作：安装"
+                        }, 
+                        {
+                            "name": "ReadAction", 
+                            "nameZh": "动作：阅读"
+                        }, 
+                        {
+                            "name": "EatAction", 
+                            "nameZh": "动作：吃"
+                        }
+                    ], 
+                    "name": "ConsumeAction", 
+                    "nameZh": "动作：消耗"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "DrawAction", 
+                            "nameZh": "动作：画"
+                        }, 
+                        {
+                            "name": "FilmAction", 
+                            "nameZh": "动作：摄像"
+                        }, 
+                        {
+                            "name": "CookAction", 
+                            "nameZh": "动作：烹饪"
+                        }, 
+                        {
+                            "name": "PhotographAction", 
+                            "nameZh": "摄影"
+                        }, 
+                        {
+                            "name": "PaintAction", 
+                            "nameZh": "动作：用颜料画画"
+                        }, 
+                        {
+                            "name": "WriteAction", 
+                            "nameZh": "动作：书写"
+                        }
+                    ], 
+                    "name": "CreateAction", 
+                    "nameZh": "动作：新建"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "ExerciseAction", 
+                            "nameZh": "动作：锻炼"
+                        }, 
+                        {
+                            "name": "PerformAction", 
+                            "nameZh": "动作：表演"
+                        }
+                    ], 
+                    "name": "PlayAction", 
+                    "nameZh": "动作：游玩"
+                }, 
+                {
+                    "name": "SearchAction", 
+                    "nameZh": "动作：搜寻"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "TrackAction", 
+                            "nameZh": "动作：追踪"
+                        }, 
+                        {
+                            "name": "CheckAction", 
+                            "nameZh": "动作：检查"
+                        }, 
+                        {
+                            "name": "DiscoverAction", 
+                            "nameZh": "动作：发现"
+                        }
+                    ], 
+                    "name": "FindAction", 
+                    "nameZh": "动作：寻找"
+                }, 
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "name": "AppendAction", 
+                                            "nameZh": "动作：增补"
+                                        }, 
+                                        {
+                                            "name": "PrependAction", 
+                                            "nameZh": "动作：追加在前"
+                                        }
+                                    ], 
+                                    "name": "InsertAction", 
+                                    "nameZh": "动作：插入"
+                                }
+                            ], 
+                            "name": "AddAction", 
+                            "nameZh": "动作：添加"
+                        }, 
+                        {
+                            "name": "DeleteAction", 
+                            "nameZh": "动作：删除"
+                        }, 
+                        {
+                            "name": "ReplaceAction", 
+                            "nameZh": "动作：替换"
+                        }
+                    ], 
+                    "name": "UpdateAction", 
+                    "nameZh": "动作：更新"
+                }
+            ], 
+            "name": "Action", 
+            "nameZh": "动作"
+        }, 
+        {
+            "children": [
+                {
+                    "name": "Photograph", 
+                    "nameZh": "照片"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "DataFeed", 
+                            "nameZh": "数据源头"
+                        }
+                    ], 
+                    "name": "Dataset", 
+                    "nameZh": "数据集"
+                }, 
+                {
+                    "name": "Painting", 
+                    "nameZh": "绘画作品"
+                }, 
+                {
+                    "name": "Course", 
+                    "nameZh": "课程"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "Recipe", 
+                            "nameZh": "菜谱"
+                        }
+                    ], 
+                    "name": "HowTo", 
+                    "nameZh": "操作流程说明"
+                }, 
+                {
+                    "name": "HowToSection", 
+                    "nameZh": "操作步骤组合"
+                }, 
+                {
+                    "name": "VisualArtwork", 
+                    "nameZh": "视觉艺术作品"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "VideoGame", 
+                            "nameZh": "电子游戏"
+                        }
+                    ], 
+                    "name": "Game", 
+                    "nameZh": "游戏"
+                }, 
+                {
+                    "name": "Season", 
+                    "nameZh": "季"
+                }, 
+                {
+                    "name": "PublicationVolume", 
+                    "nameZh": "期刊的一卷"
+                }, 
+                {
+                    "name": "MusicRecording", 
+                    "nameZh": "音乐录音"
+                }, 
+                {
+                    "name": "TVSeason", 
+                    "nameZh": "电视剧的一季"
+                }, 
+                {
+                    "name": "PublicationIssue", 
+                    "nameZh": "期刊的一期"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "Report", 
+                            "nameZh": "报告"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "APIReference", 
+                                    "nameZh": "API文档"
+                                }
+                            ], 
+                            "name": "TechArticle", 
+                            "nameZh": "技术文章"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "DiscussionForumPosting", 
+                                    "nameZh": "论坛帖子"
+                                }, 
+                                {
+                                    "children": [
+                                        {
+                                            "name": "LiveBlogPosting", 
+                                            "nameZh": "博客实时直播"
+                                        }
+                                    ], 
+                                    "name": "BlogPosting", 
+                                    "nameZh": "博客文章"
+                                }
+                            ], 
+                            "name": "SocialMediaPosting", 
+                            "nameZh": "社交媒体文章"
+                        }, 
+                        {
+                            "name": "ScholarlyArticle", 
+                            "nameZh": "学术文章"
+                        }, 
+                        {
+                            "name": "NewsArticle", 
+                            "nameZh": "新闻报导"
+                        }
+                    ], 
+                    "name": "Article", 
+                    "nameZh": "文章"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "WPFooter", 
+                            "nameZh": "页面元素：页脚"
+                        }, 
+                        {
+                            "name": "SiteNavigationElement", 
+                            "nameZh": "站点导航网页元素"
+                        }, 
+                        {
+                            "name": "WPAdBlock", 
+                            "nameZh": "页面元素：广告块"
+                        }, 
+                        {
+                            "name": "WPSideBar", 
+                            "nameZh": "页面元素：边框"
+                        }, 
+                        {
+                            "name": "WPHeader", 
+                            "nameZh": "页面元素：页眉"
+                        }, 
+                        {
+                            "name": "Table", 
+                            "nameZh": "表格"
+                        }
+                    ], 
+                    "name": "WebPageElement", 
+                    "nameZh": "网页元素"
+                }, 
+                {
+                    "name": "MenuSection", 
+                    "nameZh": "菜单栏目"
+                }, 
+                {
+                    "name": "WebSite", 
+                    "nameZh": "网站"
+                }, 
+                {
+                    "name": "Movie", 
+                    "nameZh": "电影"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "VideoGame", 
+                            "nameZh": "电子游戏"
+                        }, 
+                        {
+                            "name": "MobileApplication", 
+                            "nameZh": "移动应用"
+                        }, 
+                        {
+                            "name": "WebApplication", 
+                            "nameZh": "网络应用"
+                        }
+                    ], 
+                    "name": "SoftwareApplication", 
+                    "nameZh": "软件程序"
+                }, 
+                {
+                    "name": "Code", 
+                    "nameZh": "源代码"
+                }, 
+                {
+                    "name": "HowToTip", 
+                    "nameZh": "步骤的注意事项"
+                }, 
+                {
+                    "name": "Sculpture", 
+                    "nameZh": "雕像"
+                }, 
+                {
+                    "name": "Map", 
+                    "nameZh": "地图"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "Answer", 
+                            "nameZh": "回答"
+                        }
+                    ], 
+                    "name": "Comment", 
+                    "nameZh": "意见"
+                }, 
+                {
+                    "name": "MusicComposition", 
+                    "nameZh": "乐曲"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "AboutPage", 
+                            "nameZh": "关于我们"
+                        }, 
+                        {
+                            "name": "QAPage", 
+                            "nameZh": "常见问题页面"
+                        }, 
+                        {
+                            "name": "CheckoutPage", 
+                            "nameZh": "结算页面"
+                        }, 
+                        {
+                            "name": "ProfilePage", 
+                            "nameZh": "用户信息页面"
+                        }, 
+                        {
+                            "name": "SearchResultsPage", 
+                            "nameZh": "搜索结果页面"
+                        }, 
+                        {
+                            "name": "ContactPage", 
+                            "nameZh": "联系我们页面"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "VideoGallery", 
+                                    "nameZh": "视频图册页面"
+                                }, 
+                                {
+                                    "name": "ImageGallery", 
+                                    "nameZh": "图片列表页面"
+                                }
+                            ], 
+                            "name": "CollectionPage", 
+                            "nameZh": "列表页面"
+                        }, 
+                        {
+                            "name": "ItemPage", 
+                            "nameZh": "详情页面"
+                        }
+                    ], 
+                    "name": "WebPage", 
+                    "nameZh": "网页"
+                }, 
+                {
+                    "name": "HowToStep", 
+                    "nameZh": "操作步骤"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "BookSeries", 
+                            "nameZh": "丛书"
+                        }, 
+                        {
+                            "name": "RadioSeries", 
+                            "nameZh": "无线电广播系列剧"
+                        }, 
+                        {
+                            "name": "Periodical", 
+                            "nameZh": "期刊"
+                        }, 
+                        {
+                            "name": "MovieSeries", 
+                            "nameZh": "系列电影"
+                        }, 
+                        {
+                            "name": "VideoGameSeries", 
+                            "nameZh": "电子游戏系列"
+                        }, 
+                        {
+                            "name": "TVSeries", 
+                            "nameZh": "电视系列剧"
+                        }
+                    ], 
+                    "name": "CreativeWorkSeries", 
+                    "nameZh": "系列作品"
+                }, 
+                {
+                    "name": "Conversation", 
+                    "nameZh": "对话"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "EmailMessage", 
+                            "nameZh": "电子邮件消息"
+                        }
+                    ], 
+                    "name": "Message", 
+                    "nameZh": "消息"
+                }, 
+                {
+                    "name": "Book", 
+                    "nameZh": "图书"
+                }, 
+                {
+                    "name": "Menu", 
+                    "nameZh": "菜单"
+                }, 
+                {
+                    "name": "Question", 
+                    "nameZh": "问题"
+                }, 
+                {
+                    "name": "Blog", 
+                    "nameZh": "博客"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "TVEpisode", 
+                            "nameZh": "电视剧集"
+                        }, 
+                        {
+                            "name": "RadioEpisode", 
+                            "nameZh": "无线电广播剧集"
+                        }
+                    ], 
+                    "name": "Episode", 
+                    "nameZh": "剧集"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "ClaimReview", 
+                            "nameZh": "检查某人的言论是否符合事实的文字"
+                        }
+                    ], 
+                    "name": "Review", 
+                    "nameZh": "评价"
+                }, 
+                {
+                    "name": "SoftwareSourceCode", 
+                    "nameZh": "软件源码"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "VideoGameClip", 
+                            "nameZh": "电子游戏片段"
+                        }, 
+                        {
+                            "name": "RadioClip", 
+                            "nameZh": "无线电广播片段"
+                        }, 
+                        {
+                            "name": "TVClip", 
+                            "nameZh": "电视节目片段"
+                        }, 
+                        {
+                            "name": "MovieClip", 
+                            "nameZh": "电影片段"
+                        }
+                    ], 
+                    "name": "Clip", 
+                    "nameZh": "片段"
+                }, 
+                {
+                    "name": "HowToDirection", 
+                    "nameZh": "步骤的操作说明"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "TextDigitalDocument", 
+                            "nameZh": "文本型数字文档"
+                        }, 
+                        {
+                            "name": "PresentationDigitalDocument", 
+                            "nameZh": "数字型演示文档"
+                        }, 
+                        {
+                            "name": "SpreadsheetDigitalDocument", 
+                            "nameZh": "电子表格数字文档"
+                        }, 
+                        {
+                            "name": "NoteDigitalDocument", 
+                            "nameZh": "电子笔记"
+                        }
+                    ], 
+                    "name": "DigitalDocument", 
+                    "nameZh": "数字文档"
+                }, 
+                {
+                    "name": "DataCatalog", 
+                    "nameZh": "数据目录"
+                }, 
+                {
+                    "name": "TVSeries", 
+                    "nameZh": "电视系列剧"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "MusicAlbum", 
+                            "nameZh": "音乐专辑"
+                        }, 
+                        {
+                            "name": "MusicRelease", 
+                            "nameZh": "音乐专辑发行版本"
+                        }
+                    ], 
+                    "name": "MusicPlaylist", 
+                    "nameZh": "歌单"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "AudioObject", 
+                            "nameZh": "音频对象"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "Barcode", 
+                                    "nameZh": "条形码"
+                                }
+                            ], 
+                            "name": "ImageObject", 
+                            "nameZh": "图片对象"
+                        }, 
+                        {
+                            "name": "MusicVideoObject", 
+                            "nameZh": "音乐视频对象"
+                        }, 
+                        {
+                            "name": "VideoObject", 
+                            "nameZh": "视频对象"
+                        }, 
+                        {
+                            "name": "DataDownload", 
+                            "nameZh": "数据下载"
+                        }
+                    ], 
+                    "name": "MediaObject", 
+                    "nameZh": "媒体对象"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "TVSeason", 
+                            "nameZh": "电视剧的一季"
+                        }, 
+                        {
+                            "name": "RadioSeason", 
+                            "nameZh": "无线电广播剧集的一季"
+                        }
+                    ], 
+                    "name": "CreativeWorkSeason", 
+                    "nameZh": "作品的一季"
+                }
+            ], 
+            "name": "CreativeWork", 
+            "nameZh": "作品"
+        }, 
+        {
+            "name": "Person", 
+            "nameZh": "人"
+        }, 
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "AnimalShelter", 
+                            "nameZh": "动物收容所"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "CafeOrCoffeeShop", 
+                                    "nameZh": "咖啡馆"
+                                }, 
+                                {
+                                    "name": "Bakery", 
+                                    "nameZh": "烘焙店"
+                                }, 
+                                {
+                                    "name": "IceCreamShop", 
+                                    "nameZh": "冰淇淋店"
+                                }, 
+                                {
+                                    "name": "Restaurant", 
+                                    "nameZh": "餐厅"
+                                }, 
+                                {
+                                    "name": "FastFoodRestaurant", 
+                                    "nameZh": "快餐店"
+                                }, 
+                                {
+                                    "name": "Winery", 
+                                    "nameZh": "酒庄"
+                                }, 
+                                {
+                                    "name": "BarOrPub", 
+                                    "nameZh": "酒吧"
+                                }, 
+                                {
+                                    "name": "Brewery", 
+                                    "nameZh": "啤酒厂"
+                                }
+                            ], 
+                            "name": "FoodEstablishment", 
+                            "nameZh": "餐饮服务机构"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "Attorney", 
+                                    "nameZh": "律师事务所"
+                                }, 
+                                {
+                                    "name": "Notary", 
+                                    "nameZh": "公证服务机构"
+                                }
+                            ], 
+                            "name": "LegalService", 
+                            "nameZh": "法律服务机构"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "HousePainter", 
+                                    "nameZh": "油漆工"
+                                }, 
+                                {
+                                    "name": "GeneralContractor", 
+                                    "nameZh": "总承包商"
+                                }, 
+                                {
+                                    "name": "Electrician", 
+                                    "nameZh": "电工"
+                                }, 
+                                {
+                                    "name": "MovingCompany", 
+                                    "nameZh": "搬家公司"
+                                }, 
+                                {
+                                    "name": "HVACBusiness", 
+                                    "nameZh": "暖通空调服务机构"
+                                }, 
+                                {
+                                    "name": "Locksmith", 
+                                    "nameZh": "锁匠"
+                                }, 
+                                {
+                                    "name": "Plumber", 
+                                    "nameZh": "水暖工"
+                                }, 
+                                {
+                                    "name": "RoofingContractor", 
+                                    "nameZh": "屋顶承包商"
+                                }
+                            ], 
+                            "name": "HomeAndConstructionBusiness", 
+                            "nameZh": "家装服务机构"
+                        }, 
+                        {
+                            "name": "RealEstateAgent", 
+                            "nameZh": "房地产中介"
+                        }, 
+                        {
+                            "name": "ChildCare", 
+                            "nameZh": "托儿所"
+                        }, 
+                        {
+                            "name": "InternetCafe", 
+                            "nameZh": "网吧"
+                        }, 
+                        {
+                            "name": "RadioStation", 
+                            "nameZh": "无线广播电台"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "PostOffice", 
+                                    "nameZh": "邮局"
+                                }
+                            ], 
+                            "name": "GovernmentOffice", 
+                            "nameZh": "政府办公室"
+                        }, 
+                        {
+                            "name": "Library", 
+                            "nameZh": "图书馆"
+                        }, 
+                        {
+                            "name": "TouristInformationCenter", 
+                            "nameZh": "旅游信息服务中心"
+                        }, 
+                        {
+                            "name": "ProfessionalService", 
+                            "nameZh": "专业服务"
+                        }, 
+                        {
+                            "name": "SelfStorage", 
+                            "nameZh": "自助存储"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "AmusementPark", 
+                                    "nameZh": "游乐园"
+                                }, 
+                                {
+                                    "name": "Casino", 
+                                    "nameZh": "赌场"
+                                }, 
+                                {
+                                    "name": "MovieTheater", 
+                                    "nameZh": "电影院"
+                                }, 
+                                {
+                                    "name": "NightClub", 
+                                    "nameZh": "夜店"
+                                }, 
+                                {
+                                    "name": "ComedyClub", 
+                                    "nameZh": "喜剧俱乐部"
+                                }, 
+                                {
+                                    "name": "AdultEntertainment", 
+                                    "nameZh": "成人娱乐场所"
+                                }, 
+                                {
+                                    "name": "ArtGallery", 
+                                    "nameZh": "艺术博物馆"
+                                }
+                            ], 
+                            "name": "EntertainmentBusiness", 
+                            "nameZh": "娱乐服务机构"
+                        }, 
+                        {
+                            "name": "ShoppingCenter", 
+                            "nameZh": "购物中心"
+                        }, 
+                        {
+                            "name": "TelevisionStation", 
+                            "nameZh": "电视台"
+                        }, 
+                        {
+                            "name": "DryCleaningOrLaundry", 
+                            "nameZh": "干洗店或者洗衣店"
+                        }, 
+                        {
+                            "name": "EmploymentAgency", 
+                            "nameZh": "职业介绍所"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "PoliceStation", 
+                                    "nameZh": "警察局"
+                                }, 
+                                {
+                                    "name": "FireStation", 
+                                    "nameZh": "消防站"
+                                }, 
+                                {
+                                    "name": "Hospital", 
+                                    "nameZh": "医院"
+                                }
+                            ], 
+                            "name": "EmergencyService", 
+                            "nameZh": "应急公共服务"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "InsuranceAgency", 
+                                    "nameZh": "保险服务机构"
+                                }, 
+                                {
+                                    "name": "BankOrCreditUnion", 
+                                    "nameZh": "银行或者信用合作社"
+                                }, 
+                                {
+                                    "name": "AutomatedTeller", 
+                                    "nameZh": "自动取款机"
+                                }, 
+                                {
+                                    "name": "AccountingService", 
+                                    "nameZh": "会计服务"
+                                }
+                            ], 
+                            "name": "FinancialService", 
+                            "nameZh": "金融服务机构"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "HealthClub", 
+                                    "nameZh": "健身俱乐部"
+                                }, 
+                                {
+                                    "name": "NailSalon", 
+                                    "nameZh": "美甲店"
+                                }, 
+                                {
+                                    "name": "HairSalon", 
+                                    "nameZh": "美发店"
+                                }, 
+                                {
+                                    "name": "DaySpa", 
+                                    "nameZh": "日间水疗中心"
+                                }, 
+                                {
+                                    "name": "TattooParlor", 
+                                    "nameZh": "纹身工作室"
+                                }, 
+                                {
+                                    "name": "BeautySalon", 
+                                    "nameZh": "美容美发店"
+                                }
+                            ], 
+                            "name": "HealthAndBeautyBusiness", 
+                            "nameZh": "健康与美容服务机构"
+                        }, 
+                        {
+                            "name": "TravelAgency", 
+                            "nameZh": "旅行社"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "HealthClub", 
+                                    "nameZh": "健身俱乐部"
+                                }, 
+                                {
+                                    "name": "ExerciseGym", 
+                                    "nameZh": "健身房"
+                                }, 
+                                {
+                                    "name": "GolfCourse", 
+                                    "nameZh": "高尔夫球场"
+                                }, 
+                                {
+                                    "name": "SportsClub", 
+                                    "nameZh": "体育俱乐部"
+                                }, 
+                                {
+                                    "name": "StadiumOrArena", 
+                                    "nameZh": "体育场馆"
+                                }, 
+                                {
+                                    "name": "TennisComplex", 
+                                    "nameZh": "网球中心"
+                                }, 
+                                {
+                                    "name": "SkiResort", 
+                                    "nameZh": "滑雪圣地"
+                                }, 
+                                {
+                                    "name": "PublicSwimmingPool", 
+                                    "nameZh": "公共游泳池"
+                                }, 
+                                {
+                                    "name": "BowlingAlley", 
+                                    "nameZh": "保龄球场"
+                                }
+                            ], 
+                            "name": "SportsActivityLocation", 
+                            "nameZh": "运动场所"
+                        }, 
+                        {
+                            "name": "Dentist", 
+                            "nameZh": "牙科诊所"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "GroceryStore", 
+                                    "nameZh": "杂货店"
+                                }, 
+                                {
+                                    "name": "AutoPartsStore", 
+                                    "nameZh": "汽车配件店"
+                                }, 
+                                {
+                                    "name": "JewelryStore", 
+                                    "nameZh": "珠宝店"
+                                }, 
+                                {
+                                    "name": "HomeGoodsStore", 
+                                    "nameZh": "家居用品店"
+                                }, 
+                                {
+                                    "name": "TireShop", 
+                                    "nameZh": "轮胎店"
+                                }, 
+                                {
+                                    "name": "MovieRentalStore", 
+                                    "nameZh": "影碟出租店"
+                                }, 
+                                {
+                                    "name": "ToyStore", 
+                                    "nameZh": "玩具店"
+                                }, 
+                                {
+                                    "name": "BookStore", 
+                                    "nameZh": "书店"
+                                }, 
+                                {
+                                    "name": "OutletStore", 
+                                    "nameZh": "工厂直销店"
+                                }, 
+                                {
+                                    "name": "MobilePhoneStore", 
+                                    "nameZh": "手机店"
+                                }, 
+                                {
+                                    "name": "LiquorStore", 
+                                    "nameZh": "出售酒类的小店"
+                                }, 
+                                {
+                                    "name": "BikeStore", 
+                                    "nameZh": "自行车店"
+                                }, 
+                                {
+                                    "name": "SportingGoodsStore", 
+                                    "nameZh": "运动用品店"
+                                }, 
+                                {
+                                    "name": "OfficeEquipmentStore", 
+                                    "nameZh": "办公用品店"
+                                }, 
+                                {
+                                    "name": "MusicStore", 
+                                    "nameZh": "音乐商店"
+                                }, 
+                                {
+                                    "name": "ComputerStore", 
+                                    "nameZh": "电脑商店"
+                                }, 
+                                {
+                                    "name": "ShoeStore", 
+                                    "nameZh": "鞋店"
+                                }, 
+                                {
+                                    "name": "PetStore", 
+                                    "nameZh": "宠物店"
+                                }, 
+                                {
+                                    "name": "Florist", 
+                                    "nameZh": "花店"
+                                }, 
+                                {
+                                    "name": "PawnShop", 
+                                    "nameZh": "当铺"
+                                }, 
+                                {
+                                    "name": "ConvenienceStore", 
+                                    "nameZh": "便利店"
+                                }, 
+                                {
+                                    "name": "ElectronicsStore", 
+                                    "nameZh": "电子产品店"
+                                }, 
+                                {
+                                    "name": "GardenStore", 
+                                    "nameZh": "园艺店"
+                                }, 
+                                {
+                                    "name": "FurnitureStore", 
+                                    "nameZh": "家具店"
+                                }, 
+                                {
+                                    "name": "HardwareStore", 
+                                    "nameZh": "五金店"
+                                }, 
+                                {
+                                    "name": "HobbyShop", 
+                                    "nameZh": "业余爱好商店"
+                                }, 
+                                {
+                                    "name": "WholesaleStore", 
+                                    "nameZh": "批发店"
+                                }, 
+                                {
+                                    "name": "DepartmentStore", 
+                                    "nameZh": "百货公司"
+                                }, 
+                                {
+                                    "name": "MensClothingStore", 
+                                    "nameZh": "男装店"
+                                }, 
+                                {
+                                    "name": "ClothingStore", 
+                                    "nameZh": "服装店"
+                                }
+                            ], 
+                            "name": "Store", 
+                            "nameZh": "商店"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "BedAndBreakfast", 
+                                    "nameZh": "提供早餐的旅馆"
+                                }, 
+                                {
+                                    "name": "Motel", 
+                                    "nameZh": "汽车旅馆"
+                                }, 
+                                {
+                                    "name": "Hotel", 
+                                    "nameZh": "旅馆"
+                                }, 
+                                {
+                                    "name": "Hostel", 
+                                    "nameZh": "招待所"
+                                }, 
+                                {
+                                    "name": "Resort", 
+                                    "nameZh": "度假村"
+                                }, 
+                                {
+                                    "name": "Campground", 
+                                    "nameZh": "露营地"
+                                }
+                            ], 
+                            "name": "LodgingBusiness", 
+                            "nameZh": "旅馆业"
+                        }, 
+                        {
+                            "name": "RecyclingCenter", 
+                            "nameZh": "垃圾回收站"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "AutoPartsStore", 
+                                    "nameZh": "汽车配件店"
+                                }, 
+                                {
+                                    "name": "AutoRepair", 
+                                    "nameZh": "汽车修理店"
+                                }, 
+                                {
+                                    "name": "MotorcycleDealer", 
+                                    "nameZh": "摩托车行"
+                                }, 
+                                {
+                                    "name": "AutoRental", 
+                                    "nameZh": "汽车租赁公司"
+                                }, 
+                                {
+                                    "name": "AutoDealer", 
+                                    "nameZh": "车行"
+                                }, 
+                                {
+                                    "name": "GasStation", 
+                                    "nameZh": "加油站"
+                                }, 
+                                {
+                                    "name": "AutoBodyShop", 
+                                    "nameZh": "汽车维修店"
+                                }, 
+                                {
+                                    "name": "MotorcycleRepair", 
+                                    "nameZh": "摩托车修理店"
+                                }, 
+                                {
+                                    "name": "AutoWash", 
+                                    "nameZh": "洗车店"
+                                }
+                            ], 
+                            "name": "AutomotiveBusiness", 
+                            "nameZh": "汽车产业"
+                        }
+                    ], 
+                    "name": "LocalBusiness", 
+                    "nameZh": "本地商铺"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "SportsTeam", 
+                            "nameZh": "竞技队伍"
+                        }
+                    ], 
+                    "name": "SportsOrganization", 
+                    "nameZh": "体育机构"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "HighSchool", 
+                            "nameZh": "高中"
+                        }, 
+                        {
+                            "name": "School", 
+                            "nameZh": "学校"
+                        }, 
+                        {
+                            "name": "ElementarySchool", 
+                            "nameZh": "小学"
+                        }, 
+                        {
+                            "name": "CollegeOrUniversity", 
+                            "nameZh": "高校"
+                        }, 
+                        {
+                            "name": "Preschool", 
+                            "nameZh": "幼儿园"
+                        }, 
+                        {
+                            "name": "MiddleSchool", 
+                            "nameZh": "初中"
+                        }
+                    ], 
+                    "name": "EducationalOrganization", 
+                    "nameZh": "教育机构"
+                }, 
+                {
+                    "name": "Airline", 
+                    "nameZh": "航空公司"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "DanceGroup", 
+                            "nameZh": "舞蹈团"
+                        }, 
+                        {
+                            "name": "MusicGroup", 
+                            "nameZh": "乐团"
+                        }, 
+                        {
+                            "name": "TheaterGroup", 
+                            "nameZh": "剧团"
+                        }
+                    ], 
+                    "name": "PerformingGroup", 
+                    "nameZh": "演出团体"
+                }, 
+                {
+                    "name": "Corporation", 
+                    "nameZh": "法人团体"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "Pharmacy", 
+                            "nameZh": "药店"
+                        }, 
+                        {
+                            "name": "Dentist", 
+                            "nameZh": "牙科诊所"
+                        }, 
+                        {
+                            "name": "Physician", 
+                            "nameZh": "医生"
+                        }, 
+                        {
+                            "name": "Hospital", 
+                            "nameZh": "医院"
+                        }
+                    ], 
+                    "name": "MedicalOrganization", 
+                    "nameZh": "医疗机构"
+                }, 
+                {
+                    "name": "GovernmentOrganization", 
+                    "nameZh": "政府机构"
+                }, 
+                {
+                    "name": "NGO", 
+                    "nameZh": "非政府组织"
+                }
+            ], 
+            "name": "Organization", 
+            "nameZh": "机构"
+        }, 
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Suite", 
+                            "nameZh": "套房"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "HotelRoom", 
+                                    "nameZh": "旅馆房间"
+                                }, 
+                                {
+                                    "name": "MeetingRoom", 
+                                    "nameZh": "会议室"
+                                }
+                            ], 
+                            "name": "Room", 
+                            "nameZh": "房间"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "SingleFamilyResidence", 
+                                    "nameZh": "独立家庭公寓"
+                                }
+                            ], 
+                            "name": "House", 
+                            "nameZh": "住宅"
+                        }, 
+                        {
+                            "name": "Apartment", 
+                            "nameZh": "公寓"
+                        }, 
+                        {
+                            "name": "CampingPitch", 
+                            "nameZh": "露营地的一个露营点"
+                        }
+                    ], 
+                    "name": "Accommodation", 
+                    "nameZh": "住所"
+                }, 
+                {
+                    "name": "LandmarksOrHistoricalBuildings", 
+                    "nameZh": "地标或者历史性建筑"
+                }, 
+                {
+                    "name": "TouristAttraction", 
+                    "nameZh": "观光地"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "AnimalShelter", 
+                            "nameZh": "动物收容所"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "CafeOrCoffeeShop", 
+                                    "nameZh": "咖啡馆"
+                                }, 
+                                {
+                                    "name": "Bakery", 
+                                    "nameZh": "烘焙店"
+                                }, 
+                                {
+                                    "name": "IceCreamShop", 
+                                    "nameZh": "冰淇淋店"
+                                }, 
+                                {
+                                    "name": "Restaurant", 
+                                    "nameZh": "餐厅"
+                                }, 
+                                {
+                                    "name": "FastFoodRestaurant", 
+                                    "nameZh": "快餐店"
+                                }, 
+                                {
+                                    "name": "Winery", 
+                                    "nameZh": "酒庄"
+                                }, 
+                                {
+                                    "name": "BarOrPub", 
+                                    "nameZh": "酒吧"
+                                }, 
+                                {
+                                    "name": "Brewery", 
+                                    "nameZh": "啤酒厂"
+                                }
+                            ], 
+                            "name": "FoodEstablishment", 
+                            "nameZh": "餐饮服务机构"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "Attorney", 
+                                    "nameZh": "律师事务所"
+                                }, 
+                                {
+                                    "name": "Notary", 
+                                    "nameZh": "公证服务机构"
+                                }
+                            ], 
+                            "name": "LegalService", 
+                            "nameZh": "法律服务机构"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "HousePainter", 
+                                    "nameZh": "油漆工"
+                                }, 
+                                {
+                                    "name": "GeneralContractor", 
+                                    "nameZh": "总承包商"
+                                }, 
+                                {
+                                    "name": "Electrician", 
+                                    "nameZh": "电工"
+                                }, 
+                                {
+                                    "name": "MovingCompany", 
+                                    "nameZh": "搬家公司"
+                                }, 
+                                {
+                                    "name": "HVACBusiness", 
+                                    "nameZh": "暖通空调服务机构"
+                                }, 
+                                {
+                                    "name": "Locksmith", 
+                                    "nameZh": "锁匠"
+                                }, 
+                                {
+                                    "name": "Plumber", 
+                                    "nameZh": "水暖工"
+                                }, 
+                                {
+                                    "name": "RoofingContractor", 
+                                    "nameZh": "屋顶承包商"
+                                }
+                            ], 
+                            "name": "HomeAndConstructionBusiness", 
+                            "nameZh": "家装服务机构"
+                        }, 
+                        {
+                            "name": "RealEstateAgent", 
+                            "nameZh": "房地产中介"
+                        }, 
+                        {
+                            "name": "ChildCare", 
+                            "nameZh": "托儿所"
+                        }, 
+                        {
+                            "name": "InternetCafe", 
+                            "nameZh": "网吧"
+                        }, 
+                        {
+                            "name": "RadioStation", 
+                            "nameZh": "无线广播电台"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "PostOffice", 
+                                    "nameZh": "邮局"
+                                }
+                            ], 
+                            "name": "GovernmentOffice", 
+                            "nameZh": "政府办公室"
+                        }, 
+                        {
+                            "name": "Library", 
+                            "nameZh": "图书馆"
+                        }, 
+                        {
+                            "name": "TouristInformationCenter", 
+                            "nameZh": "旅游信息服务中心"
+                        }, 
+                        {
+                            "name": "ProfessionalService", 
+                            "nameZh": "专业服务"
+                        }, 
+                        {
+                            "name": "SelfStorage", 
+                            "nameZh": "自助存储"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "AmusementPark", 
+                                    "nameZh": "游乐园"
+                                }, 
+                                {
+                                    "name": "Casino", 
+                                    "nameZh": "赌场"
+                                }, 
+                                {
+                                    "name": "MovieTheater", 
+                                    "nameZh": "电影院"
+                                }, 
+                                {
+                                    "name": "NightClub", 
+                                    "nameZh": "夜店"
+                                }, 
+                                {
+                                    "name": "ComedyClub", 
+                                    "nameZh": "喜剧俱乐部"
+                                }, 
+                                {
+                                    "name": "AdultEntertainment", 
+                                    "nameZh": "成人娱乐场所"
+                                }, 
+                                {
+                                    "name": "ArtGallery", 
+                                    "nameZh": "艺术博物馆"
+                                }
+                            ], 
+                            "name": "EntertainmentBusiness", 
+                            "nameZh": "娱乐服务机构"
+                        }, 
+                        {
+                            "name": "ShoppingCenter", 
+                            "nameZh": "购物中心"
+                        }, 
+                        {
+                            "name": "TelevisionStation", 
+                            "nameZh": "电视台"
+                        }, 
+                        {
+                            "name": "DryCleaningOrLaundry", 
+                            "nameZh": "干洗店或者洗衣店"
+                        }, 
+                        {
+                            "name": "EmploymentAgency", 
+                            "nameZh": "职业介绍所"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "PoliceStation", 
+                                    "nameZh": "警察局"
+                                }, 
+                                {
+                                    "name": "FireStation", 
+                                    "nameZh": "消防站"
+                                }, 
+                                {
+                                    "name": "Hospital", 
+                                    "nameZh": "医院"
+                                }
+                            ], 
+                            "name": "EmergencyService", 
+                            "nameZh": "应急公共服务"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "InsuranceAgency", 
+                                    "nameZh": "保险服务机构"
+                                }, 
+                                {
+                                    "name": "BankOrCreditUnion", 
+                                    "nameZh": "银行或者信用合作社"
+                                }, 
+                                {
+                                    "name": "AutomatedTeller", 
+                                    "nameZh": "自动取款机"
+                                }, 
+                                {
+                                    "name": "AccountingService", 
+                                    "nameZh": "会计服务"
+                                }
+                            ], 
+                            "name": "FinancialService", 
+                            "nameZh": "金融服务机构"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "HealthClub", 
+                                    "nameZh": "健身俱乐部"
+                                }, 
+                                {
+                                    "name": "NailSalon", 
+                                    "nameZh": "美甲店"
+                                }, 
+                                {
+                                    "name": "HairSalon", 
+                                    "nameZh": "美发店"
+                                }, 
+                                {
+                                    "name": "DaySpa", 
+                                    "nameZh": "日间水疗中心"
+                                }, 
+                                {
+                                    "name": "TattooParlor", 
+                                    "nameZh": "纹身工作室"
+                                }, 
+                                {
+                                    "name": "BeautySalon", 
+                                    "nameZh": "美容美发店"
+                                }
+                            ], 
+                            "name": "HealthAndBeautyBusiness", 
+                            "nameZh": "健康与美容服务机构"
+                        }, 
+                        {
+                            "name": "TravelAgency", 
+                            "nameZh": "旅行社"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "HealthClub", 
+                                    "nameZh": "健身俱乐部"
+                                }, 
+                                {
+                                    "name": "ExerciseGym", 
+                                    "nameZh": "健身房"
+                                }, 
+                                {
+                                    "name": "GolfCourse", 
+                                    "nameZh": "高尔夫球场"
+                                }, 
+                                {
+                                    "name": "SportsClub", 
+                                    "nameZh": "体育俱乐部"
+                                }, 
+                                {
+                                    "name": "StadiumOrArena", 
+                                    "nameZh": "体育场馆"
+                                }, 
+                                {
+                                    "name": "TennisComplex", 
+                                    "nameZh": "网球中心"
+                                }, 
+                                {
+                                    "name": "SkiResort", 
+                                    "nameZh": "滑雪圣地"
+                                }, 
+                                {
+                                    "name": "PublicSwimmingPool", 
+                                    "nameZh": "公共游泳池"
+                                }, 
+                                {
+                                    "name": "BowlingAlley", 
+                                    "nameZh": "保龄球场"
+                                }
+                            ], 
+                            "name": "SportsActivityLocation", 
+                            "nameZh": "运动场所"
+                        }, 
+                        {
+                            "name": "Dentist", 
+                            "nameZh": "牙科诊所"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "GroceryStore", 
+                                    "nameZh": "杂货店"
+                                }, 
+                                {
+                                    "name": "AutoPartsStore", 
+                                    "nameZh": "汽车配件店"
+                                }, 
+                                {
+                                    "name": "JewelryStore", 
+                                    "nameZh": "珠宝店"
+                                }, 
+                                {
+                                    "name": "HomeGoodsStore", 
+                                    "nameZh": "家居用品店"
+                                }, 
+                                {
+                                    "name": "TireShop", 
+                                    "nameZh": "轮胎店"
+                                }, 
+                                {
+                                    "name": "MovieRentalStore", 
+                                    "nameZh": "影碟出租店"
+                                }, 
+                                {
+                                    "name": "ToyStore", 
+                                    "nameZh": "玩具店"
+                                }, 
+                                {
+                                    "name": "BookStore", 
+                                    "nameZh": "书店"
+                                }, 
+                                {
+                                    "name": "OutletStore", 
+                                    "nameZh": "工厂直销店"
+                                }, 
+                                {
+                                    "name": "MobilePhoneStore", 
+                                    "nameZh": "手机店"
+                                }, 
+                                {
+                                    "name": "LiquorStore", 
+                                    "nameZh": "出售酒类的小店"
+                                }, 
+                                {
+                                    "name": "BikeStore", 
+                                    "nameZh": "自行车店"
+                                }, 
+                                {
+                                    "name": "SportingGoodsStore", 
+                                    "nameZh": "运动用品店"
+                                }, 
+                                {
+                                    "name": "OfficeEquipmentStore", 
+                                    "nameZh": "办公用品店"
+                                }, 
+                                {
+                                    "name": "MusicStore", 
+                                    "nameZh": "音乐商店"
+                                }, 
+                                {
+                                    "name": "ComputerStore", 
+                                    "nameZh": "电脑商店"
+                                }, 
+                                {
+                                    "name": "ShoeStore", 
+                                    "nameZh": "鞋店"
+                                }, 
+                                {
+                                    "name": "PetStore", 
+                                    "nameZh": "宠物店"
+                                }, 
+                                {
+                                    "name": "Florist", 
+                                    "nameZh": "花店"
+                                }, 
+                                {
+                                    "name": "PawnShop", 
+                                    "nameZh": "当铺"
+                                }, 
+                                {
+                                    "name": "ConvenienceStore", 
+                                    "nameZh": "便利店"
+                                }, 
+                                {
+                                    "name": "ElectronicsStore", 
+                                    "nameZh": "电子产品店"
+                                }, 
+                                {
+                                    "name": "GardenStore", 
+                                    "nameZh": "园艺店"
+                                }, 
+                                {
+                                    "name": "FurnitureStore", 
+                                    "nameZh": "家具店"
+                                }, 
+                                {
+                                    "name": "HardwareStore", 
+                                    "nameZh": "五金店"
+                                }, 
+                                {
+                                    "name": "HobbyShop", 
+                                    "nameZh": "业余爱好商店"
+                                }, 
+                                {
+                                    "name": "WholesaleStore", 
+                                    "nameZh": "批发店"
+                                }, 
+                                {
+                                    "name": "DepartmentStore", 
+                                    "nameZh": "百货公司"
+                                }, 
+                                {
+                                    "name": "MensClothingStore", 
+                                    "nameZh": "男装店"
+                                }, 
+                                {
+                                    "name": "ClothingStore", 
+                                    "nameZh": "服装店"
+                                }
+                            ], 
+                            "name": "Store", 
+                            "nameZh": "商店"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "BedAndBreakfast", 
+                                    "nameZh": "提供早餐的旅馆"
+                                }, 
+                                {
+                                    "name": "Motel", 
+                                    "nameZh": "汽车旅馆"
+                                }, 
+                                {
+                                    "name": "Hotel", 
+                                    "nameZh": "旅馆"
+                                }, 
+                                {
+                                    "name": "Hostel", 
+                                    "nameZh": "招待所"
+                                }, 
+                                {
+                                    "name": "Resort", 
+                                    "nameZh": "度假村"
+                                }, 
+                                {
+                                    "name": "Campground", 
+                                    "nameZh": "露营地"
+                                }
+                            ], 
+                            "name": "LodgingBusiness", 
+                            "nameZh": "旅馆业"
+                        }, 
+                        {
+                            "name": "RecyclingCenter", 
+                            "nameZh": "垃圾回收站"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "AutoPartsStore", 
+                                    "nameZh": "汽车配件店"
+                                }, 
+                                {
+                                    "name": "AutoRepair", 
+                                    "nameZh": "汽车修理店"
+                                }, 
+                                {
+                                    "name": "MotorcycleDealer", 
+                                    "nameZh": "摩托车行"
+                                }, 
+                                {
+                                    "name": "AutoRental", 
+                                    "nameZh": "汽车租赁公司"
+                                }, 
+                                {
+                                    "name": "AutoDealer", 
+                                    "nameZh": "车行"
+                                }, 
+                                {
+                                    "name": "GasStation", 
+                                    "nameZh": "加油站"
+                                }, 
+                                {
+                                    "name": "AutoBodyShop", 
+                                    "nameZh": "汽车维修店"
+                                }, 
+                                {
+                                    "name": "MotorcycleRepair", 
+                                    "nameZh": "摩托车修理店"
+                                }, 
+                                {
+                                    "name": "AutoWash", 
+                                    "nameZh": "洗车店"
+                                }
+                            ], 
+                            "name": "AutomotiveBusiness", 
+                            "nameZh": "汽车产业"
+                        }
+                    ], 
+                    "name": "LocalBusiness", 
+                    "nameZh": "本地商铺"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "PoliceStation", 
+                            "nameZh": "警察局"
+                        }, 
+                        {
+                            "name": "EventVenue", 
+                            "nameZh": "活动场所"
+                        }, 
+                        {
+                            "name": "Museum", 
+                            "nameZh": "博物馆"
+                        }, 
+                        {
+                            "name": "Zoo", 
+                            "nameZh": "动物园"
+                        }, 
+                        {
+                            "name": "MovieTheater", 
+                            "nameZh": "电影院"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "Synagogue", 
+                                    "nameZh": "犹太教会堂"
+                                }, 
+                                {
+                                    "name": "HinduTemple", 
+                                    "nameZh": "印度教寺庙"
+                                }, 
+                                {
+                                    "name": "Church", 
+                                    "nameZh": "教堂"
+                                }, 
+                                {
+                                    "name": "BuddhistTemple", 
+                                    "nameZh": "佛寺"
+                                }, 
+                                {
+                                    "name": "Mosque", 
+                                    "nameZh": "清真寺"
+                                }, 
+                                {
+                                    "name": "CatholicChurch", 
+                                    "nameZh": "天主教堂"
+                                }
+                            ], 
+                            "name": "PlaceOfWorship", 
+                            "nameZh": "宗教场所"
+                        }, 
+                        {
+                            "name": "Crematorium", 
+                            "nameZh": "火葬场"
+                        }, 
+                        {
+                            "name": "Playground", 
+                            "nameZh": "儿童乐园"
+                        }, 
+                        {
+                            "name": "ParkingFacility", 
+                            "nameZh": "停车场"
+                        }, 
+                        {
+                            "name": "Aquarium", 
+                            "nameZh": "海洋生物館"
+                        }, 
+                        {
+                            "name": "Bridge", 
+                            "nameZh": "桥梁"
+                        }, 
+                        {
+                            "name": "TrainStation", 
+                            "nameZh": "火车站"
+                        }, 
+                        {
+                            "name": "Beach", 
+                            "nameZh": "水滨"
+                        }, 
+                        {
+                            "name": "Park", 
+                            "nameZh": "公园"
+                        }, 
+                        {
+                            "name": "FireStation", 
+                            "nameZh": "消防站"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "Embassy", 
+                                    "nameZh": "大使馆"
+                                }, 
+                                {
+                                    "name": "DefenceEstablishment", 
+                                    "nameZh": "军事基地"
+                                }, 
+                                {
+                                    "name": "LegislativeBuilding", 
+                                    "nameZh": "立法机构建筑"
+                                }, 
+                                {
+                                    "name": "CityHall", 
+                                    "nameZh": "市政厅"
+                                }, 
+                                {
+                                    "name": "Courthouse", 
+                                    "nameZh": "法院大楼"
+                                }
+                            ], 
+                            "name": "GovernmentBuilding", 
+                            "nameZh": "政府建筑"
+                        }, 
+                        {
+                            "name": "PerformingArtsTheater", 
+                            "nameZh": "表演艺术中心"
+                        }, 
+                        {
+                            "name": "StadiumOrArena", 
+                            "nameZh": "体育场馆"
+                        }, 
+                        {
+                            "name": "TaxiStand", 
+                            "nameZh": "出租车站"
+                        }, 
+                        {
+                            "name": "MusicVenue", 
+                            "nameZh": "音乐演出场地"
+                        }, 
+                        {
+                            "name": "BusStop", 
+                            "nameZh": "公交站"
+                        }, 
+                        {
+                            "name": "Campground", 
+                            "nameZh": "露营地"
+                        }, 
+                        {
+                            "name": "SubwayStation", 
+                            "nameZh": "地铁站"
+                        }, 
+                        {
+                            "name": "RVPark", 
+                            "nameZh": "露营车营地"
+                        }, 
+                        {
+                            "name": "Cemetery", 
+                            "nameZh": "公墓"
+                        }, 
+                        {
+                            "name": "Airport", 
+                            "nameZh": "飞机场"
+                        }, 
+                        {
+                            "name": "Hospital", 
+                            "nameZh": "医院"
+                        }, 
+                        {
+                            "name": "BusStation", 
+                            "nameZh": "公共汽车总站"
+                        }
+                    ], 
+                    "name": "CivicStructure", 
+                    "nameZh": "市政建筑"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "ApartmentComplex", 
+                            "nameZh": "公寓大楼"
+                        }, 
+                        {
+                            "name": "GatedResidenceCommunity", 
+                            "nameZh": "有门禁的住宅小区"
+                        }
+                    ], 
+                    "name": "Residence", 
+                    "nameZh": "住宅区"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "Volcano", 
+                            "nameZh": "火山"
+                        }, 
+                        {
+                            "name": "Continent", 
+                            "nameZh": "大洲"
+                        }, 
+                        {
+                            "name": "Mountain", 
+                            "nameZh": "山"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "SeaBodyOfWater", 
+                                    "nameZh": "海"
+                                }, 
+                                {
+                                    "name": "Reservoir", 
+                                    "nameZh": "水库"
+                                }, 
+                                {
+                                    "name": "RiverBodyOfWater", 
+                                    "nameZh": "河"
+                                }, 
+                                {
+                                    "name": "Waterfall", 
+                                    "nameZh": "瀑布"
+                                }, 
+                                {
+                                    "name": "LakeBodyOfWater", 
+                                    "nameZh": "湖"
+                                }, 
+                                {
+                                    "name": "OceanBodyOfWater", 
+                                    "nameZh": "海洋"
+                                }, 
+                                {
+                                    "name": "Canal", 
+                                    "nameZh": "运河"
+                                }, 
+                                {
+                                    "name": "Pond", 
+                                    "nameZh": "池塘"
+                                }
+                            ], 
+                            "name": "BodyOfWater", 
+                            "nameZh": "水体"
+                        }
+                    ], 
+                    "name": "Landform", 
+                    "nameZh": "地形"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "Country", 
+                            "nameZh": "国家"
+                        }, 
+                        {
+                            "name": "State", 
+                            "nameZh": "一级行政区"
+                        }, 
+                        {
+                            "name": "City", 
+                            "nameZh": "城镇"
+                        }
+                    ], 
+                    "name": "AdministrativeArea", 
+                    "nameZh": "行政区"
+                }
+            ], 
+            "name": "Place", 
+            "nameZh": "地点"
+        }, 
+        {
+            "children": [
+                {
+                    "name": "Demand", 
+                    "nameZh": "需求"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "AggregateRating", 
+                            "nameZh": "总体评分"
+                        }
+                    ], 
+                    "name": "Rating", 
+                    "nameZh": "评分"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "BusTrip", 
+                            "nameZh": "长途汽车行程"
+                        }, 
+                        {
+                            "name": "Flight", 
+                            "nameZh": "航班"
+                        }, 
+                        {
+                            "name": "TrainTrip", 
+                            "nameZh": "火车旅行"
+                        }
+                    ], 
+                    "name": "Trip", 
+                    "nameZh": "行程"
+                }, 
+                {
+                    "name": "PropertyValueSpecification", 
+                    "nameZh": "属性值详情"
+                }, 
+                {
+                    "name": "ProgramMembership", 
+                    "nameZh": "会员待遇"
+                }, 
+                {
+                    "name": "MenuItem", 
+                    "nameZh": "菜单项目"
+                }, 
+                {
+                    "name": "EntryPoint", 
+                    "nameZh": "入口"
+                }, 
+                {
+                    "name": "DigitalDocumentPermission", 
+                    "nameZh": "数字文档访问权限"
+                }, 
+                {
+                    "name": "GameServer", 
+                    "nameZh": "游戏服务器"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "EducationalAudience", 
+                            "nameZh": "受众群：接受教育"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "ParentAudience", 
+                                    "nameZh": "受众群：父母"
+                                }
+                            ], 
+                            "name": "PeopleAudience", 
+                            "nameZh": "受众群：人群"
+                        }, 
+                        {
+                            "name": "BusinessAudience", 
+                            "nameZh": "受众群：商界人士"
+                        }
+                    ], 
+                    "name": "Audience", 
+                    "nameZh": "受众"
+                }, 
+                {
+                    "name": "ComputerLanguage", 
+                    "nameZh": "计算机语言"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "HowToSection", 
+                            "nameZh": "操作步骤组合"
+                        }, 
+                        {
+                            "name": "HowToTip", 
+                            "nameZh": "步骤的注意事项"
+                        }, 
+                        {
+                            "name": "HowToStep", 
+                            "nameZh": "操作步骤"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "HowToSupply", 
+                                    "nameZh": "操作相关物料"
+                                }, 
+                                {
+                                    "name": "HowToTool", 
+                                    "nameZh": "操作相关工具"
+                                }
+                            ], 
+                            "name": "HowToItem", 
+                            "nameZh": "操作相关物品"
+                        }, 
+                        {
+                            "name": "HowToDirection", 
+                            "nameZh": "步骤的操作说明"
+                        }
+                    ], 
+                    "name": "ListItem", 
+                    "nameZh": "列表里的项目"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "NutritionInformation", 
+                            "nameZh": "营养成分信息"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "DeliveryChargeSpecification", 
+                                    "nameZh": "运费详情"
+                                }, 
+                                {
+                                    "name": "UnitPriceSpecification", 
+                                    "nameZh": "单价详情"
+                                }, 
+                                {
+                                    "name": "CompoundPriceSpecification", 
+                                    "nameZh": "复合价格明细"
+                                }, 
+                                {
+                                    "name": "PaymentChargeSpecification", 
+                                    "nameZh": "付款方式款项详情"
+                                }
+                            ], 
+                            "name": "PriceSpecification", 
+                            "nameZh": "价格明细"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "LocationFeatureSpecification", 
+                                    "nameZh": "住宿特色明细"
+                                }
+                            ], 
+                            "name": "PropertyValue", 
+                            "nameZh": "属性值"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "GeoCircle", 
+                                    "nameZh": "环形的地理区域"
+                                }
+                            ], 
+                            "name": "GeoShape", 
+                            "nameZh": "地理区域形状"
+                        }, 
+                        {
+                            "name": "InteractionCounter", 
+                            "nameZh": "交互计数"
+                        }, 
+                        {
+                            "name": "TypeAndQuantityNode", 
+                            "nameZh": "类型和数量节点"
+                        }, 
+                        {
+                            "name": "DatedMoneySpecification", 
+                            "nameZh": "带日期的金钱明细"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "PostalAddress", 
+                                    "nameZh": "邮寄地址"
+                                }
+                            ], 
+                            "name": "ContactPoint", 
+                            "nameZh": "联系方式"
+                        }, 
+                        {
+                            "name": "WarrantyPromise", 
+                            "nameZh": "保修承诺"
+                        }, 
+                        {
+                            "name": "MonetaryAmount", 
+                            "nameZh": "金钱数量"
+                        }, 
+                        {
+                            "name": "EngineSpecification", 
+                            "nameZh": "引擎规格描述"
+                        }, 
+                        {
+                            "name": "OpeningHoursSpecification", 
+                            "nameZh": "开放时间详情"
+                        }, 
+                        {
+                            "name": "QuantitativeValue", 
+                            "nameZh": "定量值"
+                        }, 
+                        {
+                            "name": "OwnershipInfo", 
+                            "nameZh": "所有权信息"
+                        }, 
+                        {
+                            "name": "GeoCoordinates", 
+                            "nameZh": "经纬度"
+                        }
+                    ], 
+                    "name": "StructuredValue", 
+                    "nameZh": "结构化的值"
+                }, 
+                {
+                    "name": "AlignmentObject", 
+                    "nameZh": "教学达标情况"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "TelevisionChannel", 
+                            "nameZh": "电视频道"
+                        }, 
+                        {
+                            "name": "RadioChannel", 
+                            "nameZh": "无线电广播电台频道"
+                        }
+                    ], 
+                    "name": "BroadcastChannel", 
+                    "nameZh": "广播频道"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "GovernmentPermit", 
+                            "nameZh": "政府颁发的许可证"
+                        }
+                    ], 
+                    "name": "Permit", 
+                    "nameZh": "许可证"
+                }, 
+                {
+                    "name": "DataFeedItem", 
+                    "nameZh": "数据源头的一项"
+                }, 
+                {
+                    "name": "ServiceChannel", 
+                    "nameZh": "服务渠道"
+                }, 
+                {
+                    "name": "Order", 
+                    "nameZh": "订单"
+                }, 
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "name": "BookSeries", 
+                                    "nameZh": "丛书"
+                                }, 
+                                {
+                                    "name": "RadioSeries", 
+                                    "nameZh": "无线电广播系列剧"
+                                }, 
+                                {
+                                    "name": "Periodical", 
+                                    "nameZh": "期刊"
+                                }, 
+                                {
+                                    "name": "MovieSeries", 
+                                    "nameZh": "系列电影"
+                                }, 
+                                {
+                                    "name": "VideoGameSeries", 
+                                    "nameZh": "电子游戏系列"
+                                }, 
+                                {
+                                    "name": "TVSeries", 
+                                    "nameZh": "电视系列剧"
+                                }
+                            ], 
+                            "name": "CreativeWorkSeries", 
+                            "nameZh": "系列作品"
+                        }
+                    ], 
+                    "name": "Series", 
+                    "nameZh": "系列"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "Mass", 
+                            "nameZh": "质量"
+                        }, 
+                        {
+                            "name": "Energy", 
+                            "nameZh": "能量"
+                        }, 
+                        {
+                            "name": "Duration", 
+                            "nameZh": "时间段"
+                        }, 
+                        {
+                            "name": "Distance", 
+                            "nameZh": "结构：距离"
+                        }
+                    ], 
+                    "name": "Quantity", 
+                    "nameZh": "数量"
+                }, 
+                {
+                    "name": "Brand", 
+                    "nameZh": "品牌"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "PerformanceRole", 
+                            "nameZh": "表演角色"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "EmployeeRole", 
+                                    "nameZh": "雇员角色"
+                                }
+                            ], 
+                            "name": "OrganizationRole", 
+                            "nameZh": "机构里的角色"
+                        }
+                    ], 
+                    "name": "Role", 
+                    "nameZh": "角色"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "HowToSection", 
+                            "nameZh": "操作步骤组合"
+                        }, 
+                        {
+                            "name": "BreadcrumbList", 
+                            "nameZh": "面包屑列表"
+                        }, 
+                        {
+                            "name": "HowToStep", 
+                            "nameZh": "操作步骤"
+                        }, 
+                        {
+                            "name": "OfferCatalog", 
+                            "nameZh": "商品报价目录"
+                        }
+                    ], 
+                    "name": "ItemList", 
+                    "nameZh": "列表"
+                }, 
+                {
+                    "name": "Seat", 
+                    "nameZh": "座位"
+                }, 
+                {
+                    "name": "Ticket", 
+                    "nameZh": "票"
+                }, 
+                {
+                    "name": "Invoice", 
+                    "nameZh": "账单"
+                }, 
+                {
+                    "name": "OrderItem", 
+                    "nameZh": "订单项目"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "FoodService", 
+                            "nameZh": "提供早中晚饭的服务"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "name": "CreditCard", 
+                                            "nameZh": "信用卡"
+                                        }
+                                    ], 
+                                    "name": "PaymentCard", 
+                                    "nameZh": "支付卡片"
+                                }, 
+                                {
+                                    "children": [
+                                        {
+                                            "name": "DepositAccount", 
+                                            "nameZh": "存款账户"
+                                        }
+                                    ], 
+                                    "name": "BankAccount", 
+                                    "nameZh": "银行账户"
+                                }, 
+                                {
+                                    "name": "PaymentService", 
+                                    "nameZh": "支付服务"
+                                }, 
+                                {
+                                    "children": [
+                                        {
+                                            "name": "DepositAccount", 
+                                            "nameZh": "存款账户"
+                                        }
+                                    ], 
+                                    "name": "InvestmentOrDeposit", 
+                                    "nameZh": "投资或存款产品"
+                                }, 
+                                {
+                                    "children": [
+                                        {
+                                            "name": "CreditCard", 
+                                            "nameZh": "信用卡"
+                                        }
+                                    ], 
+                                    "name": "LoanOrCredit", 
+                                    "nameZh": "贷款或者信用贷款"
+                                }, 
+                                {
+                                    "name": "CurrencyConversionService", 
+                                    "nameZh": "货币兑换服务"
+                                }
+                            ], 
+                            "name": "FinancialProduct", 
+                            "nameZh": "金融产品"
+                        }, 
+                        {
+                            "name": "CableOrSatelliteService", 
+                            "nameZh": "有线或者卫星服务"
+                        }, 
+                        {
+                            "name": "BroadcastService", 
+                            "nameZh": "广播服务"
+                        }, 
+                        {
+                            "name": "TaxiService", 
+                            "nameZh": "出租车服务"
+                        }, 
+                        {
+                            "name": "Taxi", 
+                            "nameZh": "出租车"
+                        }, 
+                        {
+                            "name": "GovernmentService", 
+                            "nameZh": "政府服务"
+                        }
+                    ], 
+                    "name": "Service", 
+                    "nameZh": "服务"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "GenderType", 
+                            "nameZh": "性别类型"
+                        }, 
+                        {
+                            "name": "MapCategoryType", 
+                            "nameZh": "地图类型枚举"
+                        }, 
+                        {
+                            "name": "ContactPointOption", 
+                            "nameZh": "联系方式选项"
+                        }, 
+                        {
+                            "name": "DigitalDocumentPermissionType", 
+                            "nameZh": "数字文档访问权限类型"
+                        }, 
+                        {
+                            "name": "PaymentStatusType", 
+                            "nameZh": "支付状态类型"
+                        }, 
+                        {
+                            "name": "MusicAlbumReleaseType", 
+                            "nameZh": "音乐专辑发行形式"
+                        }, 
+                        {
+                            "name": "GameServerStatus", 
+                            "nameZh": "游戏服务器状态"
+                        }, 
+                        {
+                            "name": "OfferItemCondition", 
+                            "nameZh": "物品规格品相"
+                        }, 
+                        {
+                            "name": "RestrictedDiet", 
+                            "nameZh": "特定饮食"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "SteeringPositionValue", 
+                                    "nameZh": "转向位置参数"
+                                }, 
+                                {
+                                    "name": "DriveWheelConfigurationValue", 
+                                    "nameZh": "驱动轮配置值"
+                                }
+                            ], 
+                            "name": "QualitativeValue", 
+                            "nameZh": "定性值"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "name": "CreditCard", 
+                                            "nameZh": "信用卡"
+                                        }
+                                    ], 
+                                    "name": "PaymentCard", 
+                                    "nameZh": "支付卡片"
+                                }
+                            ], 
+                            "name": "PaymentMethod", 
+                            "nameZh": "支付方式"
+                        }, 
+                        {
+                            "name": "ActionStatusType", 
+                            "nameZh": "动作状态类型"
+                        }, 
+                        {
+                            "name": "OrderStatus", 
+                            "nameZh": "订单状态"
+                        }, 
+                        {
+                            "name": "BookFormatType", 
+                            "nameZh": "书籍装订的各种形式"
+                        }, 
+                        {
+                            "name": "ItemListOrderType", 
+                            "nameZh": "列表排列顺序类型"
+                        }, 
+                        {
+                            "name": "WarrantyScope", 
+                            "nameZh": "保修范围"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "ParcelService", 
+                                    "nameZh": "包裹服务"
+                                }, 
+                                {
+                                    "name": "LockerDelivery", 
+                                    "nameZh": "快递柜"
+                                }
+                            ], 
+                            "name": "DeliveryMethod", 
+                            "nameZh": "送货方式"
+                        }, 
+                        {
+                            "name": "MusicAlbumProductionType", 
+                            "nameZh": "音乐专辑类型"
+                        }, 
+                        {
+                            "name": "Specialty", 
+                            "nameZh": "特长类型"
+                        }, 
+                        {
+                            "name": "ItemAvailability", 
+                            "nameZh": "存货状态"
+                        }, 
+                        {
+                            "name": "BusinessFunction", 
+                            "nameZh": "商业活动"
+                        }, 
+                        {
+                            "name": "RsvpResponseType", 
+                            "nameZh": "对请柬的回复类型"
+                        }, 
+                        {
+                            "name": "DayOfWeek", 
+                            "nameZh": "日历日"
+                        }, 
+                        {
+                            "name": "BusinessEntityType", 
+                            "nameZh": "商业实体类型，例如卖家，终端用户，分销商等"
+                        }, 
+                        {
+                            "name": "ReservationStatusType", 
+                            "nameZh": "预定状态类型"
+                        }, 
+                        {
+                            "name": "BoardingPolicyType", 
+                            "nameZh": "登机政策类型"
+                        }, 
+                        {
+                            "name": "MusicReleaseFormatType", 
+                            "nameZh": "音乐发行格式类型"
+                        }, 
+                        {
+                            "name": "EventStatusType", 
+                            "nameZh": "活动当前状态类型"
+                        }, 
+                        {
+                            "name": "GamePlayMode", 
+                            "nameZh": "游戏玩家模式枚举"
+                        }
+                    ], 
+                    "name": "Enumeration", 
+                    "nameZh": "枚举"
+                }, 
+                {
+                    "name": "BedDetails", 
+                    "nameZh": "床位详情"
+                }, 
+                {
+                    "name": "Language", 
+                    "nameZh": "自然语言"
+                }, 
+                {
+                    "name": "ParcelDelivery", 
+                    "nameZh": "包裹快递服务"
+                }, 
+                {
+                    "name": "JobPosting", 
+                    "nameZh": "招聘启事"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "TaxiReservation", 
+                            "nameZh": "预定信息：出租车"
+                        }, 
+                        {
+                            "name": "ReservationPackage", 
+                            "nameZh": "预定信息组合"
+                        }, 
+                        {
+                            "name": "EventReservation", 
+                            "nameZh": "预定信息：活动"
+                        }, 
+                        {
+                            "name": "LodgingReservation", 
+                            "nameZh": "预定信息：住宿"
+                        }, 
+                        {
+                            "name": "FlightReservation", 
+                            "nameZh": "预定信息：航班"
+                        }, 
+                        {
+                            "name": "TrainReservation", 
+                            "nameZh": "预定信息：火车"
+                        }, 
+                        {
+                            "name": "FoodEstablishmentReservation", 
+                            "nameZh": "预定信息：餐饮"
+                        }, 
+                        {
+                            "name": "BusReservation", 
+                            "nameZh": "预定信息：长途车"
+                        }, 
+                        {
+                            "name": "RentalCarReservation", 
+                            "nameZh": "预定信息：汽车出租"
+                        }
+                    ], 
+                    "name": "Reservation", 
+                    "nameZh": "预定信息"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "AggregateOffer", 
+                            "nameZh": "总体报价"
+                        }
+                    ], 
+                    "name": "Offer", 
+                    "nameZh": "报价"
+                }
+            ], 
+            "name": "Intangible", 
+            "nameZh": "无形之物"
+        }, 
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "OnDemandEvent", 
+                            "nameZh": "可点播的活动录像或者录音"
+                        }, 
+                        {
+                            "name": "BroadcastEvent", 
+                            "nameZh": "活动：和广播有关的"
+                        }
+                    ], 
+                    "name": "PublicationEvent", 
+                    "nameZh": "发布事件"
+                }, 
+                {
+                    "name": "EducationEvent", 
+                    "nameZh": "活动：和教育有关的"
+                }, 
+                {
+                    "name": "DanceEvent", 
+                    "nameZh": "活动：和舞蹈有关的"
+                }, 
+                {
+                    "name": "SaleEvent", 
+                    "nameZh": "事件：销售"
+                }, 
+                {
+                    "name": "FoodEvent", 
+                    "nameZh": "活动：和食物有关的"
+                }, 
+                {
+                    "name": "BusinessEvent", 
+                    "nameZh": "活动：和商业有关的"
+                }, 
+                {
+                    "children": [
+                        {
+                            "name": "UserLikes", 
+                            "nameZh": "用户喜欢"
+                        }, 
+                        {
+                            "name": "UserPlays", 
+                            "nameZh": "用户播放"
+                        }, 
+                        {
+                            "name": "UserBlocks", 
+                            "nameZh": "用户阻塞"
+                        }, 
+                        {
+                            "name": "UserTweets", 
+                            "nameZh": "用户推特"
+                        }, 
+                        {
+                            "name": "UserPlusOnes", 
+                            "nameZh": "用户点赞"
+                        }, 
+                        {
+                            "name": "UserPageVisits", 
+                            "nameZh": "用户浏览"
+                        }, 
+                        {
+                            "name": "UserDownloads", 
+                            "nameZh": "用户下载"
+                        }, 
+                        {
+                            "name": "UserCheckins", 
+                            "nameZh": "用户登录"
+                        }, 
+                        {
+                            "name": "UserComments", 
+                            "nameZh": "用户意见"
+                        }
+                    ], 
+                    "name": "UserInteraction", 
+                    "nameZh": "用户交互"
+                }, 
+                {
+                    "name": "ExhibitionEvent", 
+                    "nameZh": "活动：和展览有关的"
+                }, 
+                {
+                    "name": "CourseInstance", 
+                    "nameZh": "课程实例"
+                }, 
+                {
+                    "name": "ComedyEvent", 
+                    "nameZh": "活动：和喜剧有关的"
+                }, 
+                {
+                    "name": "ScreeningEvent", 
+                    "nameZh": "事件：影视拍摄"
+                }, 
+                {
+                    "name": "MusicEvent", 
+                    "nameZh": "活动：和音乐有关的"
+                }, 
+                {
+                    "name": "VisualArtsEvent", 
+                    "nameZh": "活动：和视觉艺术有关的"
+                }, 
+                {
+                    "name": "DeliveryEvent", 
+                    "nameZh": "活动：和送货有关的"
+                }, 
+                {
+                    "name": "ChildrensEvent", 
+                    "nameZh": "活动：和儿童有关的"
+                }, 
+                {
+                    "name": "Festival", 
+                    "nameZh": "节日"
+                }, 
+                {
+                    "name": "LiteraryEvent", 
+                    "nameZh": "活动：和文学有关的"
+                }, 
+                {
+                    "name": "SocialEvent", 
+                    "nameZh": "社交活动"
+                }, 
+                {
+                    "name": "TheaterEvent", 
+                    "nameZh": "活动：和剧院有关的"
+                }, 
+                {
+                    "name": "SportsEvent", 
+                    "nameZh": "体育赛事"
+                }
+            ], 
+            "name": "Event", 
+            "nameZh": "活动"
+        }, 
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Car", 
+                            "nameZh": "汽车"
+                        }
+                    ], 
+                    "name": "Vehicle", 
+                    "nameZh": "交通工具"
+                }, 
+                {
+                    "name": "SomeProducts", 
+                    "nameZh": "一类产品"
+                }, 
+                {
+                    "name": "IndividualProduct", 
+                    "nameZh": "单个产品"
+                }, 
+                {
+                    "name": "ProductModel", 
+                    "nameZh": "产品型号"
+                }
+            ], 
+            "name": "Product", 
+            "nameZh": "产品"
+        }
+    ], 
+    "name": "Thing", 
+    "nameZh": "事物"
+}

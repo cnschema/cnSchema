@@ -54,8 +54,6 @@ def enable_cors(fn):
 app = bottle.app()
 cns = CnsSearch()
 
-
-#http://106.75.79.180:9200/hbrain_market_price_v2.0/predict/search?pretty&filter_path=took,hits.total,hits.hits.source
 @app.route('/autocomplete', method=['GET'])
 @enable_cors
 def autocomplete():
@@ -67,7 +65,6 @@ def autocomplete():
         traceback.print_exc()
         logging.info("error")
         return ""
-
 
 
 @app.route('/search', method=['GET'])
@@ -122,6 +119,9 @@ if __name__ == "__main__":
     ####################
     ## run local server
     python server.py task_server
+
+    http://localhost:18080/autocomplete?q=store
+    http://localhost:18080/search?q=美
 
     ####################
     ## online release

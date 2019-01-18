@@ -33,6 +33,8 @@ from cdata.table import excel2json
 from elasticsearch import Elasticsearch
 from elasticsearch import helpers
 
+from settings import cns_config
+
 """
 enable prefix autocomplete
 1. add "suggest" field config in index mapping.json,  e.g.
@@ -133,9 +135,7 @@ sample ES queries
 
 class CnsSearch():
     def __init__(self):
-        filename = "es.cns.json"
-        filename = file2abspath(filename, __file__)
-        self.es_config = json.load(open(filename))
+        self.es_config = cns_config["es"]
         self.conn = None
 
     def connect(self):
@@ -237,7 +237,7 @@ class CnsSearch():
             item["index_suggest"] = {
                 "input": index_suggest,
                 #"output": u"{}（{}）".format(item["name"],item["nameZh"]),
-                "payload" : suggest_payload,
+                #"payload" : suggest_payload,
             }
 
             yield {
@@ -337,36 +337,36 @@ class CnsSearch():
         return output
 
 
-    def es_prefix(self, q, size=10):
-        if not q:
-            return
-
-        es = self.connect()
-
-        ts_start = time.time()
-
-        q = any2unicode(q)
-        query = {
-            "concept-suggest" : {
-                "text" : q,
-                "completion" : {
-                    "field" : "index_suggest"
-                }
-            }
-        }
-
-        # logging.info(json.dumps(query,ensure_ascii=False))
-        ret = es.suggest(index=self.es_config["es_index"], body=query)
-        logging.info(json.dumps(ret, ensure_ascii=False, indent=4))
-
-        # rewrite return value
-        output = {
-            "results": [x["payload"] for x in ret["concept-suggest"][0]["options"][:size]]
-        }
-        output["servertime"] = (time.time() - ts_start)
-        #logging.info(json.dumps(output,ensure_ascii=False, indent=4))
-
-        return output
+    # def es_prefix(self, q, size=10):
+    #     if not q:
+    #         return
+    #
+    #     es = self.connect()
+    #
+    #     ts_start = time.time()
+    #
+    #     q = any2unicode(q)
+    #     query = {
+    #         "concept-suggest" : {
+    #             "text" : q,
+    #             "completion" : {
+    #                 "field" : "index_suggest"
+    #             }
+    #         }
+    #     }
+    #
+    #     # logging.info(json.dumps(query,ensure_ascii=False))
+    #     ret = es.suggest(index=self.es_config["es_index"], body=query)
+    #     logging.info(json.dumps(ret, ensure_ascii=False, indent=4))
+    #
+    #     # rewrite return value
+    #     output = {
+    #         "results": [x["payload"] for x in ret["concept-suggest"][0]["options"][:size]]
+    #     }
+    #     output["servertime"] = (time.time() - ts_start)
+    #     #logging.info(json.dumps(output,ensure_ascii=False, indent=4))
+    #
+    #     return output
 
 
 
@@ -385,10 +385,6 @@ def task_es_test(args):
     cns = CnsSearch()
     es = cns.connect()
 
-    logging.info("es_prefix")
-    output = cns.es_prefix( q, size=2)
-    logging.info(json.dumps(output,ensure_ascii=False, indent=4))
-
     logging.info("es_autocomplete")
     output = cns.es_autocomplete( q, size=2)
     logging.info(json.dumps(output,ensure_ascii=False, indent=4))
@@ -397,17 +393,9 @@ def task_es_test(args):
     output = cns.es_search( q, size=2)
     logging.info(json.dumps(output,ensure_ascii=False, indent=4))
 
-def task_es_test_all(args):
+def task_es_test_regression(args):
     cns = CnsSearch()
     es = cns.connect()
-
-    output = cns.es_prefix( "sh", size=2)
-    logging.info(json.dumps(output,ensure_ascii=False, indent=4))
-    assert len(output["results"]) == 2
-
-    output = cns.es_prefix( "tore", size=2)
-    logging.info(json.dumps(output,ensure_ascii=False, indent=4))
-    assert len(output["results"]) == 0
 
     output = cns.es_autocomplete( "tore", size=2)
     logging.info(json.dumps(output,ensure_ascii=False, indent=4))
@@ -453,13 +441,31 @@ if __name__ == "__main__":
     main_subtask(__name__, optional_params=optional_params)
 
 """
+    one time job
     python search.py task_es_init_mapping
-    python search.py task_es_load_data 3.2
-    python search.py task_es_test_all
-    python search.py task_es_test --input 店
-    python search.py task_es_test --input 美
-    python search.py task_es_test --input tore
 
-    curl -X DELETE localhost:9200/cns_20170801
+    maintain
+    1. check settings.py for last version, [cns_20190115]
+        http://localhost:9200/cns_20190115
+    2. update vesrion to today
+    3. update data (cns.py)
+    4. load data into es
+        python search.py task_es_load_data --version=3.4
+    5. test
+        python search.py task_es_test_regression
+        python search.py task_es_test --input 店
+        python search.py task_es_test --input 美
+        python search.py task_es_test --input tore
+        python search.py task_es_test --input sto
 
+        python search.py task_es_test --input str
+
+
+    other maintain scripts
+        curl -X DELETE localhost:9200/cns_20190115
+
+
+curl -X POST 'localhost:9200/cns_20190115/_search?pretty' -d '
+         {"query": {"query_string": {"fields": ["index_search"], "query": "美"}}, "size": 10, "from": 0, "_source": ["@id", "name", "nameZh", "description", "descriptionZh"]}
+'
 """

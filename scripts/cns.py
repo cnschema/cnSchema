@@ -31,6 +31,8 @@ from cdata.misc import main_subtask
 
 from schemaorg import Schemaorg
 
+from settings import cns_config
+
 try:
      # Python 2.6-2.7
      from HTMLParser import HTMLParser
@@ -216,7 +218,7 @@ def dup(items, prop, threshold=1):
 
 def task_cns_core_init(args=None):
     name = "cns-core"
-    version = "3.4"
+    version = cns_config["version"]
 
     items = read_cns_core_excel(version, path="local")
     items = rewrite_cns_core(version, items)
@@ -225,7 +227,7 @@ def task_cns_core_init(args=None):
 
 def task_cns_core_stat(args=None):
     name = "cns-core"
-    version = "3.4"
+    version = cns_config["version"]
 
     items = read_cns_core_excel(version, path="data")
 
@@ -237,7 +239,7 @@ def task_cns_core_stat(args=None):
 
 def task_cns_core_excel2json(args=None):
     name = "cns-core"
-    version = "3.4"
+    version = cns_config["version"]
 
     items = read_cns_core_excel(version, path="data")
 
@@ -251,7 +253,7 @@ def task_cns_core_excel2json(args=None):
 
 def task_cns_core_json2excel(args=None):
     name = "cns-core"
-    version = "3.4"
+    version = cns_config["version"]
 
     items = read_cns_core_jsonld(version, path="data")
     #logging.info(items)
@@ -282,16 +284,17 @@ import pystache
 
 class WebsiteV1():
     def __init__(self, version, site, map_id_schemaorg):
-        self.subversion = "{}.2".format(version)
+        self.subversion = "{}.{}".format(version, cns_config["subversion"])
         self.version = version
         self.site = site
         self.dir_output = os.path.join(os.path.dirname(__file__), "../local/sites/{}").format(self.subversion)
+        self.dir_release = os.path.join(os.path.dirname(__file__), "../data/releases/{}").format(version)
         self.map_id_schemaorg = map_id_schemaorg
 
     def run(self):
         self.copy_website_base()
         self.generate_page_vocab()
-        self.generate_page_entity_detail()
+        #self.generate_page_entity_detail()
 
 
     def copy_website_base(self):
@@ -344,11 +347,11 @@ class WebsiteV1():
                     item_simple[p] = item[p]
             data_json["properties"].append( item_simple )
 
-        filename = os.path.join(self.dir_output, "data2/classes.json")
+        filename = os.path.join(self.dir_release, "classes.json")
         create_dir_if_not_exist(filename)
         json2file(data_json["classes"][0], filename)
 
-        filename = os.path.join(self.dir_output, "data2/properties.json")
+        filename = os.path.join(self.dir_release, "properties.json")
         json2file(data_json["properties"], filename)
 
     def generate_page_vocab_331(self):
@@ -645,7 +648,7 @@ MAP_CNSCHEMA = [ {"name":x} for x in PLIST_CNSCHEMA]
 
 def task_cns_make_html(args=None):
     name = "cns-core"
-    version = "3.4"
+    version = cns_config["version"]
     site = "cnschema.org"
 
     items = read_cns_core_jsonld(version, path="data")
@@ -668,7 +671,7 @@ def task_cns_make_html(args=None):
     #rewrite map_id_schemaorg schema.org => cnschema.org    items_new = schemaorg2cnschema(items_new)
     map_id_schemaorg = schemaorg2cnschema(map_id_schemaorg)
 
-    filename = '../local/releases/3.4/cns-core.extend.json'
+    filename = '../local/releases/{}/cns-core.extend.json'.format(cns_config["version"])
     filename = file2abspath(filename, __file__)
     json2file(map_id_schemaorg ,filename)
 
@@ -717,16 +720,14 @@ if __name__ == "__main__":
     main_subtask(__name__)
 
 """
-    python cns.py task_cns_core_init
+    maintain
+        python cns.py task_cns_core_init
+        python cns.py task_cns_core_stat
+        python cns.py task_cns_core_excel2json
+        python cns.py task_cns_make_html
 
-    python cns.py task_cns_core_stat
-
-    python cns.py task_cns_core_excel2json
-
-    python cns.py task_cns_core_json2excel
-
-    python cns.py task_cns_make_html
-
-    python cns.py task_cns_template
+    other
+        python cns.py task_cns_core_json2excel
+        python cns.py task_cns_template
 
 """
