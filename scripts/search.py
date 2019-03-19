@@ -445,11 +445,12 @@ if __name__ == "__main__":
     python search.py task_es_init_mapping
 
     maintain
-    1. check settings.py for last version, [cns_20190115]
-        http://localhost:9200/cns_20190115
+    1. check settings.py for last version, [cns_20190320]
+        http://localhost:9200/cns_20190320
     2. update vesrion to today
     3. update data (cns.py)
     4. load data into es
+        start es (locally installed)
         python search.py task_es_load_data --version=3.4
     5. test
         python search.py task_es_test_regression
@@ -462,10 +463,10 @@ if __name__ == "__main__":
 
 
     other maintain scripts
-        curl -X DELETE localhost:9200/cns_20190115
+        curl -X DELETE localhost:9200/cns_20190320
 
 
-curl -X POST 'localhost:9200/cns_20190115/_search?pretty' -d '
+curl -X POST 'localhost:9200/cns_20190320/_search?pretty' -d '
          {"query": {"query_string": {"fields": ["index_search"], "query": "美"}}, "size": 10, "from": 0, "_source": ["@id", "name", "nameZh", "description", "descriptionZh"]}
 '
 """

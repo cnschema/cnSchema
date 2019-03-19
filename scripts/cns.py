@@ -95,6 +95,7 @@ def read_cns_core_excel(version, path="data"):
     if version == "3.2":
         return read_cns_core_excel_v1(version, path)
 
+    # https://docs.google.com/spreadsheets/d/1mpiBxI5rK_qs86IpbXgN1xbhrxS_VYF0XjI_fcRpl00/edit#gid=364353024
     name = "schemaorg_translate"
     filename = "../{}/releases/{}/{}.xlsx".format(path, version, name)
     filename = file2abspath(filename, __file__)
@@ -208,13 +209,18 @@ def write_cns_core(items, version, formats=["excel","jsonld"]):
 
 
 def dup(items, prop, threshold=1):
+    """
+        detect duplication/missing value in human annotation
+        expect at most 2 dup (supercede by concept have same link)
+    """
     counter = collections.Counter()
     for item in items:
-        counter[item.get(prop,"")]+=1
+        counter[item.get(prop,"EMPTY_STRING")]+=1
     for key, cnt in counter.most_common():
         if cnt <= threshold:
             continue
-        print key, cnt
+        msg = "{}:{}={}".format(prop,    key, cnt)
+        print msg
 
 def task_cns_core_init(args=None):
     name = "cns-core"
@@ -646,7 +652,7 @@ MAP_CNSCHEMA = [ {"name":x} for x in PLIST_CNSCHEMA]
 
 
 
-def task_cns_make_html(args=None):
+def task_cns_generate_json_for_website(args=None):
     name = "cns-core"
     version = cns_config["version"]
     site = "cnschema.org"
@@ -724,7 +730,7 @@ if __name__ == "__main__":
         python cns.py task_cns_core_init
         python cns.py task_cns_core_stat
         python cns.py task_cns_core_excel2json
-        python cns.py task_cns_make_html
+        python cns.py task_cns_generate_json_for_website
 
     other
         python cns.py task_cns_core_json2excel

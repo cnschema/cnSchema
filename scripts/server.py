@@ -123,6 +123,10 @@ if __name__ == "__main__":
     http://localhost:18080/autocomplete?q=store
     http://localhost:18080/search?q=美
 
+
+
+    OUTDATED
+    
     ####################
     ## online release
     sh sync-up-server.sh
