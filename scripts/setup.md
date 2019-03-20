@@ -12,10 +12,12 @@ local update。，。
 4. goto search.py, update elastic search data
 5. goto server.py, test server
 
+
 rebuild  package
 * req
-   ../data/releases/3.4/classes.json
-   ../data/releases/3.4/properties.json
+   cp ../data/releases/3.4/classes.json ../vue-site/static/
+   cp ../data/releases/3.4/properties.json ../vue-site/static/
+
 
 online updated
 rsync -rv -e ssh 3.4.0/ ubuntu@106.75.116.250:/home/ubuntu/cnschema.org/sites/3.4.0
