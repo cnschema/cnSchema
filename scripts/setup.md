@@ -26,3 +26,10 @@ rsync -rv -e ssh 3.4.0/ ubuntu@106.75.116.250:/home/ubuntu/cnschema.org/sites/3.
 python search.py task_es_load_data --version=3.4
 python search.py task_es_test_regression
 python search.py task_es_test --input 店
+python search.py task_es_test --input 录音
+
+更新服务
+tmux attach -t 1
+terminate current web service
+
+python server.py task_server
