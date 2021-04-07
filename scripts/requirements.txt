@@ -1,6 +1,6 @@
 backports-abc==0.5
 beautifulsoup4==4.6.0
-bottle==0.12.13
+bottle==0.12.19
 cdata==0.1.8
 certifi==2017.4.17
 chardet==3.0.4
