@@ -234,13 +234,13 @@
     "rdfs:labelh": "additionalNumberOfGuests"
   },
   {
-    "descriptionZh": "表示实体附加特征的属性值对（例如schema.org中没有匹配属性的产品功能或其他特性）\n注意：出版商应该意识到在使用特定的schema.org属性时，通常期望这类指定的数据作为属性值，而不是使用通用的属性-值机制。",
+    "descriptionZh": "表示实体附加特征的属性值对（例如cnschema.openkg.cn中没有匹配属性的产品功能或其他特性）\n注意：出版商应该意识到在使用特定的cnschema.openkg.cn属性时，通常期望这类指定的数据作为属性值，而不是使用通用的属性-值机制。",
     "nameZh": "附加属性",
     "rdfs:comment": " e.g. a product feature or another characteristic for which there is no matching property in cnschema.openkg.cn.<br><br/>\n\n\n\nNote: Publishers should be aware that applications designed to use specific cnschema.openkg.cn properties (e.g. https://cnschema.openkg.cn/宽度, https://cnschema.openkg.cn/颜色",
     "rdfs:labelh": "additionalProperty"
   },
   {
-    "descriptionZh": "该项的一个附加类型， 通常用于从外部词典中向微数据语法添加更加具体的类型。它表示事物和事物本身所属的类之间的关系。在RDFa语法中, 对多类型最好使用‘typeof’属性这样的本地RDFa语法. Schema.org 工具对额外类型的理解较弱，特别是外部定义的额外类型。",
+    "descriptionZh": "该项的一个附加类型， 通常用于从外部词典中向微数据语法添加更加具体的类型。它表示事物和事物本身所属的类之间的关系。在RDFa语法中, 对多类型最好使用‘typeof’属性这样的本地RDFa语法. cnschema.openkg.cn 工具对额外类型的理解较弱，特别是外部定义的额外类型。",
     "nameZh": "附加类型",
     "rdfs:comment": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. cnschema.openkg.cn tools may have only weaker understanding of extra types, in particular those defined externally.",
     "rdfs:labelh": "additionalType"
@@ -2514,7 +2514,7 @@
     "rdfs:labelh": "earlyPrepaymentPenalty"
   },
   {
-    "descriptionZh": "代表电影或电视作品的特定编辑/版本的标记符。例如，名为“捉鬼敢死队”的电影，其标题 EIDR 为“10.5240/7EC7-228A-510A-053E-CBB8-J”，除此之外还有几个编辑，例如“10.5240/1F2A-E1C5-680A-14C6-E76B-I”和“10.5240/8A35-3BEE-6497-5D12-9E4F-3”。由于像 电影 和 电视剧 这样的 schema.org 类型可用于作品及其多种表达方式，因此可以单独使用 titleEIDR（用于一般描述），或与 editEIDR 一起使用进行更具体的描述",
+    "descriptionZh": "代表电影或电视作品的特定编辑/版本的标记符。例如，名为“捉鬼敢死队”的电影，其标题 EIDR 为“10.5240/7EC7-228A-510A-053E-CBB8-J”，除此之外还有几个编辑，例如“10.5240/1F2A-E1C5-680A-14C6-E76B-I”和“10.5240/8A35-3BEE-6497-5D12-9E4F-3”。由于像 电影 和 电视剧 这样的 cnschema.openkg.cn 类型可用于作品及其多种表达方式，因此可以单独使用 titleEIDR（用于一般描述），或与 editEIDR 一起使用进行更具体的描述",
     "nameZh": "编辑标记符",
     "rdfs:comment": "",
     "rdfs:labelh": "editEIDR"
@@ -2874,241 +2874,241 @@
     "rdfs:labelh": "evidenceOrigin"
   },
   {
-    "descriptionZh": "定义一个<a class=“localLink”href=“/Date”>日期</a>或<a class=“localLink”href=“/DateTime”>日期时间</a>，在此期间计划的<a class=“localLink”href=“/Event”>事件将不会发生。\n该属性允许指定<a class=“localLink”href=“/Schedule”>计划的例外情况。\n如果将异常指定为a<a class=“localLink”href=“/DateTime”>DateTime</a>，则只有在该特定日期和时间开始的事件才应从计划中排除。\n这样就可以将一整天排除在日程之外，而不必逐项列出每一个预定的活动。",
+    "descriptionZh": "相关的创作，通常二者有范例，参考的关系。",
     "nameZh": "范例作品",
     "rdfs:comment": "A creative work that this work is an example/instance/realization/derivation of.",
     "rdfs:labelh": "exampleOfWork"
   },
   {
-    "descriptionZh": "经纪人或其他中间人买卖外币的价格之间的差额。",
+    "descriptionZh": "定义一个<a class=“localLink”href=“/Date”>日期</a>或<a class=“localLink”href=“/DateTime”>日期时间</a>，在此期间计划的<a class=“localLink”href=“/Event”>事件将不会发生。\n该属性允许指定<a class=“localLink”href=“/Schedule”>计划的例外情况。\n如果将异常指定为a<a class=“localLink”href=“/DateTime”>DateTime</a>，则只有在该特定日期和时间开始的事件才应从计划中排除。\n这样就可以将一整天排除在日程之外，而不必逐项列出每一个预定的活动。",
     "nameZh": "除外日期",
     "rdfs:comment": "Defines a <a class=\"localLink\" href=\"/Date\">Date</a> or <a class=\"localLink\" href=\"/DateTime\">DateTime</a> during which a scheduled <a class=\"localLink\" href=\"/Event\">Event</a> will not take place. The property allows exceptions to\n\na <a class=\"localLink\" href=\"/Schedule\">Schedule</a> to be specified. If an exception is specified as a <a class=\"localLink\" href=\"/DateTime\">DateTime</a> then only the event that would have started at that specific date and time\n\nshould be excluded from the schedule. If an exception is specified as a <a class=\"localLink\" href=\"/Date\">Date</a> then any event that is scheduled for that 24 hour period should be\n\nexcluded from the schedule. This allows a whole day to be excluded from the schedule without having to itemise every scheduled event.",
     "rdfs:labelh": "exceptDate"
   },
   {
-    "descriptionZh": "软件开发中，软件库的文件名，例如windows 里的DLL文件。",
+    "descriptionZh": "经纪人或其他中间人买卖外币的价格之间的差额。",
     "nameZh": "汇率价差",
     "rdfs:comment": "The difference between the price at which a broker or other intermediary buys and sells foreign currency.",
     "rdfs:labelh": "exchangeRateSpread"
   },
   {
-    "descriptionZh": "活动的执行场地。",
+    "descriptionZh": "软件开发中，软件库的文件名，例如windows 里的DLL文件。",
     "nameZh": "可执行链接库名称",
     "rdfs:comment": "Library file name e.g., mscorlib.dll, system.web.dll.",
     "rdfs:labelh": "executableLibraryName"
   },
   {
-    "descriptionZh": "器具的子属性。用于此行动的锻炼计划。",
+    "descriptionZh": "活动的执行场地。",
     "nameZh": "锻炼场地",
     "rdfs:comment": "A sub property of location. The course where this action was taken.",
     "rdfs:labelh": "exerciseCourse"
   },
   {
-    "descriptionZh": "器具的子属性。这个行动中使用的饮食。",
+    "descriptionZh": "器具的子属性。用于此行动的锻炼计划。",
     "nameZh": "锻炼计划",
     "rdfs:comment": "A sub property of instrument. The exercise plan used on this action.",
     "rdfs:labelh": "exercisePlan"
   },
   {
-    "descriptionZh": "锻炼或活动的类型，如力量训练、柔韧性训练、有氧运动、心脏康复等。",
+    "descriptionZh": "器具的子属性。这个行动中使用的饮食。",
     "nameZh": "运动相关饮食",
     "rdfs:comment": "A sub property of instrument. The diet used in this action.",
     "rdfs:labelh": "exerciseRelatedDiet"
   },
   {
-    "descriptionZh": "此对象的EXIF数据。",
+    "descriptionZh": "锻炼或活动的类型，如力量训练、柔韧性训练、有氧运动、心脏康复等。",
     "nameZh": "运动类型",
     "rdfs:comment": "Type(s) of exercise or activity, such as strength training, flexibility training, aerobics, cardiac rehabilitation, etc.",
     "rdfs:labelh": "exerciseType"
   },
   {
-    "descriptionZh": "包裹可能到达的最早日期。",
+    "descriptionZh": "此对象的EXIF数据。",
     "nameZh": "图片对象的EXIF信息",
     "rdfs:comment": "exif data for this object.",
     "rdfs:labelh": "exifData"
   },
   {
-    "descriptionZh": "包裹可能到达的最晚日期。",
+    "descriptionZh": "包裹可能到达的最早日期。",
     "nameZh": "预计最早送达时间",
     "rdfs:comment": "The earliest date the package may arrive.",
     "rdfs:labelh": "expectedArrivalFrom"
   },
   {
-    "descriptionZh": "在短期或长期的医疗条件下可能出现的结果。",
+    "descriptionZh": "包裹可能到达的最晚日期。",
     "nameZh": "预计最晚送达时间",
     "rdfs:comment": "The latest date the package may arrive.",
     "rdfs:labelh": "expectedArrivalUntil"
   },
   {
-    "descriptionZh": "行动前必须接受的条件。例如，用户可能需要购买电影才能观看。",
+    "descriptionZh": "在短期或长期的医疗条件下可能出现的结果。",
     "nameZh": "治疗预期",
     "rdfs:comment": "The likely outcome in either the short term or long term of the medical condition.",
     "rdfs:labelh": "expectedPrognosis"
   },
   {
-    "descriptionZh": "表明一个职位：是否可以用职业经历取代其正式学历资格。如果为true，则表示满足其中一个要求就足够了。",
+    "descriptionZh": "行动前必须接受的条件。例如，用户可能需要购买电影才能观看。",
     "nameZh": "行动前必须接受的条件",
     "rdfs:comment": "An Offer which must be accepted before the user can perform the Action. For example, the user may need to buy a movie before being able to watch it.",
     "rdfs:labelh": "expectsAcceptanceOf"
   },
   {
-    "descriptionZh": "职位所需的技能和经验的描述。",
+    "descriptionZh": "表明一个职位：是否可以用职业经历取代其正式学历资格。如果为true，则表示满足其中一个要求就足够了。",
     "nameZh": "经历取代教育",
     "rdfs:comment": "Indicates whether a <a class=\"localLink\" href=\"/JobPosting\">JobPosting</a> will accept experience (as indicated by <a class=\"localLink\" href=\"/OccupationalExperienceRequirements\">OccupationalExperienceRequirements</a>) in place of its formal educational qualifications (as indicated by <a class=\"localLink\" href=\"/educationRequirements\">educationRequirements</a>). If true, indicates that satisfying one of these requirements is sufficient.",
     "rdfs:labelh": "experienceInPlaceOfEducation"
   },
   {
-    "descriptionZh": "与该计划相关的医学专家建议。",
+    "descriptionZh": "职位所需的技能和经验的描述。",
     "nameZh": "经验要求",
     "rdfs:comment": "Description of skills and experience needed for the position or Occupation.",
     "rdfs:labelh": "experienceRequirements"
   },
   {
-    "descriptionZh": "内容过期且不再有用或可用的日期。例如，可用性或相关性受时间限制的<a class=“localLink”href=“/VideoObject”>VideoObject</a>或<a class=“localLink”href=“/NewsArticle”>NewsArticle</a>，或者是一个<a class=“localLink”href=“/ClaimReview”>ClaimReview</a>事实调查，其发布者希望表明它在某个日期之后可能不再相关（或有助于突出显示）。",
+    "descriptionZh": "与该计划相关的医学专家建议。",
     "nameZh": "专家建议",
     "rdfs:comment": "Medical expert advice related to the plan.",
     "rdfs:labelh": "expertConsiderations"
   },
   {
-    "descriptionZh": "在实验中观察到该基因呈现活性的组织、器官、生物样本等。比如大脑，消化系统。",
+    "descriptionZh": "内容过期且不再有用或可用的日期。例如，可用性或相关性受时间限制的<a class=“localLink”href=“/VideoObject”>VideoObject</a>或<a class=“localLink”href=“/NewsArticle”>NewsArticle</a>，或者是一个<a class=“localLink”href=“/ClaimReview”>ClaimReview</a>事实调查，其发布者希望表明它在某个日期之后可能不再相关（或有助于突出显示）。",
     "nameZh": "过期日期",
     "rdfs:comment": "Date the content expires and is no longer useful or available. For example a <a class=\"localLink\" href=\"/VideoObject\">VideoObject</a> or <a class=\"localLink\" href=\"/NewsArticle\">NewsArticle</a> whose availability or relevance is time-limited, or a <a class=\"localLink\" href=\"/ClaimReview\">ClaimReview</a> fact check whose publisher wants to indicate that it may no longer be relevant (or helpful to highlight) after some date.",
     "rdfs:labelh": "expires"
   },
   {
-    "descriptionZh": "姓。 在美国，是一个人姓名中的最后一个字。",
+    "descriptionZh": "在实验中观察到该基因呈现活性的组织、器官、生物样本等。比如大脑，消化系统。",
     "nameZh": "表达在",
     "rdfs:comment": "Tissue, organ, biological sample, etc in which activity of this gene has been observed experimentally. For example brain, digestive system.",
     "rdfs:labelh": "expressedIn"
   },
   {
-    "descriptionZh": "脂肪的克数。",
+    "descriptionZh": "姓。 在美国，是一个人姓名中的最后一个字。",
     "nameZh": "姓",
     "rdfs:comment": "Family name. In the U.S., the last name of a Person.",
     "rdfs:labelh": "familyName"
   },
   {
-    "descriptionZh": "传真号。",
+    "descriptionZh": "脂肪的克数。",
     "nameZh": "脂肪含量",
     "rdfs:comment": "The number of grams of fat.",
     "rdfs:labelh": "fatContent"
   },
   {
-    "descriptionZh": "应用程序提供的功能或模块。",
+    "descriptionZh": "传真号。",
     "nameZh": "传真号",
     "rdfs:comment": "The fax number.",
     "rdfs:labelh": "faxNumber"
   },
   {
-    "descriptionZh": "金融产品或金融服务机构适用的费用，佣金和其他条款的说明。",
+    "descriptionZh": "应用程序提供的功能或模块。",
     "nameZh": "功能列表",
     "rdfs:comment": "Features or modules provided by this application (and possibly required by other applications).",
     "rdfs:labelh": "featureList"
   },
   {
-    "descriptionZh": "纤维的克数。",
+    "descriptionZh": "金融产品或金融服务机构适用的费用，佣金和其他条款的说明。",
     "nameZh": "费用和佣金详情",
     "rdfs:comment": "Description of fees, commissions, and other terms applied either to a class of ficial product, or by a ficial service organization.",
     "rdfs:labelh": "feesAndCommissionsSpecification"
   },
   {
-    "descriptionZh": "文件格式（或文件类型）是指电脑为了存储信息而使用的对信息的特殊编码方式，是用于识别内部储存的资料。比如有的储存图片，有的储存程序，有的储存文字信息。每一类信息，都可以一种或多种文件格式保存在电脑存储中。每一种文件格式通常会有一种或多种扩展名可以用来识别，但也可能没有扩展名。扩展名可以帮助应用程序识别的文件格式。",
+    "descriptionZh": "纤维的克数。",
     "nameZh": "纤维含量",
     "rdfs:comment": "The number of grams of fiber.",
     "rdfs:labelh": "fiberContent"
   },
   {
-    "descriptionZh": "文件大小能衡量一个计算机文件的大小。通常情况下以带前缀的字节数表示。",
+    "descriptionZh": "文件格式（或文件类型）是指电脑为了存储信息而使用的对信息的特殊编码方式，是用于识别内部储存的资料。比如有的储存图片，有的储存程序，有的储存文字信息。每一类信息，都可以一种或多种文件格式保存在电脑存储中。每一种文件格式通常会有一种或多种扩展名可以用来识别，但也可能没有扩展名。扩展名可以帮助应用程序识别的文件格式。",
     "nameZh": "文件格式",
     "rdfs:comment": "",
     "rdfs:labelh": "fileFormat"
   },
   {
-    "descriptionZh": "一种官方援助类型或项目，学生可以用该项目来支付与该项目相关的学费或费用。",
+    "descriptionZh": "文件大小能衡量一个计算机文件的大小。通常情况下以带前缀的字节数表示。",
     "nameZh": "文件大小",
     "rdfs:comment": "Size of the application / package (e.g. 18MB). In the absence of a unit (MB, KB etc.), KB will be assumed.",
     "rdfs:labelh": "fileSize"
   },
   {
-    "descriptionZh": "表示在某些<a class=“localLink”href=“/CreativeWork”>CreativeWork</a>中首次出现已知的<a class=“localLink”href=“/CreativeWork”>CreativeWork</a>。",
+    "descriptionZh": "一种官方援助类型或项目，学生可以用该项目来支付与该项目相关的学费或费用。",
     "nameZh": "官方援助资格",
     "rdfs:comment": "A ficial aid type or program which students may use to pay for tuition or fees associated with the program.",
     "rdfs:labelh": "ficialAidEligible"
   },
   {
-    "descriptionZh": "首演的日期和地点。",
+    "descriptionZh": "表示在某些<a class=“localLink”href=“/CreativeWork”>CreativeWork</a>中首次出现已知的<a class=“localLink”href=“/CreativeWork”>CreativeWork</a>。",
     "nameZh": "首次亮相",
     "rdfs:comment": "Indicates the first known occurence of a <a class=\"localLink\" href=\"/Claim\">Claim</a> in some <a class=\"localLink\" href=\"/CreativeWork\">CreativeWork</a>.",
     "rdfs:labelh": "firstAppearance"
   },
   {
-    "descriptionZh": "航班飞行的距离。",
+    "descriptionZh": "首演的日期和地点。",
     "nameZh": "首演",
     "rdfs:comment": "The date and place the work was first performed.",
     "rdfs:labelh": "firstPerformance"
   },
   {
-    "descriptionZh": "包含国际航空运输协会（IATA）代码在内的航班唯一标记号。例如，联合航空公司对应的IATA代码是“UA”，它有一架航班为110，那么它的航班号是“UA110”。",
+    "descriptionZh": "航班飞行的距离。",
     "nameZh": "飞行距离",
     "rdfs:comment": "The distance of the flight.",
     "rdfs:labelh": "flightDistance"
   },
   {
-    "descriptionZh": "多层建筑中住宿的楼层。由于计数系统<a href=”https://en.wikipedia.org/wiki/Storey#Consecutive_number_floor_designations“>在国际上有所不同</a>，应尽可能使用本地系统。/",
+    "descriptionZh": "包含国际航空运输协会（IATA）代码在内的航班唯一标记号。例如，联合航空公司对应的IATA代码是“UA”，它有一架航班为110，那么它的航班号是“UA110”。",
     "nameZh": "航班号",
     "rdfs:comment": "The unique identifier for a flight including the airline IATA code. For example, if describing United flight 110, where the IATA code for United is 'UA', the flightNumber is 'UA110'.",
     "rdfs:labelh": "flightNumber"
   },
   {
-    "descriptionZh": "最低限额是信用卡交易必须授权的金额。",
+    "descriptionZh": "多层建筑中住宿的楼层。由于计数系统<a href=”https://en.wikipedia.org/wiki/Storey#Consecutive_number_floor_designations“>在国际上有所不同</a>，应尽可能使用本地系统。/",
     "nameZh": "楼层",
     "rdfs:comment": "",
     "rdfs:labelh": "floorLevel"
   },
   {
-    "descriptionZh": "房间大小。常用单位代码：MTK表示平方米，FTK表示平方英尺，YDK表示平方码。",
+    "descriptionZh": "最低限额是信用卡交易必须授权的金额。",
     "nameZh": "最低限额",
     "rdfs:comment": "A floor limit is the amount of money above which credit card transactions must be authorized.",
     "rdfs:labelh": "floorLimit"
   },
   {
-    "descriptionZh": "社交网络上被别人关注。",
+    "descriptionZh": "房间大小。常用单位代码：MTK表示平方米，FTK表示平方英尺，YDK表示平方码。",
     "nameZh": "建筑面积",
     "rdfs:comment": "The size of the accommodation, e.g. in square meter or squarefoot.\n\nTypical unit code(s): MTK for square meter, FTK for square foot, or YDK for square yard",
     "rdfs:labelh": "floorSize"
   },
   {
-    "descriptionZh": "社交网络上主动关注其他人或组织。",
+    "descriptionZh": "社交网络上被别人关注。",
     "nameZh": "被关注",
     "rdfs:comment": "A sub property of object. The person or organization being followed.",
     "rdfs:labelh": "followee"
   },
   {
-    "descriptionZh": "手术后的典型或推荐后续护理。",
+    "descriptionZh": "社交网络上主动关注其他人或组织。",
     "nameZh": "关注",
     "rdfs:comment": "The most generic uni-directional social relation.",
     "rdfs:labelh": "follows"
   },
   {
-    "descriptionZh": "位置的子属性。行动发生的特定食品场所。",
+    "descriptionZh": "手术后的典型或推荐后续护理。",
     "nameZh": "跟进",
     "rdfs:comment": "Typical or recommended followup care after the procedure is performed.",
     "rdfs:labelh": "followup"
   },
   {
-    "descriptionZh": "位置的子属性，食物事件发生的地点。",
+    "descriptionZh": "位置的子属性。行动发生的特定食品场所。",
     "nameZh": "餐饮场所",
     "rdfs:comment": "A sub property of location. The specific food establishment where the action occurred.",
     "rdfs:labelh": "foodEstablishment"
   },
   {
-    "descriptionZh": "服用本药物时与特定食物相关的任何预防、指导、禁忌症等。",
+    "descriptionZh": "位置的子属性，食物事件发生的地点。",
     "nameZh": "食物事件发生的地点",
     "rdfs:comment": "A sub property of location. The specific food event where the action occurred.",
     "rdfs:labelh": "foodEvent"
   },
   {
-    "descriptionZh": "组织机构的创始人。",
+    "descriptionZh": "服用本药物时与特定食物相关的任何预防、指导、禁忌症等。",
     "nameZh": "食物警告",
     "rdfs:comment": "Any precaution, guidance, contraindication, etc. related to consumption of specific foods while taking this drug.",
     "rdfs:labelh": "foodWarning"
@@ -3120,745 +3120,745 @@
     "rdfs:labelh": "founder"
   },
   {
-    "descriptionZh": "组织机构成立的日期。",
+    "descriptionZh": "组织机构的创始人。",
     "nameZh": "创始人",
     "rdfs:comment": "A person who founded this organization.",
     "rdfs:labelh": "founders"
   },
   {
-    "descriptionZh": "组织机构成立的地点。",
+    "descriptionZh": "组织机构成立的日期。",
     "nameZh": "成立日期",
     "rdfs:comment": "The date that this organization was founded.",
     "rdfs:labelh": "foundingDate"
   },
   {
-    "descriptionZh": "一种标志，表示该物品、事件或场所可以免费进入。",
+    "descriptionZh": "组织机构成立的地点。",
     "nameZh": "成立地点",
     "rdfs:comment": "The place where the Organization was founded.",
     "rdfs:labelh": "foundingLocation"
   },
   {
-    "descriptionZh": "一个货币金额，金额大于等于该值时，运费免费。计划通过<a class=“localLink”href=“/OfferShippingDetails”>OfferShippingDetails</a>与<a class=“localLink”href=“/shippingSettingsLink”>shippingSettingsLink</a>匹配的<a class=“localLink”href=“/ShippingRateSettings”>ShippingRateSettings</a>使用。",
+    "descriptionZh": "一种标志，表示该物品、事件或场所可以免费进入。",
     "nameZh": "免费标记",
     "rdfs:comment": "A flag to signal that the item, event, or place is accessible for free.",
     "rdfs:labelh": "free"
   },
   {
-    "descriptionZh": "多长时间服用一次，比如：每天。",
+    "descriptionZh": "一个货币金额，金额大于等于该值时，运费免费。计划通过<a class=“localLink”href=“/OfferShippingDetails”>OfferShippingDetails</a>与<a class=“localLink”href=“/shippingSettingsLink”>shippingSettingsLink</a>匹配的<a class=“localLink”href=“/ShippingRateSettings”>ShippingRateSettings</a>使用。",
     "nameZh": "免运费门槛",
     "rdfs:comment": "A monetary value above which (or equal to) the shipping rate becomes free. Intended to be used via an <a class=\"localLink\" href=\"/OfferShippingDetails\">OfferShippingDetails</a> with <a class=\"localLink\" href=\"/shippingSettingsLink\">shippingSettingsLink</a> matching this <a class=\"localLink\" href=\"/ShippingRateSettings\">ShippingRateSettings</a>.",
     "rdfs:labelh": "freeShippingThreshold"
   },
   {
-    "descriptionZh": "位置的子属性。操作之前对象或代理的原始位置。",
+    "descriptionZh": "多长时间服用一次，比如：每天。",
     "nameZh": "频率",
     "rdfs:comment": "How often the dose is taken, e.g. 'daily'.",
     "rdfs:labelh": "frequency"
   },
   {
-    "descriptionZh": "燃料箱的容量，如果是电动汽车，电池的容量。如果有多个组件用于存储，则应指示相同类型的所有存储的总数。典型单位代码：升的LTR，美国加仑的GLL，英国/英制加仑的GLI，安培小时的AMH（电动汽车）。",
+    "descriptionZh": "位置的子属性。操作之前对象或代理的原始位置。",
     "nameZh": "发源地",
     "rdfs:comment": "A sub property of location. The original location of the object or the agent before the action.",
     "rdfs:labelh": "fromLocation"
   },
   {
-    "descriptionZh": "车辆行驶特定距离或时间所消耗的燃料量（例如每100公里升）。",
+    "descriptionZh": "燃料箱的容量，如果是电动汽车，电池的容量。如果有多个组件用于存储，则应指示相同类型的所有存储的总数。典型单位代码：升的LTR，美国加仑的GLL，英国/英制加仑的GLI，安培小时的AMH（电动汽车）。",
     "nameZh": "燃料容量",
     "rdfs:comment": "The capacity of the fuel tank or in the case of electric cars, the battery. If there are multiple components for storage, this should indicate the total of all storage of the same type.<br/><br/>\n\n\n\nTypical unit code(s): LTR for liters, GLL of US gallons, GLI for UK / imperial gallons, AMH for ampere-hours (for electrical vehicles).",
     "rdfs:labelh": "fuelCapacity"
   },
   {
-    "descriptionZh": "每单位燃料行驶的距离。",
+    "descriptionZh": "车辆行驶特定距离或时间所消耗的燃料量（例如每100公里升）。",
     "nameZh": "耗油率",
     "rdfs:comment": "The amount of fuel consumed for traveling a particular distance or temporal duration with the given vehicle (e.g. liters per 100 km).<br/><br/>\n\n\n\n<ul>\n\n<li>Note 1: There are unfortunately no standard unit codes for liters per 100 km.  Use <a class=\"localLink\" href=\"/unitText\">unitText</a> to indicate the unit of measurement, e.g. L/100 km.</li>\n\n<li>Note 2: There are two ways of indicating the fuel consumption, <a class=\"localLink\" href=\"/fuelConsumption\">fuelConsumption</a> (e.g. 8 liters per 100 km) and <a class=\"localLink\" href=\"/fuelEfficiency\">fuelEfficiency</a> (e.g. 30 miles per gallon). They are reciprocal.</li>\n\n<li>Note 3: Often, the absolute value is useful only when related to driving speed (\"at 80 km/h\") or usage pattern (\"city traffic\"). You can use <a class=\"localLink\" href=\"/valueReference\">valueReference</a> to link the value for the fuel consumption to another value.</li>\n\n</ul>",
     "rdfs:labelh": "fuelConsumption"
   },
   {
-    "descriptionZh": "适合车辆发动机的燃料类型。如果车辆只有一个发动机，此属性可以直接连接到车辆。",
+    "descriptionZh": "每单位燃料行驶的距离。",
     "nameZh": "油耗值",
     "rdfs:comment": "The distance traveled per unit of fuel used; most commonly miles per gallon (mpg) or kilometers per liter (km/L).<br/><br/>\n\n\n\n<ul>\n\n<li>Note 1: There are unfortunately no standard unit codes for miles per gallon or kilometers per liter. Use <a class=\"localLink\" href=\"/unitText\">unitText</a> to indicate the unit of measurement, e.g. mpg or km/L.</li>\n\n<li>Note 2: There are two ways of indicating the fuel consumption, <a class=\"localLink\" href=\"/fuelConsumption\">fuelConsumption</a> (e.g. 8 liters per 100 km) and <a class=\"localLink\" href=\"/fuelEfficiency\">fuelEfficiency</a> (e.g. 30 miles per gallon). They are reciprocal.</li>\n\n<li>Note 3: Often, the absolute value is useful only when related to driving speed (\"at 80 km/h\") or usage pattern (\"city traffic\"). You can use <a class=\"localLink\" href=\"/valueReference\">valueReference</a> to link the value for the fuel economy to another value.</li>\n\n</ul>",
     "rdfs:labelh": "fuelEfficiency"
   },
   {
-    "descriptionZh": "关节允许的活动度。",
+    "descriptionZh": "适合车辆发动机的燃料类型。如果车辆只有一个发动机，此属性可以直接连接到车辆。",
     "nameZh": "燃料类型",
     "rdfs:comment": "The type of fuel suitable for the engine or engines of the vehicle. If the vehicle has only one engine, this property can be attached directly to the vehicle.",
     "rdfs:labelh": "fuelType"
   },
   {
-    "descriptionZh": "表示基金会资助或赞助的项目。",
+    "descriptionZh": "关节允许的活动度。",
     "nameZh": "功能类",
     "rdfs:comment": "The degree of mobility the joint allows.",
     "rdfs:labelh": "functionalClass"
   },
   {
-    "descriptionZh": "通过某种非正式的贡献来支持（赞助）某事的人或组织。",
+    "descriptionZh": "表示基金会资助或赞助的项目。",
     "nameZh": "资助项目",
     "rdfs:comment": "Indicates an item funded or sponsored through a <a class=\"localLink\" href=\"/Grant\">Grant</a>.",
     "rdfs:labelh": "fundedItem"
   },
   {
-    "descriptionZh": "服务器上运行的游戏。",
+    "descriptionZh": "通过某种非正式的贡献来支持（赞助）某事的人或组织。",
     "nameZh": "投资者",
     "rdfs:comment": "A person or organization that supports (sponsors) something through some kind of ficial contribution.",
     "rdfs:labelh": "funder"
   },
   {
-    "descriptionZh": "游戏中存在的物品。",
+    "descriptionZh": "服务器上运行的游戏。",
     "nameZh": "游戏",
     "rdfs:comment": "Video game which is played on this server.",
     "rdfs:labelh": "game"
   },
   {
-    "descriptionZh": "游戏中的真实或虚拟的地址。",
+    "descriptionZh": "游戏中存在的物品。",
     "nameZh": "游戏道具",
     "rdfs:comment": "An item is an object within the game world that can be collected by a player or, occasionally, a non-player character.",
     "rdfs:labelh": "gameItem"
   },
   {
-    "descriptionZh": "用于玩电子游戏的电子系统。",
+    "descriptionZh": "游戏中的真实或虚拟的地址。",
     "nameZh": "游戏地址",
     "rdfs:comment": "Real or fictional location of the game (or part of game).",
     "rdfs:labelh": "gameLocation"
   },
   {
-    "descriptionZh": "支持游戏运行的服务器。",
+    "descriptionZh": "用于玩电子游戏的电子系统。",
     "nameZh": "游戏平台",
     "rdfs:comment": "",
     "rdfs:labelh": "gamePlatform"
   },
   {
-    "descriptionZh": "游戏攻略指的就是指官方或非官方发布的，可以为玩家提供一些游戏经验与心得的文字或视频类的教材。引导玩家特别是新手玩家熟悉并能尽快的对相关游戏的更多深入了解的文章，或者也可以说是一些玩家自己的游戏心得，跟大家一起分享。有些玩家也会称之为游戏秘籍。",
+    "descriptionZh": "支持游戏运行的服务器。",
     "nameZh": "游戏服务器",
     "rdfs:comment": "The server on which  it is possible to play the game.",
     "rdfs:labelh": "gameServer"
   },
   {
-    "descriptionZh": "事物的性别，通常是a<a class=“localLink”href=“/Person”>Person</a>，但也可能是虚构人物、动物等。\nhttps://schema.org/Male和https://schema.org/Female可以使用，对于无法被判定为二元性别的人，也可以使用字符。\n<a class=“localLink”href=“/gender”>gender</a>属性也可以在更宽泛的意义上用于涵盖运动队的性别。至于个人的性别，我们并不试图列举所有的可能性。混合性别可以用文本值“mixed”表示。/",
+    "descriptionZh": "游戏攻略指的就是指官方或非官方发布的，可以为玩家提供一些游戏经验与心得的文字或视频类的教材。引导玩家特别是新手玩家熟悉并能尽快的对相关游戏的更多深入了解的文章，或者也可以说是一些玩家自己的游戏心得，跟大家一起分享。有些玩家也会称之为游戏秘籍。",
     "nameZh": "游戏攻略",
     "rdfs:comment": "Links to tips, tactics, etc.",
     "rdfs:labelh": "gameTip"
   },
   {
-    "descriptionZh": "文学、艺术、电影或音乐的体裁，类型。",
+    "descriptionZh": "事物的性别，通常是a<a class=“localLink”href=“/Person”>Person</a>，但也可能是虚构人物、动物等。\nhttps://cnschema.openkg.cn/Male和https://cnschema.openkg.cn/Female可以使用，对于无法被判定为二元性别的人，也可以使用字符。\n<a class=“localLink”href=“/gender”>gender</a>属性也可以在更宽泛的意义上用于涵盖运动队的性别。至于个人的性别，我们并不试图列举所有的可能性。混合性别可以用文本值“mixed”表示。/",
     "nameZh": "性别",
     "rdfs:comment": "",
     "rdfs:labelh": "gender"
   },
   {
-    "descriptionZh": "地理位置的坐标。",
+    "descriptionZh": "文学、艺术、电影或音乐的体裁，类型。",
     "nameZh": "风格",
     "rdfs:comment": "Genre of the creative work, broadcast channel or group.",
     "rdfs:labelh": "genre"
   },
   {
-    "descriptionZh": "表示两个几何图形（或它们的位置）之间的关系，将外围的几何图形与内含的几何图形关联起来。“如果b的任何点不在a的外部，且b的内部至少有一点在a的内部，则a包含b”。如<a href=”中所定义https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>。/",
+    "descriptionZh": "地理位置的坐标。",
     "nameZh": "经纬度",
     "rdfs:comment": "The geo coordinates of the place.",
     "rdfs:labelh": "geo"
   },
   {
-    "descriptionZh": "表示两个几何图形（或它们所代表的位置）之间的关系，将一个几何图形与覆盖它的另一个几何图形相关联。如<a href=”中所定义https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>。/",
+    "descriptionZh": "表示两个几何图形（或它们的位置）之间的关系，将外围的几何图形与内含的几何图形关联起来。“如果b的任何点不在a的外部，且b的内部至少有一点在a的内部，则a包含b”。如<a href=”中所定义https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>。/",
     "nameZh": "几何包含",
     "rdfs:comment": "Represents a relationship between two geometries (or the places they represent), relating a containing geometry to a contained geometry. \"a contains b iff no points of b lie in the exterior of a/en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>./",
     "rdfs:labelh": "geoContains"
   },
   {
-    "descriptionZh": "表示两个几何图形（或它们所代表的位置）之间的关系，将一个几何图形与覆盖它的另一个几何图形相关联。“b的每个点都是a的（内部或边界）点”。如<a href=”中所定义https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>。/",
+    "descriptionZh": "表示两个几何图形（或它们所代表的位置）之间的关系，将一个几何图形与覆盖它的另一个几何图形相关联。如<a href=”中所定义https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>。/",
     "nameZh": "被覆盖",
     "rdfs:comment": "",
     "rdfs:labelh": "geoCoveredBy"
   },
   {
-    "descriptionZh": "表示两个几何体（或它们所代表的位置）之间的关系，将一个几何体与另一个与之相交的几何体相关联：“a与b相交：它们有一些但不是所有的内部点是相同的，并且相交的尺寸小于其中至少一个的尺寸”。如<a href=”中所定义https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>。/",
+    "descriptionZh": "表示两个几何图形（或它们所代表的位置）之间的关系，将一个几何图形与覆盖它的另一个几何图形相关联。“b的每个点都是a的（内部或边界）点”。如<a href=”中所定义https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>。/",
     "nameZh": "集合覆盖",
     "rdfs:comment": "",
     "rdfs:labelh": "geoCovers"
   },
   {
-    "descriptionZh": "表示两个几何体（或它们所代表的位置）在拓扑上不相交的空间关系：它们没有共同点。它们形成了一组不相连的几何图形。（对称关系，定义见<a href=）https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>）/",
+    "descriptionZh": "表示两个几何体（或它们所代表的位置）之间的关系，将一个几何体与另一个与之相交的几何体相关联：“a与b相交：它们有一些但不是所有的内部点是相同的，并且相交的尺寸小于其中至少一个的尺寸”。如<a href=”中所定义https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>。/",
     "nameZh": "几何相交",
     "rdfs:comment": "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that crosses it: \"a crosses b: they have some but not all interior points in common/en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>./",
     "rdfs:labelh": "geoCrosses"
   },
   {
-    "descriptionZh": "表示两个几何体（或它们所代表的位置）在拓扑上相等的空间关系，如<a href=”中所定义https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>”如果两个几何体的内部相交，且一个几何体的内部或边界没有任何部分与另一个几何体的外部相交，则两个几何体在拓扑上是相等的”（对称关系）/",
+    "descriptionZh": "表示两个几何体（或它们所代表的位置）在拓扑上不相交的空间关系：它们没有共同点。它们形成了一组不相连的几何图形。（对称关系，定义见<a href=）https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>）/",
     "nameZh": "几何不相交",
     "rdfs:comment": "",
     "rdfs:labelh": "geoDisjoint"
   },
   {
-    "descriptionZh": "表示两个几何体（或它们所代表的位置）至少有一个公共点的空间关系。如<a href=”中所定义https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>。/",
+    "descriptionZh": "表示两个几何体（或它们所代表的位置）在拓扑上相等的空间关系，如<a href=”中所定义https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>”如果两个几何体的内部相交，且一个几何体的内部或边界没有任何部分与另一个几何体的外部相交，则两个几何体在拓扑上是相等的”（对称关系）/",
     "nameZh": "几何相等",
     "rdfs:comment": "",
     "rdfs:labelh": "geoEquals"
   },
   {
-    "descriptionZh": "表示地理形状中心的地理坐标，例如地球圆。",
+    "descriptionZh": "表示两个几何体（或它们所代表的位置）至少有一个公共点的空间关系。如<a href=”中所定义https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>。/",
     "nameZh": "几何相交",
     "rdfs:comment": "",
     "rdfs:labelh": "geoIntersects"
   },
   {
-    "descriptionZh": "表示两个几何图形（或它们所代表的位置）之间的关系，将一个几何图形与地理空间上与之重叠的另一个几何图形相关联，即它们有一些但不是所有的共同点。如<a href=”中所定义https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>。/",
+    "descriptionZh": "表示地理形状中心的地理坐标，例如地球圆。",
     "nameZh": "地理中点",
     "rdfs:comment": "Indicates the GeoCoordinates at the centre of a GeoShape e.g. GeoCircle.",
     "rdfs:labelh": "geoMidpoint"
   },
   {
-    "descriptionZh": "表示地球圆的近似半径（米，除非通过距离符号另有指示）。",
+    "descriptionZh": "表示两个几何图形（或它们所代表的位置）之间的关系，将一个几何图形与地理空间上与之重叠的另一个几何图形相关联，即它们有一些但不是所有的共同点。如<a href=”中所定义https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>。/",
     "nameZh": "地理重叠",
     "rdfs:comment": "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that geospatially overlaps it/en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>./",
     "rdfs:labelh": "geoOverlaps"
   },
   {
-    "descriptionZh": "表示两个几何体（或它们所代表的位置）接触的空间关系：它们至少有一个共同的边界点，但没有内部点。（对称关系，定义见<a href=）https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>）/",
+    "descriptionZh": "表示地球圆的近似半径（米，除非通过距离符号另有指示）。",
     "nameZh": "区域半径",
     "rdfs:comment": "Indicates the approximate radius of a GeoCircle (metres unless indicated otherwise via Distance notation).",
     "rdfs:labelh": "geoRadius"
   },
   {
-    "descriptionZh": "表示两个几何体（或它们所代表的位置）之间的关系，将一个几何体与包含它的几何体相关联，即它在其内部（即内部）。如<a href=”中所定义https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>。/",
+    "descriptionZh": "表示两个几何体（或它们所代表的位置）接触的空间关系：它们至少有一个共同的边界点，但没有内部点。（对称关系，定义见<a href=）https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>）/",
     "nameZh": "地理接触",
     "rdfs:comment": "Represents spatial relations in which two geometries (or the places they represent) touch: they have at least one boundary point in common, but no interior points.\" (a symmetric relationship/en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a> )/",
     "rdfs:labelh": "geoTouches"
   },
   {
-    "descriptionZh": "受众群所在地理区域。",
+    "descriptionZh": "表示两个几何体（或它们所代表的位置）之间的关系，将一个几何体与包含它的几何体相关联，即它在其内部（即内部）。如<a href=”中所定义https://en.wikipedia.org/wiki/DE-9IM“>DE-9IM</a>。/",
     "nameZh": "地理范围内",
     "rdfs:comment": "Represents a relationship between two geometries (or the places they represent), relating a geometry to one that contains it/en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>./",
     "rdfs:labelh": "geoWithin"
   },
   {
-    "descriptionZh": "关于接受检测的信息（针对<a class=“localLink”href=“/MedicalCondition”>MedicalCondition</a>），例如在大流行的情况下。",
+    "descriptionZh": "受众群所在地理区域。",
     "nameZh": "受众群所在地理区域",
     "rdfs:comment": "The geographic area associated with the audience.",
     "rdfs:labelh": "geographicArea"
   },
   {
-    "descriptionZh": "名。在美国，是一个人名字中的第一个字。",
+    "descriptionZh": "关于接受检测的信息（针对<a class=“localLink”href=“/MedicalCondition”>MedicalCondition</a>），例如在大流行的情况下。",
     "nameZh": "获取检测信息",
     "rdfs:comment": "Information about getting tested (for a <a class=\"localLink\" href=\"/MedicalCondition\">MedicalCondition</a>), e.g. in the context of a pandemic.",
     "rdfs:labelh": "gettingTestedInfo"
   },
   {
-    "descriptionZh": "全球位置码。",
+    "descriptionZh": "名。在美国，是一个人名字中的第一个字。",
     "nameZh": "名",
     "rdfs:comment": "Given name. In the U.S., the first name of a Person.",
     "rdfs:labelh": "givenName"
   },
   {
-    "descriptionZh": "government BenefitsInfo提供与特殊公告相关的政府福利信息。",
+    "descriptionZh": "全球位置码。",
     "nameZh": "全球位置码",
     "rdfs:comment": "",
     "rdfs:labelh": "globalLocationNumber"
   },
   {
-    "descriptionZh": "在到期日之后的一段时间内，借款人必须在违约（未能支付）被视为发生之前履行其义务。",
+    "descriptionZh": "government BenefitsInfo提供与特殊公告相关的政府福利信息。",
     "nameZh": "政府福利信息",
     "rdfs:comment": "governmentBenefitsInfo provides information about government benefits associated with a SpecialAnnouncement.",
     "rdfs:labelh": "governmentBenefitsInfo"
   },
   {
-    "descriptionZh": "获得此许可的人员，组织，联络人或受众。",
+    "descriptionZh": "在到期日之后的一段时间内，借款人必须在违约（未能支付）被视为发生之前履行其义务。",
     "nameZh": "宽限期",
     "rdfs:comment": "The period of time after any due date that the borrower has to fulfil its obligations before a default (failure to pay) is deemed to have occurred.",
     "rdfs:labelh": "gracePeriod"
   },
   {
-    "descriptionZh": "数学中的大于。",
+    "descriptionZh": "获得此许可的人员，组织，联络人或受众。",
     "nameZh": "受让人",
     "rdfs:comment": "The person, organization, contact point, or audience that has been granted this permission.",
     "rdfs:labelh": "grantee"
   },
   {
-    "descriptionZh": "数学中的大于等于。",
+    "descriptionZh": "数学中的大于。",
     "nameZh": "大于",
     "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is greater than the object.",
     "rdfs:labelh": "greater"
   },
   {
-    "descriptionZh": "全球贸易商品编号（<A href=”https://www.gs1.org/standards/id-keys/gtin“>GTIN</a>）。\nGTIN使用数字识别码识别贸易项目，包括产品和服务。GTIN</a>属性概括了早期的<a class=“localLink”href=“/gtin8”>gtin8</a>，<a class=“localLink”href=“/gtin12”>gtin12</a>，<a class=“localLink”href=“/gtin13”>gtin13</a>，以及<a class=”localLink“href=“/gtin14”>gtin14</a>属性。\nGS1<a href=”https://www.gs1.org/standards/Digital-Link/“>digital link specifications</a>将gtin表示为URL。\n正确的<a class=“localLink”href=“/gtin”>gtin</a>值应该是有效的gtin，这意味着它应该是一个8、12、13或14位的全数字字符串，或者是基于这样一个字符串的“GS1 digital link”URL。数字组件还应该有一个<a href=”https://www.gs1.org/services/check-digit-calculator“>有效的GS1校验位</a>并满足有效GTIN的其他规则。另请参见<a href=”http://www.gs1.org/barcodes/technical/idkeys/gtin“>GS1的GTIN摘要</a>和<a href=”https://en.wikipedia.org/wiki/Global_Trade_Item_Number“>Wikipedia</a>了解更多详细信息。不要求或不鼓励使用gtin值的左填充。/",
+    "descriptionZh": "数学中的大于等于。",
     "nameZh": "大于等于",
     "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is greater than or equal to the object.",
     "rdfs:labelh": "greaterOrEqual"
   },
   {
-    "descriptionZh": "与该实体相关的医疗指南。",
+    "descriptionZh": "全球贸易商品编号（<A href=”https://www.gs1.org/standards/id-keys/gtin“>GTIN</a>）。\nGTIN使用数字识别码识别贸易项目，包括产品和服务。GTIN</a>属性概括了早期的<a class=“localLink”href=“/gtin8”>gtin8</a>，<a class=“localLink”href=“/gtin12”>gtin12</a>，<a class=“localLink”href=“/gtin13”>gtin13</a>，以及<a class=”localLink“href=“/gtin14”>gtin14</a>属性。\nGS1<a href=”https://www.gs1.org/standards/Digital-Link/“>digital link specifications</a>将gtin表示为URL。\n正确的<a class=“localLink”href=“/gtin”>gtin</a>值应该是有效的gtin，这意味着它应该是一个8、12、13或14位的全数字字符串，或者是基于这样一个字符串的“GS1 digital link”URL。数字组件还应该有一个<a href=”https://www.gs1.org/services/check-digit-calculator“>有效的GS1校验位</a>并满足有效GTIN的其他规则。另请参见<a href=”http://www.gs1.org/barcodes/technical/idkeys/gtin“>GS1的GTIN摘要</a>和<a href=”https://en.wikipedia.org/wiki/Global_Trade_Item_Number“>Wikipedia</a>了解更多详细信息。不要求或不鼓励使用gtin值的左填充。/",
     "nameZh": "全球贸易商品编号",
     "rdfs:comment": "",
     "rdfs:labelh": "gtin8"
   },
   {
-    "descriptionZh": "本指南提出建议的日期。",
+    "descriptionZh": "与该实体相关的医疗指南。",
     "nameZh": "医疗指南",
     "rdfs:comment": "A medical guideline related to this entity.",
     "rdfs:labelh": "guideline"
   },
   {
-    "descriptionZh": "医疗条件、治疗等，这是指南主题的。",
+    "descriptionZh": "本指南提出建议的日期。",
     "nameZh": "指南日期",
     "rdfs:comment": "Date on which this guideline's recommendation was made.",
     "rdfs:labelh": "guidelineDate"
   },
   {
-    "descriptionZh": "在交货方式为现场提货的情况下，从收到订单到货物离开仓库或准备提货之间的典型延迟。典型属性：minValue、maxValue、unitCode（d代表天）。按照一般惯例，这是指营业日（如果使用单位代码，则编码为“d”），即仅计算业务正常运营的天数。",
+    "descriptionZh": "医疗条件、治疗等，这是指南主题的。",
     "nameZh": "指南主题",
     "rdfs:comment": "The medical conditions, treatments, etc. that are the subject of the guideline.",
     "rdfs:labelh": "guidelineSubject"
   },
   {
-    "descriptionZh": "表示（在某种意义上）将该生物化学实体作为一部分的生物化学实体。",
+    "descriptionZh": "在交货方式为现场提货的情况下，从收到订单到货物离开仓库或准备提货之间的典型延迟。典型属性：minValue、maxValue、unitCode（d代表天）。按照一般惯例，这是指营业日（如果使用单位代码，则编码为“d”），即仅计算业务正常运营的天数。",
     "nameZh": "处理时间",
     "rdfs:comment": "The typical delay between the receipt of the order and the goods either leaving the warehouse or being prepared for pickup, in case the delivery method is on site pickup. Typical properties: minValue, maxValue, unitCode (d for DAY).  This is by common convention assumed to mean business days (if a unitCode is used, coded as \"d\"), i.e. only counting days when the business normally operates.",
     "rdfs:labelh": "handlingTime"
   },
   {
-    "descriptionZh": "生物化学特性的象征性表现。例如，基因的核苷酸序列或蛋白质的氨基酸序列。",
+    "descriptionZh": "表示（在某种意义上）将该生物化学实体作为一部分的生物化学实体。",
     "nameZh": "有生化实体部分",
     "rdfs:comment": "Indicates a BioChemEntity that (in some sense) has this BioChemEntity as a part.",
     "rdfs:labelh": "hasBioChemEntityPart"
   },
   {
-    "descriptionZh": "广播服务的广播频道。",
+    "descriptionZh": "生物化学特性的象征性表现。例如，基因的核苷酸序列或蛋白质的氨基酸序列。",
     "nameZh": "具有生物聚合物序列",
     "rdfs:comment": "A symbolic representation of a BioChemEnity. For example, a nucleotide sequence of a Gene or an amino acid sequence of a Protein.",
     "rdfs:labelh": "hasBioPolymerSequence"
   },
   {
-    "descriptionZh": "此代码集中包含的类别代码。",
+    "descriptionZh": "广播服务的广播频道。",
     "nameZh": "有广播频道",
     "rdfs:comment": "A broadcast channel of a broadcast service.",
     "rdfs:labelh": "hasBroadcastChannel"
   },
   {
-    "descriptionZh": "构成教育/职业计划的学习机会之一的课程。没有暗示课程是必修课还是选修课；对于该课程是否对该项目的所有人开放，没有任何保证。",
+    "descriptionZh": "此代码集中包含的类别代码。",
     "nameZh": "有类别代码",
     "rdfs:comment": "A Category code contained in this code set.",
     "rdfs:labelh": "hasCategoryCode"
   },
   {
-    "descriptionZh": "在特定的时间和地点，或通过特定的媒体或学习模式，或向特定的学生群体提供课程。",
+    "descriptionZh": "构成教育/职业计划的学习机会之一的课程。没有暗示课程是必修课还是选修课；对于该课程是否对该项目的所有人开放，没有任何保证。",
     "nameZh": "有课程",
     "rdfs:comment": "A course or class that is one of the learning opportunities that constitute an educational / occupational program. No information is implied about whether the course is mandatory or optional; no guarantee is implied about whether the course will be available to everyone on the program.",
     "rdfs:labelh": "hasCourse"
   },
   {
-    "descriptionZh": "授予某人或组织的证书。",
+    "descriptionZh": "在特定的时间和地点，或通过特定的媒体或学习模式，或向特定的学生群体提供课程。",
     "nameZh": "课程实例",
     "rdfs:comment": "An offering of the course at a specific time and place or through specific media or mode of study or to a specific section of students.",
     "rdfs:labelh": "hasCourseInstance"
   },
   {
-    "descriptionZh": "包含在此术语集中的已定义术语。",
+    "descriptionZh": "授予某人或组织的证书。",
     "nameZh": "有凭据",
     "rdfs:comment": "A credential awarded to the Person or Organization.",
     "rdfs:labelh": "hasCredential"
   },
   {
-    "descriptionZh": "送货的方式。",
+    "descriptionZh": "包含在此术语集中的已定义术语。",
     "nameZh": "有定义的术语",
     "rdfs:comment": "A Defined Term contained in this term set.",
     "rdfs:labelh": "hasDefinedTerm"
   },
   {
-    "descriptionZh": "与访问本文件相关的许可（例如，阅读或书写电子文件的许可）。对于公共文档，请指定受众audienceType等于“public”的被授权人。",
+    "descriptionZh": "送货的方式。",
     "nameZh": "物流送货方式",
     "rdfs:comment": "Method used for delivery or shipping.",
     "rdfs:labelh": "hasDeliveryMethod"
   },
   {
-    "descriptionZh": "指示某些设施（例如，<a class=“localLink”href=“/FoodStablish”>FoodStablish</a>，<a class=“localLink”href=“/CovidTestingFacility”>CovidTestingFacility</a>）是否提供驾车通过的服务。在<a class=“localLink”href=“/CovidTestingFacility”>CovidTestingFacility</a>的情况下，此类设施可能有助于与其他可能感染病毒的用户保持社交距离。",
+    "descriptionZh": "与访问本文件相关的许可（例如，阅读或书写电子文件的许可）。对于公共文档，请指定受众audienceType等于“public”的被授权人。",
     "nameZh": "数字文档访问权限",
     "rdfs:comment": "A permission related to the access to this document (e.g. permission to read or write an electronic document). For a public document, specify a grantee with an Audience with audienceType equal to \"public\".",
     "rdfs:labelh": "hasDigitalDocumentPermission"
   },
   {
-    "descriptionZh": "根据国际能效标准定义产品的能效类别（也称为“等级”或“评级”）。",
+    "descriptionZh": "指示某些设施（例如，<a class=“localLink”href=“/FoodStablish”>FoodStablish</a>，<a class=“localLink”href=“/CovidTestingFacility”>CovidTestingFacility</a>）是否提供驾车通过的服务。在<a class=“localLink”href=“/CovidTestingFacility”>CovidTestingFacility</a>的情况下，此类设施可能有助于与其他可能感染病毒的用户保持社交距离。",
     "nameZh": "具有直通服务",
     "rdfs:comment": "Indicates whether some facility (e.g. <a class=\"localLink\" href=\"/FoodEstablishment\">FoodEstablishment</a>, <a class=\"localLink\" href=\"/CovidTestingFacility\">CovidTestingFacility</a>) offers a service that can be used by driving through in a car. In the case of <a class=\"localLink\" href=\"/CovidTestingFacility\">CovidTestingFacility</a> such facilities could potentially help with social distancing from other potentially-infected users.",
     "rdfs:labelh": "hasDriveThroughService"
   },
   {
-    "descriptionZh": "根据国际能源效率标准定义产品的能源效率类别（可以是超出数值范围的评级或是/否认证）。",
+    "descriptionZh": "根据国际能效标准定义产品的能效类别（也称为“等级”或“评级”）。",
     "nameZh": "有能耗详情",
     "rdfs:comment": "Defines the energy efficiency Category (also known as \"class\" or \"rating\") for a product according to an international energy efficiency standard.",
     "rdfs:labelh": "hasEnergyConsumptionDetails"
   },
   {
-    "descriptionZh": "表示某些健康主题内容中特别提到的一个或多个方面。",
+    "descriptionZh": "根据国际能源效率标准定义产品的能源效率类别（可以是超出数值范围的评级或是/否认证）。",
     "nameZh": "具有能源效率类别",
     "rdfs:comment": "Defines the energy efficiency Category (which could be either a rating out of range of values or a yes/no certification) for a product according to an international energy efficiency standard.",
     "rdfs:labelh": "hasEnergyEfficiencyCategory"
   },
   {
-    "descriptionZh": "一个显示位置地图的URL。",
+    "descriptionZh": "表示某些健康主题内容中特别提到的一个或多个方面。",
     "nameZh": "有健康方面",
     "rdfs:comment": "Indicates the aspect or aspects specifically addressed in some <a class=\"localLink\" href=\"/HealthTopicContent\">HealthTopicContent</a>. For example, that the content is an overview, or that it talks about treatment, self-care, treatments or their side-effects.",
     "rdfs:labelh": "hasHealthAspect"
   },
   {
-    "descriptionZh": "产品尺寸，例如裤子的内接缝、自行车的车轮尺寸或螺丝的量规。通常是一个精确的测量值，但也可以是可调产品的一系列测量值，例如皮带和滑雪捆绑带。",
+    "descriptionZh": "一个显示位置地图的URL。",
     "nameZh": "地图URL",
     "rdfs:comment": "A URL to a map of the place.",
     "rdfs:labelh": "hasMap"
   },
   {
-    "descriptionZh": "将实际菜单作为结构化表示、文本或菜单的URL。",
+    "descriptionZh": "产品尺寸，例如裤子的内接缝、自行车的车轮尺寸或螺丝的量规。通常是一个精确的测量值，但也可以是可调产品的一系列测量值，例如皮带和滑雪捆绑带。",
     "nameZh": "有测量",
     "rdfs:comment": "A product measurement, for example the inseam of pants, the wheel size of a bicycle, or the gauge of a screw. Usually an exact measurement, but can also be a range of measurements for adjustable products, for example belts and ski bindings.",
     "rdfs:labelh": "hasMeasurement"
   },
   {
-    "descriptionZh": "包含在菜单或菜单部分的食物或饮料。",
+    "descriptionZh": "将实际菜单作为结构化表示、文本或菜单的URL。",
     "nameZh": "有菜单",
     "rdfs:comment": "Either the actual menu as a structured representation, as text, or a URL of the menu.",
     "rdfs:labelh": "hasMenu"
   },
   {
-    "descriptionZh": "菜单的一个子类（按菜肴、课程、上菜时间段等）。",
+    "descriptionZh": "包含在菜单或菜单部分的食物或饮料。",
     "nameZh": "菜单物品",
     "rdfs:comment": "A food or drink item contained in a menu or menu section.",
     "rdfs:labelh": "hasMenuItem"
   },
   {
-    "descriptionZh": "指定可能适用的商户退货政策。",
+    "descriptionZh": "菜单的一个子类（按菜肴、课程、上菜时间段等）。",
     "nameZh": "菜单子目录",
     "rdfs:comment": "A subgrouping of the menu (by dishes, course, serving time period, etc.).",
     "rdfs:labelh": "hasMenuSection"
   },
   {
-    "descriptionZh": "由该生物化学实体执行的分子功能；如果你想包含任何证据，请使用PropertyValue。",
+    "descriptionZh": "指定可能适用的商户退货政策。",
     "nameZh": "有商家退货政策",
     "rdfs:comment": "Specifies a MerchantReturnPolicy that may be applicable.",
     "rdfs:labelh": "hasMerchantReturnPolicy"
   },
   {
-    "descriptionZh": "此人的职业。对于过去的职业，使用角色来表示日期。",
+    "descriptionZh": "由该生物化学实体执行的分子功能；如果你想包含任何证据，请使用PropertyValue。",
     "nameZh": "具有分子功能",
     "rdfs:comment": "Molecular function performed by this BioChemEntity; please use PropertyValue if you want to include any evidence.",
     "rdfs:labelh": "hasMolecularFunction"
   },
   {
-    "descriptionZh": "指示此组织、人员或服务的供应类别清单。",
+    "descriptionZh": "此人的职业。对于过去的职业，使用角色来表示日期。",
     "nameZh": "有职业",
     "rdfs:comment": "The Person's occupation. For past professions, use Role for expressing dates.",
     "rdfs:labelh": "hasOccupation"
   },
   {
-    "descriptionZh": "由组织或个人经营销售网点。",
+    "descriptionZh": "指示此组织、人员或服务的供应类别清单。",
     "nameZh": "清单",
     "rdfs:comment": "Indicates an OfferCatalog listing for this Organization, Person, or Service.",
     "rdfs:labelh": "hasOfferCatalog"
   },
   {
-    "descriptionZh": "指示属于此事物的事物或CreativeWork，或CreativeWork（在某种意义上）。",
+    "descriptionZh": "由组织或个人经营销售网点。",
     "nameZh": "销售点",
     "rdfs:comment": "Points-of-Sales operated by the organization or person.",
     "rdfs:labelh": "hasPOS"
   },
   {
-    "descriptionZh": "表示可能适用的产品退货政策。",
+    "descriptionZh": "指示属于此事物的事物或CreativeWork，或CreativeWork（在某种意义上）。",
     "nameZh": "作品组件",
     "rdfs:comment": "Indicates an item or CreativeWork that is part of this item, or CreativeWork (in some sense).",
     "rdfs:labelh": "hasPart"
   },
   {
-    "descriptionZh": "该实体的一种常见表现形式，如蛋白质序列或化学结构。对于图像，使用schema.org/image。",
+    "descriptionZh": "表示可能适用的产品退货政策。",
     "nameZh": "有退货政策",
     "rdfs:comment": "Indicates a ProductReturnPolicy that may be applicable.",
     "rdfs:labelh": "hasProductReturnPolicy"
   },
   {
-    "descriptionZh": "表示一个产品，该产品是该产品组的成员（或<a class=“localLink”href=“/ProductModel”>ProductModel</a>）。",
+    "descriptionZh": "该实体的一种常见表现形式，如蛋白质序列或化学结构。对于图像，使用cnschema.openkg.cn/image。",
     "nameZh": "有表示",
     "rdfs:comment": "A common representation such as a protein sequence or chemical structure for this entity. For images use cnschema.openkg.cn/image.",
     "rdfs:labelh": "hasRepresentation"
   },
   {
-    "descriptionZh": "文章标题。",
+    "descriptionZh": "表示一个产品，该产品是该产品组的成员（或<a class=“localLink”href=“/ProductModel”>ProductModel</a>）。",
     "nameZh": "有变体",
     "rdfs:comment": "Indicates a <a class=\"localLink\" href=\"/Product\">Product</a> that is a member of this <a class=\"localLink\" href=\"/ProductGroup\">ProductGroup</a> (or <a class=\"localLink\" href=\"/ProductModel\">ProductModel</a>).",
     "rdfs:labelh": "hasVariant"
   },
   {
-    "descriptionZh": "指定患者、医学研究或其他目标受众的健康状况。",
+    "descriptionZh": "文章标题。",
     "nameZh": "文章标题",
     "rdfs:comment": "Headline of the article.",
     "rdfs:labelh": "headline"
   },
   {
-    "descriptionZh": "共同保险是在免赔额之前还是之后适用等等。TODO:这是一个封闭的集合吗？",
+    "descriptionZh": "指定患者、医学研究或其他目标受众的健康状况。",
     "nameZh": "健康状况",
     "rdfs:comment": "Specifying the health condition(s) of a patient, medical study, or other target audience.",
     "rdfs:labelh": "healthCondition"
   },
   {
-    "descriptionZh": "共同保险率是否表示为0.0到1.0之间的数字。",
+    "descriptionZh": "共同保险是在免赔额之前还是之后适用等等。TODO:这是一个封闭的集合吗？",
     "nameZh": "健康计划共同保险选项",
     "rdfs:comment": "Whether the coinsurance applies before or after deductible, etc. TODO: Is this a closed set?",
     "rdfs:labelh": "healthPlanCoinsuranceOption"
   },
   {
-    "descriptionZh": "公司是否支付金额。",
+    "descriptionZh": "共同保险率是否表示为0.0到1.0之间的数字。",
     "nameZh": "健康计划共同保险费率",
     "rdfs:comment": "Whether The rate of coinsurance expressed as a number between 0.0 and 1.0.",
     "rdfs:labelh": "healthPlanCoinsuranceRate"
   },
   {
-    "descriptionZh": "无论copay是在免赔额之前还是之后，等等。TODO:这是一个封闭的集合吗？",
+    "descriptionZh": "公司是否支付金额。",
     "nameZh": "健康计划共付额",
     "rdfs:comment": "Whether The copay amount.",
     "rdfs:labelh": "healthPlanCopay"
   },
   {
-    "descriptionZh": "对于这项服务，患者的花费是否在这个网络或公式下。",
+    "descriptionZh": "无论copay是在免赔额之前还是之后，等等。TODO:这是一个封闭的集合吗？",
     "nameZh": "健康计划共付额选项",
     "rdfs:comment": "Whether the copay is before or after deductible, etc. TODO: Is this a closed set?",
     "rdfs:labelh": "healthPlanCopayOption"
   },
   {
-    "descriptionZh": "TODO",
+    "descriptionZh": "对于这项服务，患者的花费是否在这个网络或公式下。",
     "nameZh": "健康计划成本分摊",
     "rdfs:comment": "Whether The costs to the patient for services under this network or formulary.",
     "rdfs:labelh": "healthPlanCostSharing"
   },
   {
-    "descriptionZh": "本处方集或保险计划提供的药物级别。",
+    "descriptionZh": "TODO",
     "nameZh": "健康计划药物选项",
     "rdfs:comment": "TODO.",
     "rdfs:labelh": "healthPlanDrugOption"
   },
   {
-    "descriptionZh": "HIOS生成的14个字符的计划ID号。即使在不同的市场，计划ID也必须是唯一的。",
+    "descriptionZh": "本处方集或保险计划提供的药物级别。",
     "nameZh": "健康计划药物等级",
     "rdfs:comment": "The tier(s) of drugs offered by this formulary or insurance plan.",
     "rdfs:labelh": "healthPlanDrugTier"
   },
   {
-    "descriptionZh": "直接指向特定标准计划或计划变更的计划手册的URL。",
+    "descriptionZh": "HIOS生成的14个字符的计划ID号。即使在不同的市场，计划ID也必须是唯一的。",
     "nameZh": "健康计划 ID",
     "rdfs:comment": "The 14-character, HIOS-generated Plan ID number. (Plan IDs must be unique, even across different markets.)",
     "rdfs:labelh": "healthPlanId"
   },
   {
-    "descriptionZh": "网络的名称或唯一ID（网络通常在不同的保险计划中重复使用）。",
+    "descriptionZh": "直接指向特定标准计划或计划变更的计划手册的URL。",
     "nameZh": "健康计划营销网址",
     "rdfs:comment": "The URL that goes directly to the plan brochure for the specific standard plan or plan variation.",
     "rdfs:labelh": "healthPlanMarketingUrl"
   },
   {
-    "descriptionZh": "此网络的层。",
+    "descriptionZh": "网络的名称或唯一ID（网络通常在不同的保险计划中重复使用）。",
     "nameZh": "健康计划网络 ID",
     "rdfs:comment": "Name or unique ID of network. (Networks are often reused across different insurance plans).",
     "rdfs:labelh": "healthPlanNetworkId"
   },
   {
-    "descriptionZh": "与成本分摊关联的药房类别或类型。",
+    "descriptionZh": "此网络的层。",
     "nameZh": "健康计划网络层",
     "rdfs:comment": "The tier(s) for this network.",
     "rdfs:labelh": "healthPlanNetworkTier"
   },
   {
-    "descriptionZh": "表示描述医院的数据，例如CDC<a class=“localLink”href=“/CDCPMDRecord”>CDCPMDRecord</a>或某种类型的<a class=“localLink”href=“/Dataset”>Dataset</a>。",
+    "descriptionZh": "与成本分摊关联的药房类别或类型。",
     "nameZh": "健康计划药房类别",
     "rdfs:comment": "The category or type of pharmacy associated with this cost sharing.",
     "rdfs:labelh": "healthPlanPharmacyCategory"
   },
   {
-    "descriptionZh": "高度",
+    "descriptionZh": "表示描述医院的数据，例如CDC<a class=“localLink”href=“/CDCPMDRecord”>CDCPMDRecord</a>或某种类型的<a class=“localLink”href=“/Dataset”>Dataset</a>。",
     "nameZh": "医疗保健报告数据",
     "rdfs:comment": "Indicates data describing a hospital, e.g. a CDC <a class=\"localLink\" href=\"/CDCPMDRecord\">CDCPMDRecord</a> or as some kind of <a class=\"localLink\" href=\"/Dataset\">Dataset</a>.",
     "rdfs:labelh": "healthcareReportingData"
   },
   {
-    "descriptionZh": "最高价格\n使用指南:\n使用从0123456789（Unicode“数字零”（U+0030）到“数字九”（U+0039））的值，而不是表面上相似的Unicode符号。\n使用“.”（Unicode“句号”（U+002E））而不是“，”来表示小数点。避免将这些符号用作可读性分隔符。",
+    "descriptionZh": "高度",
     "nameZh": "高度",
     "rdfs:comment": "The height of the item.",
     "rdfs:labelh": "height"
   },
   {
-    "descriptionZh": "提供工作职位的机构。",
+    "descriptionZh": "最高价格\n使用指南:\n使用从0123456789（Unicode“数字零”（U+0030）到“数字九”（U+0039））的值，而不是表面上相似的Unicode符号。\n使用“.”（Unicode“句号”（U+002E））而不是“，”来表示小数点。避免将这些符号用作可读性分隔符。",
     "nameZh": "最高价",
     "rdfs:comment": "The highest price of all offers available.<br/><br/>\n\n\n\nUsage guidelines:<br/><br/>\n\n\n\n<ul>\n\n<li>Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.</li>\n\n<li>Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.</li>\n\n</ul>",
     "rdfs:labelh": "highPrice"
   },
   {
-    "descriptionZh": "档案组织持有、保留或维护档案组件。",
+    "descriptionZh": "提供工作职位的机构。",
     "nameZh": "招聘机构",
     "rdfs:comment": "Organization offering the job position.",
     "rdfs:labelh": "hiringOrganization"
   },
   {
-    "descriptionZh": "家庭联系地址。",
+    "descriptionZh": "档案组织持有、保留或维护档案组件。",
     "nameZh": "持有档案",
     "rdfs:comment": "<a class=\"localLink\" href=\"/ArchiveOrganization\">ArchiveOrganization</a> that holds, keeps or maintains the <a class=\"localLink\" href=\"/ArchiveComponent\">ArchiveComponent</a>.",
     "rdfs:labelh": "holdingArchive"
   },
   {
-    "descriptionZh": "体育运动中的主队。",
+    "descriptionZh": "家庭联系地址。",
     "nameZh": "家庭地址",
     "rdfs:comment": "A contact location for a person's residence.",
     "rdfs:labelh": "homeLocation"
   },
   {
-    "descriptionZh": "放在姓名前面的敬语。",
+    "descriptionZh": "体育运动中的主队。",
     "nameZh": "主队",
     "rdfs:comment": "The home team in a sports event.",
     "rdfs:labelh": "homeTeam"
   },
   {
-    "descriptionZh": "放在姓名后面的敬语。",
+    "descriptionZh": "放在姓名前面的敬语。",
     "nameZh": "姓名前面的敬语",
     "rdfs:comment": "An honorific prefix preceding a Person's name such as Dr/Mrs/Mr.",
     "rdfs:labelh": "honorificPrefix"
   },
   {
-    "descriptionZh": "附属有医生或办公室的医院。",
+    "descriptionZh": "放在姓名后面的敬语。",
     "nameZh": "姓名后面的敬语",
     "rdfs:comment": "An honorific suffix following a Person's name such as M.D. /PhD/MSCSW.",
     "rdfs:labelh": "honorificSuffix"
   },
   {
-    "descriptionZh": "航空公司，旅游俱乐部等提供会员资格的组织。",
+    "descriptionZh": "附属有医生或办公室的医院。",
     "nameZh": "医院隶属关系",
     "rdfs:comment": "A hospital with which the physician or office is affiliated.",
     "rdfs:labelh": "hospitalAffiliation"
   },
   {
-    "descriptionZh": "该服务或联系人可用的时间。",
+    "descriptionZh": "航空公司，旅游俱乐部等提供会员资格的组织。",
     "nameZh": "会员服务提供者",
     "rdfs:comment": "The organization (airline, travelers' club, etc.) the membership is made with.",
     "rdfs:labelh": "hostingOrganization"
   },
   {
-    "descriptionZh": "程序是如何执行的。",
+    "descriptionZh": "该服务或联系人可用的时间。",
     "nameZh": "服务时间",
     "rdfs:comment": "The hours during which this service or contact is available.",
     "rdfs:labelh": "hoursAvailable"
   },
   {
-    "descriptionZh": "例如GET，POST等等。",
+    "descriptionZh": "程序是如何执行的。",
     "nameZh": "如何执行",
     "rdfs:comment": "How the procedure is performed.",
     "rdfs:labelh": "howPerformed"
   },
   {
-    "descriptionZh": "国际航空运输协会代码。",
+    "descriptionZh": "例如GET，POST等等。",
     "nameZh": "http方法/",
     "rdfs:comment": "An HTTP method that specifies the appropriate HTTP method for a request to an HTTP EntryPoint. Values are capitalized strings as used in HTTP.",
     "rdfs:labelh": "国际航空运输协会代码/"
   },
   {
-    "descriptionZh": "国际民航组织机场代码。",
+    "descriptionZh": "国际航空运输协会代码。",
     "nameZh": "国际航空运输协会代码",
     "rdfs:comment": "IATA identifier for an airline or airport.",
     "rdfs:labelh": "iataCode"
   },
   {
-    "descriptionZh": "identifier属性表示任何类型的对象的任何类型的标识符，例如ISBNs、GTIN代码、UUID等。Schema.org提供专用属性来表示其中的许多内容，可以是文本字符串，也可以是URL（URI）链接。有关更多详细信息，请参阅背景说明。",
+    "descriptionZh": "国际民航组织机场代码。",
     "nameZh": "国际民航组织机场代码",
     "rdfs:comment": "ICAO identifier for an airport.",
     "rdfs:labelh": "icaoCode"
   },
   {
-    "descriptionZh": "可以识别这种迹象的体格检查。",
+    "descriptionZh": "identifier属性表示任何类型的对象的任何类型的标识符，例如ISBNs、GTIN代码、UUID等。cnschema.openkg.cn提供专用属性来表示其中的许多内容，可以是文本字符串，也可以是URL（URI）链接。有关更多详细信息，请参阅背景说明。",
     "nameZh": "标识符",
     "rdfs:comment": "The identifier property represents any kind of identifier for any kind of <a class=\"localLink\" href=\"/Thing\">Thing</a>, such as ISBNs, GTIN codes, UUIDs etc. cnschema.openkg.cn provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See <a href=\"/docs/datamodel.html#identifierBg\">background notes</a> for more details.",
     "rdfs:labelh": "identifier"
   },
   {
-    "descriptionZh": "可以识别这种迹象的诊断测试。",
+    "descriptionZh": "可以识别这种迹象的体格检查。",
     "nameZh": "鉴别检查",
     "rdfs:comment": "A physical examination that can identify this sign.",
     "rdfs:labelh": "identifyingExam"
   },
   {
-    "descriptionZh": "书籍的插图绘制者。",
+    "descriptionZh": "可以识别这种迹象的诊断测试。",
     "nameZh": "识别测试",
     "rdfs:comment": "A diagnostic test that can identify this sign.",
     "rdfs:labelh": "identifyingTest"
   },
   {
-    "descriptionZh": "物品的图像。可以是<a class=“localLink”href=“/URL”>URL</a>或完整描述的<a class=“localLink”href=“/ImageObject”>ImageObject</a>。",
+    "descriptionZh": "书籍的插图绘制者。",
     "nameZh": "插图绘制者",
     "rdfs:comment": "The illustrator of the book.",
     "rdfs:labelh": "illustrator"
   },
   {
-    "descriptionZh": "使用成像技术。",
+    "descriptionZh": "物品的图像。可以是<a class=“localLink”href=“/URL”>URL</a>或完整描述的<a class=“localLink”href=“/ImageObject”>ImageObject</a>。",
     "nameZh": "图片",
     "rdfs:comment": "An image of the item. This can be a <a class=\"localLink\" href=\"/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"/ImageObject\">ImageObject</a>.",
     "rdfs:labelh": "image"
   },
   {
-    "descriptionZh": "音乐所属的专辑。",
+    "descriptionZh": "使用成像技术。",
     "nameZh": "成像技术",
     "rdfs:comment": "Imaging technique used.",
     "rdfs:labelh": "imagingTechnique"
   },
   {
-    "descriptionZh": "提供该频道的有线或者卫星服务。",
+    "descriptionZh": "音乐所属的专辑。",
     "nameZh": "所属专辑",
     "rdfs:comment": "The album to which this recording belongs.",
     "rdfs:labelh": "inAlbum"
   },
   {
-    "descriptionZh": "分子实体的非专有标识符，可用于印刷和电子数据源，从而使各种数据汇编更容易链接。",
+    "descriptionZh": "提供该频道的有线或者卫星服务。",
     "nameZh": "在广播组",
     "rdfs:comment": "The CableOrSatelliteService offering the channel.",
     "rdfs:labelh": "inBroadcastLineup"
   },
   {
-    "descriptionZh": "InChIKey是完整InChI的哈希版本（使用SHA-256算法）。",
+    "descriptionZh": "分子实体的非专有标识符，可用于印刷和电子数据源，从而使各种数据汇编更容易链接。",
     "nameZh": "英寸",
     "rdfs:comment": "Non-proprietary identifier for molecular entity that can be used in printed and electronic data sources thus enabling easier linking of diverse data compilations.",
     "rdfs:labelh": "inChI"
   },
   {
-    "descriptionZh": "一个类别代码集，该集合包含此类别代码。",
+    "descriptionZh": "InChIKey是完整InChI的哈希版本（使用SHA-256算法）。",
     "nameZh": "inChIKey",
     "rdfs:comment": "InChIKey is a hashed version of the full InChI (using the SHA-256 algorithm).",
     "rdfs:labelh": "inChIKey"
   },
   {
-    "descriptionZh": "一个定义的术语集，该集合包含此术语。",
+    "descriptionZh": "一个类别代码集，该集合包含此类别代码。",
     "nameZh": "在代码集中",
     "rdfs:comment": "A <a class=\"localLink\" href=\"/CategoryCodeSet\">CategoryCodeSet</a> that contains this category code.",
     "rdfs:labelh": "inCodeSet"
   },
   {
-    "descriptionZh": "内容、表演或动作中使用的语言。请使用<a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>中的一个语言编码。另请参见 <a class=\"localLink\" href=\"/availableLanguage\">availableLanguage</a>./",
+    "descriptionZh": "一个定义的术语集，该集合包含此术语。",
     "nameZh": "在定义的术语集中",
     "rdfs:comment": "A <a class=\"localLink\" href=\"/DefinedTermSet\">DefinedTermSet</a> that contains this term.",
     "rdfs:labelh": "inDefinedTermSet"
   },
   {
-    "descriptionZh": "音乐所属的播放列表。",
+    "descriptionZh": "内容、表演或动作中使用的语言。请使用<a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>中的一个语言编码。另请参见 <a class=\"localLink\" href=\"/availableLanguage\">availableLanguage</a>./",
     "nameZh": "使用语言",
     "rdfs:comment": "",
     "rdfs:labelh": "inLanguage"
   },
   {
-    "descriptionZh": "表示该产品所属产品组的ID。",
+    "descriptionZh": "音乐所属的播放列表。",
     "nameZh": "所属播放列表",
     "rdfs:comment": "The playlist to which this recording belongs.",
     "rdfs:labelh": "inPlaylist"
   },
   {
-    "descriptionZh": "有店内退货吗？（对于更高级的返回方法，请使用<a class=“localLink”href=“/returnMethod”>returnMethod</a>属性）",
+    "descriptionZh": "表示该产品所属产品组的ID。",
     "nameZh": "在有ID的产品组",
     "rdfs:comment": "Indicates the <a class=\"localLink\" href=\"/productGroupID\">productGroupID</a> for a <a class=\"localLink\" href=\"/ProductGroup\">ProductGroup</a> that this product <a class=\"localLink\" href=\"/isVariantOf\">isVariantOf</a>.",
     "rdfs:labelh": "inProductGroupWithID"
   },
   {
-    "descriptionZh": "论文支持的资格、候选资格、学位、申请。",
+    "descriptionZh": "有店内退货吗？（对于更高级的返回方法，请使用<a class=“localLink”href=“/returnMethod”>returnMethod</a>属性）",
     "nameZh": "店内退货",
     "rdfs:comment": "Are in-store returns offered? (for more advanced return methods use the <a class=\"localLink\" href=\"/returnMethod\">returnMethod</a> property)",
     "rdfs:labelh": "inStoreReturnsOffered"
   },
   {
-    "descriptionZh": "描述工作的奖金和佣金报酬方面。",
+    "descriptionZh": "论文支持的资格、候选资格、学位、申请。",
     "nameZh": "支持的",
     "rdfs:comment": "Qualification, candidature, degree, application that Thesis supports.",
     "rdfs:labelh": "inSupportOf"
@@ -3870,1837 +3870,1837 @@
     "rdfs:labelh": "incentiveCompensation"
   },
   {
-    "descriptionZh": "包含在这部作品中的较小的作品（例如交响乐中的乐章）。",
+    "descriptionZh": "描述工作的奖金和佣金报酬方面。",
     "nameZh": "奖金",
     "rdfs:comment": "Description of bonus and commission compensation aspects of the job.",
     "rdfs:labelh": "incentives"
   },
   {
-    "descriptionZh": "包含此数据集的数据目录（此属性以前是“catalog”，首选名称现在是“IncludeIndataCatalog”）。",
+    "descriptionZh": "包含在这部作品中的较小的作品（例如交响乐中的乐章）。",
     "nameZh": "包含乐曲",
     "rdfs:comment": "Smaller compositions included in this work (e.g. a movement in a symphony).",
     "rdfs:labelh": "includedComposition"
   },
   {
-    "descriptionZh": "包含此数据集的数据目录。",
+    "descriptionZh": "包含此数据集的数据目录（此属性以前是“catalog”，首选名称现在是“IncludeIndataCatalog”）。",
     "nameZh": "所在数据集目录",
     "rdfs:comment": "A data catalog which contains this dataset (this property was previously 'catalog', preferred name is now 'includedInDataCatalog').",
     "rdfs:labelh": "includedDataCatalog"
   },
   {
-    "descriptionZh": "包括这种药物的保险计划。",
+    "descriptionZh": "包含此数据集的数据目录。",
     "nameZh": "所在数据集目录",
     "rdfs:comment": "A data catalog which contains this dataset.",
     "rdfs:labelh": "includedInDataCatalog"
   },
   {
-    "descriptionZh": "计算中包含的可修改或不可修改的风险因素，例如年龄、共存条件。",
+    "descriptionZh": "包括这种药物的保险计划。",
     "nameZh": "包含在健康保险计划中",
     "rdfs:comment": "The insurance plans that cover this drug.",
     "rdfs:labelh": "includedInHealthInsurancePlan"
   },
   {
-    "descriptionZh": "位于目的地的景点。",
+    "descriptionZh": "计算中包含的可修改或不可修改的风险因素，例如年龄、共存条件。",
     "nameZh": "包括风险因素",
     "rdfs:comment": "A modifiable or non-modifiable risk factor included in the calculation, e.g. age, coexisting condition.",
     "rdfs:labelh": "includedRiskFactor"
   },
   {
-    "descriptionZh": "本计划涵盖的处方集。",
+    "descriptionZh": "位于目的地的景点。",
     "nameZh": "包括景点",
     "rdfs:comment": "Attraction located at destination.",
     "rdfs:labelh": "includesAttraction"
   },
   {
-    "descriptionZh": "该计划涵盖的网络。",
+    "descriptionZh": "本计划涵盖的处方集。",
     "nameZh": "包括在健康计划的处方",
     "rdfs:comment": "Formularies covered by this plan.",
     "rdfs:labelh": "includesHealthPlanFormulary"
   },
   {
-    "descriptionZh": "此链接指向一个或多个节点，指示产品集合中包含的产品的确切数量。<a class=“localLink”href=“/Offer”>Offer</a>或<a class=“localLink”href=“/ProductCollection”>ProductCollection</a>。",
+    "descriptionZh": "该计划涵盖的网络。",
     "nameZh": "包括在健康计划的网络",
     "rdfs:comment": "Networks covered by this plan.",
     "rdfs:labelh": "includesHealthPlanNetwork"
   },
   {
-    "descriptionZh": "受此因素影响的情况、并发症等。",
+    "descriptionZh": "此链接指向一个或多个节点，指示产品集合中包含的产品的确切数量。<a class=“localLink”href=“/Offer”>Offer</a>或<a class=“localLink”href=“/ProductCollection”>ProductCollection</a>。",
     "nameZh": "包含对象",
     "rdfs:comment": "This links to a node or nodes indicating the exact quantity of the products included in  an <a class=\"localLink\" href=\"/Offer\">Offer</a> or <a class=\"localLink\" href=\"/ProductCollection\">ProductCollection</a>.",
     "rdfs:labelh": "includesObject"
   },
   {
-    "descriptionZh": "职位关联的行业。",
+    "descriptionZh": "受此因素影响的情况、并发症等。",
     "nameZh": "增加风险",
     "rdfs:comment": "The condition, complication, etc. influenced by this factor.",
     "rdfs:labelh": "increasesRiskOf"
   },
   {
-    "descriptionZh": "不适合区域。",
+    "descriptionZh": "职位关联的行业。",
     "nameZh": "所属行业",
     "rdfs:comment": "The industry associated with the job position.",
     "rdfs:labelh": "industry"
   },
   {
-    "descriptionZh": "真正的病原体，如特定的细菌。",
+    "descriptionZh": "不适合区域。",
     "nameZh": "不适用地区",
     "rdfs:comment": "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.<br/><br/>\n\n\n\nSee also <a class=\"localLink\" href=\"/eligibleRegion\">eligibleRegion</a>.",
     "rdfs:labelh": "ineligibleRegion"
   },
   {
-    "descriptionZh": "引起疾病的病原体类别（细菌、朊病毒等）。",
+    "descriptionZh": "真正的病原体，如特定的细菌。",
     "nameZh": "病原体",
     "rdfs:comment": "The actual infectious agent, such as a specific bacterium.",
     "rdfs:labelh": "infectiousAgent"
   },
   {
-    "descriptionZh": "菜谱中使用的食材。",
+    "descriptionZh": "引起疾病的病原体类别（细菌、朊病毒等）。",
     "nameZh": "病原体类别",
     "rdfs:comment": "The class of infectious agent (bacteria, prion, etc.) that causes the disease.",
     "rdfs:labelh": "infectiousAgentClass"
   },
   {
-    "descriptionZh": "铅笔画完后用墨水在铅笔画上画痕迹的人。",
+    "descriptionZh": "菜谱中使用的食材。",
     "nameZh": "食材",
     "rdfs:comment": "A single ingredient used in the recipe, e.g. sugar, flour or garlic.",
     "rdfs:labelh": "ingredients"
   },
   {
-    "descriptionZh": "肌肉附着的位置，或肌肉运动的部位。",
+    "descriptionZh": "铅笔画完后用墨水在铅笔画上画痕迹的人。",
     "nameZh": "印客",
     "rdfs:comment": "The individual who traces over the pencil drawings in ink after pencils are complete.",
     "rdfs:labelh": "inker"
   },
   {
-    "descriptionZh": "APP安装地址。",
+    "descriptionZh": "肌肉附着的位置，或肌肉运动的部位。",
     "nameZh": "附着处",
     "rdfs:comment": "The place of attachment of a muscle, or what the muscle moves.",
     "rdfs:labelh": "insertion"
   },
   {
-    "descriptionZh": "教授课程的人。",
+    "descriptionZh": "APP安装地址。",
     "nameZh": "APP安装地址",
     "rdfs:comment": "URL at which the app may be installed, if different from the URL of the item.",
     "rdfs:labelh": "installUrl"
   },
   {
-    "descriptionZh": "工作时所需用的器具。",
+    "descriptionZh": "教授课程的人。",
     "nameZh": "教师",
     "rdfs:comment": "A person assigned to instruct or provide instructional assistance for the <a class=\"localLink\" href=\"/CourseInstance\">CourseInstance</a>.",
     "rdfs:labelh": "instructor"
   },
   {
-    "descriptionZh": "定量测量运动中力量的大小，例如每分钟心跳。可能包括运动的速度。",
+    "descriptionZh": "工作时所需用的器具。",
     "nameZh": "工具",
     "rdfs:comment": "The object that helped the agent perform the action. e.g. John wrote a book with <em>a pen</em>.",
     "rdfs:labelh": "instrument"
   },
   {
-    "descriptionZh": "另一种已知与该药物相互作用影响该药物效果或对患者造成风险的药物。注：疾病相互作用通常被视为禁忌症。",
+    "descriptionZh": "定量测量运动中力量的大小，例如每分钟心跳。可能包括运动的速度。",
     "nameZh": "强度",
     "rdfs:comment": "Quantitative measure gauging the degree of force involved in the exercise, for example, heartbeats per minute. May include the velocity of the movement.",
     "rdfs:labelh": "intensity"
   },
   {
-    "descriptionZh": "此属性与它所依赖的UserInteraction类型一起被弃用。",
+    "descriptionZh": "另一种已知与该药物相互作用影响该药物效果或对患者造成风险的药物。注：疾病相互作用通常被视为禁忌症。",
     "nameZh": "药物相互作用",
     "rdfs:comment": "Another drug that is known to interact with this drug in a way that impacts the effect of this drug or causes a risk to the patient. Note: disease interactions are typically captured as contraindications.",
     "rdfs:labelh": "interactingDrug"
   },
   {
-    "descriptionZh": "发生交互的网站或软件应用程序。",
+    "descriptionZh": "此属性与它所依赖的UserInteraction类型一起被弃用。",
     "nameZh": "交互总数",
     "rdfs:comment": "This property is deprecated, alongside the UserInteraction types on which it depended.",
     "rdfs:labelh": "interactionCount"
   },
   {
-    "descriptionZh": "使用网站或软件应用程序进行创造性工作的交互次数。应使用最具体的InteractionCounter子类型。",
+    "descriptionZh": "发生交互的网站或软件应用程序。",
     "nameZh": "交互对应的软件服务",
     "rdfs:comment": "The WebSite or SoftwareApplication where the interactions took place.",
     "rdfs:labelh": "interactionService"
   },
   {
-    "descriptionZh": "表示交互类型的动作。对于支持票, +1s, 等. 使用 <a class=\"localLink\" href=\"/LikeAction\">LikeAction</a>. 对于反对票使用 <a class=\"localLink\" href=\"/DislikeAction\">DislikeAction</a>. 其他情况使用最具体的动作。",
+    "descriptionZh": "使用网站或软件应用程序进行创造性工作的交互次数。应使用最具体的InteractionCounter子类型。",
     "nameZh": "交互统计",
     "rdfs:comment": "The number of interactions for the CreativeWork using the WebSite or SoftwareApplication. The most specific child type of InteractionCounter should be used.",
     "rdfs:labelh": "interactionStatistic"
   },
   {
-    "descriptionZh": "由学习资源支持的预省略学习模式。可接受的值为“活动”、“说明性”或“混合”。",
+    "descriptionZh": "表示交互类型的动作。对于支持票, +1s, 等. 使用 <a class=\"localLink\" href=\"/LikeAction\">LikeAction</a>. 对于反对票使用 <a class=\"localLink\" href=\"/DislikeAction\">DislikeAction</a>. 其他情况使用最具体的动作。",
     "nameZh": "交互类型",
     "rdfs:comment": "The Action representing the type of interaction. For up votes, +1s, etc. use <a class=\"localLink\" href=\"/LikeAction\">LikeAction</a>. For down votes use <a class=\"localLink\" href=\"/DislikeAction\">DislikeAction</a>. Otherwise, use the most specific Action.",
     "rdfs:labelh": "interactionType"
   },
   {
-    "descriptionZh": "适用于金融产品的利率。",
+    "descriptionZh": "由学习资源支持的预省略学习模式。可接受的值为“活动”、“说明性”或“混合”。",
     "nameZh": "交互类型",
     "rdfs:comment": "The predomit mode of learning supported by the learning resource. Acceptable values are 'active', 'expositive', or 'mixed'.",
     "rdfs:labelh": "interactivityType"
   },
   {
-    "descriptionZh": "用于表示从a<a class=“localLink”href=“/MediaObject”>MediaObject</a>或其他<a class=“localLink”href=“/CreativeWork”>CreativeWork</a>的内容中包含、暗示、翻译或提炼的特定声明。可以使用claimInterpreter<a class=“localLink”href=“/claimInterpreter”>来指示口译方。",
+    "descriptionZh": "适用于金融产品的利率。",
     "nameZh": "利率",
     "rdfs:comment": "The interest rate, charged or paid, applicable to the ficial product. Note: This is different from the calculated annualPercentageRate.",
     "rdfs:labelh": "interestRate"
   },
   {
-    "descriptionZh": "当前产品的库存量。",
+    "descriptionZh": "用于表示从a<a class=“localLink”href=“/MediaObject”>MediaObject</a>或其他<a class=“localLink”href=“/CreativeWork”>CreativeWork</a>的内容中包含、暗示、翻译或提炼的特定声明。可以使用claimInterpreter<a class=“localLink”href=“/claimInterpreter”>来指示口译方。",
     "nameZh": "解释为声明",
     "rdfs:comment": "Used to indicate a specific claim contained, implied, translated or refined from the content of a <a class=\"localLink\" href=\"/MediaObject\">MediaObject</a> or other <a class=\"localLink\" href=\"/CreativeWork\">CreativeWork</a>. The interpreting party can be indicated using <a class=\"localLink\" href=\"/claimInterpreter\">claimInterpreter</a>.",
     "rdfs:labelh": "interpretedAsClaim"
   },
   {
-    "descriptionZh": "将属性与其相反的属性相关联。反向属性将相同的项目对彼此关联，但方向相反。例如，“alumniOf”和“alumniOf”属性是相反的。有些属性没有显式的逆；在这些情况下，可以使用反向属性的RDFa和JSON-LD语法。",
+    "descriptionZh": "当前产品的库存量。",
     "nameZh": "库存量",
     "rdfs:comment": "The current approximate inventory level for the item or items.",
     "rdfs:labelh": "inventoryLevel"
   },
   {
-    "descriptionZh": "提供者是否接受新患者。",
+    "descriptionZh": "将属性与其相反的属性相关联。反向属性将相同的项目对彼此关联，但方向相反。例如，“alumniOf”和“alumniOf”属性是相反的。有些属性没有显式的逆；在这些情况下，可以使用反向属性的RDFa和JSON-LD语法。",
     "nameZh": "逆向",
     "rdfs:comment": "Relates a property to a property that is its inverse. Inverse properties relate the same pairs of items to each other, but in reversed direction. For example, the 'alumni' and 'alumniOf' properties are inverseOf each other. Some properties don't have explicit inverses; in these situations RDFa and JSON-LD syntax for reverse properties can be used.",
     "rdfs:labelh": "inverseOf"
   },
   {
-    "descriptionZh": "表示该出版物可免费获得的标志。",
+    "descriptionZh": "提供者是否接受新患者。",
     "nameZh": "正在接受新患者",
     "rdfs:comment": "Whether the provider is accepting new patients.",
     "rdfs:labelh": "isAcceptingNewPatients"
   },
   {
-    "descriptionZh": "指明本产品是其他产品的附件或备件的指针。",
+    "descriptionZh": "表示该出版物可免费获得的标志。",
     "nameZh": "是否免费",
     "rdfs:comment": "A flag to signal that the item, event, or place is accessible for free.",
     "rdfs:labelh": "isAccessibleForFree"
   },
   {
-    "descriptionZh": "如果药物以非专利形式提供（无论名称如何），则为True。",
+    "descriptionZh": "指明本产品是其他产品的附件或备件的指针。",
     "nameZh": "是另一产品的附件或备件",
     "rdfs:comment": "A pointer to another product (or multiple products) for which this product is an accessory or spare part.",
     "rdfs:labelh": "isAccessoryOrSparePartFor"
   },
   {
-    "descriptionZh": "上游资源URL。",
+    "descriptionZh": "如果药物以非专利形式提供（无论名称如何），则为True。",
     "nameZh": "普遍可用",
     "rdfs:comment": "True if the drug is available in a generic form (regardless of name).",
     "rdfs:labelh": "isAvailableGenerically"
   },
   {
-    "descriptionZh": "用于创建此资源的资源。这个术语可以重复用于多个来源。例如http://example.com/great-multiplication-intro.html。/",
+    "descriptionZh": "上游资源URL。",
     "nameZh": "上游资源URL",
     "rdfs:comment": "A resource from which this work is derived or from which it is a modification or adaption.",
     "rdfs:labelh": "isBasedOn"
   },
   {
-    "descriptionZh": "指明此产品是消耗品的另一产品（或多个产品）的指针。",
+    "descriptionZh": "用于创建此资源的资源。这个术语可以重复用于多个来源。例如http://example.com/great-multiplication-intro.html。/",
     "nameZh": "基于网址",
     "rdfs:comment": "",
     "rdfs:labelh": "isBasedOnUrl"
   },
   {
-    "descriptionZh": "另一种生物化学物质被这个编码。",
+    "descriptionZh": "指明此产品是消耗品的另一产品（或多个产品）的指针。",
     "nameZh": "下游产品",
     "rdfs:comment": "A pointer to another product (or multiple products) for which this product is a consumable.",
     "rdfs:labelh": "isConsumableFor"
   },
   {
-    "descriptionZh": "指明其内容是否适合全家观看。",
+    "descriptionZh": "另一种生物化学物质被这个编码。",
     "nameZh": "由生物化学实体编码",
     "rdfs:comment": "Another BioChemEntity encoding by this one.",
     "rdfs:labelh": "isEncodedByBioChemEntity"
   },
   {
-    "descriptionZh": "该礼物的报价是否被接受。",
+    "descriptionZh": "指明其内容是否适合全家观看。",
     "nameZh": "是否适合全家观看",
     "rdfs:comment": "Indicates whether this content is family friendly.",
     "rdfs:labelh": "isFamilyFriendly"
   },
   {
-    "descriptionZh": "生物化学实体参与的生物过程；如果你想包含任何证据，请使用属性值。",
+    "descriptionZh": "该礼物的报价是否被接受。",
     "nameZh": "是否礼物",
     "rdfs:comment": "Was the offer accepted as a gift for someone other than the buyer.",
     "rdfs:labelh": "isGift"
   },
   {
-    "descriptionZh": "指明该广播是否为现场直播。",
+    "descriptionZh": "生物化学实体参与的生物过程；如果你想包含任何证据，请使用属性值。",
     "nameZh": "参与生物过程",
     "rdfs:comment": "Biological process this BioChemEntity is involved in; please use PropertyValue if you want to include any evidence.",
     "rdfs:labelh": "isInvolvedInBiologicalProcess"
   },
   {
-    "descriptionZh": "该生物化学实体所在的亚细胞位置；如果你想包含任何证据，请使用属性值。",
+    "descriptionZh": "指明该广播是否为现场直播。",
     "nameZh": "是否直播",
     "rdfs:comment": "True if the broadcast is of a live event.",
     "rdfs:labelh": "isLiveBroadcast"
   },
   {
-    "descriptionZh": "指示此项目或CreativeWork（在某种意义上）所属的项目或CreativeWork。",
+    "descriptionZh": "该生物化学实体所在的亚细胞位置；如果你想包含任何证据，请使用属性值。",
     "nameZh": "位于亚细胞位置",
     "rdfs:comment": "Subcellular location where this BioChemEntity is located; please use PropertyValue if you want to include any evidence.",
     "rdfs:labelh": "isLocatedInSubcellularLocation"
   },
   {
-    "descriptionZh": "表示（在某种意义上）是该生物化学实体一部分的生物化学实体。",
+    "descriptionZh": "指示此项目或CreativeWork（在某种意义上）所属的项目或CreativeWork。",
     "nameZh": "从属于",
     "rdfs:comment": "Indicates an item or CreativeWork that this item, or CreativeWork (in some sense), is part of.",
     "rdfs:labelh": "isPartOf"
   },
   {
-    "descriptionZh": "表示本楼层平面图描述的一些住处。",
+    "descriptionZh": "表示（在某种意义上）是该生物化学实体一部分的生物化学实体。",
     "nameZh": "是生物化学实体的一部分",
     "rdfs:comment": "Indicates a BioChemEntity that is (in some sense) a part of this BioChemEntity.",
     "rdfs:labelh": "isPartOfBioChemEntity"
   },
   {
-    "descriptionZh": "如果该商品的名称是专有/品牌名称（与通用名称相比），则为True。",
+    "descriptionZh": "表示本楼层平面图描述的一些住处。",
     "nameZh": "是公寓平面图",
     "rdfs:comment": "Indicates some accommodation that this floor plan describes.",
     "rdfs:labelh": "isPlanForApartment"
   },
   {
-    "descriptionZh": "指向另一个相关产品（或多个产品）的指针。",
+    "descriptionZh": "如果该商品的名称是专有/品牌名称（与通用名称相比），则为True。",
     "nameZh": "是专有的",
     "rdfs:comment": "True if this item's name is a proprietary/brand name (vs. generic name).",
     "rdfs:labelh": "isProprietary"
   },
   {
-    "descriptionZh": "3DModel是否允许调整大小。例如，为了反映实际情况，房间布局应用程序通常不允许调整3DModel图元的大小。",
+    "descriptionZh": "指向另一个相关产品（或多个产品）的指针。",
     "nameZh": "相关",
     "rdfs:comment": "A pointer to another, somehow related product (or multiple products).",
     "rdfs:labelh": "isRelatedTo"
   },
   {
-    "descriptionZh": "指向另一个功能相似的产品（或多个产品）的指针。",
+    "descriptionZh": "3DModel是否允许调整大小。例如，为了反映实际情况，房间布局应用程序通常不允许调整3DModel图元的大小。",
     "nameZh": "可调整大小",
     "rdfs:comment": "Whether the 3DModel allows resizing. For example, room layout applications often do not allow 3DModel elements to be resized to reflect reality.",
     "rdfs:labelh": "isResizable"
   },
   {
-    "descriptionZh": "当此项被 DeliveryTimeSettings（交货时间设置）或ShippingRateSettings（运费设置）的发货设置链接引用时，此项可以被标记被True，来表明：一些公布的DeliveryTimeSettings（交货时间设置）或ShippingRateSettings（运费设置），旨在应用到所有由该商家发表的OfferShippingDetails（报价装运细节）。在transitTimeLabel（运输时间标签）或shippingLabel（发货标签）旁边使用此属性的“true”值没有意义，因为此属性用于未标记的设置。",
+    "descriptionZh": "指向另一个功能相似的产品（或多个产品）的指针。",
     "nameZh": "相似",
     "rdfs:comment": "A pointer to another, functionally similar product (or multiple products).",
     "rdfs:labelh": "isSimilarTo"
   },
   {
-    "descriptionZh": "表示这是其变体的产品类型。",
+    "descriptionZh": "当此项被 DeliveryTimeSettings（交货时间设置）或ShippingRateSettings（运费设置）的发货设置链接引用时，此项可以被标记被True，来表明：一些公布的DeliveryTimeSettings（交货时间设置）或ShippingRateSettings（运费设置），旨在应用到所有由该商家发表的OfferShippingDetails（报价装运细节）。在transitTimeLabel（运输时间标签）或shippingLabel（发货标签）旁边使用此属性的“true”值没有意义，因为此属性用于未标记的设置。",
     "nameZh": "未标记的备用物",
     "rdfs:comment": "This can be marked 'true' to indicate that some published <a class=\"localLink\" href=\"/DeliveryTimeSettings\">DeliveryTimeSettings</a> or <a class=\"localLink\" href=\"/ShippingRateSettings\">ShippingRateSettings</a> are intended to apply to all <a class=\"localLink\" href=\"/OfferShippingDetails\">OfferShippingDetails</a> published by the same merchant, when referenced by a <a class=\"localLink\" href=\"/shippingSettingsLink\">shippingSettingsLink</a> in those settings. It is not meaningful to use a 'true' value for this property alongside a transitTimeLabel (for <a class=\"localLink\" href=\"/DeliveryTimeSettings\">DeliveryTimeSettings</a>) or shippingLabel (for <a class=\"localLink\" href=\"/ShippingRateSettings\">ShippingRateSettings</a>), since this property is for use with unlabelled settings.",
     "rdfs:labelh": "isUnlabelledFallback"
   },
   {
-    "descriptionZh": "书籍的国际标准书号(ISBN)。",
+    "descriptionZh": "表示这是其变体的产品类型。",
     "nameZh": "变形",
     "rdfs:comment": "Indicates the kind of product that this is a variant of. In the case of <a class=\"localLink\" href=\"/ProductModel\">ProductModel</a>, this is a pointer (from a ProductModel) to a base product from which this product is a variant. It is safe to infer that the variant inherits all product features from the base model, unless defined locally. This is not transitive. In the case of a <a class=\"localLink\" href=\"/ProductGroup\">ProductGroup</a>, the group description also serves as a template, representing a set of Products that vary on explicitly defined, specific dimensions only (so it defines both a set of variants, as well as which values distinguish amongst those variants). When used with <a class=\"localLink\" href=\"/ProductGroup\">ProductGroup</a>, this property can apply to any <a class=\"localLink\" href=\"/Product\">Product</a> included in the group.",
     "rdfs:labelh": "isVariantOf"
   },
   {
-    "descriptionZh": "ISIC是所有经济活动的国际工业分类标准，而V4代码是为特定组织，商业人士或地点的修订。",
+    "descriptionZh": "书籍的国际标准书号(ISBN)。",
     "nameZh": "ISBN码",
     "rdfs:comment": "The ISBN of the book.",
     "rdfs:labelh": "isbn"
   },
   {
-    "descriptionZh": "国际标准音像制品代码。",
+    "descriptionZh": "ISIC是所有经济活动的国际工业分类标准，而V4代码是为特定组织，商业人士或地点的修订。",
     "nameZh": "国际标准行业分类",
     "rdfs:comment": "The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.",
     "rdfs:labelh": "isicV4"
   },
   {
-    "descriptionZh": "期刊的国际标准序列号。",
+    "descriptionZh": "国际标准音像制品代码。",
     "nameZh": "国际标准音像制品代码",
     "rdfs:comment": "The International Standard Recording Code for the recording.",
     "rdfs:labelh": "isrcCode"
   },
   {
-    "descriptionZh": "期刊标记符。",
+    "descriptionZh": "期刊的国际标准序列号。",
     "nameZh": "ISSN号",
     "rdfs:comment": "The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L) for, this serial publication.",
     "rdfs:labelh": "issn"
   },
   {
-    "descriptionZh": "许可的签发机构。",
+    "descriptionZh": "期刊标记符。",
     "nameZh": "期刊号",
     "rdfs:comment": "Identifies the issue of publication; for example, \"iii\" or \"2\".",
     "rdfs:labelh": "issueNumber"
   },
   {
-    "descriptionZh": "被许可的服务。",
+    "descriptionZh": "许可的签发机构。",
     "nameZh": "许可的签发机构",
     "rdfs:comment": "The organization issuing the ticket or permit.",
     "rdfs:labelh": "issuedBy"
   },
   {
-    "descriptionZh": "国际标准音乐作品编码。",
+    "descriptionZh": "被许可的服务。",
     "nameZh": "被许可的服务",
     "rdfs:comment": "The service through with the permit was granted.",
     "rdfs:labelh": "issuedThrough"
   },
   {
-    "descriptionZh": "列表中的一项。",
+    "descriptionZh": "国际标准音乐作品编码。",
     "nameZh": "国际标准音乐作品编码",
     "rdfs:comment": "The International Standard Musical Work Code for the composition.",
     "rdfs:labelh": "iswcCode"
   },
   {
-    "descriptionZh": "OfferItemCondition中的预定义值，指定产品或服务的条件，或报价中包含的产品或服务的条件。还用于产品退货政策，以指定接受退货的产品的条件。",
+    "descriptionZh": "列表中的一项。",
     "nameZh": "条目",
     "rdfs:comment": "An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')鈥?",
     "rdfs:labelh": "item"
   },
   {
-    "descriptionZh": "缺陷产品退货的退货费用类型。",
+    "descriptionZh": "OfferItemCondition中的预定义值，指定产品或服务的条件，或报价中包含的产品或服务的条件。还用于产品退货政策，以指定接受退货的产品的条件。",
     "nameZh": "产品条件",
     "rdfs:comment": "A predefined value from OfferItemCondition specifying the condition of the product or service, or the products or services included in the offer. Also used for product return policies to specify the condition of products accepted for returns.",
     "rdfs:labelh": "itemCondition"
   },
   {
-    "descriptionZh": "客户获取缺陷产品退货装运标签的方法。",
+    "descriptionZh": "缺陷产品退货的退货费用类型。",
     "nameZh": "缺陷商品退货费",
     "rdfs:comment": "The type of return fees for returns of defect products.",
     "rdfs:labelh": "itemDefectReturnFees"
   },
   {
-    "descriptionZh": "缺陷产品退货的运输成本金额。当属性<a class=“localLink”href=“/itemDefectReturnFees”>itemDefectReturnFees</a>等于<a class=“localLink”href=“/ReturnShippingFees”>ReturnShippingFees</a>时适用。",
+    "descriptionZh": "客户获取缺陷产品退货装运标签的方法。",
     "nameZh": "缺陷商品退回标签来源",
     "rdfs:comment": "The method (from an enumeration) by which the customer obtains a return shipping label for a defect product.",
     "rdfs:labelh": "itemDefectReturnLabelSource"
   },
   {
-    "descriptionZh": "对于itemListElement值，可以使用简单字符串（例如“Peter”、“Paul”、“Mary”）、现有实体或使用ListItem。\n\n如果列表中的元素是纯字符串，则文本值最好。现有实体最适合于数据中现有事物的简单无序列表。当您希望提供有关列表中元素的附加上下文，或者同一项可能位于不同列表中的不同位置时，ListItem与有序列表一起使用。\n\n注意：标记中元素的顺序不足以表示元素的顺序。在这种情况下，请使用带有“position”属性的ListItem。",
+    "descriptionZh": "缺陷产品退货的运输成本金额。当属性<a class=“localLink”href=“/itemDefectReturnFees”>itemDefectReturnFees</a>等于<a class=“localLink”href=“/ReturnShippingFees”>ReturnShippingFees</a>时适用。",
     "nameZh": "商品缺陷退货运费金额",
     "rdfs:comment": "Amount of shipping costs for defect product returns. Applicable when property <a class=\"localLink\" href=\"/itemDefectReturnFees\">itemDefectReturnFees</a> equals <a class=\"localLink\" href=\"/ReturnShippingFees\">ReturnShippingFees</a>.",
     "rdfs:labelh": "itemDefectReturnShippingFeesAmount"
   },
   {
-    "descriptionZh": "排序类型（如升序、降序、无序）。",
+    "descriptionZh": "对于itemListElement值，可以使用简单字符串（例如“Peter”、“Paul”、“Mary”）、现有实体或使用ListItem。\n\n如果列表中的元素是纯字符串，则文本值最好。现有实体最适合于数据中现有事物的简单无序列表。当您希望提供有关列表中元素的附加上下文，或者同一项可能位于不同列表中的不同位置时，ListItem与有序列表一起使用。\n\n注意：标记中元素的顺序不足以表示元素的顺序。在这种情况下，请使用带有“position”属性的ListItem。",
     "nameZh": "项目列表里的元素",
     "rdfs:comment": "For itemListElement values, you can use simple strings (e.g. \"Peter\", \"Paul\", \"Mary\"), existing entities, or use ListItem.<br/><br/>\n\n\n\nText values are best if the elements in the list are plain strings. Existing entities are best for a simple, unordered list of existing things in your data. ListItem is used with ordered lists when you want to provide additional context about the element in that list or when the same item might be in different places in different lists.<br/><br/>\n\n\n\nNote: The order of elements in your mark-up is not sufficient for indicating the order or elements.  Use ListItem with a 'position' property in such cases.",
     "rdfs:labelh": "itemListElement"
   },
   {
-    "descriptionZh": "项目的当前位置。",
+    "descriptionZh": "排序类型（如升序、降序、无序）。",
     "nameZh": "列表排列顺序",
     "rdfs:comment": "Type of ordering (e.g. Ascending, Descending, Unordered).",
     "rdfs:labelh": "itemListOrder"
   },
   {
-    "descriptionZh": "销售的物品。",
+    "descriptionZh": "项目的当前位置。",
     "nameZh": "项目位置",
     "rdfs:comment": "Current location of the item.",
     "rdfs:labelh": "itemLocation"
   },
   {
-    "descriptionZh": "正在被评论或打分的物品。",
+    "descriptionZh": "销售的物品。",
     "nameZh": "销售物品",
     "rdfs:comment": "An item being offered (or demanded). The transactional nature of the offer or demand is documented using <a class=\"localLink\" href=\"/businessFunction\">businessFunction</a>, e.g. sell, lease etc. While several common expected types are listed explicitly in this definition, others can be used. Using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.",
     "rdfs:labelh": "itemOffered"
   },
   {
-    "descriptionZh": "正在被运送的物品。",
+    "descriptionZh": "正在被评论或打分的物品。",
     "nameZh": "评价物品",
     "rdfs:comment": "The item that is being reviewed/rated.",
     "rdfs:labelh": "itemReviewed"
   },
   {
-    "descriptionZh": "组成旅行的目的地（<a class=“localLink”href=“/Place”>Place</a>）。对于目的地顺序很重要的旅行，请使用<a class=“localLink”href=“/ItemList”>ItemList</a>指定该顺序（参见示例）。",
+    "descriptionZh": "正在被运送的物品。",
     "nameZh": "运送物品",
     "rdfs:comment": "Item(s) being shipped.",
     "rdfs:labelh": "itemShipped"
   },
   {
-    "descriptionZh": "国际纯化学和应用化学联合会（IUPAC）推荐的化合物命名系统方法。",
+    "descriptionZh": "组成旅行的目的地（<a class=“localLink”href=“/Place”>Place</a>）。对于目的地顺序很重要的旅行，请使用<a class=“localLink”href=“/ItemList”>ItemList</a>指定该顺序（参见示例）。",
     "nameZh": "行程",
     "rdfs:comment": "Destination(s) ( <a class=\"localLink\" href=\"/Place\">Place</a> ) that make up a trip. For a trip where destination order is important use <a class=\"localLink\" href=\"/ItemList\">ItemList</a> to specify that order (see examples).",
     "rdfs:labelh": "itinerary"
   },
   {
-    "descriptionZh": "该职位具有的福利。",
+    "descriptionZh": "国际纯化学和应用化学联合会（IUPAC）推荐的化合物命名系统方法。",
     "nameZh": "IUPAC名称",
     "rdfs:comment": "Systematic method of naming chemical compounds as recommended by the International Union of Pure and Applied Chemistry (IUPAC).",
     "rdfs:labelh": "iupacName"
   },
   {
-    "descriptionZh": "关于一个职位是否可立即启动的指示器。",
+    "descriptionZh": "该职位具有的福利。",
     "nameZh": "职位福利",
     "rdfs:comment": "Description of benefits associated with the job.",
     "rdfs:labelh": "jobBenefits"
   },
   {
-    "descriptionZh": "工作所在地的地址。",
+    "descriptionZh": "关于一个职位是否可立即启动的指示器。",
     "nameZh": "工作立即开始",
     "rdfs:comment": "An indicator as to whether a position is available for an immediate start.",
     "rdfs:labelh": "jobImmediateStart"
   },
   {
-    "descriptionZh": "工作地点的描述（例如远程办公工作）。",
+    "descriptionZh": "工作所在地的地址。",
     "nameZh": "工作地点",
     "rdfs:comment": "A (typically single) geographic location associated with the job position.",
     "rdfs:labelh": "jobLocation"
   },
   {
-    "descriptionZh": "成功申请这份工作的人预计开始工作的日期。选择未来的特定日期，或使用jobImmediateStart属性指示该职位将尽快填补。",
+    "descriptionZh": "工作地点的描述（例如远程办公工作）。",
     "nameZh": "工作地点类型",
     "rdfs:comment": "A description of the job location (e.g TELECOMMUTE for telecommute jobs).",
     "rdfs:labelh": "jobLocationType"
   },
   {
-    "descriptionZh": "一个人的工作头衔。",
+    "descriptionZh": "成功申请这份工作的人预计开始工作的日期。选择未来的特定日期，或使用jobImmediateStart属性指示该职位将尽快填补。",
     "nameZh": "工作开始日期",
     "rdfs:comment": "The date on which a successful applicant for this job would be expected to start work. Choose a specific date in the future or use the jobImmediateStart property to indicate the position is to be filled as soon as possible.",
     "rdfs:labelh": "jobStartDate"
   },
   {
-    "descriptionZh": "表示法律管辖区，例如某些立法或某些政府服务的所在地。",
+    "descriptionZh": "一个人的工作头衔。",
     "nameZh": "工作头衔",
     "rdfs:comment": "The job title of the person (for example, Ficial Manager).",
     "rdfs:labelh": "jobTitle"
   },
   {
-    "descriptionZh": "文章中的关键词或标签。",
+    "descriptionZh": "表示法律管辖区，例如某些立法或某些政府服务的所在地。",
     "nameZh": "管辖权",
     "rdfs:comment": "Indicates a legal jurisdiction, e.g. of some legislation, or where some government service is based.",
     "rdfs:labelh": "jurisdiction"
   },
   {
-    "descriptionZh": "已知汽车故障的文本描述，包括可修复的和不可修复的。",
+    "descriptionZh": "文章中的关键词或标签。",
     "nameZh": "关键词",
     "rdfs:comment": "Keywords or tags used to describe this content. Multiple entries in a keywords list are typically delimited by commas.",
     "rdfs:labelh": "keywords"
   },
   {
-    "descriptionZh": "最普遍的双向社会/工作关系。",
+    "descriptionZh": "已知汽车故障的文本描述，包括可修复的和不可修复的。",
     "nameZh": "已知汽车故障",
     "rdfs:comment": "A textual description of known damages, both repaired and unrepaired.",
     "rdfs:labelh": "knownVehicleDamages"
   },
   {
-    "descriptionZh": "指一个人，而不是一个组织，以表明一个主题——建议可能的专业知识，但这项专业知识并不是必须的。我们不区分技能水平，也不将其与教育内容、活动、目标或职位描述联系起来。",
+    "descriptionZh": "最普遍的双向社会/工作关系。",
     "nameZh": "认识",
     "rdfs:comment": "The most generic bi-directional social/work relation.",
     "rdfs:labelh": "knows"
   },
   {
-    "descriptionZh": "指一个人，而不是一个组织，以表示一种已知的语言。我们不区分技能水平或阅读/写作/口语/签名。使用IETF BCP 47标准中的语言代码。",
+    "descriptionZh": "指一个人，而不是一个组织，以表明一个主题——建议可能的专业知识，但这项专业知识并不是必须的。我们不区分技能水平，也不将其与教育内容、活动、目标或职位描述联系起来。",
     "nameZh": "知道关于",
     "rdfs:comment": "Of a <a class=\"localLink\" href=\"/Person\">Person</a>, and less typically of an <a class=\"localLink\" href=\"/Organization\">Organization</a>, to indicate a topic that is known about - suggesting possible expertise but not implying it. We do not distinguish skill levels here, or relate this to educational content, events, objectives or <a class=\"localLink\" href=\"/JobPosting\">JobPosting</a> descriptions.",
     "rdfs:labelh": "knowsAbout"
   },
   {
-    "descriptionZh": "链接到该药物的标签详细信息。",
+    "descriptionZh": "指一个人，而不是一个组织，以表示一种已知的语言。我们不区分技能水平或阅读/写作/口语/签名。使用IETF BCP 47标准中的语言代码。",
     "nameZh": "知道语言",
     "rdfs:comment": "",
     "rdfs:labelh": "knowsLanguage"
   },
   {
-    "descriptionZh": "参与者的子属性。房地产的所有者。",
+    "descriptionZh": "链接到该药物的标签详细信息。",
     "nameZh": "标签详情",
     "rdfs:comment": "Link to the drug's label details.",
     "rdfs:labelh": "labelDetails"
   },
   {
-    "descriptionZh": "器具的子属性。用于此行动的语言。",
+    "descriptionZh": "参与者的子属性。房地产的所有者。",
     "nameZh": "房东",
     "rdfs:comment": "A sub property of participant. The owner of the real estate property.",
     "rdfs:labelh": "landlord"
   },
   {
-    "descriptionZh": "上一次审查本网页内容的准确性和或完整性的日期。",
+    "descriptionZh": "器具的子属性。用于此行动的语言。",
     "nameZh": "语言",
     "rdfs:comment": "A sub property of instrument. The language used on this action.",
     "rdfs:labelh": "language"
   },
   {
-    "descriptionZh": "一个位置的纬度。",
+    "descriptionZh": "上一次审查本网页内容的准确性和或完整性的日期。",
     "nameZh": "最近审查时间",
     "rdfs:comment": "Date on which the content on this web page was last reviewed for accuracy and/or completeness.",
     "rdfs:labelh": "lastReviewed"
   },
   {
-    "descriptionZh": "显示平面布置图的示意图。",
+    "descriptionZh": "一个位置的纬度。",
     "nameZh": "纬度",
     "rdfs:comment": "",
     "rdfs:labelh": "latitude"
   },
   {
-    "descriptionZh": "表示学习资料类型或种类。包括演示，讲义等。",
+    "descriptionZh": "显示平面布置图的示意图。",
     "nameZh": "布局图像",
     "rdfs:comment": "A schematic image showing the floorplan layout.",
     "rdfs:labelh": "layoutImage"
   },
   {
-    "descriptionZh": "某些住房的租赁期限，要么是特定于某些报价，要么是某些情况下该房产的固有租赁期限。",
+    "descriptionZh": "表示学习资料类型或种类。包括演示，讲义等。",
     "nameZh": "学习资料类型",
     "rdfs:comment": "The predomit type or kind characterizing the learning resource. For example, 'presentation', 'handout'.",
     "rdfs:labelh": "learningResourceType"
   },
   {
-    "descriptionZh": "依法登记的名字，组织或机构的官方名称，比如注册的企业名。",
+    "descriptionZh": "某些住房的租赁期限，要么是特定于某些报价，要么是某些情况下该房产的固有租赁期限。",
     "nameZh": "租赁长度",
     "rdfs:comment": "Length of the lease for some <a class=\"localLink\" href=\"/Accommodation\">Accommodation</a>, either particular to some <a class=\"localLink\" href=\"/Offer\">Offer</a> or in some cases intrinsic to the property.",
     "rdfs:labelh": "leaseLength"
   },
   {
-    "descriptionZh": "药物或补充剂的法律地位，包括适用的任何受控物清单。",
+    "descriptionZh": "依法登记的名字，组织或机构的官方名称，比如注册的企业名。",
     "nameZh": "官方名称",
     "rdfs:comment": "The official name of the organization, e.g. the registered company name.",
     "rdfs:labelh": "legalName"
   },
   {
-    "descriptionZh": "表示该立法（或部分立法）以某种方式在不同立法背景下转移了另一立法。这是一个信息链接，没有法律价值。对于具有法律约束力的转置链接，请使用<a href=“/legicationtransposes”>legicationtransposes</a>属性。例如，欧盟成员国信息丰富的综合法律“适用”其中实施的欧洲指令的综合版本。",
+    "descriptionZh": "药物或补充剂的法律地位，包括适用的任何受控物清单。",
     "nameZh": "法律地位",
     "rdfs:comment": "The drug or supplement's legal status, including any controlled substance schedules that apply.",
     "rdfs:labelh": "legalStatus"
   },
   {
-    "descriptionZh": "另一项立法要求这项立法进行修改。这包括修正、替换、纠正、废除或其他类型的变更的概念。这可能是直接变更（文本或非文本修订）或相应或间接变更。该属性用于表示两个行为之间存在变更关系，而不是显示变更结果的文本合并版本的存在。对于合并关系，请使用<a href=“/legicationconsolidates”>legictionconsolidates</a>属性。",
+    "descriptionZh": "表示该立法（或部分立法）以某种方式在不同立法背景下转移了另一立法。这是一个信息链接，没有法律价值。对于具有法律约束力的转置链接，请使用<a href=“/legicationtransposes”>legicationtransposes</a>属性。例如，欧盟成员国信息丰富的综合法律“适用”其中实施的欧洲指令的综合版本。",
     "nameZh": "立法适用",
     "rdfs:comment": "Indicates that this legislation (or part of a legislation) somehow transfers another legislation in a different legislative context. This is an informative link, and it has no legal value. For legally-binding links of transposition, use the <a href=\"/legislationTransposes\">legislationTransposes</a> property. For example an informative consolidated law of a European Union's member state \"applies\" the consolidated version of the European Directive implemented in it.",
     "rdfs:labelh": "legislationApplies"
   },
   {
-    "descriptionZh": "表示本合并立法中考虑的其他立法（通常是修订立法的编辑过程的产物）。",
+    "descriptionZh": "另一项立法要求这项立法进行修改。这包括修正、替换、纠正、废除或其他类型的变更的概念。这可能是直接变更（文本或非文本修订）或相应或间接变更。该属性用于表示两个行为之间存在变更关系，而不是显示变更结果的文本合并版本的存在。对于合并关系，请使用<a href=“/legicationconsolidates”>legictionconsolidates</a>属性。",
     "nameZh": "立法变化",
     "rdfs:comment": "Another legislation that this legislation changes. This encompasses the notions of amendment, replacement, correction, repeal, or other types of change. This may be a direct change (textual or non-textual amendment) or a consequential or indirect change. The property is to be used to express the existence of a change relationship between two acts rather than the existence of a consolidated version of the text that shows the result of the change. For consolidation relationships, use the <a href=\"/legislationConsolidates\">legislationConsolidates</a> property.",
     "rdfs:labelh": "legislationChanges"
   },
   {
-    "descriptionZh": "立法通过或签署的日期。这是该文本被正式确认为立法的日期，尽管它可能尚未公布或生效。",
+    "descriptionZh": "表示本合并立法中考虑的其他立法（通常是修订立法的编辑过程的产物）。",
     "nameZh": "立法合并",
     "rdfs:comment": "Indicates another legislation taken into account in this consolidated legislation (which is usually the product of an editorial process that revises the legislation). This property should be used multiple times to refer to both the original version or the previous consolidated version, and to the legislations making the change.",
     "rdfs:labelh": "legislationConsolidates"
   },
   {
-    "descriptionZh": "所提供的立法描述有效的时间点（例如：当查看2016-04-07（=日期版本）的法律时，我得到了2015-04-12《2015年国民保险缴款法》的合并）。",
+    "descriptionZh": "立法通过或签署的日期。这是该文本被正式确认为立法的日期，尽管它可能尚未公布或生效。",
     "nameZh": "立法日期",
     "rdfs:comment": "The date of adoption or signature of the legislation. This is the date at which the text is officially aknowledged to be a legislation, even though it might not even be published or in force.",
     "rdfs:labelh": "legislationDate"
   },
   {
-    "descriptionZh": "立法的标识符。这可以是基于字符串的标识符，如欧盟级别的CELEX或法国的NOR，也可以是基于web的URL/URI标识符，如ELI（欧洲立法标识符）或URN-Lex。",
+    "descriptionZh": "所提供的立法描述有效的时间点（例如：当查看2016-04-07（=日期版本）的法律时，我得到了2015-04-12《2015年国民保险缴款法》的合并）。",
     "nameZh": "立法日期版本",
     "rdfs:comment": "The point-in-time at which the provided description of the legislation is valid (e.g. : when looking at the law on the 2016-04-07 (= dateVersion), I get the consolidation of 2015-04-12 of the \"National Insurance Contributions Act 2015\")",
     "rdfs:labelh": "legislationDateVersion"
   },
   {
-    "descriptionZh": "法律起源的司法管辖区。",
+    "descriptionZh": "立法的标识符。这可以是基于字符串的标识符，如欧盟级别的CELEX或法国的NOR，也可以是基于web的URL/URI标识符，如ELI（欧洲立法标识符）或URN-Lex。",
     "nameZh": "立法标识符",
     "rdfs:comment": "An identifier for the legislation. This can be either a string-based identifier, like the CELEX at EU level or the NOR in France, or a web-based, URL/URI identifier, like an ELI (European Legislation Identifier) or an URN-Lex.",
     "rdfs:labelh": "legislationIdentifier"
   },
   {
-    "descriptionZh": "该立法目前是否生效，或是否部分生效。",
+    "descriptionZh": "法律起源的司法管辖区。",
     "nameZh": "立法管辖权",
     "rdfs:comment": "The jurisdiction from which the legislation originates.",
     "rdfs:labelh": "legislationJurisdiction"
   },
   {
-    "descriptionZh": "这项立法文件的法律价值。同样的立法可以写在多个具有不同法律价值的文件中。通常，数字签名的PDF文件比同一法案的HTML文件具有“更强”的法律价值。",
+    "descriptionZh": "该立法目前是否生效，或是否部分生效。",
     "nameZh": "立法法律生效",
     "rdfs:comment": "Whether the legislation is currently in force, not in force, or partially in force.",
     "rdfs:labelh": "legislationLegalForce"
   },
   {
-    "descriptionZh": "最初通过或制定法律的个人或组织：通常是议会（主要立法）或政府（次要立法）。这表明法律的“法定作者”，而不是其实际作者。",
+    "descriptionZh": "这项立法文件的法律价值。同样的立法可以写在多个具有不同法律价值的文件中。通常，数字签名的PDF文件比同一法案的HTML文件具有“更强”的法律价值。",
     "nameZh": "立法法律价值",
     "rdfs:comment": "The legal value of this legislation file. The same legislation can be written in multiple files with different legal values. Typically a digitally signed PDF have a \"stronger\" legal value than the HTML file of the same act.",
     "rdfs:labelh": "legislationLegalValue"
   },
   {
-    "descriptionZh": "对立法负有某种责任的个人或组织。通常是负责制定立法的部门，或立法发布后可能出现的问题的地址。",
+    "descriptionZh": "最初通过或制定法律的个人或组织：通常是议会（主要立法）或政府（次要立法）。这表明法律的“法定作者”，而不是其实际作者。",
     "nameZh": "批准立法者",
     "rdfs:comment": "The person or organization that originally passed or made the law : typically parliament (for primary legislation) or government (for secondary legislation). This indicates the \"legal author\" of the law, as opposed to its physical author.",
     "rdfs:labelh": "legislationPassedBy"
   },
   {
-    "descriptionZh": "表明该立法（或部分立法）通过适当的实施措施，实现了另一立法设定的目标。通常，欧盟成员国或地区的一些立法会转用欧洲指令。这表明这两项立法之间存在具有法律约束力的联系。",
+    "descriptionZh": "对立法负有某种责任的个人或组织。通常是负责制定立法的部门，或立法发布后可能出现的问题的地址。",
     "nameZh": "立法负责",
     "rdfs:comment": "An individual or organization that has some kind of responsibility for the legislation. Typically the ministry who is/was in charge of elaborating the legislation, or the adressee for potential questions about the legislation once it is published.",
     "rdfs:labelh": "legislationResponsible"
   },
   {
-    "descriptionZh": "立法的类型。价值观的例子有“法律”、“法案”、“指令”、“法令”、“法规”、“法定文书”。",
+    "descriptionZh": "表明该立法（或部分立法）通过适当的实施措施，实现了另一立法设定的目标。通常，欧盟成员国或地区的一些立法会转用欧洲指令。这表明这两项立法之间存在具有法律约束力的联系。",
     "nameZh": "立法转移",
     "rdfs:comment": "Indicates that this legislation (or part of legislation) fulfills the objectives set by another legislation, by passing appropriate implementation measures. Typically, some legislations of European Union's member states or regions transpose European Directives. This indicates a legally binding link between the 2 legislations.",
     "rdfs:labelh": "legislationTransposes"
   },
   {
-    "descriptionZh": "全球法人机构识别编码。",
+    "descriptionZh": "立法的类型。价值观的例子有“法律”、“法案”、“指令”、“法令”、“法规”、“法定文书”。",
     "nameZh": "立法类型",
     "rdfs:comment": "The type of the legislation. Examples of values are \"law\", \"act\", \"directive\", \"decree\", \"regulation\", \"statutory instrument\", \"loi organique\", \"r猫glement grand-ducal\", etc., depending on the country.",
     "rdfs:labelh": "legislationType"
   },
   {
-    "descriptionZh": "借出东西给别人的人。",
+    "descriptionZh": "全球法人机构识别编码。",
     "nameZh": "全球法人机构识别编码",
     "rdfs:comment": "An organization identifier that uniquely identifies a legal entity as defined in ISO 17442.",
     "rdfs:labelh": "leiCode"
   },
   {
-    "descriptionZh": "数学中的小于。",
+    "descriptionZh": "借出东西给别人的人。",
     "nameZh": "借出者",
     "rdfs:comment": "A sub property of participant. The person that lends the object being borrowed.",
     "rdfs:labelh": "lender"
   },
   {
-    "descriptionZh": "数学中的小于等于。",
+    "descriptionZh": "数学中的小于。",
     "nameZh": "小于",
     "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is lesser than the object.",
     "rdfs:labelh": "lesser"
   },
   {
-    "descriptionZh": "在艺术品中添加文字的个人。",
+    "descriptionZh": "数学中的小于等于。",
     "nameZh": "小于等于",
     "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is lesser than or equal to the object.",
     "rdfs:labelh": "lesserOrEqual"
   },
   {
-    "descriptionZh": "适用于此内容的许可证文件，通常由URL指示。",
+    "descriptionZh": "在艺术品中添加文字的个人。",
     "nameZh": "书写者",
     "rdfs:comment": "The individual who adds lettering, including speech balloons and sound effects, to artwork.",
     "rdfs:labelh": "letterer"
   },
   {
-    "descriptionZh": "由两点或多点组成的点对点路径。",
+    "descriptionZh": "适用于此内容的许可证文件，通常由URL指示。",
     "nameZh": "许可证书",
     "rdfs:comment": "A license document that applies to this content, typically indicated by URL.",
     "rdfs:labelh": "license"
   },
   {
-    "descriptionZh": "指示Web链接的关系类型。",
+    "descriptionZh": "由两点或多点组成的点对点路径。",
     "nameZh": "直线",
     "rdfs:comment": "A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space.",
     "rdfs:labelh": "line"
   },
   {
-    "descriptionZh": "博客直播的一条更新。",
+    "descriptionZh": "指示Web链接的关系类型。",
     "nameZh": "链接关系",
     "rdfs:comment": "Indicates the relationship type of a Web link.",
     "rdfs:labelh": "linkRelationship"
   },
   {
-    "descriptionZh": "可在后期转换为适当抵押的抵押授权金额。",
+    "descriptionZh": "博客直播的一条更新。",
     "nameZh": "博客直播的更新",
     "rdfs:comment": "An update to the LiveBlog.",
     "rdfs:labelh": "liveBlogUpdate"
   },
   {
-    "descriptionZh": "一次性支付的金额。",
+    "descriptionZh": "可在后期转换为适当抵押的抵押授权金额。",
     "nameZh": "贷款抵押授权金额",
     "rdfs:comment": "Amount of mortgage mandate that can be converted into a proper mortgage at a later stage.",
     "rdfs:labelh": "loanMortgageMandateAmount"
   },
   {
-    "descriptionZh": "到期付款频率，即两次付款之间的月数。这被定义为频率，即一段时间的倒数。",
+    "descriptionZh": "一次性支付的金额。",
     "nameZh": "贷款支付金额",
     "rdfs:comment": "The amount of money to pay in a single payment.",
     "rdfs:labelh": "loanPaymentAmount"
   },
   {
-    "descriptionZh": "一种偿还以前从贷款人那里借来的钱的形式。还款通常采取定期付款的形式，每次付款通常包括部分本金加上利息。",
+    "descriptionZh": "到期付款频率，即两次付款之间的月数。这被定义为频率，即一段时间的倒数。",
     "nameZh": "贷款支付频率",
     "rdfs:comment": "Frequency of payments due, i.e. number of months between payments. This is defined as a frequency, i.e. the reciprocal of a period of time.",
     "rdfs:labelh": "loanPaymentFrequency"
   },
   {
-    "descriptionZh": "贷款或信贷协议的期限。",
+    "descriptionZh": "一种偿还以前从贷款人那里借来的钱的形式。还款通常采取定期付款的形式，每次付款通常包括部分本金加上利息。",
     "nameZh": "贷款还款形式",
     "rdfs:comment": "A form of paying back money previously borrowed from a lender. Repayment usually takes the form of periodic payments that normally include part principal plus interest in each payment.",
     "rdfs:labelh": "loanRepaymentForm"
   },
   {
-    "descriptionZh": "贷款或信贷的类型。贷款或信贷的类型。",
+    "descriptionZh": "贷款或信贷协议的期限。",
     "nameZh": "贷款期限",
     "rdfs:comment": "The duration of the loan or credit agreement.",
     "rdfs:labelh": "loanTerm"
   },
   {
-    "descriptionZh": "地址",
+    "descriptionZh": "贷款或信贷的类型。贷款或信贷的类型。",
     "nameZh": "贷款类型",
     "rdfs:comment": "The type of a loan or credit.",
     "rdfs:labelh": "loanType"
   },
   {
-    "descriptionZh": "创建CreativeWork的位置，可能与CreativeWork中描述的位置不同。",
+    "descriptionZh": "地址",
     "nameZh": "地点",
     "rdfs:comment": "The location of, for example, where an event is happening, where an organization is located, or where an action takes place.",
     "rdfs:labelh": "location"
   },
   {
-    "descriptionZh": "旅馆房间的一个完整描述。",
+    "descriptionZh": "创建CreativeWork的位置，可能与CreativeWork中描述的位置不同。",
     "nameZh": "创建地点",
     "rdfs:comment": "The location where the CreativeWork was created, which may not be the same as the location depicted in the CreativeWork.",
     "rdfs:labelh": "locationCreated"
   },
   {
-    "descriptionZh": "旅馆房间房型的描述。",
+    "descriptionZh": "旅馆房间的一个完整描述。",
     "nameZh": "旅馆房间描述",
     "rdfs:comment": "A full description of the lodging unit.",
     "rdfs:labelh": "lodgingUnitDescription"
   },
   {
-    "descriptionZh": "关联的商标。",
+    "descriptionZh": "旅馆房间房型的描述。",
     "nameZh": "旅馆房间房型",
     "rdfs:comment": "Textual description of the unit type (including suite vs. room, size of bed, etc.).",
     "rdfs:labelh": "lodgingUnitType"
   },
   {
-    "descriptionZh": "位置的经度。",
+    "descriptionZh": "关联的商标。",
     "nameZh": "商标",
     "rdfs:comment": "An associated logo.",
     "rdfs:labelh": "logo"
   },
   {
-    "descriptionZh": "一个行为中的失败者。",
+    "descriptionZh": "位置的经度。",
     "nameZh": "经度",
     "rdfs:comment": "",
     "rdfs:labelh": "longitude"
   },
   {
-    "descriptionZh": "所有价格中的最低价。",
+    "descriptionZh": "一个行为中的失败者。",
     "nameZh": "输家",
     "rdfs:comment": "A sub property of participant. The loser of the action.",
     "rdfs:labelh": "loser"
   },
   {
-    "descriptionZh": "歌曲的词作者。",
+    "descriptionZh": "所有价格中的最低价。",
     "nameZh": "最低价格",
     "rdfs:comment": "The lowest price of all offers available.<br/><br/>\n\n\n\nUsage guidelines:<br/><br/>\n\n\n\n<ul>\n\n<li>Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.</li>\n\n<li>Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.</li>\n\n</ul>",
     "rdfs:labelh": "lowPrice"
   },
   {
-    "descriptionZh": "歌曲的歌词。",
+    "descriptionZh": "歌曲的词作者。",
     "nameZh": "作词者",
     "rdfs:comment": "The person who wrote the words.",
     "rdfs:labelh": "lyricist"
   },
   {
-    "descriptionZh": "指示此网页元素是否是该页面的主题。",
+    "descriptionZh": "歌曲的歌词。",
     "nameZh": "歌词",
     "rdfs:comment": "The words in the song.",
     "rdfs:labelh": "lyrics"
   },
   {
-    "descriptionZh": "网页或艺术品的核心实体。",
+    "descriptionZh": "指示此网页元素是否是该页面的主题。",
     "nameZh": "是否网页主题",
     "rdfs:comment": "Indicates if this web page element is the main subject of the page.",
     "rdfs:labelh": "mainContentOfPage"
   },
   {
-    "descriptionZh": "页面描述的主要实体。",
+    "descriptionZh": "网页或艺术品的核心实体。",
     "nameZh": "核心实体",
     "rdfs:comment": "Indicates the primary entity described in some page or other CreativeWork.",
     "rdfs:labelh": "mainEntity"
   },
   {
-    "descriptionZh": "数据集、软件包（<A class=“localLink”href=“/SoftwareApplication”>SoftwareApplication</A>）或其他<A class=“localLink”href=“/Project”>Project</A>的维护者。维护者是一个<A class=“localLink”href=“/Person”>Person</A>或<A class=“localLink”href=“/Organization”>Organization</A>，负责管理对某些（通常是复杂的）工件的贡献和/或发布。软件和数据的分发通常基于“上游”来源。当将维护者应用于某个特定版本时，例如，数据集的特定版本或包装，上游源始终可能有不同的维护者。isBasedOn属性可用于指示数据集之间的此类关系，以明确不同的维护角色。类似地，在软件的情况下，一个包可能有专门的维护人员致力于集成到软件发行版（如Ubuntu）中，以及底层工作的上游维护人员。",
+    "descriptionZh": "页面描述的主要实体。",
     "nameZh": "页面的核心实体",
     "rdfs:comment": "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See <a href=\"/docs/datamodel.html#mainEntityBackground\">background notes</a> for details.",
     "rdfs:labelh": "mainEntityOfPage"
   },
   {
-    "descriptionZh": "组织或个人提供的产品或服务。",
+    "descriptionZh": "数据集、软件包（<A class=“localLink”href=“/SoftwareApplication”>SoftwareApplication</A>）或其他<A class=“localLink”href=“/Project”>Project</A>的维护者。维护者是一个<A class=“localLink”href=“/Person”>Person</A>或<A class=“localLink”href=“/Organization”>Organization</A>，负责管理对某些（通常是复杂的）工件的贡献和/或发布。软件和数据的分发通常基于“上游”来源。当将维护者应用于某个特定版本时，例如，数据集的特定版本或包装，上游源始终可能有不同的维护者。isBasedOn属性可用于指示数据集之间的此类关系，以明确不同的维护角色。类似地，在软件的情况下，一个包可能有专门的维护人员致力于集成到软件发行版（如Ubuntu）中，以及底层工作的上游维护人员。",
     "nameZh": "维护者",
     "rdfs:comment": "A maintainer of a <a class=\"localLink\" href=\"/Dataset\">Dataset</a>, software package (<a class=\"localLink\" href=\"/SoftwareApplication\">SoftwareApplication</a>), or other <a class=\"localLink\" href=\"/Project\">Project</a>. A maintainer is a <a class=\"localLink\" href=\"/Person\">Person</a> or <a class=\"localLink\" href=\"/Organization\">Organization</a> that manages contributions to, and/or publication of, some (typically complex) artifact. It is common for distributions of software and data to be based on \"upstream\" sources. When <a class=\"localLink\" href=\"/maintainer\">maintainer</a> is applied to a specific version of something e.g. a particular version or packaging of a <a class=\"localLink\" href=\"/Dataset\">Dataset</a>, it is always  possible that the upstream source has a different maintainer. The <a class=\"localLink\" href=\"/isBasedOn\">isBasedOn</a> property can be used to indicate such relationships between datasets to make the different maintece roles clear. Similarly in the case of software, a package may have dedicated maintainers working on integration into software distributions such as Ubuntu, as well as upstream maintainers of the underlying work.",
     "rdfs:labelh": "maintainer"
   },
   {
-    "descriptionZh": "产品的制造商。",
+    "descriptionZh": "组织或个人提供的产品或服务。",
     "nameZh": "提供的产品或服务",
     "rdfs:comment": "A pointer to products or services offered by the organization or person.",
     "rdfs:labelh": "makesOffer"
   },
   {
-    "descriptionZh": "地图上位置的URL地址。",
+    "descriptionZh": "产品的制造商。",
     "nameZh": "制造商",
     "rdfs:comment": "The manufacturer of the product.",
     "rdfs:labelh": "manufacturer"
   },
   {
-    "descriptionZh": "表示地图的种类。",
+    "descriptionZh": "地图上位置的URL地址。",
     "nameZh": "地图",
     "rdfs:comment": "A URL to a map of the place.",
     "rdfs:labelh": "map"
   },
   {
-    "descriptionZh": "地图上位置的URL地址。",
+    "descriptionZh": "表示地图的种类。",
     "nameZh": "地图类型",
     "rdfs:comment": "Indicates the kind of Map, from the MapCategoryType Enumeration.",
     "rdfs:labelh": "mapType"
   },
   {
-    "descriptionZh": "观察的误差范围。",
+    "descriptionZh": "地图上位置的URL地址。",
     "nameZh": "地图",
     "rdfs:comment": "A URL to a map of the place.",
     "rdfs:labelh": "maps"
   },
   {
-    "descriptionZh": "对于新闻媒体机构，通过此属性可以链接到报头页面或列出顶级编辑管理的页面。",
+    "descriptionZh": "观察的误差范围。",
     "nameZh": "误差范围",
     "rdfs:comment": "A marginOfError for an <a class=\"localLink\" href=\"/Observation\">Observation</a>.",
     "rdfs:labelh": "marginOfError"
   },
   {
-    "descriptionZh": "物体使用的材料。",
+    "descriptionZh": "对于新闻媒体机构，通过此属性可以链接到报头页面或列出顶级编辑管理的页面。",
     "nameZh": "刊头",
     "rdfs:comment": "For a <a class=\"localLink\" href=\"/NewsMediaOrganization\">NewsMediaOrganization</a>, a link to the masthead page or a page listing top editorial management.",
     "rdfs:labelh": "masthead"
   },
   {
-    "descriptionZh": "描述材料的数量或表达它们所占据的物理空间。",
+    "descriptionZh": "物体使用的材料。",
     "nameZh": "材质",
     "rdfs:comment": "A material that something is made from, e.g. leather, wool, cotton, paper.",
     "rdfs:labelh": "material"
   },
   {
-    "descriptionZh": "一种数学表达式，可以为特定变量求解、简化或转换。这可以采用多种格式，例如LaTeX、Ascii Math或使用键盘编写的Math。",
+    "descriptionZh": "描述材料的数量或表达它们所占据的物理空间。",
     "nameZh": "材料大小",
     "rdfs:comment": "The quantity of the materials being described or an expression of the physical space they occupy.",
     "rdfs:labelh": "materialExtent"
   },
   {
-    "descriptionZh": "最高价。",
+    "descriptionZh": "一种数学表达式，可以为特定变量求解、简化或转换。这可以采用多种格式，例如LaTeX、Ascii Math或使用键盘编写的Math。",
     "nameZh": "数学表达式",
     "rdfs:comment": "A mathematical expression (e.g. 'x^2-3x=0') that may be solved for a specific variable, simplified, or transformed. This can take many formats, e.g. LaTeX, Ascii-Math, or math as you would write with a keyboard.",
     "rdfs:labelh": "mathExpression"
   },
   {
-    "descriptionZh": "特征或属性的最大值。",
+    "descriptionZh": "最高价。",
     "nameZh": "最高价格",
     "rdfs:comment": "The highest price if the price is a range.",
     "rdfs:labelh": "maxPrice"
   },
   {
-    "descriptionZh": "可能出席某项活动的总人数，或可能到某个地点的总人数。",
+    "descriptionZh": "特征或属性的最大值。",
     "nameZh": "最大值",
     "rdfs:comment": "The upper value of some characteristic or property.",
     "rdfs:labelh": "maxValue"
   },
   {
-    "descriptionZh": "可参与该项目的最大学生人数。",
+    "descriptionZh": "可能出席某项活动的总人数，或可能到某个地点的总人数。",
     "nameZh": "最多可容纳多少人参与",
     "rdfs:comment": "The total number of individuals that may attend an event or venue.",
     "rdfs:labelh": "maximumAttendeeCapacity"
   },
   {
-    "descriptionZh": "特定推荐机构定义的特定人群的本补充剂推荐摄入量。",
+    "descriptionZh": "可参与该项目的最大学生人数。",
     "nameZh": "最大参与人数",
     "rdfs:comment": "The maximum number of students who may be enrolled in the program.",
     "rdfs:labelh": "maximumEnrollment"
   },
   {
-    "descriptionZh": "最大实际线下出席人数（如果是混合事件出席模式，则为线下部分人数）。",
+    "descriptionZh": "特定推荐机构定义的特定人群的本补充剂推荐摄入量。",
     "nameZh": "最大摄入量",
     "rdfs:comment": "Recommended intake of this supplement for a given population as defined by a specific recommending authority.",
     "rdfs:labelh": "maximumIntake"
   },
   {
-    "descriptionZh": "最大的线上出席人数。",
+    "descriptionZh": "最大实际线下出席人数（如果是混合事件出席模式，则为线下部分人数）。",
     "nameZh": "最大物理参加者容量",
     "rdfs:comment": "The maximum physical attendee capacity of an <a class=\"localLink\" href=\"/Event\">Event</a> whose <a class=\"localLink\" href=\"/eventAttendanceMode\">eventAttendanceMode</a> is <a class=\"localLink\" href=\"/OfflineEventAttendanceMode\">OfflineEventAttendanceMode</a> (or the offline aspects, in the case of a <a class=\"localLink\" href=\"/MixedEventAttendanceMode\">MixedEventAttendanceMode</a>).",
     "rdfs:labelh": "maximumPhysicalAttendeeCapacity"
   },
   {
-    "descriptionZh": "描述将提供或可供购买的套餐。",
+    "descriptionZh": "最大的线上出席人数。",
     "nameZh": "最大虚拟与会者容量",
     "rdfs:comment": "The maximum physical attendee capacity of an <a class=\"localLink\" href=\"/Event\">Event</a> whose <a class=\"localLink\" href=\"/eventAttendanceMode\">eventAttendanceMode</a> is <a class=\"localLink\" href=\"/OnlineEventAttendanceMode\">OnlineEventAttendanceMode</a> (or the online aspects, in the case of a <a class=\"localLink\" href=\"/MixedEventAttendanceMode\">MixedEventAttendanceMode</a>).",
     "rdfs:labelh": "maximumVirtualAttendeeCapacity"
   },
   {
-    "descriptionZh": "观察的可测量属性，要么是schema.org属性，即来自其他RDF兼容系统的属性，例如W3C RDF数据立方体或模式。要么是schema.org 的拓展，如<a href=”https://www.gs1.org/voc/?show=properties“>GS1的</a>。/",
+    "descriptionZh": "描述将提供或可供购买的套餐。",
     "nameZh": "套餐描述",
     "rdfs:comment": "Description of the meals that will be provided or available for purchase.",
     "rdfs:labelh": "mealService"
   },
   {
-    "descriptionZh": "观察的测量值。",
+    "descriptionZh": "观察的可测量属性，要么是cnschema.openkg.cn属性，即来自其他RDF兼容系统的属性，例如W3C RDF数据立方体或模式。要么是cnschema.openkg.cn 的拓展，如<a href=”https://www.gs1.org/voc/?show=properties“>GS1的</a>。/",
     "nameZh": "可度量属性",
     "rdfs:comment": "The measuredProperty of an <a class=\"localLink\" href=\"/Observation\">Observation</a>, either a cnschema.openkg.cn property/www.gs1.org/voc/?show=properties\">GS1's</a>./",
     "rdfs:labelh": "measuredProperty"
   },
   {
-    "descriptionZh": "在<a class=\"localLink\" href=\"/Dataset\">Dataset</a> (或 <a class=\"localLink\" href=\"/DataDownload\">DataDownload</a>, <a class=\"localLink\" href=\"/DataCatalog\">DataCatalog</a>)中使用的技术。该技术用于测量相关变量。\n此项发布面向科学和学术数据集，但可能具有更广泛的适用性。\n它不打算作为度量的完整表示，而是作为数据集发现的高级总结。",
+    "descriptionZh": "观察的测量值。",
     "nameZh": "测量值",
     "rdfs:comment": "The measuredValue of an <a class=\"localLink\" href=\"/Observation\">Observation</a>.",
     "rdfs:labelh": "measuredValue"
   },
   {
-    "descriptionZh": "通过 药物或补充剂的药理作用 产生的特定生化作用。",
+    "descriptionZh": "在<a class=\"localLink\" href=\"/Dataset\">Dataset</a> (或 <a class=\"localLink\" href=\"/DataDownload\">DataDownload</a>, <a class=\"localLink\" href=\"/DataCatalog\">DataCatalog</a>)中使用的技术。该技术用于测量相关变量。\n此项发布面向科学和学术数据集，但可能具有更广泛的适用性。\n它不打算作为度量的完整表示，而是作为数据集发现的高级总结。",
     "nameZh": "测量技术",
     "rdfs:comment": "A technique or technology used in a <a class=\"localLink\" href=\"/Dataset\">Dataset</a> (or <a class=\"localLink\" href=\"/DataDownload\">DataDownload</a>, <a class=\"localLink\" href=\"/DataCatalog\">DataCatalog</a>),\n\ncorresponding to the method used for measuring the corresponding variable(s) (described using <a class=\"localLink\" href=\"/variableMeasured\">variableMeasured</a>). This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but rather as a high level summary for dataset discovery.<br/><br/>\n\n\n\nFor example, if <a class=\"localLink\" href=\"/variableMeasured\">variableMeasured</a> is: molecule concentration, <a class=\"localLink\" href=\"/measurementTechnique\">measurementTechnique</a> could be: \"mass spectrometry\" or \"nmr spectroscopy\" or \"colorimetry\" or \"immunofluorescence\".<br/><br/>\n\n\n\nIf the <a class=\"localLink\" href=\"/variableMeasured\">variableMeasured</a> is \"depression rating\", the <a class=\"localLink\" href=\"/measurementTechnique\">measurementTechnique</a> could be \"Zung Scale\" or \"HAM-D\" or \"Beck Depression Inventory\".<br/><br/>\n\n\n\nIf there are several <a class=\"localLink\" href=\"/variableMeasured\">variableMeasured</a> properties recorded for some given data object, use a <a class=\"localLink\" href=\"/PropertyValue\">PropertyValue</a> for each <a class=\"localLink\" href=\"/variableMeasured\">variableMeasured</a> and attach the corresponding <a class=\"localLink\" href=\"/measurementTechnique\">measurementTechnique</a>.",
     "rdfs:labelh": "measurementTechnique"
   },
   {
-    "descriptionZh": "指示媒体对象的MediaManipulationRatingEnumeration分类。",
+    "descriptionZh": "通过 药物或补充剂的药理作用 产生的特定生化作用。",
     "nameZh": "作用机制",
     "rdfs:comment": "The specific biochemical interaction through which this drug or supplement produces its pharmacological effect.",
     "rdfs:labelh": "mechanismOfAction"
   },
   {
-    "descriptionZh": "在a<a class=“localLink”href=“/MediaReview”>媒介评议</a>的上下文中，表示使用a<a class=“localLink”href=“/MediaReviewItem”>媒体审查项目</a>分组的特定媒体项目。",
+    "descriptionZh": "指示媒体对象的MediaManipulationRatingEnumeration分类。",
     "nameZh": "媒体真实性类别",
     "rdfs:comment": "Indicates a MediaManipulationRatingEnumeration classification of a media object (in the context of how it was published or shared).",
     "rdfs:labelh": "mediaAuthenticityCategory"
   },
   {
-    "descriptionZh": "中值。",
+    "descriptionZh": "在a<a class=“localLink”href=“/MediaReview”>媒介评议</a>的上下文中，表示使用a<a class=“localLink”href=“/MediaReviewItem”>媒体审查项目</a>分组的特定媒体项目。",
     "nameZh": "媒体项目外层",
     "rdfs:comment": "In the context of a <a class=\"localLink\" href=\"/MediaReview\">MediaReview</a>, indicates specific media item(s) that are grouped using a <a class=\"localLink\" href=\"/MediaReviewItem\">MediaReviewItem</a>.",
     "rdfs:labelh": "mediaItemAppearance"
   },
   {
-    "descriptionZh": "网页的医疗观众。",
+    "descriptionZh": "中值。",
     "nameZh": "中位数",
     "rdfs:comment": "The median value.",
     "rdfs:labelh": "median"
   },
   {
-    "descriptionZh": "医疗机构的医学专业。",
+    "descriptionZh": "网页的医疗观众。",
     "nameZh": "医疗观众",
     "rdfs:comment": "Medical audience for page.",
     "rdfs:labelh": "medicalAudience"
   },
   {
-    "descriptionZh": "包括这个医疗实体在内的医学体系。",
+    "descriptionZh": "医疗机构的医学专业。",
     "nameZh": "医学专业",
     "rdfs:comment": "A medical specialty of the provider.",
     "rdfs:labelh": "medicalSpecialty"
   },
   {
-    "descriptionZh": "表示车辆符合相应的排放标准。",
+    "descriptionZh": "包括这个医疗实体在内的医学体系。",
     "nameZh": "医学系统",
     "rdfs:comment": "The system of medicine that includes this MedicalEntity, for example 'evidence-based', 'homeopathic', 'chiropractic', etc.",
     "rdfs:labelh": "medicineSystem"
   },
   {
-    "descriptionZh": "组织或项目的成员。",
+    "descriptionZh": "表示车辆符合相应的排放标准。",
     "nameZh": "符合排放标准",
     "rdfs:comment": "Indicates that the vehicle meets the respective emission standard.",
     "rdfs:labelh": "meetsEmissionStandard"
   },
   {
-    "descriptionZh": "会员所属的机构或项目组织。",
+    "descriptionZh": "组织或项目的成员。",
     "nameZh": "会员",
     "rdfs:comment": "A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals.",
     "rdfs:labelh": "member"
   },
   {
-    "descriptionZh": "组织的会员。",
+    "descriptionZh": "会员所属的机构或项目组织。",
     "nameZh": "会员所属的机构",
     "rdfs:comment": "An Organization (or ProgramMembership) to which this Person or Organization belongs.",
     "rdfs:labelh": "memberOf"
   },
   {
-    "descriptionZh": "成员身份的唯一标识符。",
+    "descriptionZh": "组织的会员。",
     "nameZh": "会员",
     "rdfs:comment": "A member of this organization.",
     "rdfs:labelh": "members"
   },
   {
-    "descriptionZh": "会员获得的会员积分数。如有必要，可以使用unitText来表示积分的单位（例如星星、英里等）。",
+    "descriptionZh": "成员身份的唯一标识符。",
     "nameZh": "会员编号",
     "rdfs:comment": "A unique identifier for the membership.",
     "rdfs:labelh": "membershipNumber"
   },
   {
-    "descriptionZh": "软件的最低内存要求。",
+    "descriptionZh": "会员获得的会员积分数。如有必要，可以使用unitText来表示积分的单位（例如星星、英里等）。",
     "nameZh": "会员获得的积分数",
     "rdfs:comment": "The number of membership points earned by the member. If necessary, the unitText can be used to express the units the points are issued in. (e.g. stars, miles, etc.)",
     "rdfs:labelh": "membershipPointsEarned"
   },
   {
-    "descriptionZh": "指明CreateWork包含对某实体的引用。",
+    "descriptionZh": "软件的最低内存要求。",
     "nameZh": "最低内存要求",
     "rdfs:comment": "Minimum memory requirements.",
     "rdfs:labelh": "memoryRequirements"
   },
   {
-    "descriptionZh": "将实际菜单作为结构化表示、文本或菜单的URL。",
+    "descriptionZh": "指明CreateWork包含对某实体的引用。",
     "nameZh": "提到的实体",
     "rdfs:comment": "Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept.",
     "rdfs:labelh": "mentions"
   },
   {
-    "descriptionZh": "可添加到此菜单项的附加菜单项，如沙拉配菜或薯条配菜。此外，它还可以是一个包含该菜单项允许的附加菜单项的菜单部分。",
+    "descriptionZh": "将实际菜单作为结构化表示、文本或菜单的URL。",
     "nameZh": "菜单",
     "rdfs:comment": "Either the actual menu as a structured representation, as text, or a URL of the menu.",
     "rdfs:labelh": "menu"
   },
   {
-    "descriptionZh": "属性seller的旧称。",
+    "descriptionZh": "可添加到此菜单项的附加菜单项，如沙拉配菜或薯条配菜。此外，它还可以是一个包含该菜单项允许的附加菜单项的菜单部分。",
     "nameZh": "菜单插件",
     "rdfs:comment": "Additional menu item(s) such as a side dish of salad or side order of fries that can be added to this menu item. Additionally it can be a menu section containing allowed add-on menu items for this menu item.",
     "rdfs:labelh": "menuAddOn"
   },
   {
-    "descriptionZh": "指定产品可以退货的固定日期或天数（从交货日期算起）。",
+    "descriptionZh": "属性seller的旧称。",
     "nameZh": "商人",
     "rdfs:comment": "'merchant' is an out-dated term for 'seller'.",
     "rdfs:labelh": "merchant"
   },
   {
-    "descriptionZh": "按URL指定用于产品退货的网页或服务。",
+    "descriptionZh": "指定产品可以退货的固定日期或天数（从交货日期算起）。",
     "nameZh": "商家退货日",
     "rdfs:comment": "Specifies either a fixed return date or the number of days (from the delivery date) that a product can be returned. Used when the <a class=\"localLink\" href=\"/returnPolicyCategory\">returnPolicyCategory</a> property is specified as <a class=\"localLink\" href=\"/MerchantReturnFiniteReturnWindow\">MerchantReturnFiniteReturnWindow</a>.",
     "rdfs:labelh": "merchantReturnDays"
   },
   {
-    "descriptionZh": "附在邮件上的创意作品。",
+    "descriptionZh": "按URL指定用于产品退货的网页或服务。",
     "nameZh": "商家退货链接",
     "rdfs:comment": "Specifies a Web page or service by URL, for product returns.",
     "rdfs:labelh": "merchantReturnLink"
   },
   {
-    "descriptionZh": "由其里程表读取获得的一辆汽车自出厂以来所行驶的总里程。",
+    "descriptionZh": "附在邮件上的创意作品。",
     "nameZh": "消息附件",
     "rdfs:comment": "A CreativeWork attached to the message.",
     "rdfs:labelh": "messageAttachment"
   },
   {
-    "descriptionZh": "一个价格范围中的最低价格。",
+    "descriptionZh": "由其里程表读取获得的一辆汽车自出厂以来所行驶的总里程。",
     "nameZh": "里程数",
     "rdfs:comment": "The total distance travelled by the particular vehicle since its initial production, as read from its odometer.<br/><br/>\n\n\n\nTypical unit code(s): KMT for kilometers, SMI for statute miles",
     "rdfs:labelh": "mileageFromOdometer"
   },
   {
-    "descriptionZh": "特征或属性的最小值。",
+    "descriptionZh": "一个价格范围中的最低价格。",
     "nameZh": "最低价格",
     "rdfs:comment": "The lowest price if the price is a range.",
     "rdfs:labelh": "minPrice"
   },
   {
-    "descriptionZh": "Invoice类型实体此次需要支付的最小金额。",
+    "descriptionZh": "特征或属性的最小值。",
     "nameZh": "最小值",
     "rdfs:comment": "The lower value of some characteristic or property.",
     "rdfs:labelh": "minValue"
   },
   {
-    "descriptionZh": "对于新闻媒体组织来说，是关于报道优先事项的声明，包括任何公共议程或对问题的立场。",
+    "descriptionZh": "Invoice类型实体此次需要支付的最小金额。",
     "nameZh": "最小付款额",
     "rdfs:comment": "The minimum payment required at this time.",
     "rdfs:labelh": "minimumPaymentDue"
   },
   {
-    "descriptionZh": "产品的型号。可以是ProductModel类型的URL或者是型号标识的文本表示。ProductModel类型实体的URL可以来自外部来源。建议通过属性gtin8/gtin13/gtin14和mpn额外提供强产品标识。",
+    "descriptionZh": "对于新闻媒体组织来说，是关于报道优先事项的声明，包括任何公共议程或对问题的立场。",
     "nameZh": "报道优先级政策",
     "rdfs:comment": "For a <a class=\"localLink\" href=\"/NewsMediaOrganization\">NewsMediaOrganization</a>, a statement on coverage priorities, including any public agenda or stance on issues.",
     "rdfs:labelh": "missionCoveragePrioritiesPolicy"
   },
   {
-    "descriptionZh": "车型的发布日期（通常用于区分同一品牌和型号的版本）。",
+    "descriptionZh": "产品的型号。可以是ProductModel类型的URL或者是型号标识的文本表示。ProductModel类型实体的URL可以来自外部来源。建议通过属性gtin8/gtin13/gtin14和mpn额外提供强产品标识。",
     "nameZh": "型号",
     "rdfs:comment": "The model of the product. Use with the URL of a ProductModel or a textual representation of the model identifier. The URL of the ProductModel can be from an external source. It is recommended to additionally provide strong product identifiers via the gtin8/gtin13/gtin14 and mpn properties.",
     "rdfs:labelh": "model"
   },
   {
-    "descriptionZh": "预定（Reservation类型实体）的修改日期或时间。",
+    "descriptionZh": "车型的发布日期（通常用于区分同一品牌和型号的版本）。",
     "nameZh": "型号日期",
     "rdfs:comment": "The release date of a vehicle model (often used to differentiate versions of the same make and model).",
     "rdfs:labelh": "modelDate"
   },
   {
-    "descriptionZh": "经验公式是分子中所有原子的最简单整数比。",
+    "descriptionZh": "预定（Reservation类型实体）的修改日期或时间。",
     "nameZh": "更新时间",
     "rdfs:comment": "The date and time the reservation was modified.",
     "rdfs:labelh": "modifiedTime"
   },
   {
-    "descriptionZh": "这是所描述实体的分子量，而不是母体的分子量。单位应包含在表格中。",
+    "descriptionZh": "经验公式是分子中所有原子的最简单整数比。",
     "nameZh": "分子式",
     "rdfs:comment": "The empirical formula is the simplest whole number ratio of all the atoms in a molecule.",
     "rdfs:labelh": "molecularFormula"
   },
   {
-    "descriptionZh": "单同位素质量是分子中原子质量的总和，使用每个元素的主（最丰富）同位素的未结合基态静止质量，而不是同位素平均质量。请将表格中的单位包括在内。",
+    "descriptionZh": "这是所描述实体的分子量，而不是母体的分子量。单位应包含在表格中。",
     "nameZh": "分子量",
     "rdfs:comment": "This is the molecular weight of the entity being described, not of the parent. Units should be included in the form '&lt;Number&gt; &lt;unit&gt;', for example '12 amu' or as '&lt;QuantitativeValue&gt;.",
     "rdfs:labelh": "molecularWeight"
   },
   {
-    "descriptionZh": "最低付款额是每个月在信用卡账单上支付的最低金额。",
+    "descriptionZh": "单同位素质量是分子中原子质量的总和，使用每个元素的主（最丰富）同位素的未结合基态静止质量，而不是同位素平均质量。请将表格中的单位包括在内。",
     "nameZh": "单同位素分子量",
     "rdfs:comment": "The monoisotopic mass is the sum of the masses of the atoms in a molecule using the unbound, ground-state, rest mass of the principal (most abundant) isotope for each element instead of the isotopic average mass. Please include the units the form '&lt;Number&gt; &lt;unit&gt;', for example '770.230488 g/mol' or as '&lt;QuantitativeValue&gt;.",
     "rdfs:labelh": "monoisotopicMolecularWeight"
   },
   {
-    "descriptionZh": "表示职位所需的最少工作月数。",
+    "descriptionZh": "最低付款额是每个月在信用卡账单上支付的最低金额。",
     "nameZh": "每月最低还款额",
     "rdfs:comment": "The minimum payment is the lowest amount of money that one is required to pay on a credit card statement each month.",
     "rdfs:labelh": "monthlyMinimumRepaymentAmount"
   },
   {
-    "descriptionZh": "产品的制造商零件编号（MPN）。",
+    "descriptionZh": "表示职位所需的最少工作月数。",
     "nameZh": "几个月的经验",
     "rdfs:comment": "Indicates the minimal number of months of experience required for a position.",
     "rdfs:labelh": "monthsOfExperience"
   },
   {
-    "descriptionZh": "该属性是否允许多值，缺省为false",
+    "descriptionZh": "产品的制造商零件编号（MPN）。",
     "nameZh": "制造商零件编码",
     "rdfs:comment": "The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.",
     "rdfs:labelh": "mpn"
   },
   {
-    "descriptionZh": "肌肉产生的运动。",
+    "descriptionZh": "该属性是否允许多值，缺省为false",
     "nameZh": "是否允许多个值",
     "rdfs:comment": "Whether multiple values are allowed for the property.  Default is false.",
     "rdfs:labelh": "multipleValues"
   },
   {
-    "descriptionZh": "一首音乐作品的改编曲。",
+    "descriptionZh": "肌肉产生的运动。",
     "nameZh": "肌肉动作",
     "rdfs:comment": "The movement the muscle generates.",
     "rdfs:labelh": "muscleAction"
   },
   {
-    "descriptionZh": "影视配乐的作曲者。",
+    "descriptionZh": "一首音乐作品的改编曲。",
     "nameZh": "改编曲",
     "rdfs:comment": "An arrangement derived from the composition.",
     "rdfs:labelh": "musicArrangement"
   },
   {
-    "descriptionZh": "音乐作品的类型（例如，序曲、奏鸣曲、交响曲等）。",
+    "descriptionZh": "影视配乐的作曲者。",
     "nameZh": "作曲者",
     "rdfs:comment": "The composer of the soundtrack.",
     "rdfs:labelh": "musicBy"
   },
   {
-    "descriptionZh": "音乐团体的一位成员，例如，披头士乐队的成员John，Paul，George和Ringo。",
+    "descriptionZh": "音乐作品的类型（例如，序曲、奏鸣曲、交响曲等）。",
     "nameZh": "乐曲形式",
     "rdfs:comment": "The type of composition (e.g. overture, sonata, symphony, etc.).",
     "rdfs:labelh": "musicCompositionForm"
   },
   {
-    "descriptionZh": "音乐发行的格式（使用的记录介质类型，即光盘，数字媒体，LP等）。",
+    "descriptionZh": "音乐团体的一位成员，例如，披头士乐队的成员John，Paul，George和Ringo。",
     "nameZh": "乐团成员",
     "rdfs:comment": "A member of a music group&#x2014;for example, John, Paul, George, or Ringo.",
     "rdfs:labelh": "musicGroupMember"
   },
   {
-    "descriptionZh": "音乐作品的调（key）、模式（mode）和音阶（scale）。",
+    "descriptionZh": "音乐发行的格式（使用的记录介质类型，即光盘，数字媒体，LP等）。",
     "nameZh": "音乐发行格式",
     "rdfs:comment": "Format of this release (the type of recording media used, ie. compact disc, digital media, LP, etc.).",
     "rdfs:labelh": "musicReleaseFormat"
   },
   {
-    "descriptionZh": "特定组织或业务人员的北美行业分类系统（NAICS）代码。",
+    "descriptionZh": "音乐作品的调（key）、模式（mode）和音阶（scale）。",
     "nameZh": "音乐的调",
     "rdfs:comment": "The key, mode, or scale this composition uses.",
     "rdfs:labelh": "musicalKey"
   },
   {
-    "descriptionZh": "条目的名称。",
+    "descriptionZh": "特定组织或业务人员的北美行业分类系统（NAICS）代码。",
     "nameZh": "北美行业分类系统",
     "rdfs:comment": "The North American Industry Classification System (NAICS) code for a particular organization or business person.",
     "rdfs:labelh": "naics"
   },
   {
-    "descriptionZh": "由个人或组织担任、执行或填补的职位，该职位是组织的一部分。例如，运动队中的一名运动员可能会打“四分卫”的位置。",
+    "descriptionZh": "条目的名称。",
     "nameZh": "名称",
     "rdfs:comment": "The name of the item.",
     "rdfs:labelh": "name"
   },
   {
-    "descriptionZh": "人的国籍。",
+    "descriptionZh": "由个人或组织担任、执行或填补的职位，该职位是组织的一部分。例如，运动队中的一名运动员可能会打“四分卫”的位置。",
     "nameZh": "角色职位",
     "rdfs:comment": "A position played, performed or filled by a person or organization, as part of an organization. For example, an athlete in a SportsTeam might play in the position named 'Quarterback'.",
     "rdfs:labelh": "namedPosition"
   },
   {
-    "descriptionZh": "如果不进行治疗并允许其自然进展，则疾病的预期进展。",
+    "descriptionZh": "人的国籍。",
     "nameZh": "国籍",
     "rdfs:comment": "Nationality of the person.",
     "rdfs:labelh": "nationality"
   },
   {
-    "descriptionZh": "在<a class=“localLink”href=“/Review”>Review</a>的上下文中，表示负面考虑因素——可以是非结构化文本，也可以是列表。",
+    "descriptionZh": "如果不进行治疗并允许其自然进展，则疾病的预期进展。",
     "nameZh": "自然进展",
     "rdfs:comment": "The expected progression of the condition if it is not treated and allowed to progress naturally.",
     "rdfs:labelh": "naturalProgression"
   },
   {
-    "descriptionZh": "与肌肉有关的潜在神经支配。",
+    "descriptionZh": "在<a class=“localLink”href=“/Review”>Review</a>的上下文中，表示负面考虑因素——可以是非结构化文本，也可以是列表。",
     "nameZh": "负面注释",
     "rdfs:comment": "Indicates, in the context of a <a class=\"localLink\" href=\"/Review\">Review</a> (e.g. framed as 'pro' vs 'con' considerations), negative considerations - either as unstructured text, or a list.",
     "rdfs:labelh": "negativeNotes"
   },
   {
-    "descriptionZh": "涉及肌肉控制的神经通路延伸。",
+    "descriptionZh": "与肌肉有关的潜在神经支配。",
     "nameZh": "神经",
     "rdfs:comment": "The underlying innervation associated with the muscle.",
     "rdfs:labelh": "nerve"
   },
   {
-    "descriptionZh": "由资产减去负债计算得到的个人净资产。",
+    "descriptionZh": "涉及肌肉控制的神经通路延伸。",
     "nameZh": "神经马达",
     "rdfs:comment": "The neurological pathway extension that involves muscle control.",
     "rdfs:labelh": "nerveMotor"
   },
   {
-    "descriptionZh": "指示包含新闻更新和指南的页面。",
+    "descriptionZh": "由资产减去负债计算得到的个人净资产。",
     "nameZh": "净资产",
     "rdfs:comment": "The total ficial value of the person as calculated by subtracting assets from liabilities.",
     "rdfs:labelh": "netWorth"
   },
   {
-    "descriptionZh": "指向当前列表项下一项的链接。",
+    "descriptionZh": "指示包含新闻更新和指南的页面。",
     "nameZh": "新闻更新和指南",
     "rdfs:comment": "Indicates a page with news updates and guidelines. This could often be (but is not required to be) the main page containing <a class=\"localLink\" href=\"/SpecialAnnouncement\">SpecialAnnouncement</a> markup on a site.",
     "rdfs:labelh": "newsUpdatesAndGuidelines"
   },
   {
-    "descriptionZh": "对于<a class=“localLink”href=“/NewsMediaOrganization”>NewsMediaOrganization</a>或其他与新闻相关的<a class=“localLink”href=“/Organization”>Organization</a>，该声明解释：何时文章作者将不会在署名行署名。",
+    "descriptionZh": "指向当前列表项下一项的链接。",
     "nameZh": "下一项",
     "rdfs:comment": "A link to the ListItem that follows the current one.",
     "rdfs:labelh": "nextItem"
   },
   {
-    "descriptionZh": "定性值的序关系：表示主语不等于宾语。",
+    "descriptionZh": "对于<a class=“localLink”href=“/NewsMediaOrganization”>NewsMediaOrganization</a>或其他与新闻相关的<a class=“localLink”href=“/Organization”>Organization</a>，该声明解释：何时文章作者将不会在署名行署名。",
     "nameZh": "无署名政策",
     "rdfs:comment": "For a <a class=\"localLink\" href=\"/NewsMediaOrganization\">NewsMediaOrganization</a> or other news-related <a class=\"localLink\" href=\"/Organization\">Organization</a>, a statement explaining when authors of articles are not named in bylines.",
     "rdfs:labelh": "noBylinesPolicy"
   },
   {
-    "descriptionZh": "这种药物或补充剂的通用名称。",
+    "descriptionZh": "定性值的序关系：表示主语不等于宾语。",
     "nameZh": "不等于",
     "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is not equal to the object.",
     "rdfs:labelh": "nonEqual"
   },
   {
-    "descriptionZh": "非营利组织状态指非营利组织在其主要营业地的法律状态。",
+    "descriptionZh": "这种药物或补充剂的通用名称。",
     "nameZh": "非专有名称",
     "rdfs:comment": "The generic name of this drug or supplement.",
     "rdfs:labelh": "nonProprietaryName"
   },
   {
-    "descriptionZh": "典型患者可接受值的范围。",
+    "descriptionZh": "非营利组织状态指非营利组织在其主要营业地的法律状态。",
     "nameZh": "非营利状态",
     "rdfs:comment": "nonprofit Status indicates the legal status of a non-profit organization in its primary place of business.",
     "rdfs:labelh": "nonprofitStatus"
   },
   {
-    "descriptionZh": "表示产品的北约库存编号（nsn）。",
+    "descriptionZh": "典型患者可接受值的范围。",
     "nameZh": "普通范围",
     "rdfs:comment": "Range of acceptable values for a typical patient, when applicable.",
     "rdfs:labelh": "normalRange"
   },
   {
-    "descriptionZh": "居住在该单元的成年人人数。",
+    "descriptionZh": "表示产品的北约库存编号（nsn）。",
     "nameZh": "北约库存编号",
     "rdfs:comment": "",
     "rdfs:labelh": "nsn"
   },
   {
-    "descriptionZh": "居住在该单元的儿童人数。",
+    "descriptionZh": "居住在该单元的成年人人数。",
     "nameZh": "大人人数",
     "rdfs:comment": "The number of adults staying in the unit.",
     "rdfs:labelh": "numAdults"
   },
   {
-    "descriptionZh": "指示为特定统计总体定义的约束数。这有助于应用程序了解它们是否可以访问统计总体的足够完整的描述。",
+    "descriptionZh": "居住在该单元的儿童人数。",
     "nameZh": "小孩人数",
     "rdfs:comment": "The number of children staying in the unit.",
     "rdfs:labelh": "numChildren"
   },
   {
-    "descriptionZh": "专辑或播放列表中的曲目数。",
+    "descriptionZh": "指示为特定统计总体定义的约束数。这有助于应用程序了解它们是否可以访问统计总体的足够完整的描述。",
     "nameZh": "数量限制",
     "rdfs:comment": "Indicates the number of constraints (not counting <a class=\"localLink\" href=\"/populationType\">populationType</a>) defined for a particular <a class=\"localLink\" href=\"/StatisticalPopulation\">StatisticalPopulation</a>. This helps applications understand if they have access to a sufficiently complete description of a <a class=\"localLink\" href=\"/StatisticalPopulation\">StatisticalPopulation</a>.",
     "rdfs:labelh": "numConstraints"
   },
   {
-    "descriptionZh": "表示公寓综合体中的住宿单元总数（可用加不可用），或特定楼层平面（在其特定公寓综合体内）的住宿单元数。另请参见可用住宿单元的数量。",
+    "descriptionZh": "专辑或播放列表中的曲目数。",
     "nameZh": "音轨数",
     "rdfs:comment": "The number of tracks in this album or playlist.",
     "rdfs:labelh": "numTracks"
   },
   {
-    "descriptionZh": "车辆的安全气囊数。",
+    "descriptionZh": "表示公寓综合体中的住宿单元总数（可用加不可用），或特定楼层平面（在其特定公寓综合体内）的住宿单元数。另请参见可用住宿单元的数量。",
     "nameZh": "住宿单位数",
     "rdfs:comment": "Indicates the total (available plus unavailable) number of accommodation units in an <a class=\"localLink\" href=\"/ApartmentComplex\">ApartmentComplex</a>, or the number of accommodation units for a specific <a class=\"localLink\" href=\"/FloorPlan\">FloorPlan</a> (within its specific <a class=\"localLink\" href=\"/ApartmentComplex\">ApartmentComplex</a>). See also <a class=\"localLink\" href=\"/numberOfAvailableAccommodationUnits\">numberOfAvailableAccommodationUnits</a>.",
     "rdfs:labelh": "numberOfAccommodationUnits"
   },
   {
-    "descriptionZh": "表示公寓综合体中的可用住宿单元总数，或特定楼层平面（在其特定公寓综合体内）的可用住宿单元数。另请参见可用住宿单元的数量。",
+    "descriptionZh": "车辆的安全气囊数。",
     "nameZh": "汽车安全气囊总数",
     "rdfs:comment": "The number or type of airbags in the vehicle.",
     "rdfs:labelh": "numberOfAirbags"
   },
   {
-    "descriptionZh": "车辆的轴数。",
+    "descriptionZh": "表示公寓综合体中的可用住宿单元总数，或特定楼层平面（在其特定公寓综合体内）的可用住宿单元数。另请参见可用住宿单元的数量。",
     "nameZh": "可用住宿单位数量",
     "rdfs:comment": "Indicates the number of available accommodation units in an <a class=\"localLink\" href=\"/ApartmentComplex\">ApartmentComplex</a>, or the number of accommodation units for a specific <a class=\"localLink\" href=\"/FloorPlan\">FloorPlan</a> (within its specific <a class=\"localLink\" href=\"/ApartmentComplex\">ApartmentComplex</a>). See also <a class=\"localLink\" href=\"/numberOfAccommodationUnits\">numberOfAccommodationUnits</a>.",
     "rdfs:labelh": "numberOfAvailableAccommodationUnits"
   },
   {
-    "descriptionZh": "根据房地产惯例：<a href=\"https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field\">documented in RESO</a>，某个房间内浴室的总整数为浴室数量的简单总和。例如，对于一个有两个全浴室和一个半浴室的房产，浴室总数将为3。/",
+    "descriptionZh": "车辆的轴数。",
     "nameZh": "汽车轮轴数",
     "rdfs:comment": "The number of axles.<br/><br/>\n\n\n\nTypical unit code(s): C62",
     "rdfs:labelh": "numberOfAxles"
   },
   {
-    "descriptionZh": "某个住宿、公寓综合体或楼层平面图中的卧室总数。",
+    "descriptionZh": "根据房地产惯例：<a href=\"https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field\">documented in RESO</a>，某个房间内浴室的总整数为浴室数量的简单总和。例如，对于一个有两个全浴室和一个半浴室的房产，浴室总数将为3。/",
     "nameZh": "浴室总数",
     "rdfs:comment": "",
     "rdfs:labelh": "numberOfBathroomsTotal"
   },
   {
-    "descriptionZh": "旅馆、套房、别墅、公寓中给定床位类型空余数量。",
+    "descriptionZh": "某个住宿、公寓综合体或楼层平面图中的卧室总数。",
     "nameZh": "卧室数量",
     "rdfs:comment": "The total integer number of bedrooms in a some <a class=\"localLink\" href=\"/Accommodation\">Accommodation</a>, <a class=\"localLink\" href=\"/ApartmentComplex\">ApartmentComplex</a> or <a class=\"localLink\" href=\"/FloorPlan\">FloorPlan</a>.",
     "rdfs:labelh": "numberOfBedrooms"
   },
   {
-    "descriptionZh": "一门课程所授予的学分数，或完成一个教育职业计划所需的学分数。",
+    "descriptionZh": "旅馆、套房、别墅、公寓中给定床位类型空余数量。",
     "nameZh": "床位数",
     "rdfs:comment": "The quantity of the given bed type available in the HotelRoom, Suite, House, or Apartment.",
     "rdfs:labelh": "numberOfBeds"
   },
   {
-    "descriptionZh": "门的数量。",
+    "descriptionZh": "一门课程所授予的学分数，或完成一个教育职业计划所需的学分数。",
     "nameZh": "学分数",
     "rdfs:comment": "The number of credits or units awarded by a Course or required to complete an EducationalOccupationalProgram.",
     "rdfs:labelh": "numberOfCredits"
   },
   {
-    "descriptionZh": "组织的雇员数。",
+    "descriptionZh": "门的数量。",
     "nameZh": "门的数量",
     "rdfs:comment": "The number of doors.<br/><br/>\n\n\n\nTypical unit code(s): C62",
     "rdfs:labelh": "numberOfDoors"
   },
   {
-    "descriptionZh": "本季或系列的剧集数。",
+    "descriptionZh": "组织的雇员数。",
     "nameZh": "雇员数",
     "rdfs:comment": "The number of employees in an organization e.g. business.",
     "rdfs:labelh": "numberOfEmployees"
   },
   {
-    "descriptionZh": "可用于汽车传动系统的前进档的总数。",
+    "descriptionZh": "本季或系列的剧集数。",
     "nameZh": "剧集数",
     "rdfs:comment": "The number of episodes in this season or series.",
     "rdfs:labelh": "numberOfEpisodes"
   },
   {
-    "descriptionZh": "完整浴室的数量。",
+    "descriptionZh": "可用于汽车传动系统的前进档的总数。",
     "nameZh": "前进档位数",
     "rdfs:comment": "The total number of forward gears available for the transmission system of the vehicle.<br/><br/>\n\n\n\nTypical unit code(s): C62",
     "rdfs:labelh": "numberOfForwardGears"
   },
   {
-    "descriptionZh": "项目列表中的项目数。请注意，一些描述可能无法完全描述列表中的所有项目（例如，多页分页）；在这种情况下，numberOfItems将用于整个列表。",
+    "descriptionZh": "完整浴室的数量。",
     "nameZh": "全浴室数量",
     "rdfs:comment": "Number of full bathrooms - The total number of full and 戮bathrooms in an <a class=\"localLink\" href=\"/Accommodation\">Accommodation</a>. This corresponds to the <a href=\"https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field\">BathroomsFull field in RESO</a>./",
     "rdfs:labelh": "numberOfFullBathrooms"
   },
   {
-    "descriptionZh": "贷款发放时合同要求的偿还贷款的次数。对于按月付款的贷款，这是从合同首次付款日到到期日的月数。",
+    "descriptionZh": "项目列表中的项目数。请注意，一些描述可能无法完全描述列表中的所有项目（例如，多页分页）；在这种情况下，numberOfItems将用于整个列表。",
     "nameZh": "条目数量",
     "rdfs:comment": "The number of items in an ItemList. Note that some descriptions might not fully describe all items in a list (e.g., multi-page pagination); in such cases, the numberOfItems would be for the entire list.",
     "rdfs:labelh": "numberOfItems"
   },
   {
-    "descriptionZh": "书的总页数。",
+    "descriptionZh": "贷款发放时合同要求的偿还贷款的次数。对于按月付款的贷款，这是从合同首次付款日到到期日的月数。",
     "nameZh": "贷款偿还次数",
     "rdfs:comment": "The number of payments contractually required at origination to repay the loan. For monthly paying loans this is the number of months from the contractual first payment date to the maturity date.",
     "rdfs:labelh": "numberOfLoanPayments"
   },
   {
-    "descriptionZh": "半浴室数量。",
+    "descriptionZh": "书的总页数。",
     "nameZh": "总页数",
     "rdfs:comment": "The number of pages in the book.",
     "rdfs:labelh": "numberOfPages"
   },
   {
-    "descriptionZh": "指明有多少人可以玩这个游戏（最少、最多或范围）。",
+    "descriptionZh": "半浴室数量。",
     "nameZh": "半浴室数量",
     "rdfs:comment": "Number of partial bathrooms - The total number of half and 录bathrooms in an <a class=\"localLink\" href=\"/Accommodation\">Accommodation</a>. This corresponds to the <a href=\"https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field\">BathroomsPartial field in RESO</a>./",
     "rdfs:labelh": "numberOfPartialBathrooms"
   },
   {
-    "descriptionZh": "这辆车的车主数量，包括现在的车主。",
+    "descriptionZh": "指明有多少人可以玩这个游戏（最少、最多或范围）。",
     "nameZh": "玩家数",
     "rdfs:comment": "Indicate how many people can play this game (minimum, maximum, or range).",
     "rdfs:labelh": "numberOfPlayers"
   },
   {
-    "descriptionZh": "住宿的房间数量。",
+    "descriptionZh": "这辆车的车主数量，包括现在的车主。",
     "nameZh": "历任车主数",
     "rdfs:comment": "The number of owners of the vehicle, including the current one.<br/><br/>\n\n\n\nTypical unit code(s): C62",
     "rdfs:labelh": "numberOfPreviousOwners"
   },
   {
-    "descriptionZh": "系列节目的季数。",
+    "descriptionZh": "住宿的房间数量。",
     "nameZh": "房间数",
     "rdfs:comment": "The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.\n\nTypical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.",
     "rdfs:labelh": "numberOfRooms"
   },
   {
-    "descriptionZh": "组织中角色关联的号码，例如，运动员运动衫上的号码。",
+    "descriptionZh": "系列节目的季数。",
     "nameZh": "季数",
     "rdfs:comment": "The number of seasons in this series.",
     "rdfs:labelh": "numberOfSeasons"
   },
   {
-    "descriptionZh": "食谱或菜单条目的营养信息。",
+    "descriptionZh": "组织中角色关联的号码，例如，运动员运动衫上的号码。",
     "nameZh": "角色编码",
     "rdfs:comment": "A number associated with a role in an organization, for example, the number on an athlete's jersey.",
     "rdfs:labelh": "numberedPosition"
   },
   {
-    "descriptionZh": "动作在其上执行的对象，其状态保持完整或更改。",
+    "descriptionZh": "食谱或菜单条目的营养信息。",
     "nameZh": "营养成分",
     "rdfs:comment": "Nutrition information about the recipe or menu item.",
     "rdfs:labelh": "nutrition"
   },
   {
-    "descriptionZh": "观察日期。",
+    "descriptionZh": "动作在其上执行的对象，其状态保持完整或更改。",
     "nameZh": "对象",
     "rdfs:comment": "The object upon which the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) or theme (which doesn't). e.g. John read <em>a book</em>.",
     "rdfs:labelh": "object"
   },
   {
-    "descriptionZh": "观察中观察到的节点，通常是统计总体。",
+    "descriptionZh": "观察日期。",
     "nameZh": "观察日期",
     "rdfs:comment": "The observationDate of an <a class=\"localLink\" href=\"/Observation\">Observation</a>.",
     "rdfs:labelh": "observationDate"
   },
   {
-    "descriptionZh": "住宿允许的总入住人数（包括婴儿等）。",
+    "descriptionZh": "观察中观察到的节点，通常是统计总体。",
     "nameZh": "观察节点",
     "rdfs:comment": "The observedNode of an <a class=\"localLink\" href=\"/Observation\">Observation</a>, often a <a class=\"localLink\" href=\"/StatisticalPopulation\">StatisticalPopulation</a>.",
     "rdfs:labelh": "observedNode"
   },
   {
-    "descriptionZh": "本职业描述适用的地区/国家。请注意，不同司法管辖区的教育要求和资格可能有所不同。",
+    "descriptionZh": "住宿允许的总入住人数（包括婴儿等）。",
     "nameZh": "最大入住人数",
     "rdfs:comment": "The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permitted usage as per the contractual agreement (e.g. a double room used by a single person).\n\nTypical unit code(s): C62 for person",
     "rdfs:labelh": "occupancy"
   },
   {
-    "descriptionZh": "职位的种类。",
+    "descriptionZh": "本职业描述适用的地区/国家。请注意，不同司法管辖区的教育要求和资格可能有所不同。",
     "nameZh": "职业要求适用地区",
     "rdfs:comment": "The region/country for which this occupational description is appropriate. Note that educational requirements and qualifications can vary between jurisdictions.",
     "rdfs:labelh": "occupationLocation"
   },
   {
-    "descriptionZh": "成功完成本课程或计划后获得的资格、奖项、证书、文凭或其他职业证书的说明。",
+    "descriptionZh": "职位的种类。",
     "nameZh": "职位分类",
     "rdfs:comment": "",
     "rdfs:labelh": "occupationalCategory"
   },
   {
-    "descriptionZh": "产品的报价数量。",
+    "descriptionZh": "成功完成本课程或计划后获得的资格、奖项、证书、文凭或其他职业证书的说明。",
     "nameZh": "颁发职业资格证书",
     "rdfs:comment": "A description of the qualification, award, certificate, diploma or other occupational credential awarded as a consequence of successful completion of this course or program.",
     "rdfs:labelh": "occupationalCredentialAwarded"
   },
   {
-    "descriptionZh": "指向提供报价的组织或个人。",
+    "descriptionZh": "产品的报价数量。",
     "nameZh": "商品的报价总数",
     "rdfs:comment": "The number of offers for the product.",
     "rdfs:labelh": "offerCount"
   },
   {
-    "descriptionZh": "提供此项目的报价 - 例如，出售产品的报价，出租电影DVD的价格、门票价格。",
+    "descriptionZh": "指向提供报价的组织或个人。",
     "nameZh": "报价者",
     "rdfs:comment": "A pointer to the organization or person making the offer.",
     "rdfs:labelh": "offeredBy"
   },
   {
-    "descriptionZh": "处方是否可以邮寄。",
+    "descriptionZh": "提供此项目的报价 - 例如，出售产品的报价，出租电影DVD的价格、门票价格。",
     "nameZh": "报价",
     "rdfs:comment": "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use <a class=\"localLink\" href=\"/businessFunction\">businessFunction</a> to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a <a class=\"localLink\" href=\"/Demand\">Demand</a>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.",
     "rdfs:labelh": "offers"
   },
   {
-    "descriptionZh": "营业时间。例子：周二和周四下午4点到8点。",
+    "descriptionZh": "处方是否可以邮寄。",
     "nameZh": "邮寄处方",
     "rdfs:comment": "Whether prescriptions can be delivered by mail.",
     "rdfs:labelh": "offersPrescriptionByMail"
   },
   {
-    "descriptionZh": "开放时间详细信息。",
+    "descriptionZh": "营业时间。例子：周二和周四下午4点到8点。",
     "nameZh": "开放时间",
     "rdfs:comment": "The general opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'.<br/><br/>\n\n\n\n<ul>\n\n<li>Days are specified using the following two-letter combinations: <code>Mo</code>, <code>Tu</code>, <code>We</code>, <code>Th</code>, <code>Fr</code>, <code>Sa</code>, <code>Su</code>.</li>\n\n<li>Times are specified using 24:00 format. For example, 3pm is specified as <code>15:00</code>, 10am as <code>10:00</code>. </li>\n\n<li>Here is an example: <code>&lt;time itemprop=\"openingHours\" datetime=&quot;Tu,Th 16:00-20:00&quot;&gt;Tuesdays and Thursdays 4-8pm&lt;/time&gt;</code>.</li>\n\n<li>If a business is open 7 days a week, then it can be specified as <code>&lt;time itemprop=&quot;openingHours&quot; datetime=&quot;Mo-Su&quot;&gt;Monday through Sunday, all day&lt;/time&gt;</code>.</li>\n\n</ul>",
     "rdfs:labelh": "openingHours"
   },
   {
-    "descriptionZh": "一周内某天的开放时间。",
+    "descriptionZh": "开放时间详细信息。",
     "nameZh": "开放时间详情",
     "rdfs:comment": "The opening hours of a certain place.",
     "rdfs:labelh": "openingHoursSpecification"
   },
   {
-    "descriptionZh": "支持操作系统，例如，Windows 7、OSX 10.6、Android 1.6。",
+    "descriptionZh": "一周内某天的开放时间。",
     "nameZh": "开门时间",
     "rdfs:comment": "The opening hour of the place or service on the given day(s) of the week.",
     "rdfs:labelh": "opens"
   },
   {
-    "descriptionZh": "participant的子属性，锻炼健身活动中的对手。",
+    "descriptionZh": "支持操作系统，例如，Windows 7、OSX 10.6、Android 1.6。",
     "nameZh": "操作系统",
     "rdfs:comment": "Operating systems supported (Windows 7, OSX 10.6, Android 1.6).",
     "rdfs:labelh": "operatingSystem"
   },
   {
-    "descriptionZh": "object的子属性，选择活动中的选项。",
+    "descriptionZh": "participant的子属性，锻炼健身活动中的对手。",
     "nameZh": "对手",
     "rdfs:comment": "A sub property of participant. The opponent on this action.",
     "rdfs:labelh": "opponent"
   },
   {
-    "descriptionZh": "下单的日期。",
+    "descriptionZh": "object的子属性，选择活动中的选项。",
     "nameZh": "选项",
     "rdfs:comment": "A sub property of object. The options subject to this action.",
     "rdfs:labelh": "option"
   },
   {
-    "descriptionZh": "订单所选物流。",
+    "descriptionZh": "下单的日期。",
     "nameZh": "订单的下单日期",
     "rdfs:comment": "Date order was placed.",
     "rdfs:labelh": "orderDate"
   },
   {
-    "descriptionZh": "订单条目的编号。",
+    "descriptionZh": "订单所选物流。",
     "nameZh": "订单的物流选择",
     "rdfs:comment": "The delivery of the parcel related to this order or order item.",
     "rdfs:labelh": "orderDelivery"
   },
   {
-    "descriptionZh": "订单条目的当前状态。",
+    "descriptionZh": "订单条目的编号。",
     "nameZh": "订单条目的编号",
     "rdfs:comment": "The identifier of the order item.",
     "rdfs:labelh": "orderItemNumber"
   },
   {
-    "descriptionZh": "订单编号。",
+    "descriptionZh": "订单条目的当前状态。",
     "nameZh": "订单条目的状态",
     "rdfs:comment": "The current status of the order item.",
     "rdfs:labelh": "orderItemStatus"
   },
   {
-    "descriptionZh": "订购的商品数量。 如果属性未设置，则设定数量为1。",
+    "descriptionZh": "订单编号。",
     "nameZh": "订单的编号",
     "rdfs:comment": "The identifier of the transaction.",
     "rdfs:labelh": "orderNumber"
   },
   {
-    "descriptionZh": "订单的当前状态。",
+    "descriptionZh": "订购的商品数量。 如果属性未设置，则设定数量为1。",
     "nameZh": "订单条目的采购数量",
     "rdfs:comment": "The number of the item ordered. If the property is not set, assume the quantity is one.",
     "rdfs:labelh": "orderQuantity"
   },
   {
-    "descriptionZh": "订单条目。",
+    "descriptionZh": "订单的当前状态。",
     "nameZh": "订单的状态",
     "rdfs:comment": "The current status of the order.",
     "rdfs:labelh": "orderStatus"
   },
   {
-    "descriptionZh": "活动的组织者。",
+    "descriptionZh": "订单条目。",
     "nameZh": "订单条目",
     "rdfs:comment": "The item ordered.",
     "rdfs:labelh": "orderedItem"
   },
   {
-    "descriptionZh": "发货者的地址。",
+    "descriptionZh": "活动的组织者。",
     "nameZh": "组织者",
     "rdfs:comment": "An organizer of an Event.",
     "rdfs:labelh": "organizer"
   },
   {
-    "descriptionZh": "在处理非文本化内容的媒体评论中，描述有助于更好地解释媒体对象的背景信息。",
+    "descriptionZh": "发货者的地址。",
     "nameZh": "发货者的地址",
     "rdfs:comment": "Shipper's address.",
     "rdfs:labelh": "originAddress"
   },
   {
-    "descriptionZh": "链接到包含内容原始版本的页面，或直接链接到原始内容的在线副本，例如视频文件。",
+    "descriptionZh": "在处理非文本化内容的媒体评论中，描述有助于更好地解释媒体对象的背景信息。",
     "nameZh": "原始媒体上下文描述",
     "rdfs:comment": "Describes, in a <a class=\"localLink\" href=\"/MediaReview\">MediaReview</a> when dealing with <a class=\"localLink\" href=\"/DecontextualizedContent\">DecontextualizedContent</a>, background information that can contribute to better interpretation of the <a class=\"localLink\" href=\"/MediaObject\">MediaObject</a>.",
     "rdfs:labelh": "originalMediaContextDescription"
   },
   {
-    "descriptionZh": "淋巴结构起源或传入的脉管系统。",
+    "descriptionZh": "链接到包含内容原始版本的页面，或直接链接到原始内容的在线副本，例如视频文件。",
     "nameZh": "媒体源链接",
     "rdfs:comment": "Link to the page containing an original version of the content, or directly to an online copy of the original <a class=\"localLink\" href=\"/MediaObject\">MediaObject</a> content, e.g. video file.",
     "rdfs:labelh": "originalMediaLink"
   },
   {
-    "descriptionZh": "与药物过量有关的任何信息，包括症状或体征、治疗方法、应急响应联系信息。",
+    "descriptionZh": "淋巴结构起源或传入的脉管系统。",
     "nameZh": "起源于",
     "rdfs:comment": "The vasculature the lymphatic structure originates, or afferents, from.",
     "rdfs:labelh": "originatesFrom"
   },
   {
-    "descriptionZh": "获得产品所有权的日期和时间。",
+    "descriptionZh": "与药物过量有关的任何信息，包括症状或体征、治疗方法、应急响应联系信息。",
     "nameZh": "用药过量",
     "rdfs:comment": "Any information related to overdose on a drug, including signs or symptoms, treatments, contact information for emergency response.",
     "rdfs:labelh": "overdosage"
   },
   {
-    "descriptionZh": "放弃产品所有权的日期和时间。",
+    "descriptionZh": "获得产品所有权的日期和时间。",
     "nameZh": "所有权开始时间",
     "rdfs:comment": "The date and time of obtaining the product.",
     "rdfs:labelh": "ownedFrom"
   },
   {
-    "descriptionZh": "对于一个组织（通常但不一定是新闻媒体组织），组织所有权结构的描述；包括资金和赠款。在新闻/媒体环境中，这尤其涉及编辑独立性。请注意，也可以使用funder，它可以使基本的funder信息机器可读。",
+    "descriptionZh": "放弃产品所有权的日期和时间。",
     "nameZh": "所有权结束时间",
     "rdfs:comment": "The date and time of giving up ownership on the product.",
     "rdfs:labelh": "ownedThrough"
   },
   {
-    "descriptionZh": "组织或个人拥有的产品。",
+    "descriptionZh": "对于一个组织（通常但不一定是新闻媒体组织），组织所有权结构的描述；包括资金和赠款。在新闻/媒体环境中，这尤其涉及编辑独立性。请注意，也可以使用funder，它可以使基本的funder信息机器可读。",
     "nameZh": "所有者权益信息",
     "rdfs:comment": "For an <a class=\"localLink\" href=\"/Organization\">Organization</a> (often but not necessarily a <a class=\"localLink\" href=\"/NewsMediaOrganization\">NewsMediaOrganization</a>), a description of organizational ownership structure; funding and grants. In a news/media setting, this is with particular reference to editorial independence.   Note that the <a class=\"localLink\" href=\"/funder\">funder</a> is also available and can be used to make basic funder information machine-readable.",
     "rdfs:labelh": "ownershipFundingInfo"
   },
   {
-    "descriptionZh": "结束页码。例如，“138”或“xvi”。",
+    "descriptionZh": "组织或个人拥有的产品。",
     "nameZh": "拥有",
     "rdfs:comment": "Products owned by the organization or person.",
     "rdfs:labelh": "owns"
   },
   {
-    "descriptionZh": "开始页码。例如，“135”或“xiii”。",
+    "descriptionZh": "结束页码。例如，“138”或“xvi”。",
     "nameZh": "结束页码",
     "rdfs:comment": "The page on which the work ends; for example \"138\" or \"xvi\".",
     "rdfs:labelh": "pageEnd"
   },
   {
-    "descriptionZh": "多段页码范围。例如“1-6,9,55”或“10-12,46-49”。",
+    "descriptionZh": "开始页码。例如，“135”或“xiii”。",
     "nameZh": "开始页码",
     "rdfs:comment": "The page on which the work starts; for example \"135\" or \"xiii\".",
     "rdfs:labelh": "pageStart"
   },
   {
-    "descriptionZh": "一个问题、答案或条目的父条目。",
+    "descriptionZh": "多段页码范围。例如“1-6,9,55”或“10-12,46-49”。",
     "nameZh": "起止页码",
     "rdfs:comment": "A parent of this person.",
     "rdfs:labelh": "parent"
   },
   {
-    "descriptionZh": "subOrganization的反向属性，即包含这个组织的更大组织。",
+    "descriptionZh": "一个问题、答案或条目的父条目。",
     "nameZh": "上级条目",
     "rdfs:comment": "The parent of a question, answer or item in general.",
     "rdfs:labelh": "parentItem"
   },
   {
-    "descriptionZh": "一个广播服务的上级广播服务，例如，一个地区频道所属的国家频道。",
+    "descriptionZh": "subOrganization的反向属性，即包含这个组织的更大组织。",
     "nameZh": "上级组织",
     "rdfs:comment": "The larger organization that this organization is a <a class=\"localLink\" href=\"/subOrganization\">subOrganization</a> of, if any.",
     "rdfs:labelh": "parentOrganization"
   },
   {
-    "descriptionZh": "相关分类群中最近的亲本分类群。",
+    "descriptionZh": "一个广播服务的上级广播服务，例如，一个地区频道所属的国家频道。",
     "nameZh": "上级服务",
     "rdfs:comment": "A broadcast service to which the broadcast service may belong to such as regional variations of a national channel.",
     "rdfs:labelh": "parentService"
   },
   {
-    "descriptionZh": "一个人的父母。",
+    "descriptionZh": "相关分类群中最近的亲本分类群。",
     "nameZh": "亲本分类群",
     "rdfs:comment": "Closest parent taxon of the taxon in question.",
     "rdfs:labelh": "parentTaxon"
   },
   {
-    "descriptionZh": "片段所属的剧集。",
+    "descriptionZh": "一个人的父母。",
     "nameZh": "父母",
     "rdfs:comment": "A parents of the person.",
     "rdfs:labelh": "parents"
   },
   {
-    "descriptionZh": "所属账单，作为所属Invoice实体的一部分被付款的订单。",
+    "descriptionZh": "片段所属的剧集。",
     "nameZh": "所属剧集",
     "rdfs:comment": "The episode to which this clip belongs.",
     "rdfs:labelh": "partOfEpisode"
   },
   {
-    "descriptionZh": "包含此交货中物品的整体订单。",
+    "descriptionZh": "所属账单，作为所属Invoice实体的一部分被付款的订单。",
     "nameZh": "所属账单",
     "rdfs:comment": "The order is being paid as part of the referenced Invoice.",
     "rdfs:labelh": "partOfInvoice"
   },
   {
-    "descriptionZh": "这一集所属的季。",
+    "descriptionZh": "包含此交货中物品的整体订单。",
     "nameZh": "所属订单",
     "rdfs:comment": "The overall order the items in this delivery were included in.",
     "rdfs:labelh": "partOfOrder"
   },
   {
-    "descriptionZh": "这一集或季属于哪个系列。",
+    "descriptionZh": "这一集所属的季。",
     "nameZh": "所属季",
     "rdfs:comment": "The season to which this episode belongs.",
     "rdfs:labelh": "partOfSeason"
   },
   {
-    "descriptionZh": "该结构所属的解剖学或器官系统。",
+    "descriptionZh": "这一集或季属于哪个系列。",
     "nameZh": "所属系列",
     "rdfs:comment": "The series to which this episode or season belongs.",
     "rdfs:labelh": "partOfSeries"
   },
   {
-    "descriptionZh": "这一集或季所属的电视连续剧。",
+    "descriptionZh": "该结构所属的解剖学或器官系统。",
     "nameZh": "所属系统",
     "rdfs:comment": "The anatomical or organ system that this structure is part of.",
     "rdfs:labelh": "partOfSystem"
   },
   {
-    "descriptionZh": "标识此行程是另一行程的子行程。例如，多日旅行的第一天、第二天等。",
+    "descriptionZh": "这一集或季所属的电视连续剧。",
     "nameZh": "所属系列",
     "rdfs:comment": "The TV series to which this episode or season belongs.",
     "rdfs:labelh": "partOfTVSeries"
   },
   {
-    "descriptionZh": "间接参与行动的其他人。 例如约翰与史蒂夫写了一本书。",
+    "descriptionZh": "标识此行程是另一行程的子行程。例如，多日旅行的第一天、第二天等。",
     "nameZh": "所属行程",
     "rdfs:comment": "Identifies that this <a class=\"localLink\" href=\"/Trip\">Trip</a> is a subTrip of another Trip.  For example Day 1, Day 2, etc. of a multi-day trip.",
     "rdfs:labelh": "partOfTrip"
   },
   {
-    "descriptionZh": "预约活动的参与人数。",
+    "descriptionZh": "间接参与行动的其他人。 例如约翰与史蒂夫写了一本书。",
     "nameZh": "参与者",
     "rdfs:comment": "Other co-agents that participated in the action indirectly. e.g. John wrote a book with <em>Steve</em>.",
     "rdfs:labelh": "participant"
   },
   {
-    "descriptionZh": "分配给乘客的安全或登机的优先级状态，例如FastTrack或Priority。",
+    "descriptionZh": "预约活动的参与人数。",
     "nameZh": "预约活动的参与人数",
     "rdfs:comment": "Number of people the reservation should accommodate.",
     "rdfs:labelh": "partySize"
   },
   {
-    "descriptionZh": "航空公司指定的乘客序列号。",
+    "descriptionZh": "分配给乘客的安全或登机的优先级状态，例如FastTrack或Priority。",
     "nameZh": "乘客优先级状态",
     "rdfs:comment": "The priority status assigned to a passenger for security or boarding (e.g. FastTrack or Priority).",
     "rdfs:labelh": "passengerPriorityStatus"
   },
   {
-    "descriptionZh": "与这种活动或状态有关的正常机械、物理和生化功能的变化。",
+    "descriptionZh": "航空公司指定的乘客序列号。",
     "nameZh": "乘客的顺序编号",
     "rdfs:comment": "The passenger's sequence number as assigned by the airline.",
     "rdfs:labelh": "passengerSequenceNumber"
   },
   {
-    "descriptionZh": "某物的图案，例如“圆点”、“条纹”、“加拿大国旗”。值通常表示为文本，但也支持指向受控值方案的链接。",
+    "descriptionZh": "与这种活动或状态有关的正常机械、物理和生化功能的变化。",
     "nameZh": "病理生理学",
     "rdfs:comment": "Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition.",
     "rdfs:labelh": "pathophysiology"
   },
   {
-    "descriptionZh": "乘客和货物的允许重量，不包括空车的重量\n典型单位代码：KGM是千克，LBR是磅。",
+    "descriptionZh": "某物的图案，例如“圆点”、“条纹”、“加拿大国旗”。值通常表示为文本，但也支持指向受控值方案的链接。",
     "nameZh": "图案",
     "rdfs:comment": "A pattern that something has, for example 'polka dot', 'striped', 'Canadian flag'. Values are typically expressed as text, although links to controlled value schemes are also supported.",
     "rdfs:labelh": "pattern"
   },
   {
-    "descriptionZh": "例如：现金，信用卡等。",
+    "descriptionZh": "乘客和货物的允许重量，不包括空车的重量\n典型单位代码：KGM是千克，LBR是磅。",
     "nameZh": "允许载重",
     "rdfs:comment": "The permitted weight of passengers and cargo, EXCLUDING the weight of the empty vehicle.<br/><br/>\n\n\n\nTypical unit code(s): KGM for kilogram, LBR for pound<br/><br/>\n\n\n\n<ul>\n\n<li>Note 1: Many databases specify the permitted TOTAL weight instead, which is the sum of <a class=\"localLink\" href=\"/weight\">weight</a> and <a class=\"localLink\" href=\"/payload\">payload</a></li>\n\n<li>Note 2: You can indicate additional information in the <a class=\"localLink\" href=\"/name\">name</a> of the <a class=\"localLink\" href=\"/QuantitativeValue\">QuantitativeValue</a> node.</li>\n\n<li>Note 3: You may also link to a <a class=\"localLink\" href=\"/QualitativeValue\">QualitativeValue</a> node that provides additional information using <a class=\"localLink\" href=\"/valueReference\">valueReference</a>.</li>\n\n<li>Note 4: Note that you can use <a class=\"localLink\" href=\"/minValue\">minValue</a> and <a class=\"localLink\" href=\"/maxValue\">maxValue</a> to indicate ranges.</li>\n\n</ul>",
     "rdfs:labelh": "payload"
   },
   {
-    "descriptionZh": "最晚付款日期。",
+    "descriptionZh": "例如：现金，信用卡等。",
     "nameZh": "接受的支付方式",
     "rdfs:comment": "Cash, Credit Card, Cryptocurrency, Local Exchange Tradings System, etc.",
     "rdfs:labelh": "paymentAccepted"
@@ -5712,19 +5712,19 @@
     "rdfs:labelh": "paymentDue"
   },
   {
-    "descriptionZh": "信用卡的名称或订单的其他付款方式。",
+    "descriptionZh": "最晚付款日期。",
     "nameZh": "最晚付款日期",
     "rdfs:comment": "The date that payment is due.",
     "rdfs:labelh": "paymentDueDate"
   },
   {
-    "descriptionZh": "使用付款方式的标识符，例如信用卡的最后4位数字。",
+    "descriptionZh": "信用卡的名称或订单的其他付款方式。",
     "nameZh": "支付方式",
     "rdfs:comment": "The name of the credit card or other method of payment for the order.",
     "rdfs:labelh": "paymentMethod"
   },
   {
-    "descriptionZh": "付款状况，例如发票是否已付款？",
+    "descriptionZh": "使用付款方式的标识符，例如信用卡的最后4位数字。",
     "nameZh": "支付方式ID",
     "rdfs:comment": "An identifier for the method of payment used (e.g. the last 4 digits of the credit card).",
     "rdfs:labelh": "paymentMethodId"
@@ -6972,7 +6972,7 @@
     "rdfs:labelh": "scheduledTime"
   },
   {
-    "descriptionZh": "某些作品中使用的schema版本。例如，文档对应模版的版本，数据对应此汇集的版本。可以使用URL（例如http://schema.org/版本/2.0/）声明schemaVersion。/",
+    "descriptionZh": "某些作品中使用的schema版本。例如，文档对应模版的版本，数据对应此汇集的版本。可以使用URL（例如http://cnschema.openkg.cn/版本/2.0/）声明schemaVersion。/",
     "nameZh": "schema的版本号",
     "rdfs:comment": "",
     "rdfs:labelh": "schemaVersion"
