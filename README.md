@@ -8,6 +8,19 @@ cnSchema的原则
 * 面向应用，支持开放数据生态
 * 社区共识，知识图谱专家指导
 
+## 新闻
+2022-06-28 发布cnSchemaV4.0
+
+## 资源
+* 网站 http://cnschema.openkg.cn/
+* 源码 https://github.com/cnschema/cnschema
+* 文档/报告 https://github.com/cnschema/cnSchema/wiki
+
+
+## 社区
+* [成为cnSchema志愿者](https://github.com/cnschema/cnSchema/discussions/64)
+* [讨论区](https://github.com/cnschema/cnSchema/discussions)
+
 ## cnSchema翻译扩展操作方案
 cnSchema更新周期为每季度更新一次，为鼓励更多的人参与cnSchema的翻译扩展工作中，形成多样的schema维护社区文化和规范，特设计以下翻译扩展操作方案：
 
@@ -16,22 +29,3 @@ cnSchema更新周期为每季度更新一次，为鼓励更多的人参与cnSche
 3. **开放翻译扩展**：需求整理组获得每季的更新内容后，移交翻译扩展组，由翻译扩展小组将待更新内容发布，并在约定时间内对外收集翻译扩展结果以及来源，结果整理后移交质量管理小组。
 4. **质量审核**：质量把控组为翻译扩展的结果中的每项更新分配2名审核员，完成全部审核后将质量不高的内容整理反馈给需求管理组，并留待下一季度再更新。
 5. **发布**：每季度的质量审核完成后，由发布组将汇总的结果提交cnSchema管理组审议，待通过后发布。
-
-cnSchema小组：
-* 管理组：待定
-* 需求整理组：待定
-* 翻译扩展组：待定
-* 质量把控组：待定
-* 发布组：待定
-
-## 资源
-* 网站 http://cnschema.org
-* 源码 https://github.com/cnschema/cnschema
-* 报告 https://github.com/cnschema/cnschema/issues/36
-* 文档 https://github.com/cnschema/cnschema/wiki  
-* 开放中文知识图谱： http://openkg.cn
-
-## 社区
-* [成为cnSchema志愿者](https://github.com/cnschema/cnschema/issues/38)
-* [使用/修改/扩展 cnSchema](https://github.com/cnschema/cnschema/issues/10)
-* [关于我们](https://github.com/cnschema/cnschema/wiki/FAQ%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
