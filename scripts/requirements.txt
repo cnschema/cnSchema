@@ -8,7 +8,7 @@ elasticsearch==5.4.0
 idna==2.5
 jieba==0.38
 pystache==0.5.4
-requests==2.13.0
+requests==2.20.0
 requests-cache==0.4.13
 singledispatch==3.4.0.3
 six==1.10.0
