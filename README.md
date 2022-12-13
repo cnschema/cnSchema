@@ -24,6 +24,7 @@ cnSchema的原则
 * 网站 http://cnschema.openkg.cn/
 * 源码 https://github.com/cnschema/cnschema
 * 文档/报告 https://github.com/cnschema/cnSchema/wiki
+* 工具/EasySchema https://github.com/zjukg/EasySchema
 
 
 ## 社区
