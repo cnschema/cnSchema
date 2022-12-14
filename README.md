@@ -9,6 +9,8 @@ cnSchema的原则
 * 社区共识，知识图谱专家指导
 
 ## 新闻
+2022-12-01 发布[EasySchema管理工具](https://github.com/zjukg/EasySchema)
+
 2022-07-02 发布cnSchema[抽取模型](http://cnschema.openkg.cn/deepke/cnSchema.html) 
 
 2022-06-28 发布[cnSchemaV4.0](https://github.com/cnschema/cnSchema/tree/master/data/releases/4.0)
@@ -18,9 +20,6 @@ cnSchema的原则
 2022-03-30 完成schema.orgV13的翻译的校验
 
 2022-02-21 完成schema.orgV13的翻译
-
-2022-12-01 发布[EasySchema管理工具](https://github.com/zjukg/EasySchema)
-
 
 ## 资源
 * 网站 http://cnschema.openkg.cn/
