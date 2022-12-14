@@ -19,6 +19,8 @@ cnSchema的原则
 
 2022-02-21 完成schema.orgV13的翻译
 
+2022-12-01 发布[EasySchema管理工具](https://github.com/zjukg/EasySchema)
+
 
 ## 资源
 * 网站 http://cnschema.openkg.cn/
