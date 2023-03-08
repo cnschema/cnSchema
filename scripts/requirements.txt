@@ -2,7 +2,7 @@ backports-abc==0.5
 beautifulsoup4==4.6.0
 bottle==0.12.13
 cdata==0.1.8
-certifi==2017.4.17
+certifi==2022.12.7
 chardet==3.0.4
 elasticsearch==5.4.0
 idna==2.5
